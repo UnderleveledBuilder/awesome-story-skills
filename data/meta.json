@@ -987,7 +987,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 2,
       "skill_count_truncated": false,
-      "stars": 3196,
+      "stars": 3198,
       "status": "ok"
     },
     "ExplosiveCoderflome/ani-book-skill": {
@@ -999,7 +999,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 102,
+      "stars": 103,
       "status": "ok"
     },
     "FURUYAN1234/story-maker": {
@@ -2464,13 +2464,13 @@
     "PenglongHuang/chinese-novelist-skill": {
       "archived": false,
       "description": "🎭 AI 写小说：从零生成 10-50 章完整中文小说，三层问答 · 创作记忆 · 悬念钩子 · 自动校验，长篇网文连载皆宜｜开源免费，适配主流 coding agent｜🤝 Infistar.cc 赞助 · 注册送 $5｜AI novel writing skill",
-      "forks": 526,
+      "forks": 527,
       "full_name": "PenglongHuang/chinese-novelist-skill",
       "license": "MIT",
       "pushed_at": "2026-10-06",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 3795,
+      "stars": 3798,
       "status": "ok"
     },
     "Phobetore/Evermind": {
@@ -2831,7 +2831,7 @@
     "SillyTavern/SillyTavern": {
       "archived": false,
       "description": "LLM Frontend for Power Users.",
-      "forks": 6473,
+      "forks": 6474,
       "full_name": "SillyTavern/SillyTavern",
       "license": "AGPL-3.0",
       "pushed_at": "2026-10-02",
@@ -3186,7 +3186,7 @@
       "pushed_at": "2026-08-28",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 884,
+      "stars": 886,
       "status": "ok"
     },
     "Tongering/yizhi-oral-history": {
@@ -4806,7 +4806,7 @@
       "pushed_at": "2026-10-14",
       "skill_count": 24,
       "skill_count_truncated": false,
-      "stars": 314,
+      "stars": 315,
       "status": "ok"
     },
     "danydenis560-beep/storyforge-ai": {
@@ -5038,7 +5038,7 @@
       "pushed_at": "2026-07-28",
       "skill_count": 2,
       "skill_count_truncated": false,
-      "stars": 63,
+      "stars": 64,
       "status": "ok"
     },
     "dspencej/UnscriptedAdventures": {
@@ -6430,7 +6430,7 @@
       "pushed_at": "2026-10-14",
       "skill_count": 8,
       "skill_count_truncated": false,
-      "stars": 7505,
+      "stars": 7507,
       "status": "ok"
     },
     "linux4life1/front-porch-AI": {
@@ -6491,7 +6491,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 370,
+      "stars": 371,
       "status": "ok"
     },
     "liyaonan/LingMo-Engine": {
@@ -8810,7 +8810,7 @@
       "forks": 5,
       "full_name": "unrefined803/RPGraph",
       "license": "AGPL-3.0",
-      "pushed_at": "2026-10-08",
+      "pushed_at": "2026-10-15",
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 47,
@@ -9734,7 +9734,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 13,
       "skill_count_truncated": false,
-      "stars": 7612,
+      "stars": 7613,
       "status": "ok"
     },
     "zenstory-ai/oh-story-dsh": {
