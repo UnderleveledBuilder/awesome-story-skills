@@ -13,7 +13,7 @@
 - 自己评自己会偏心。Novel-factory 让写手和评审分属两个模型族做盲评，专门对抗自偏好；AI-automatically-generates-novels 把评审温度压到 0.3，理由是尺子自己飘了，章与章的分数就不可比。
 - 循环要有出口。autonovel 在分数进入平台期时停，初稿阶段「进度优先于完美」；book-genesis-studio 每道关最多三轮；novel_generator 设熔断，超阈值强制挂起，防止无限重写。
 - 候选重排可能比事后编辑更要紧。Re3 的 README 写明：关掉 Edit 模块会快不少、损失不大；把候选数设为 1、关掉重排，效果明显变差。
-- 脚本抓不到累积型错误。fiction-forge 写完约 29 万字后，一次带状态账本的通读找出 191 个五轮自动编辑漏掉的问题，如时间线漂移、道具同时出现在两处。扫描器适合防回潮，不适合找问题。
+- 脚本抓不到累积型错误。fiction-forge 写完一部约 29 万词的英文长篇后，一次带状态账本的通读找出 191 个五轮自动编辑漏掉的问题，如时间线漂移、道具同时出现在两处。扫描器适合防回潮，不适合找问题。
 - 改稿会越改越散。kitten-punch-screenwriting 要求按问题来源回修对应层，禁止为修局部问题重写整体或引入新设定；dsh-novel-craft 的批注只改被标的段落。
 
 **从哪里开始**：[Claude-Book](https://github.com/ThomasHoussin/Claude-Book) 适合在 Claude Code 里给现有流程加审稿：bible 只读、状态按章存档、三审最多三轮，目录结构可照搬。[autonovel](https://github.com/NousResearch/autonovel) 适合想做全自动长篇的开发者，从设定打分到全书修订都有独立脚本，循环怎么停写得清楚。[lengdu](https://github.com/asass-11/lengdu) 适合写中文短篇、在意读感的作者，核心只有「独立校准＋新读者首读」两步。
