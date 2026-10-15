@@ -1808,13 +1808,13 @@
     "LanyXiaosheng/bookflow-skill": {
       "archived": false,
       "description": "AI小说skill",
-      "forks": 30,
+      "forks": 31,
       "full_name": "LanyXiaosheng/bookflow-skill",
       "license": "MIT",
       "pushed_at": "2026-09-18",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 200,
+      "stars": 201,
       "status": "ok"
     },
     "Laszlobeer/Dungeo-ai-new": {
@@ -2337,7 +2337,7 @@
       "pushed_at": "2026-10-10",
       "skill_count": 21,
       "skill_count_truncated": false,
-      "stars": 10319,
+      "stars": 10321,
       "status": "ok"
     },
     "Nigh/show-me-the-story": {
@@ -2385,7 +2385,7 @@
       "pushed_at": "2026-03-20",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 1626,
+      "stars": 1627,
       "status": "ok"
     },
     "Nufahi/storyforge": {
@@ -2464,13 +2464,13 @@
     "PenglongHuang/chinese-novelist-skill": {
       "archived": false,
       "description": "🎭 AI 写小说：从零生成 10-50 章完整中文小说，三层问答 · 创作记忆 · 悬念钩子 · 自动校验，长篇网文连载皆宜｜开源免费，适配主流 coding agent｜🤝 Infistar.cc 赞助 · 注册送 $5｜AI novel writing skill",
-      "forks": 527,
+      "forks": 529,
       "full_name": "PenglongHuang/chinese-novelist-skill",
       "license": "MIT",
       "pushed_at": "2026-10-06",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 3798,
+      "stars": 3799,
       "status": "ok"
     },
     "Phobetore/Evermind": {
@@ -2666,7 +2666,7 @@
       "pushed_at": "2026-06-28",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 136,
+      "stars": 137,
       "status": "ok"
     },
     "SKWVideo/skw-video-editor-ai-skills": {
@@ -2837,7 +2837,7 @@
       "pushed_at": "2026-10-02",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 34523,
+      "stars": 34525,
       "status": "ok"
     },
     "SimonWaldherr/AI-Book-Generator": {
@@ -2976,13 +2976,13 @@
     "Supreme-Ultimate/novel-to-script-team": {
       "archived": false,
       "description": "完整的多 Agent 多 Skill 小说改编影视流水线系统。",
-      "forks": 34,
+      "forks": 35,
       "full_name": "Supreme-Ultimate/novel-to-script-team",
       "license": "MIT",
       "pushed_at": "2026-05-02",
       "skill_count": 26,
       "skill_count_truncated": false,
-      "stars": 178,
+      "stars": 179,
       "status": "ok"
     },
     "TJurijs/llm-dungeon": {
@@ -3180,13 +3180,13 @@
     "Tomsawyerhu/Chinese-WebNovel-Skill": {
       "archived": false,
       "description": "中文网文小说写作skill",
-      "forks": 97,
+      "forks": 98,
       "full_name": "Tomsawyerhu/Chinese-WebNovel-Skill",
       "license": null,
       "pushed_at": "2026-08-28",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 886,
+      "stars": 887,
       "status": "ok"
     },
     "Tongering/yizhi-oral-history": {
@@ -4172,7 +4172,7 @@
       "pushed_at": "2026-06-20",
       "skill_count": 4,
       "skill_count_truncated": false,
-      "stars": 104,
+      "stars": 105,
       "status": "ok"
     },
     "artkruglov/voice-film": {
@@ -5196,7 +5196,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 4609,
+      "stars": 4611,
       "status": "ok"
     },
     "f43a9a/Claude-Code-Novel-Writing": {
@@ -5504,13 +5504,13 @@
     "haowjy/creative-writing-skills": {
       "archived": false,
       "description": "claude skills focused on creative writing",
-      "forks": 69,
+      "forks": 70,
       "full_name": "haowjy/creative-writing-skills",
       "license": "Apache-2.0",
       "pushed_at": "2026-10-15",
       "skill_count": 24,
       "skill_count_truncated": false,
-      "stars": 512,
+      "stars": 513,
       "status": "ok"
     },
     "harsh10tech/cognee-dnd-game": {
@@ -6250,7 +6250,7 @@
       "pushed_at": "2026-10-11",
       "skill_count": 2,
       "skill_count_truncated": false,
-      "stars": 77,
+      "stars": 79,
       "status": "ok"
     },
     "krys64/OpenArcana": {
@@ -9134,7 +9134,7 @@
     "wordflowlab/novel-writer-skills": {
       "archived": false,
       "description": "skill + slash command 方式进行写小说探索",
-      "forks": 51,
+      "forks": 52,
       "full_name": "wordflowlab/novel-writer-skills",
       "license": "MIT",
       "pushed_at": "2025-10-20",
@@ -9287,7 +9287,7 @@
       "pushed_at": "2026-10-10",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 3186,
+      "stars": 3187,
       "status": "ok"
     },
     "xianzl/novel-style-skills": {
@@ -9377,13 +9377,13 @@
     "xindoo/sumeru": {
       "archived": false,
       "description": "须弥写作，专注于长文小说写作的SKILL。",
-      "forks": 27,
+      "forks": 28,
       "full_name": "xindoo/sumeru",
       "license": null,
       "pushed_at": "2026-08-23",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 203,
+      "stars": 204,
       "status": "ok"
     },
     "xinxin2021110/InkRealm": {
