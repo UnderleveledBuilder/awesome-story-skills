@@ -14,7 +14,7 @@
 
 **让 agent 帮你挑**：`npx skills add UnderleveledBuilder/awesome-llm-storytelling` 装上 storytelling-methods skill，然后直接说「我要写 300 章修仙，帮我挑方法」。机器可读的完整索引在 [catalog.json](catalog.json)。
 
-收录 817 个项目：333 个 skill 和提示词、462 个框架和应用、22 个研究代码 · 元数据更新于 2026-10-15
+收录 818 个项目：334 个 skill 和提示词、462 个框架和应用、22 个研究代码 · 元数据更新于 2026-10-15
 
 **图例**：🌟 精选 · 📝 提示词 · ⚙️ 框架 · 🧩 应用 · 🎓 研究代码 · 💤 超过 180 天未更新 · 📦 已归档 · ⚠️ 仓库失效
 
@@ -23,14 +23,14 @@
 
 ## 目录
 
-- [本周新增](#new)（125）
+- [本周新增](#new)（126）
 - [精选：从这里开始](#featured)（26）
 - [按故事类型](#by-group)
   - [长篇小说 · 网文](#group-novel)（357）
   - [短篇 · 故事](#group-short)（41）
   - [剧本 · 短剧 · 影视](#group-script)（84）
   - [互动叙事 · 游戏 · 角色扮演](#group-interactive)（199）
-  - [仿写 · 同人 · 风格迁移](#group-imitation)（26）
+  - [仿写 · 同人 · 风格迁移](#group-imitation)（27）
   - [非虚构叙事](#group-nonfiction)（65）
   - [通用叙事方法](#group-general)（45）
 - [按创作方法查找](#by-method)
@@ -40,7 +40,7 @@
 <a id="new"></a>
 ## 本周新增
 
-近 7 天新收录 125 个：
+近 7 天新收录 126 个：
 
 - [director](https://github.com/s1dashu/director) ★805：动画解说模式先定中心问题，按钩子、背景、矛盾、概念、误读、回答组织讲稿，区分事实与解读、不编造动机和对白，再做人物、分镜和视频生成
 - [simon-skills](https://github.com/trustfuture/simon-skills) ★428：调查长片 skill：先定账目/代价/规则等六类核心问题并轮换，开场 5 秒用有事实支撑的冲突立起问题，结论有来源台账和事实核查；另含白板讲解视频
@@ -58,11 +58,11 @@
 - [Writingbook-AgenticWorkflow](https://github.com/idoforgod/Writingbook-AgenticWorkflow) ★29：AI 自传流水线：McAdams/Kvale 式 12 轮访谈→故事圣经（情感弧+起承转合）→逐章写并混合作家文风→对抗审稿+CoVe 事实核查→跨章一致性审计
 - [ai-director-video-commentary](https://github.com/fqyy360t/ai-director-video-commentary) ★28：影视剧解说：先做剧情调研出导演简报，把 ASR 和视觉分析融合成语义图，按因果链、情绪曲线和「故事五问」写解说，对时间戳校验，推断部分标低置信待审
 - [portfolio-case-study-generator](https://github.com/SonwaneyY/portfolio-case-study-generator) ★27：把零散项目笔记写成设计作品集案例：默认概述—挑战—过程—方案—影响—反思六段弧线，可换 STAR、英雄之旅、Pixar 体等 9 种故事结构，保留原事实与数据
+- [sun-yuchen-writing](https://github.com/AAAAAAAJ/sun-yuchen-writing) ★24：冷峻账单式第一人称短篇 skill：先建数字、物件、劳动、空缺四本素材账和叙述者盲点表，按新题材重造双层故事，排六到八个场景、结尾回收物件；附十维审稿量表
 - [sunxue](https://github.com/bayshier/sunxue) ★24：孙学白描写作 skill：从《我的女友景甜》拆出十条技法，先向用户取证收集时间线、物件和数字，再选天平开篇、押韵物件和旁观者证词成文并自检
 - [RPGBox](https://github.com/sleepydeer666/RPGBox) ★23：Galgame 式 AI RPG 客户端：旁白与多 NPC 对话分层显示，每段用选项推进剧情；角色可配多立绘，自动总结剧情记忆和人物经历
 - [tj-short](https://github.com/tttg2010/tj-short) ★18：短剧带货 skill：产品分析→brief→产品证明圣经→角色/场景/道具/证据四库与 12 镜头表；先立冲突和关系压力，产品后置为证据，再出首帧和视频提示词
-- [novel-deconstruct](https://github.com/QQ-L-XX/novel-deconstruct) ★15：输入番茄小说链接或正文，按麦基《故事》、许荣哲《小说课》等框架做定量扫描、逐场景拆解和价值变化追踪，输出 18 章拆书报告供仿写参考
-- ……另有 105 个，见下方各类型。
+- ……另有 106 个，见下方各类型。
 
 <a id="featured"></a>
 ## 精选：从这里开始
@@ -1980,13 +1980,15 @@ npx skills add alanl1234/gamebook
 
 学一部作品或一位作者的写法再创作：拆书仿写、文风蒸馏、同人、续写。
 
-#### skill · 提示词（22）
+#### skill · 提示词（23）
 
 - 🌟 **[longzu.skillls](https://github.com/zuoyou12/longzu.skillls)** · ★ 11<br>江南、烽火戏诸侯文风蒸馏 skill：全文统计 1465 万字语料加等距精读，得出共享叙事骨架和可替换语言皮肤，支持风格杂交，附审计脚本和盲测<br><sub>方法：修订 · 风格</sub><br><sub>更新于 2026-07-28 · 中文 · 3 个 skill</sub><br><sub>💡 同人/仿写性质，仓库只有风格笔记、不含原文；盲测方法改造自 alchaincyf/nuwa-skill</sub>
 
 - **[jiangnan.skill](https://github.com/dmlin7777777/jiangnan.skill)** · ★ 101<br>用 Nuwa 蒸馏出的江南 9 个心智模型，先引导式提问提取用户的结局构想，再按彩蛋式或最终章式写《龙族》结局，最后走 5 步江南化润色<br><sub>方法：理论 · 修订 · 风格 · 共创</sub><br><sub>更新于 2026-07-16 · 中文</sub><br><sub>💡 聚焦《龙族》同人结局；基于 alchaincyf/nuwa-skill 蒸馏；公开版不含原文素材</sub>
 
 - **[xin-skills](https://github.com/oscar-wang-xin/xin-skills)** · ★ 28<br>122 个文风锁定 skill：从番茄热门书和金庸、古龙等指定小说萃取十维风格规范，只仿文笔不抄剧情<br><sub>方法：风格</sub><br><sub>更新于 2026-09-25 · 中文 · 122 个 skill</sub><br><sub>💡 每个技能附对应原作的段落摘录作风格样本</sub>
+
+- **[sun-yuchen-writing](https://github.com/AAAAAAAJ/sun-yuchen-writing)** · ★ 24<br>冷峻账单式第一人称短篇 skill：先建数字、物件、劳动、空缺四本素材账和叙述者盲点表，按新题材重造双层故事，排六到八个场景、结尾回收物件；附十维审稿量表<br><sub>方法：规划 · 修订 · 风格</sub><br><sub>更新于 2026-08-27 · 中文</sub><br><sub>💡 写法提炼自孙宇晨《我的女友景甜》，SKILL.md 要求不复用原文句子、人物关系和情节；仓库附带原文全文</sub>
 
 - **[Skills-for-Long-Online-Novel-Authors](https://github.com/shuipingbai6/Skills-for-Long-Online-Novel-Authors)** · ★ 22<br>网文作者蒸馏 skill：导入作者小说、读者评论与社交内容，提取写作风格和作者人格，生成可调用的作者 skill，按其风格续写或开书<br><sub>方法：风格</sub><br><sub>更新于 2026-06-10 · 中文 · 2 个 skill · GPL-3.0</sub><br><sub>💡 没有 README.md，说明在 README_ZH.md；CLI 目录附带预编译 exe，建议用 Python 源码；需自备作者原文</sub>
 
@@ -2047,6 +2049,8 @@ npx skills add zuoyou12/longzu.skillls
 npx skills add dmlin7777777/jiangnan.skill
 # xin-skills
 npx skills add oscar-wang-xin/xin-skills
+# sun-yuchen-writing
+npx skills add AAAAAAAJ/sun-yuchen-writing
 # Skills-for-Long-Online-Novel-Authors
 npx skills add shuipingbai6/Skills-for-Long-Online-Novel-Authors
 # wenfeng-skill
@@ -2502,15 +2506,15 @@ npx skills add aimerfeng/novel-to-webnovel
 
 每种方法解决什么问题、大家怎么做、有哪些坑，见[方法指南](METHODS.md)；指南里每个方法后面附有用到它的全部项目：
 
-- [规划先行：层级大纲、分解写作](METHODS.md#method-planning)（480）
+- [规划先行：层级大纲、分解写作](METHODS.md#method-planning)（481）
 - [叙事理论注入：结构模型、类型套路、写作原则](METHODS.md#method-theory)（206）
 - [设定 · 世界观构建](METHODS.md#method-worldbuilding)（148）
 - [人物塑造 · 角色档案](METHODS.md#method-character)（189）
 - [长篇记忆 · 一致性：状态库、设定库、检索](METHODS.md#method-memory)（452）
 - [多智能体分工：作者、编辑、审稿、读者](METHODS.md#method-multiagent)（151）
 - [角色模拟 · 世界推演：让角色演出情节](METHODS.md#method-simulation)（74）
-- [审稿 · 自我批评 · 迭代修订](METHODS.md#method-revision)（392）
-- [风格学习 · 仿写：范文、文风蒸馏、拆书](METHODS.md#method-style)（142）
+- [审稿 · 自我批评 · 迭代修订](METHODS.md#method-revision)（393）
+- [风格学习 · 仿写：范文、文风蒸馏、拆书](METHODS.md#method-style)（143）
 - [去 AI 味 · 文笔打磨](METHODS.md#method-deai)（94）
 - [交互共创：读者选择、人机协作](METHODS.md#method-interactive)（199）
 - [事实约束：素材驱动、证据核对、不编造](METHODS.md#method-factual)（52）

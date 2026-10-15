@@ -73,10 +73,6 @@ repo   = "a13969748212-afk/Short-Video-Agent-Creator"
 reason = "无源码：前后端代码只以 zip 包提交；内容是热点口播文案，偏营销"
 
 [[ignored]]
-repo   = "AAAAAAAJ/sun-yuchen-writing"
-reason = "维护者决定暂不收：孙宇晨《我的女友景甜》仿写 skill（同类 skill 的收录口径待定）"
-
-[[ignored]]
 repo   = "aarushkx/storycraft-ai"
 reason = "周边工具：故事转配音+字幕+背景图视频；且 2025-08 后未更新"
 

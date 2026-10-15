@@ -282,6 +282,19 @@
       "stars": 77,
       "status": "ok"
     },
+    "AAAAAAAJ/sun-yuchen-writing": {
+      "archived": false,
+      "description": "冷峻账单式中文短篇创作与审稿 Skill，包含完整参考原文",
+      "first_seen": "2026-10-15",
+      "forks": 2,
+      "full_name": "AAAAAAAJ/sun-yuchen-writing",
+      "license": null,
+      "pushed_at": "2026-08-27",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 24,
+      "status": "ok"
+    },
     "ACDD49967/TRPG-AI-DM": {
       "archived": false,
       "description": "由大语言模型驱动的 TRPG 跑团主持，创建角色、生成世界、掷骰战斗。",

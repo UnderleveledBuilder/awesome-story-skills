@@ -8265,6 +8265,19 @@ checked = 2026-10-15
 # ───────────────────────── 仿写 · 同人 · 风格迁移 ─────────────────────────
 
 [[skills]]
+repo    = "AAAAAAAJ/sun-yuchen-writing"
+desc    = "冷峻账单式第一人称短篇 skill：先建数字、物件、劳动、空缺四本素材账和叙述者盲点表，按新题材重造双层故事，排六到八个场景、结尾回收物件；附十维审稿量表"
+desc_en = "Cold, ledger-style first-person short stories: four material ledgers (numbers, objects, labor, absences) and a narrator blind-spot table, a two-layer story rebuilt for a new topic, 6-8 scenes ending on a returning object; 10-dimension review rubric"
+group   = "imitation"
+methods = ["style", "planning", "revision"]
+format  = "skill"
+lang    = "zh"
+agents  = ["codex", "claude-code"]
+note    = "写法提炼自孙宇晨《我的女友景甜》，SKILL.md 要求不复用原文句子、人物关系和情节；仓库附带原文全文"
+note_en = "Technique distilled from Justin Sun's essay \"My Girlfriend Jing Tian\"; SKILL.md forbids reusing the original's sentences, relationships and plot; the repo includes the full original text"
+checked = 2026-10-15
+
+[[skills]]
 repo    = "7dm4sj7nt2-coder/cuizouzhao-novelist"
 desc    = "蒸馏崔走召三部曲的民俗志怪写法：SKILL.md 定说书人腔和「日常→渗人」节奏，references 分世界观、结构、人物和样本库，可原创、续写、改写、诊断"
 desc_en = "Distills Cui Zouzhao's folk strange-tale trilogy: SKILL.md fixes a storyteller voice and \"everyday → creepy\" rhythm; references cover worldbuilding, structure, characters, samples; original, continuation, rewrite, diagnosis"
