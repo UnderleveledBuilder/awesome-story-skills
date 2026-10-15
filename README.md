@@ -120,11 +120,11 @@
 
 - **[novel-creator-skill](https://github.com/leenbj/novel-creator-skill)** · ★ 682<br>每章强制五步门禁（记忆同步→一致性→风格校准→校稿→脚本），配 RAG 回读、知识图谱、进度配额、跨 agent 交叉审稿与事件冷却，两遍去 AI 味<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-03-10 💤 · 中文</sub><br><sub>💡 最后更新 2026-03-10，因 682★ 收录；去 AI 味润色基于 blader/humanizer 方法论</sub>
 
-- **[oh-story-dsh](https://github.com/zenstory-ai/oh-story-dsh)** · ★ 521<br>把 Oh Story 小说技能装进 DeepSeek Harness：加了文件树、编辑器、Chat 三栏的小说工作台，另带短剧、小说改游戏、视频解说工作台<br><sub>方法：规划 · 记忆 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 中文 · 38 个 skill · MIT</sub><br><sub>💡 基于同团队的 zenstory-ai/oh-story-claudecode（打包的 Oh Story 0.8.5，小说技能文件与原版相同）和 novel-to-game，另加 DSH Web 工作台界面和短剧、视频解说技能。只能在 DeepSeek Harness 里用，需要 Node.js 24+；Claude Code 用户用原版</sub>
+- **[oh-story-dsh](https://github.com/zenstory-ai/oh-story-dsh)** · ★ 522<br>把 Oh Story 小说技能装进 DeepSeek Harness：加了文件树、编辑器、Chat 三栏的小说工作台，另带短剧、小说改游戏、视频解说工作台<br><sub>方法：规划 · 记忆 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 中文 · 38 个 skill · MIT</sub><br><sub>💡 基于同团队的 zenstory-ai/oh-story-claudecode（打包的 Oh Story 0.8.5，小说技能文件与原版相同）和 novel-to-game，另加 DSH Web 工作台界面和短剧、视频解说技能。只能在 DeepSeek Harness 里用，需要 Node.js 24+；Claude Code 用户用原版</sub>
 
 - **[Novel-Control-Station-Skill](https://github.com/jingtai123/Novel-Control-Station-Skill)** · ★ 424<br>开书访谈后先出完整大纲与人物档案，按真值文档逐章生成控制卡再写，章后回写人物/关系/伏笔/情绪债务等动态状态，按需加载风格模块并三步去 AI 味<br><sub>方法：规划 · 记忆 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-03-29 💤 · 中文 · MIT</sub><br><sub>💡 最后更新 2026-03-29，因 424★ 收录；附 Codex 连续创作（马拉松）PowerShell runner 模板；作者称已用其写起点连载</sub>
 
-- **[story-skills](https://github.com/danjdewhurst/story-skills)** · ★ 313<br>人物、伏笔、连续性状态都写成带 frontmatter 的 Markdown，CLI 像编译器查死人复出、兑现早于铺垫等矛盾；24 个 skill 从构思到投稿<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-10-14 · 英文 · 24 个 skill · MIT</sub>
+- **[story-skills](https://github.com/danjdewhurst/story-skills)** · ★ 314<br>人物、伏笔、连续性状态都写成带 frontmatter 的 Markdown，CLI 像编译器查死人复出、兑现早于铺垫等矛盾；24 个 skill 从构思到投稿<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-10-14 · 英文 · 24 个 skill · MIT</sub>
 
 - **[wordflowlab/novel-writer-skills](https://github.com/wordflowlab/novel-writer-skills)** · ★ 265<br>Claude Code 斜杠命令加 Skills：宪法→规格→澄清→计划→任务→写作→分析七步写小说，类型知识和一致性检查自动激活，追踪情节、时间线和关系<br><sub>方法：规划 · 理论 · 记忆 · 修订</sub><br><sub>更新于 2025-10-20 💤 · 中文 · 13 个 skill · MIT</sub><br><sub>💡 跨平台版是 wordflowlab/novel-writer；2025-10 后没再更新，按 265★ 且被多个派生项目沿用收录</sub>
 
