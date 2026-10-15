@@ -130,7 +130,7 @@
 
 - **[novel-writing-framework](https://github.com/LAY-lgtm/novel-writing-framework)** · ★ 257<br>五份网文写作方法论：通用长篇流程、番茄快节奏、起点慢热、智斗权谋专项、完稿改良诊断，含三章一轮自检和 AI 指纹量化指标<br><sub>方法：规划 · 理论 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-05-31 · 📝 提示词 · 中文 · MIT</sub><br><sub>💡 每份是单独的 .md，需自己放进 skills 目录或手动加载</sub>
 
-- **[Lorn.NovelWriteSkills](https://github.com/lornshrimp/Lorn.NovelWriteSkills)** · ★ 234<br>先把作者文风、作品蓝本、题材研究蒸馏成模板，再走大纲→章节控制卡→正文→审阅去 AI 味闭环；母稿再改写成 13 个平台版本，跑字数和相似度门禁<br><sub>方法：规划 · 修订 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-09-04 · 中文 · 350 个 skill</sub><br><sub>💡 README 只写了 VS Code + GitHub Copilot 用法（.github/skills、.github/prompts 结构）；约 350 个 SKILL.md 也可单独复制到其他 agent；仓库约 22MB，大部分是写作研究资料</sub>
+- **[Lorn.NovelWriteSkills](https://github.com/lornshrimp/Lorn.NovelWriteSkills)** · ★ 235<br>先把作者文风、作品蓝本、题材研究蒸馏成模板，再走大纲→章节控制卡→正文→审阅去 AI 味闭环；母稿再改写成 13 个平台版本，跑字数和相似度门禁<br><sub>方法：规划 · 修订 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-09-04 · 中文 · 350 个 skill</sub><br><sub>💡 README 只写了 VS Code + GitHub Copilot 用法（.github/skills、.github/prompts 结构）；约 350 个 SKILL.md 也可单独复制到其他 agent；仓库约 22MB，大部分是写作研究资料</sub>
 
 - **[webnovel-writer-opencode](https://github.com/lujih/webnovel-writer-opencode)** · ★ 216<br>webnovel-writer 的 OpenCode 增强版：三层 RAG 组上下文，故事合约约束设定，伏笔债务追踪，6 维审查，借鉴 inkOS 做事件溯源<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-10-10 · 中文 · 16 个 skill · GPL-3.0</sub><br><sub>💡 基于 lingfengQAQ/webnovel-writer，另加 8 个 skill：批量写章、重写、修复、删除、导出（EPUB/DOCX/PDF 等）、番茄风和七猫风写作约束、自动发布到番茄；v2.8 起借鉴 inkos 的事件溯源设计。用 npx @cszx/webnovel-writer-opencode init 安装，Claude Code 用户直接用原版</sub>
 
@@ -1642,9 +1642,9 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[Inner-Self](https://github.com/LewdLeah/Inner-Self)** · ★ 78<br>AI Dungeon 模组：给每个 NPC 独立的私有记忆、目标、秘密和计划，被提及时自我反思、整理思绪并驱动后续情节，可合并 Auto-Cards 建设定卡<br><sub>方法：人物 · 记忆 · 模拟</sub><br><sub>更新于 2026-01-20 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 需在 AI Dungeon 场景脚本里使用；2026-01 后无更新，NPC 自主心智的思路少见，按例外收录</sub>
 
-- **[NeverEndingQuest](https://github.com/MoonlightByte/NeverEndingQuest)** · ★ 77<br>AI 地下城主跑 D&D 5e（SRD）战役：LLM 只负责叙事，独立规则引擎管骰子/背包/状态，配合冒险模块工具包与对话压缩保持长期战役记忆<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 英文</sub><br><sub>💡 基于 WOTC SRD 5.2.1 内容；默认 OpenAI GPT-5.x，可接 Gemini/本地模型；规则引擎 bin/nql-apply.exe 为编译二进制，Windows 安装用 .bat 脚本</sub>
+- **[ludo-npc-ai](https://github.com/koronto11/ludo-npc-ai)** · ★ 77<br>游戏叙事与 NPC 工作台：世界设定→角色→场景→分支对白卡→审阅 AI 候选稿→试玩彩排，中英双语 Skills 和本地 MCP 让外部 AI 参与起草<br><sub>方法：设定 · 人物 · 共创</sub><br><sub>更新于 2026-10-11 · 🧩 应用 · 多语言 · 2 个 skill · MIT</sub><br><sub>💡 AI 只出候选稿，作者终审；0.1.0 预览版</sub>
 
-- **[ludo-npc-ai](https://github.com/koronto11/ludo-npc-ai)** · ★ 76<br>游戏叙事与 NPC 工作台：世界设定→角色→场景→分支对白卡→审阅 AI 候选稿→试玩彩排，中英双语 Skills 和本地 MCP 让外部 AI 参与起草<br><sub>方法：设定 · 人物 · 共创</sub><br><sub>更新于 2026-10-11 · 🧩 应用 · 多语言 · 2 个 skill · MIT</sub><br><sub>💡 AI 只出候选稿，作者终审；0.1.0 预览版</sub>
+- **[NeverEndingQuest](https://github.com/MoonlightByte/NeverEndingQuest)** · ★ 77<br>AI 地下城主跑 D&D 5e（SRD）战役：LLM 只负责叙事，独立规则引擎管骰子/背包/状态，配合冒险模块工具包与对话压缩保持长期战役记忆<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 英文</sub><br><sub>💡 基于 WOTC SRD 5.2.1 内容；默认 OpenAI GPT-5.x，可接 Gemini/本地模型；规则引擎 bin/nql-apply.exe 为编译二进制，Windows 安装用 .bat 脚本</sub>
 
 - **[chasm_engine](https://github.com/atisharma/chasm_engine)** · ★ 70<br>生成式文字冒险服务器：几句话指定世界，边玩边生成地点和角色；地点、物品、背包、任务持久化，全局事件与角色对话记忆存向量库，NPC 会移动<br><sub>方法：设定 · 记忆 · 模拟</sub><br><sub>更新于 2026-05-09 📦 · 🧩 应用 · 英文 · AGPL-3.0</sub><br><sub>💡 已停止维护（已归档），后继为重写版 atisharma/chasm；需配合客户端使用；Hy 语言，AGPL-3.0</sub>
 
