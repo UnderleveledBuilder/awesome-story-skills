@@ -226,7 +226,7 @@
       "forks": 1,
       "full_name": "653390665/dodo",
       "license": null,
-      "pushed_at": "2026-10-06",
+      "pushed_at": "2026-10-15",
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 5,
@@ -733,7 +733,7 @@
       "pushed_at": "2026-10-06",
       "skill_count": 3,
       "skill_count_truncated": false,
-      "stars": 5,
+      "stars": 6,
       "status": "ok"
     },
     "Ddhjx-code/writeAgent": {
@@ -912,7 +912,7 @@
       "forks": 2,
       "full_name": "EdwardAThomson/DungeonGPT-JS",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-12",
+      "pushed_at": "2026-10-15",
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 13,
@@ -2325,7 +2325,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 6,
       "skill_count_truncated": false,
-      "stars": 3187,
+      "stars": 3188,
       "status": "ok"
     },
     "Narcooo/inkos": {
@@ -2343,7 +2343,7 @@
     "Nigh/show-me-the-story": {
       "archived": false,
       "description": "<10 MB — self-hosted AI novel writer in a single Go binary with a web UI. Turn ideas into outlines and chapters with review, foreshadowing, fact-checking, and full-book polish. OpenAI-compatible APIs; Chinese & English.",
-      "forks": 79,
+      "forks": 80,
       "full_name": "Nigh/show-me-the-story",
       "license": "MIT",
       "pushed_at": "2026-10-15",
@@ -2385,7 +2385,7 @@
       "pushed_at": "2026-03-20",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 1625,
+      "stars": 1626,
       "status": "ok"
     },
     "Nufahi/storyforge": {
@@ -2464,13 +2464,13 @@
     "PenglongHuang/chinese-novelist-skill": {
       "archived": false,
       "description": "🎭 AI 写小说：从零生成 10-50 章完整中文小说，三层问答 · 创作记忆 · 悬念钩子 · 自动校验，长篇网文连载皆宜｜开源免费，适配主流 coding agent｜🤝 Infistar.cc 赞助 · 注册送 $5｜AI novel writing skill",
-      "forks": 523,
+      "forks": 526,
       "full_name": "PenglongHuang/chinese-novelist-skill",
       "license": "MIT",
       "pushed_at": "2026-10-06",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 3793,
+      "stars": 3795,
       "status": "ok"
     },
     "Phobetore/Evermind": {
@@ -2831,13 +2831,13 @@
     "SillyTavern/SillyTavern": {
       "archived": false,
       "description": "LLM Frontend for Power Users.",
-      "forks": 6472,
+      "forks": 6473,
       "full_name": "SillyTavern/SillyTavern",
       "license": "AGPL-3.0",
       "pushed_at": "2026-10-02",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 34522,
+      "stars": 34523,
       "status": "ok"
     },
     "SimonWaldherr/AI-Book-Generator": {
@@ -3549,7 +3549,7 @@
       "pushed_at": "2026-10-12",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 6222,
+      "stars": 6223,
       "status": "ok"
     },
     "YanKaFei/kitten-punch-screenwriting": {
@@ -5898,7 +5898,7 @@
       "pushed_at": "2026-10-14",
       "skill_count": 24,
       "skill_count_truncated": false,
-      "stars": 232,
+      "stars": 233,
       "status": "ok"
     },
     "jialanhu0915/silver-novel-skills": {
@@ -6086,13 +6086,13 @@
     "jtydhr88/screenwriting-skills": {
       "archived": false,
       "description": "Professional agent skills for screenwriting, television writing and dramaturgy",
-      "forks": 175,
+      "forks": 176,
       "full_name": "jtydhr88/screenwriting-skills",
       "license": "MIT",
       "pushed_at": "2026-10-03",
       "skill_count": 26,
       "skill_count_truncated": false,
-      "stars": 1676,
+      "stars": 1677,
       "status": "ok"
     },
     "junjiezhou1122/justin-sun-narrative-skill": {
@@ -6546,7 +6546,7 @@
     "lornshrimp/Lorn.NovelWriteSkills": {
       "archived": false,
       "description": "一个面向长篇网文 / 小说创作工作流的 AI 写作资产库。它不是“随手堆提示词”的仓库，而是一套围绕 题材设计 → 大纲搭建 → 章节创作 → 审阅润色 → 多平台改写 → 质量门禁 → 分发落盘 搭起来的可复用写作系统。",
-      "forks": 40,
+      "forks": 41,
       "full_name": "lornshrimp/Lorn.NovelWriteSkills",
       "license": null,
       "pushed_at": "2026-09-04",
@@ -6795,7 +6795,7 @@
       "pushed_at": "2026-10-11",
       "skill_count": 6,
       "skill_count_truncated": false,
-      "stars": 26,
+      "stars": 27,
       "status": "ok"
     },
     "miuflow/ankey-story-skill": {
@@ -7032,7 +7032,7 @@
     "newideas99/open-dungeon": {
       "archived": false,
       "description": "Open Dungeon — the first easy-to-use, fully local AI roleplay app. Story and inline scene images generated 100% on your machine (Gemma 4 QAT via Ollama(and others) + FLUX). No accounts, no API keys, no cloud.",
-      "forks": 27,
+      "forks": 29,
       "full_name": "newideas99/open-dungeon",
       "license": "MIT",
       "pushed_at": "2026-07-06",
@@ -7686,7 +7686,7 @@
       "forks": 25,
       "full_name": "remacheybn408-boop/ProseForge",
       "license": "AGPL-3.0",
-      "pushed_at": "2026-10-08",
+      "pushed_at": "2026-10-15",
       "skill_count": 87,
       "skill_count_truncated": false,
       "stars": 73,
@@ -7873,7 +7873,7 @@
       "pushed_at": "2026-08-10",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 805,
+      "stars": 806,
       "status": "ok"
     },
     "sEwhappend/MyAINovel": {
@@ -8728,7 +8728,7 @@
       "pushed_at": "2026-10-13",
       "skill_count": 3,
       "skill_count_truncated": false,
-      "stars": 428,
+      "stars": 429,
       "status": "ok"
     },
     "ttsmallHot/AI4VisualNovel": {
@@ -9710,7 +9710,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 12,
       "skill_count_truncated": false,
-      "stars": 2922,
+      "stars": 2925,
       "status": "ok"
     },
     "zenstory-ai/novel-to-game": {
@@ -9734,7 +9734,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 13,
       "skill_count_truncated": false,
-      "stars": 7611,
+      "stars": 7612,
       "status": "ok"
     },
     "zenstory-ai/oh-story-dsh": {
@@ -9746,7 +9746,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 38,
       "skill_count_truncated": false,
-      "stars": 522,
+      "stars": 523,
       "status": "ok"
     },
     "zenstory-ai/zenstory": {

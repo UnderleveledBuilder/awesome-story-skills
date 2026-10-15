@@ -42,8 +42,8 @@
 
 近 7 天新收录 126 个：
 
-- [director](https://github.com/s1dashu/director) ★805：动画解说模式先定中心问题，按钩子、背景、矛盾、概念、误读、回答组织讲稿，区分事实与解读、不编造动机和对白，再做人物、分镜和视频生成
-- [simon-skills](https://github.com/trustfuture/simon-skills) ★428：调查长片 skill：先定账目/代价/规则等六类核心问题并轮换，开场 5 秒用有事实支撑的冲突立起问题，结论有来源台账和事实核查；另含白板讲解视频
+- [director](https://github.com/s1dashu/director) ★806：动画解说模式先定中心问题，按钩子、背景、矛盾、概念、误读、回答组织讲稿，区分事实与解读、不编造动机和对白，再做人物、分镜和视频生成
+- [simon-skills](https://github.com/trustfuture/simon-skills) ★429：调查长片 skill：先定账目/代价/规则等六类核心问题并轮换，开场 5 秒用有事实支撑的冲突立起问题，结论有来源台账和事实核查；另含白板讲解视频
 - [image-story-video-wizard](https://github.com/aaronyi97/image-story-video-wizard) ★357：讲书、历史故事类图片联播视频向导：对标学习后组写作包，素材分可核事件、推断与传闻，交写作模型出稿后定点审稿核事实，再进配音、分镜和成片
 - [wedding-video-guided-wizard](https://github.com/aaronyi97/wedding-video-guided-wizard) ★340：14 步引导：五幕问卷采集新人真实故事并编号事实条目，写作包按主事件、细节、情绪安排段落与呼应，每句文案和分镜须回溯故事卡，再接配音、生图与剪辑
 - [data2story-skill](https://github.com/QinghongLin/data2story-skill) ★156：数据新闻 agent：侦探查背景、分析师跑代码出发现、编辑定故事主线与钩子–证据–转折结构，再出图写 HTML，每句话标注并校验到数据或出处
@@ -86,7 +86,7 @@
 - [Sonder_Engine](https://github.com/N0819/Sonder_Engine) ★59 · 互动叙事 · 游戏 · 角色扮演：互动小说引擎：导演裁定客观因果，感知层决定每个角色能知道什么，角色代理只凭私有记忆行动，叙述者只写玩家可见部分，再统一提交状态
 - [harnessNovel](https://github.com/XTmingyue/harnessNovel) ★187 · 仿写 · 同人 · 风格迁移：先对参考小说分三阶段拆书（结构、世界观、情节单元、文风），把情节抽象成叙事模式，再按核心玩法→舞台路线→章纲→正文仿写，章节级去 AI 味
 - [longzu.skillls](https://github.com/zuoyou12/longzu.skillls) ★11 · 仿写 · 同人 · 风格迁移：江南、烽火戏诸侯文风蒸馏 skill：全文统计 1465 万字语料加等距精读，得出共享叙事骨架和可替换语言皮肤，支持风格杂交，附审计脚本和盲测
-- [director](https://github.com/s1dashu/director) ★805 · 非虚构叙事：动画解说模式先定中心问题，按钩子、背景、矛盾、概念、误读、回答组织讲稿，区分事实与解读、不编造动机和对白，再做人物、分镜和视频生成
+- [director](https://github.com/s1dashu/director) ★806 · 非虚构叙事：动画解说模式先定中心问题，按钩子、背景、矛盾、概念、误读、回答组织讲稿，区分事实与解读、不编造动机和对白，再做人物、分镜和视频生成
 - [data2story-skill](https://github.com/QinghongLin/data2story-skill) ★156 · 非虚构叙事：数据新闻 agent：侦探查背景、分析师跑代码出发现、编辑定故事主线与钩子–证据–转折结构，再出图写 HTML，每句话标注并校验到数据或出处
 - [good-story](https://github.com/Rimagination/good-story) ★136 · 非虚构叙事：科研叙事 skill：从结果、图表和草稿里找出张力和主线，按证据链重排图序，输出故事卡和证据地图，按领域校准证据强度，查因果和普遍性有没有说过头，模拟审稿人
 - [Writingbook-AgenticWorkflow](https://github.com/idoforgod/Writingbook-AgenticWorkflow) ★29 · 非虚构叙事：AI 自传流水线：McAdams/Kvale 式 12 轮访谈→故事圣经（情感弧+起承转合）→逐章写并混合作家文风→对抗审稿+CoVe 事实核查→跨章一致性审计
@@ -120,7 +120,7 @@
 
 - **[novel-creator-skill](https://github.com/leenbj/novel-creator-skill)** · ★ 682<br>每章强制五步门禁（记忆同步→一致性→风格校准→校稿→脚本），配 RAG 回读、知识图谱、进度配额、跨 agent 交叉审稿与事件冷却，两遍去 AI 味<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-03-10 💤 · 中文</sub><br><sub>💡 最后更新 2026-03-10，因 682★ 收录；去 AI 味润色基于 blader/humanizer 方法论</sub>
 
-- **[oh-story-dsh](https://github.com/zenstory-ai/oh-story-dsh)** · ★ 522<br>把 Oh Story 小说技能装进 DeepSeek Harness：加了文件树、编辑器、Chat 三栏的小说工作台，另带短剧、小说改游戏、视频解说工作台<br><sub>方法：规划 · 记忆 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 中文 · 38 个 skill · MIT</sub><br><sub>💡 基于同团队的 zenstory-ai/oh-story-claudecode（打包的 Oh Story 0.8.5，小说技能文件与原版相同）和 novel-to-game，另加 DSH Web 工作台界面和短剧、视频解说技能。只能在 DeepSeek Harness 里用，需要 Node.js 24+；Claude Code 用户用原版</sub>
+- **[oh-story-dsh](https://github.com/zenstory-ai/oh-story-dsh)** · ★ 523<br>把 Oh Story 小说技能装进 DeepSeek Harness：加了文件树、编辑器、Chat 三栏的小说工作台，另带短剧、小说改游戏、视频解说工作台<br><sub>方法：规划 · 记忆 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 中文 · 38 个 skill · MIT</sub><br><sub>💡 基于同团队的 zenstory-ai/oh-story-claudecode（打包的 Oh Story 0.8.5，小说技能文件与原版相同）和 novel-to-game，另加 DSH Web 工作台界面和短剧、视频解说技能。只能在 DeepSeek Harness 里用，需要 Node.js 24+；Claude Code 用户用原版</sub>
 
 - **[Novel-Control-Station-Skill](https://github.com/jingtai123/Novel-Control-Station-Skill)** · ★ 424<br>开书访谈后先出完整大纲与人物档案，按真值文档逐章生成控制卡再写，章后回写人物/关系/伏笔/情绪债务等动态状态，按需加载风格模块并三步去 AI 味<br><sub>方法：规划 · 记忆 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-03-29 💤 · 中文 · MIT</sub><br><sub>💡 最后更新 2026-03-29，因 424★ 收录；附 Codex 连续创作（马拉松）PowerShell runner 模板；作者称已用其写起点连载</sub>
 
@@ -202,9 +202,9 @@
 
 - **[novelops-skill](https://github.com/qiyan233/novelops-skill)** · ★ 30<br>长篇小说状态化流水线：truth files 记设定与角色认知，生成下一章工作包，LLM 起草，审计修订，状态回写，快照 diff<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-09-28 · 多语言 · MIT</sub><br><sub>💡 基于 Narcooo/inkos 的思路（truth files、审计-修订-状态回写），用纯 Python 标准库重写成不绑宿主的 skill；另加角色知情边界检查、可配置审计规则、快照/diff、同人与番外的 canon 处理。draft 默认调用本地 Ollama。SKILL.md 以英文为主</sub>
 
-- **[vibe-noveling](https://github.com/TulanCN/vibe-noveling)** · ★ 27<br>Claude Code 网文插件：苏格拉底式设定讨论、救猫咪全书规划、雪花法事件卡、写后 AI 味检测、标记返修、知识图谱<br><sub>方法：规划 · 理论 · 记忆 · 修订</sub><br><sub>更新于 2026-06-02 · 中文 · 16 个 skill · MIT</sub><br><sub>💡 针对 GLM-5 调优，作者要求关闭思考模式；默认风格基线是男频爽文</sub>
+- **[dsh-cuigengji-plugin](https://github.com/mistnest/dsh-cuigengji-plugin)** · ★ 27<br>DSH 小说工作台：按卷章写正文，角色卡/世界书/关系图和节点式情节规划图作为 AI 可查可改的案头资料，按需检索后讨论、续写、改稿<br><sub>方法：规划 · 设定 · 记忆 · 共创</sub><br><sub>更新于 2026-10-11 · 中文 · 6 个 skill · MIT</sub><br><sub>💡 DeepSeek Harness 插件，主要适配 DSH Windows 桌面版；可导入酒馆角色卡、世界书与提示词预设</sub>
 
-- **[dsh-cuigengji-plugin](https://github.com/mistnest/dsh-cuigengji-plugin)** · ★ 26<br>DSH 小说工作台：按卷章写正文，角色卡/世界书/关系图和节点式情节规划图作为 AI 可查可改的案头资料，按需检索后讨论、续写、改稿<br><sub>方法：规划 · 设定 · 记忆 · 共创</sub><br><sub>更新于 2026-10-11 · 中文 · 6 个 skill · MIT</sub><br><sub>💡 DeepSeek Harness 插件，主要适配 DSH Windows 桌面版；可导入酒馆角色卡、世界书与提示词预设</sub>
+- **[vibe-noveling](https://github.com/TulanCN/vibe-noveling)** · ★ 27<br>Claude Code 网文插件：苏格拉底式设定讨论、救猫咪全书规划、雪花法事件卡、写后 AI 味检测、标记返修、知识图谱<br><sub>方法：规划 · 理论 · 记忆 · 修订</sub><br><sub>更新于 2026-06-02 · 中文 · 16 个 skill · MIT</sub><br><sub>💡 针对 GLM-5 调优，作者要求关闭思考模式；默认风格基线是男频爽文</sub>
 
 - **[openclaw-novel-writer-skill](https://github.com/alever520/openclaw-novel-writer-skill)** · ★ 24<br>OpenClaw 网文 skill：读全局大纲写七模块章纲并确认，结合写作指南和读者反馈列要点后写正文，15 项自检，读者反馈回写指南<br><sub>方法：规划 · 理论 · 修订</sub><br><sub>更新于 2026-04-02 💤 · 中文 · MIT</sub><br><sub>💡 每章自动提交 GitHub，需配置 GitHub Token</sub>
 
@@ -524,7 +524,7 @@
 
 - **[AIStoryBuilders](https://github.com/AIStoryBuilders/AIStoryBuilders)** · ★ 73<br>把小说拆成时间线、地点、人物（按时间线分段描述）和章节段落的数据结构，写每段时按其时间线、地点和出场人物取对应设定作上下文<br><sub>方法：规划 · 设定 · 人物 · 记忆</sub><br><sub>更新于 2026-06-20 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 C# .NET MAUI 桌面应用，另有在线版和微软商店版；需 OpenAI / Azure OpenAI Key</sub>
 
-- **[ProseForge](https://github.com/remacheybn408-boop/ProseForge)** · ★ 73<br>六席位 agent 流水线：分析→四路并行场景草稿择优→连续性/对抗/文风三审合议→定点改写；章节摘要金字塔+承诺台账+叙事 RAG 防失忆<br><sub>方法：记忆 · 多智能体 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-08 · 🧩 应用 · 中文 · 87 个 skill · AGPL-3.0</sub><br><sub>💡 Docker 或原生安装包本地部署，模型走 OpenAI 兼容接口；packs/ 附 80 余个题材与技法 SKILL.md</sub>
+- **[ProseForge](https://github.com/remacheybn408-boop/ProseForge)** · ★ 73<br>六席位 agent 流水线：分析→四路并行场景草稿择优→连续性/对抗/文风三审合议→定点改写；章节摘要金字塔+承诺台账+叙事 RAG 防失忆<br><sub>方法：记忆 · 多智能体 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 中文 · 87 个 skill · AGPL-3.0</sub><br><sub>💡 Docker 或原生安装包本地部署，模型走 OpenAI 兼容接口；packs/ 附 80 余个题材与技法 SKILL.md</sub>
 
 - **[john-paul-ruf/novel-engine](https://github.com/john-paul-ruf/novel-engine)** · ★ 70<br>七个 AI 编辑角色（故事教练、代笔、初读、发展编辑、校对等）走 15 步流程从 pitch 到出版稿，访谈作者建 Voice Profile 保持文风<br><sub>方法：规划 · 多智能体 · 修订 · 风格</sub><br><sub>更新于 2026-07-29 · 🧩 应用 · 英文 · AGPL-3.0</sub><br><sub>💡 Electron 桌面应用，AGPL；使用 Claude、Codex 或 Ollama；作者称已用其出版 10 本 Amazon 书</sub>
 
@@ -778,7 +778,7 @@
 
 - **[Cloud-Dream-Novel-Agent](https://github.com/XiongJL/Cloud-Dream-Novel-Agent)** · ★ 5<br>长篇小说桌面工作台：故事线/情节点/角色/世界观资料库配 RAG 检索，六种视角 Agent 先出计划再生成草稿，原文对照审核后事务性写回<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-10-13 · 🧩 应用 · 中文 · AGPL-3.0</sub><br><sub>💡 Electron + LangGraph Python Runtime；可经 MCP 接入 Codex / Claude Code 等本地 CLI；Releases 提供安装包</sub>
 
-- **[dodo](https://github.com/653390665/dodo)** · ★ 5<br>本地小说写作助手：开书向导生成设定/大纲/正文候选，编辑器实时命中人物道具做故事记忆，去 AI 味审稿给证据并出精修预览，确认后才写入 Canon<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-06 · 🧩 应用 · 中文</sub><br><sub>💡 仓库名 dodo，产品名 InkFlow 墨影；未附开源许可证；需自配模型 API Key</sub>
+- **[dodo](https://github.com/653390665/dodo)** · ★ 5<br>本地小说写作助手：开书向导生成设定/大纲/正文候选，编辑器实时命中人物道具做故事记忆，去 AI 味审稿给证据并出精修预览，确认后才写入 Canon<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 中文</sub><br><sub>💡 仓库名 dodo，产品名 InkFlow 墨影；未附开源许可证；需自配模型 API Key</sub>
 
 - **[HuangLeijiana/novel-agent](https://github.com/HuangLeijiana/novel-agent)** · ★ 5<br>LangGraph 串起 12 个 agent：选题→世界观→人物→场景级章纲→两遍写作→编辑/连续性/读者模拟/对抗审稿→精修，记忆管理器追踪事实与伏笔<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-08-21 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 README 英文、提示词模板为中文；支持 ModelScope 免费额度、DeepSeek、Claude、Ollama 等</sub>
 
@@ -923,10 +923,10 @@ npx skills add pajama-studio/thriller
 npx skills add bbroot/novel-master
 # novelops-skill
 npx skills add qiyan233/novelops-skill
-# vibe-noveling
-npx skills add TulanCN/vibe-noveling
 # dsh-cuigengji-plugin
 npx skills add mistnest/dsh-cuigengji-plugin
+# vibe-noveling
+npx skills add TulanCN/vibe-noveling
 # openclaw-novel-writer-skill
 npx skills add alever520/openclaw-novel-writer-skill
 # siweina/dsh-novel-writer
@@ -1350,7 +1350,7 @@ npx skills add Kelin-wu/picturebook-story-illustrations
 
 - **[aid-studio](https://github.com/gzxx-2025/aid-studio)** · ★ 922<br>漫剧/短剧平台的剧本技能：分创作、续写、改写、规范化、修复五模式，按「行动→结果→下一动作」写场景，凭独立审核报告修硬伤，再接分镜和视频<br><sub>方法：理论 · 记忆 · 修订</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 中文 · 2 个 skill · MIT</sub><br><sub>💡 主体是 AI 漫剧/短剧视频生产平台，剧本 skill 在 aid-interface 资源目录（screenplay / screenplay-write / screenplay-review）；图像、视频模型需自付 API</sub>
 
-- **[ZJT](https://github.com/jeffstric/ZJT)** · ★ 232<br>短剧平台：PM agent 调度编剧、人物、场景、情节分析（三幕式/悬念/节奏）、小说分集、合规等 8 个专家，ask_user 让用户选方向，再接分镜视频<br><sub>方法：规划 · 人物 · 多智能体</sub><br><sub>更新于 2026-10-14 · 🧩 应用 · 中文 · 24 个 skill</sub><br><sub>💡 自定义许可证（LICENSE_ZH）；含算力计费/微信支付等商业运营功能；Release 提供 exe 启动器，仓库有完整源码</sub>
+- **[ZJT](https://github.com/jeffstric/ZJT)** · ★ 233<br>短剧平台：PM agent 调度编剧、人物、场景、情节分析（三幕式/悬念/节奏）、小说分集、合规等 8 个专家，ask_user 让用户选方向，再接分镜视频<br><sub>方法：规划 · 人物 · 多智能体</sub><br><sub>更新于 2026-10-14 · 🧩 应用 · 中文 · 24 个 skill</sub><br><sub>💡 自定义许可证（LICENSE_ZH）；含算力计费/微信支付等商业运营功能；Release 提供 exe 启动器，仓库有完整源码</sub>
 
 - **[juben](https://github.com/VanGong1999/juben)** · ★ 162<br>40+ agent 的短剧策划、创作、评估平台：按情绪价值、黄金三秒钩子、期待-压抑-爆发三幕做策划，生成情节点、人物小传和剧本，再多维打分<br><sub>方法：理论 · 人物 · 多智能体 · 修订</sub><br><sub>更新于 2026-04-03 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 默认接智谱 AI 免费模型；作者另有剧本知识库 GongLingRui/skills 和 GongLingRui/screen-creative-skills</sub>
 
@@ -1754,7 +1754,7 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[BetterDungeon](https://github.com/ComputerKWasTaken/BetterDungeon)** · ★ 13<br>AI Dungeon 浏览器扩展：给冒险加笔记、剧情和角色预设、Story Card 扫描分析，Navigator 助手读冒险上下文后提出可审阅的设定修改<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-10-11 · 🧩 应用 · 英文</sub><br><sub>💡 依附 AI Dungeon 使用，Navigator 等 AI 功能需自备模型 key；source-available 许可，不是 OSI 开源</sub>
 
-- **[DungeonGPT-JS](https://github.com/EdwardAThomson/DungeonGPT-JS)** · ★ 13<br>AI 地下城主网页 RPG：骰点、战斗和战役里程碑由确定性引擎裁决，AI 只负责叙述结果；程序生成世界与城镇，RAG 检索历史剧情保持记忆<br><sub>方法：规划 · 记忆 · 共创</sub><br><sub>更新于 2026-10-12 · 🧩 应用 · 英文 · Apache-2.0</sub><br><sub>💡 基于同作者 Python 版 EdwardAThomson/DungeonGPT；线上版有会员分级</sub>
+- **[DungeonGPT-JS](https://github.com/EdwardAThomson/DungeonGPT-JS)** · ★ 13<br>AI 地下城主网页 RPG：骰点、战斗和战役里程碑由确定性引擎裁决，AI 只负责叙述结果；程序生成世界与城镇，RAG 检索历史剧情保持记忆<br><sub>方法：规划 · 记忆 · 共创</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 英文 · Apache-2.0</sub><br><sub>💡 基于同作者 Python 版 EdwardAThomson/DungeonGPT；线上版有会员分级</sub>
 
 - **[living-story-world](https://github.com/jonmartin721/living-story-world)** · ★ 13<br>持续世界的配图章节生成：用知识图谱记住人物、地点和剧情线，玩家选择影响后续章节，文本与插图模型分别可换<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-09-21 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 默认本地 Ollama，可选 Gemini/Groq/OpenRouter 等；配图可接 ComfyUI/AI Horde</sub>
 
@@ -2100,7 +2100,7 @@ npx skills add LucienLL/writing-like-sun
 
 #### skill · 提示词（50）
 
-- 🌟 **[director](https://github.com/s1dashu/director)** · ★ 805<br>动画解说模式先定中心问题，按钩子、背景、矛盾、概念、误读、回答组织讲稿，区分事实与解读、不编造动机和对白，再做人物、分镜和视频生成<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-08-10 · 中文 · MIT</sub><br><sub>💡 另有个人经历故事动画、剧情影像两种模式；媒体生成依赖 LibTV CLI 或即梦 CLI</sub>
+- 🌟 **[director](https://github.com/s1dashu/director)** · ★ 806<br>动画解说模式先定中心问题，按钩子、背景、矛盾、概念、误读、回答组织讲稿，区分事实与解读、不编造动机和对白，再做人物、分镜和视频生成<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-08-10 · 中文 · MIT</sub><br><sub>💡 另有个人经历故事动画、剧情影像两种模式；媒体生成依赖 LibTV CLI 或即梦 CLI</sub>
 
 - 🌟 **[data2story-skill](https://github.com/QinghongLin/data2story-skill)** · ★ 156<br>数据新闻 agent：侦探查背景、分析师跑代码出发现、编辑定故事主线与钩子–证据–转折结构，再出图写 HTML，每句话标注并校验到数据或出处<br><sub>方法：规划 · 多智能体 · 修订 · 事实</sub><br><sub>更新于 2026-07-05 · 英文 · 27 个 skill · MIT</sub><br><sub>💡 论文配套（arXiv，CAIS workshop Spotlight）；多媒体生成需 OpenRouter API；另有 14 角色扩展版 data2story-pro</sub>
 
@@ -2108,7 +2108,7 @@ npx skills add LucienLL/writing-like-sun
 
 - 🌟 **[aletheia](https://github.com/mycyg/aletheia)** · ★ 7<br>文章、论文转纪录片：先建证据账本把主张和引文绑定出处，提 2–3 个叙事方向，按「张力→证据→解释→后果」因果链写旁白与逐镜分镜，确认后才生成素材<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-08-23 · 多语言 · MIT</sub><br><sub>💡 旁白确定性须与证据账本一致、直接引语逐条核验；后续含批量生图、本地 TTS/ASR、Three.js 渲染等完整成片流程</sub>
 
-- **[simon-skills](https://github.com/trustfuture/simon-skills)** · ★ 428<br>调查长片 skill：先定账目/代价/规则等六类核心问题并轮换，开场 5 秒用有事实支撑的冲突立起问题，结论有来源台账和事实核查；另含白板讲解视频<br><sub>方法：理论 · 事实</sub><br><sub>更新于 2026-10-13 · 中文 · 3 个 skill · MIT</sub><br><sub>💡 大部分篇幅是 Remotion 合成、火山 TTS、封面和发布文案，需要对应 API；叙事规则在 references/narrative-modes.md</sub>
+- **[simon-skills](https://github.com/trustfuture/simon-skills)** · ★ 429<br>调查长片 skill：先定账目/代价/规则等六类核心问题并轮换，开场 5 秒用有事实支撑的冲突立起问题，结论有来源台账和事实核查；另含白板讲解视频<br><sub>方法：理论 · 事实</sub><br><sub>更新于 2026-10-13 · 中文 · 3 个 skill · MIT</sub><br><sub>💡 大部分篇幅是 Remotion 合成、火山 TTS、封面和发布文案，需要对应 API；叙事规则在 references/narrative-modes.md</sub>
 
 - **[image-story-video-wizard](https://github.com/aaronyi97/image-story-video-wizard)** · ★ 357<br>讲书、历史故事类图片联播视频向导：对标学习后组写作包，素材分可核事件、推断与传闻，交写作模型出稿后定点审稿核事实，再进配音、分镜和成片<br><sub>方法：修订 · 风格 · 事实</sub><br><sub>更新于 2026-09-15 · 中文 · MIT</sub><br><sub>💡 完整 16 阶段视频流水线，文案只是其中一段；默认用 Kimi 写长文案、豆包 TTS 配音</sub>
 
@@ -2138,9 +2138,9 @@ npx skills add LucienLL/writing-like-sun
 
 - **[storytelling-frameworks](https://github.com/advisorita/storytelling-frameworks)** · ★ 7<br>个人品牌短视频故事 skill：按故事类型选六种叙事框架（英雄之旅、坑中人等），先访谈问出真实细节，再按节拍逐段写口播稿<br><sub>方法：理论 · 共创 · 事实</sub><br><sub>更新于 2026-07-17 · 多语言</sub><br><sub>💡 框架取自 @personalbrandlaunch 的爆款视频拆解；规则要求不编造细节，缺什么问用户；附中文版框架</sub>
 
-- **[concept-fable](https://github.com/hawkongz/concept-fable)** · ★ 6<br>8 步写寓言讲抽象概念：按概念性质选故事类型与基调，动笔前校验比喻与概念因果链逐环对应，三幕结构控制揭示时机，文末附解释并做 7 项自检<br><sub>方法：规划 · 理论 · 修订</sub><br><sub>更新于 2026-06-05 · 多语言 · 2 个 skill · MIT</sub><br><sub>💡 思路来自 Amanda Askell 的「用寓言讲概念、不点名」技巧</sub>
+- **[AutoYY](https://github.com/DaBaoAgent/AutoYY)** · ★ 6<br>纪录片二创 skill：以原片字幕为骨架写第三人称中文口播（钩子、逐步揭示、收尾），去 AI 味后核查：引语须逐字匹配 SRT、数字须有据，审校过闸才定稿<br><sub>方法：修订 · 去 AI 味 · 事实</sub><br><sub>更新于 2026-10-06 · 多语言 · 3 个 skill · MIT</sub><br><sub>💡 SKILL.md 为英文、产出中文；搬运 YouTube 素材二创，注意版权和平台规则；主要支持 Windows；内置 blader-humanizer</sub>
 
-- **[AutoYY](https://github.com/DaBaoAgent/AutoYY)** · ★ 5<br>纪录片二创 skill：以原片字幕为骨架写第三人称中文口播（钩子、逐步揭示、收尾），去 AI 味后核查：引语须逐字匹配 SRT、数字须有据，审校过闸才定稿<br><sub>方法：修订 · 去 AI 味 · 事实</sub><br><sub>更新于 2026-10-06 · 多语言 · 3 个 skill · MIT</sub><br><sub>💡 SKILL.md 为英文、产出中文；搬运 YouTube 素材二创，注意版权和平台规则；主要支持 Windows；内置 blader-humanizer</sub>
+- **[concept-fable](https://github.com/hawkongz/concept-fable)** · ★ 6<br>8 步写寓言讲抽象概念：按概念性质选故事类型与基调，动笔前校验比喻与概念因果链逐环对应，三幕结构控制揭示时机，文末附解释并做 7 项自检<br><sub>方法：规划 · 理论 · 修订</sub><br><sub>更新于 2026-06-05 · 多语言 · 2 个 skill · MIT</sub><br><sub>💡 思路来自 Amanda Askell 的「用寓言讲概念、不点名」技巧</sub>
 
 - **[diaolong-skill](https://github.com/lj22503/diaolong-skill)** · ★ 5<br>26 个非虚构场景叙事技能（品牌、创始人、公益、患者故事等），先要求填真实素材，按场景故事结构成稿，再过八刀评估、去 AI 味和伦理审查<br><sub>方法：理论 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-07-31 · 中文 · 26 个 skill · MIT</sub><br><sub>💡 部分场景偏营销文案（朋友圈、销售话术）；另含小说、剧本用的 narrative-creative 技能和在线网页版</sub>
 
@@ -2277,10 +2277,10 @@ npx skills add anhao/jingtian-style
 npx skills add 5ysy/cinematic-confessional-writing
 # storytelling-frameworks
 npx skills add advisorita/storytelling-frameworks
-# concept-fable
-npx skills add hawkongz/concept-fable
 # AutoYY
 npx skills add DaBaoAgent/AutoYY
+# concept-fable
+npx skills add hawkongz/concept-fable
 # diaolong-skill
 npx skills add lj22503/diaolong-skill
 # muse-podcast-pipeline
