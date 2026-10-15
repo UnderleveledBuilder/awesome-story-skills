@@ -4,9 +4,9 @@
 
 **中文** · [English](README.en.md)
 
-> 用大模型讲故事的开源方法合集：skill、agent 框架、应用和研究代码。小说、网文、短篇、剧本、互动叙事、同人仿写，以及把真实事件写得像小说一样好看的非虚构叙事，都收。
+> 能直接装、直接用的大模型讲故事开源工具，不是论文清单：skill、agent 框架、应用，以及放出了代码的研究。小说、网文、短篇、剧本、互动叙事、同人仿写，以及把真实事件写得像小说一样好看的非虚构叙事，都收。
 >
-> Open-source methods for getting LLMs to tell stories: agent skills, harnesses, apps and research code for novels, short stories, scripts, interactive fiction, fan fiction and narrative nonfiction.
+> Ready-to-use open-source tools for LLM storytelling, not a paper list: agent skills, harnesses, apps and research with released code, for novels, short stories, scripts, interactive fiction, fan fiction and narrative nonfiction.
 
 这里只收一类项目：故事主要由大模型写出来，项目本身提供的是讲故事的方法或原则，比如怎么先规划再写、怎么让长篇不吃书、怎么让多个 agent 分工审稿、怎么学一部作品的写法、怎么把一条新闻写成有悬念又不编造事实的故事。下载、发布、翻译、通用润色、标题模板这些周边工具不收。
 

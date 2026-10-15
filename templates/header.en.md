@@ -2,7 +2,7 @@
 
 [中文](README.md) · **English**
 
-> Open-source methods for getting LLMs to tell stories: agent skills, harnesses, apps and research code for novels, web novels, short stories, scripts, interactive fiction, roleplay, fan fiction, and narrative nonfiction that makes real events read like a novel.
+> Ready-to-use open-source tools for LLM storytelling, not a paper list: agent skills, harnesses, apps and research with released code, for novels, web novels, short stories, scripts, interactive fiction, roleplay, fan fiction, and narrative nonfiction that makes real events read like a novel.
 
 This list collects one kind of project: the story is mostly written by an LLM, and the project contributes a method or principle for telling it. How to plan before drafting, how to keep a long serial consistent, how to split writing and review across agents, how to learn the way a book is written, how to turn a news story into something suspenseful without inventing facts. Downloaders, publishing, translation, generic polishing and headline templates are out of scope.
 
