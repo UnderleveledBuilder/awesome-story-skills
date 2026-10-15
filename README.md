@@ -2,15 +2,19 @@
 
 # Awesome LLM Storytelling · 让大模型讲好故事
 
+**中文** · [English](README.en.md)
+
 > 用大模型讲故事的开源方法合集：skill、agent 框架、应用和研究代码。小说、网文、短篇、剧本、互动叙事、同人仿写，以及把真实事件写得像小说一样好看的非虚构叙事，都收。
 >
 > Open-source methods for getting LLMs to tell stories: agent skills, harnesses, apps and research code for novels, short stories, scripts, interactive fiction, fan fiction and narrative nonfiction.
 
 这里只收一类项目：故事主要由大模型写出来，项目本身提供的是讲故事的方法或原则，比如怎么先规划再写、怎么让长篇不吃书、怎么让多个 agent 分工审稿、怎么学一部作品的写法、怎么把一条新闻写成有悬念又不编造事实的故事。下载、发布、翻译、通用润色、标题模板这些周边工具不收。
 
-每个项目都按故事类型归类，并标出它用了哪些方法，方便横向比较同一种方法在不同项目里怎么落地。
+每个项目都按故事类型归类，并标出它用了哪些方法。[方法指南](METHODS.md)把这些方法逐一讲清楚：解决什么问题、常见做法、取舍和坑、从哪里开始。
 
-收录 692 个项目：249 个 skill 和提示词、423 个框架和应用、20 个研究代码 · 元数据更新于 2026-10-15
+**让 agent 帮你挑**：`npx skills add UnderleveledBuilder/awesome-llm-storytelling` 装上 storytelling-methods skill，然后直接说「我要写 300 章修仙，帮我挑方法」。机器可读的完整索引在 [catalog.json](catalog.json)。
+
+收录 817 个项目：333 个 skill 和提示词、462 个框架和应用、22 个研究代码 · 元数据更新于 2026-10-15
 
 **图例**：🌟 精选 · 📝 提示词 · ⚙️ 框架 · 🧩 应用 · 🎓 研究代码 · 💤 超过 180 天未更新 · 📦 已归档 · ⚠️ 仓库失效
 
@@ -19,15 +23,16 @@
 
 ## 目录
 
-- [本周新增](#new)（0）
-- [精选：从这里开始](#featured)（21）
+- [本周新增](#new)（125）
+- [精选：从这里开始](#featured)（26）
 - [按故事类型](#by-group)
-  - [长篇小说 · 网文](#group-novel)（342）
-  - [短篇 · 故事](#group-short)（36）
-  - [剧本 · 短剧 · 影视](#group-script)（75）
-  - [互动叙事 · 游戏 · 角色扮演](#group-interactive)（184）
-  - [仿写 · 同人 · 风格迁移](#group-imitation)（15）
-  - [通用叙事方法](#group-general)（40）
+  - [长篇小说 · 网文](#group-novel)（357）
+  - [短篇 · 故事](#group-short)（41）
+  - [剧本 · 短剧 · 影视](#group-script)（84）
+  - [互动叙事 · 游戏 · 角色扮演](#group-interactive)（199）
+  - [仿写 · 同人 · 风格迁移](#group-imitation)（26）
+  - [非虚构叙事](#group-nonfiction)（65）
+  - [通用叙事方法](#group-general)（45）
 - [按创作方法查找](#by-method)
 - [相关资源](#resources)
 - [收录徽章](#badge)
@@ -35,7 +40,29 @@
 <a id="new"></a>
 ## 本周新增
 
-本周暂无新增。发现好项目欢迎[推荐](../../issues/new?template=submit-skill.yml)。
+近 7 天新收录 125 个：
+
+- [director](https://github.com/s1dashu/director) ★805：动画解说模式先定中心问题，按钩子、背景、矛盾、概念、误读、回答组织讲稿，区分事实与解读、不编造动机和对白，再做人物、分镜和视频生成
+- [simon-skills](https://github.com/trustfuture/simon-skills) ★428：调查长片 skill：先定账目/代价/规则等六类核心问题并轮换，开场 5 秒用有事实支撑的冲突立起问题，结论有来源台账和事实核查；另含白板讲解视频
+- [image-story-video-wizard](https://github.com/aaronyi97/image-story-video-wizard) ★357：讲书、历史故事类图片联播视频向导：对标学习后组写作包，素材分可核事件、推断与传闻，交写作模型出稿后定点审稿核事实，再进配音、分镜和成片
+- [wedding-video-guided-wizard](https://github.com/aaronyi97/wedding-video-guided-wizard) ★340：14 步引导：五幕问卷采集新人真实故事并编号事实条目，写作包按主事件、细节、情绪安排段落与呼应，每句文案和分镜须回溯故事卡，再接配音、生图与剪辑
+- [data2story-skill](https://github.com/QinghongLin/data2story-skill) ★156：数据新闻 agent：侦探查背景、分析师跑代码出发现、编辑定故事主线与钩子–证据–转折结构，再出图写 HTML，每句话标注并校验到数据或出处
+- [good-story](https://github.com/Rimagination/good-story) ★136：科研叙事 skill：从结果、图表和草稿里找出张力和主线，按证据链重排图序，输出故事卡和证据地图，按领域校准证据强度，查因果和普遍性有没有说过头，模拟审稿人
+- [content-skills](https://github.com/artemnovitckii/content-skills) ★104：storytelling skill：先定独特视角、先写结尾，中段用 but/therefore 交替制造冲突，按句长变化写口播；规定只用真实素材、不编造经历
+- [MetaNovel-Engine](https://github.com/hahagood/MetaNovel-Engine) ★103：命令行七步写长篇：一句话主题→AI 扩展并推荐类型→角色/场景/道具设定→故事大纲→分章细纲→章节概要→正文，每步可编辑重生成，提示词按项目隔离
+- [jiangnan.skill](https://github.com/dmlin7777777/jiangnan.skill) ★101：用 Nuwa 蒸馏出的江南 9 个心智模型，先引导式提问提取用户的结局构想，再按彩蛋式或最终章式写《龙族》结局，最后走 5 步江南化润色
+- [AI100Stories](https://github.com/joeseesun/AI100Stories) ★76：通用故事提示词：识别类型、主题与文化背景，选三幕、英雄之旅或起承转合，设定主角渴望、需求、谎言、幽灵和冲突升级再成文；附 100 篇 AI 概念故事
+- [case-study-storytelling](https://github.com/mengxuebi-mush/case-study-storytelling) ★75：把产品设计作品集案例讲成面试故事：/plan 梳理论点、因果弧线与证据缺口，/script 写逐页讲稿和情绪推进，/follow-up 预演追问，不编造数据
+- [autopunk-media-skills](https://github.com/ur-grue/autopunk-media-skills) ★35：400 多个媒体 skill 加 9 个多步 agent，叙事部分覆盖纪录片开发和解说、杂志特稿、调查报道、播客、编剧，配事实核查和法律风险检查
+- [bookbuilder_ai](https://github.com/Nachoeigu/bookbuilder_ai) ★30：LangGraph 多 agent 写书：先追问需求，按激励事件、中点、高潮等结构出大纲，批评 agent 循环审稿，再出分章摘要并逐章写、逐章审
+- [Writingbook-AgenticWorkflow](https://github.com/idoforgod/Writingbook-AgenticWorkflow) ★29：AI 自传流水线：McAdams/Kvale 式 12 轮访谈→故事圣经（情感弧+起承转合）→逐章写并混合作家文风→对抗审稿+CoVe 事实核查→跨章一致性审计
+- [ai-director-video-commentary](https://github.com/fqyy360t/ai-director-video-commentary) ★28：影视剧解说：先做剧情调研出导演简报，把 ASR 和视觉分析融合成语义图，按因果链、情绪曲线和「故事五问」写解说，对时间戳校验，推断部分标低置信待审
+- [portfolio-case-study-generator](https://github.com/SonwaneyY/portfolio-case-study-generator) ★27：把零散项目笔记写成设计作品集案例：默认概述—挑战—过程—方案—影响—反思六段弧线，可换 STAR、英雄之旅、Pixar 体等 9 种故事结构，保留原事实与数据
+- [sunxue](https://github.com/bayshier/sunxue) ★24：孙学白描写作 skill：从《我的女友景甜》拆出十条技法，先向用户取证收集时间线、物件和数字，再选天平开篇、押韵物件和旁观者证词成文并自检
+- [RPGBox](https://github.com/sleepydeer666/RPGBox) ★23：Galgame 式 AI RPG 客户端：旁白与多 NPC 对话分层显示，每段用选项推进剧情；角色可配多立绘，自动总结剧情记忆和人物经历
+- [tj-short](https://github.com/tttg2010/tj-short) ★18：短剧带货 skill：产品分析→brief→产品证明圣经→角色/场景/道具/证据四库与 12 镜头表；先立冲突和关系压力，产品后置为证据，再出首帧和视频提示词
+- [novel-deconstruct](https://github.com/QQ-L-XX/novel-deconstruct) ★15：输入番茄小说链接或正文，按麦基《故事》、许荣哲《小说课》等框架做定量扫描、逐场景拆解和价值变化追踪，输出 18 章拆书报告供仿写参考
+- ……另有 105 个，见下方各类型。
 
 <a id="featured"></a>
 ## 精选：从这里开始
@@ -43,10 +70,10 @@
 每种故事类型里方法最扎实、最有代表性的项目，第一次来可以先看这些。
 
 - [inkos](https://github.com/Narcooo/inkos) ★10.3k · 长篇小说 · 网文：统一 harness 管长短篇、剧本、同人仿写、互动影游；长篇用 truth files 记设定、伏笔和角色状态，每章写后审计→修订→状态回写
-- [oh-story-claudecode](https://github.com/zenstory-ai/oh-story-claudecode) ★7.6k · 长篇小说 · 网文：扫榜找题材、拆爆款提节奏与素材，再按细纲逐章写；设定、大纲、追踪分文件落盘，状态卡分开作者真相与读者已知，写后脚本查 AI 句式
+- [zenstory-ai/oh-story-claudecode](https://github.com/zenstory-ai/oh-story-claudecode) ★7.6k · 长篇小说 · 网文：扫榜找题材、拆爆款提节奏与素材，再按细纲逐章写；设定、大纲、追踪分文件落盘，状态卡分开作者真相与读者已知，写后脚本查 AI 句式
 - [webnovel-writer](https://github.com/lingfengQAQ/webnovel-writer) ★7.5k · 长篇小说 · 网文：Claude Code 长篇网文插件：分阶段初始化设定与总纲、拆卷纲章纲，写章后多维审查并把事实提交进状态库与 RAG，可查伏笔角色，附只读面板
 - [AI_NovelGenerator](https://github.com/YILING0013/AI_NovelGenerator) ★6.2k · 长篇小说 · 网文：本地部署的长篇小说生成应用：用雪花法从核心创意逐级展开卷、弧、场景、章纲到正文，管理角色/势力/物品/伏笔状态，AI 流程可在画布上改
-- [autonovel](https://github.com/NousResearch/autonovel) ★1.6k · 长篇小说 · 网文：仿 autoresearch 的改—评—留弃循环：设定、人物、大纲、文风、canon 打分过阈值，逐章起草评分重写，再经对抗删改、读者评审团和 Opus 审稿
+- [NousResearch/autonovel](https://github.com/NousResearch/autonovel) ★1.6k · 长篇小说 · 网文：仿 autoresearch 的改—评—留弃循环：设定、人物、大纲、文风、canon 打分过阈值，逐章起草评分重写，再经对抗删改、读者评审团和 Opus 审稿
 - [RecurrentGPT](https://github.com/aiwaves-cn/RecurrentGPT) ★999 · 长篇小说 · 网文：用自然语言模拟 LSTM：每步写一段正文和下一段计划，改写短期记忆，段落摘要存入可语义检索的长期记忆；人可选改计划共写任意长度小说
 - [neuro-book](https://github.com/notnotype/neuro-book) ★744 · 长篇小说 · 网文：长篇写作 IDE：时间线切面事件溯源推算世界状态，伏笔承诺账本，leader/writer 等多 agent 分工写章，llmlint 规则查 AI 味
 - [lengdu](https://github.com/asass-11/lengdu) ★39 · 短篇 · 故事：中文短篇创作与冷读：先写完正文，再由独立校准 Agent 和全新读者 Agent 首读，检验看懂、流畅、好看
@@ -59,6 +86,11 @@
 - [Sonder_Engine](https://github.com/N0819/Sonder_Engine) ★59 · 互动叙事 · 游戏 · 角色扮演：互动小说引擎：导演裁定客观因果，感知层决定每个角色能知道什么，角色代理只凭私有记忆行动，叙述者只写玩家可见部分，再统一提交状态
 - [harnessNovel](https://github.com/XTmingyue/harnessNovel) ★187 · 仿写 · 同人 · 风格迁移：先对参考小说分三阶段拆书（结构、世界观、情节单元、文风），把情节抽象成叙事模式，再按核心玩法→舞台路线→章纲→正文仿写，章节级去 AI 味
 - [longzu.skillls](https://github.com/zuoyou12/longzu.skillls) ★11 · 仿写 · 同人 · 风格迁移：江南、烽火戏诸侯文风蒸馏 skill：全文统计 1465 万字语料加等距精读，得出共享叙事骨架和可替换语言皮肤，支持风格杂交，附审计脚本和盲测
+- [director](https://github.com/s1dashu/director) ★805 · 非虚构叙事：动画解说模式先定中心问题，按钩子、背景、矛盾、概念、误读、回答组织讲稿，区分事实与解读、不编造动机和对白，再做人物、分镜和视频生成
+- [data2story-skill](https://github.com/QinghongLin/data2story-skill) ★156 · 非虚构叙事：数据新闻 agent：侦探查背景、分析师跑代码出发现、编辑定故事主线与钩子–证据–转折结构，再出图写 HTML，每句话标注并校验到数据或出处
+- [good-story](https://github.com/Rimagination/good-story) ★136 · 非虚构叙事：科研叙事 skill：从结果、图表和草稿里找出张力和主线，按证据链重排图序，输出故事卡和证据地图，按领域校准证据强度，查因果和普遍性有没有说过头，模拟审稿人
+- [Writingbook-AgenticWorkflow](https://github.com/idoforgod/Writingbook-AgenticWorkflow) ★29 · 非虚构叙事：AI 自传流水线：McAdams/Kvale 式 12 轮访谈→故事圣经（情感弧+起承转合）→逐章写并混合作家文风→对抗审稿+CoVe 事实核查→跨章一致性审计
+- [aletheia](https://github.com/mycyg/aletheia) ★7 · 非虚构叙事：文章、论文转纪录片：先建证据账本把主张和引文绑定出处，提 2–3 个叙事方向，按「张力→证据→解释→后果」因果链写旁白与逐镜分镜，确认后才生成素材
 - [sepia](https://github.com/Nanako0129/sepia) ★3.2k · 通用叙事方法：按 StoryScope 论文测出的 AI 小说结构特征分三遍修：先改叙事架构（不点题、松因果链、后置揭示），再改段落流和表层措辞
 - [WriteHERE](https://github.com/principia-ai/WriteHERE) ★976 · 通用叙事方法：异构递归规划：把写作任务动态拆成检索、推理、撰写三类子任务，边分解边执行并按上下文调整，小说与长报告共用一套引擎
 - [creative-writing-skills](https://github.com/haowjy/creative-writing-skills) ★512 · 通用叙事方法：muse 主代理调度头脑风暴、角色模拟、大纲、写手、批评、编辑和读者模拟等子代理，从已有文字提炼文风文件，写后批评修订并同步知识库
@@ -72,19 +104,19 @@
 
 长篇连载的写作系统：开书、大纲、分章写作、长篇记忆、审稿。
 
-#### skill · 提示词（131）
+#### skill · 提示词（138）
 
-- 🌟 **[oh-story-claudecode](https://github.com/zenstory-ai/oh-story-claudecode)** · ★ 7.6k<br>扫榜找题材、拆爆款提节奏与素材，再按细纲逐章写；设定、大纲、追踪分文件落盘，状态卡分开作者真相与读者已知，写后脚本查 AI 句式<br><sub>方法：规划 · 记忆 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 中文 · 13 个 skill · MIT</sub><br><sub>💡 同团队另有 DeepSeek Harness 版 oh-story-dsh</sub>
+- 🌟 **[zenstory-ai/oh-story-claudecode](https://github.com/zenstory-ai/oh-story-claudecode)** · ★ 7.6k<br>扫榜找题材、拆爆款提节奏与素材，再按细纲逐章写；设定、大纲、追踪分文件落盘，状态卡分开作者真相与读者已知，写后脚本查 AI 句式<br><sub>方法：规划 · 记忆 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 中文 · 13 个 skill · MIT</sub><br><sub>💡 同团队另有 DeepSeek Harness 版 oh-story-dsh</sub>
 
 - 🌟 **[webnovel-writer](https://github.com/lingfengQAQ/webnovel-writer)** · ★ 7.5k<br>Claude Code 长篇网文插件：分阶段初始化设定与总纲、拆卷纲章纲，写章后多维审查并把事实提交进状态库与 RAG，可查伏笔角色，附只读面板<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-10-14 · 中文 · 8 个 skill · GPL-3.0</sub><br><sub>💡 master 为 Claude Code 版，新功能在 v8 分支（DeepSeek Harness）</sub>
 
-- **[chinese-novelist-skill](https://github.com/PenglongHuang/chinese-novelist-skill)** · ★ 3.8k<br>从零生成 10–50 章中文小说：三层问答、创作记忆、每章悬念钩子、自动校验<br><sub>方法：规划 · 理论 · 修订 · 共创</sub><br><sub>更新于 2026-10-06 · 中文 · MIT</sub>
+- **[PenglongHuang/chinese-novelist-skill](https://github.com/PenglongHuang/chinese-novelist-skill)** · ★ 3.8k<br>从零生成 10–50 章中文小说：三层问答、创作记忆、每章悬念钩子、自动校验<br><sub>方法：规划 · 理论 · 修订</sub><br><sub>更新于 2026-10-06 · 中文 · MIT</sub>
 
 - **[Chinese-WebNovel-Skill](https://github.com/Tomsawyerhu/Chinese-WebNovel-Skill)** · ★ 884<br>网文写作 skill：主路由分派到开头、转场、对白、章末、剧情逻辑、人物一致性、卷纲、去 AI 味等 10 个模块，写前检索本地语料范例<br><sub>方法：规划 · 修订 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-08-28 · 中文</sub><br><sub>💡 README 未写安装方式：SKILL.md 在仓库根目录，把整个仓库放进 skills 目录即可；附 166 篇短篇语料约 11MB，检索脚本需 Python 3</sub>
 
 - **[Openwrite](https://github.com/LiPu-jpg/Openwrite)** · ★ 827<br>DeepSeek Harness 长篇小说插件：统一创作 Agent 加 90 个小说工具，人物、设定、大纲、伏笔存本地，章节走标准审稿 DAG 与去 AI 味<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 中文 · 25 个 skill · Apache-2.0</sub><br><sub>💡 需 DeepSeek Harness（dsh）宿主；preset 内含 oh-story-deslop / long-write / review 等 skill，疑似取自 zenstory-ai/oh-story-claudecode</sub>
 
-- **[awesome-novel-agent](https://github.com/modoojunko/awesome-novel-agent)** · ★ 812<br>总控 agent 按状态文件逐个派 8 个子 agent：卷纲→章纲场景卡→提示词组装→正文→Gate A-F 去 AI 味（不过就重写）→归档更新设定<br><sub>方法：规划 · 记忆 · 多智能体 · 去 AI 味</sub><br><sub>更新于 2026-09-25 · 中文 · AGPL-3.0</sub><br><sub>💡 名字带 awesome，但它是创作 agent，不是列表</sub>
+- **[awesome-novel-agent](https://github.com/modoojunko/awesome-novel-agent)** · ★ 812<br>总控 agent 按状态文件逐个派 8 个子 agent：卷纲→章纲场景卡→提示词组装→正文→Gate A-F 去 AI 味（不过就重写）→归档更新设定<br><sub>方法：规划 · 记忆 · 多智能体 · 去 AI 味</sub><br><sub>更新于 2026-09-25 · 中文 · AGPL-3.0</sub><br><sub>💡 名字带 awesome，但它是创作 agent，不是列表；README 写明个人免费、商用需联系作者授权（仓库许可证为 AGPL-3.0）</sub>
 
 - **[novel-creator-skill](https://github.com/leenbj/novel-creator-skill)** · ★ 682<br>每章强制五步门禁（记忆同步→一致性→风格校准→校稿→脚本），配 RAG 回读、知识图谱、进度配额、跨 agent 交叉审稿与事件冷却，两遍去 AI 味<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-03-10 💤 · 中文</sub><br><sub>💡 最后更新 2026-03-10，因 682★ 收录；去 AI 味润色基于 blader/humanizer 方法论</sub>
 
@@ -92,9 +124,9 @@
 
 - **[Novel-Control-Station-Skill](https://github.com/jingtai123/Novel-Control-Station-Skill)** · ★ 424<br>开书访谈后先出完整大纲与人物档案，按真值文档逐章生成控制卡再写，章后回写人物/关系/伏笔/情绪债务等动态状态，按需加载风格模块并三步去 AI 味<br><sub>方法：规划 · 记忆 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-03-29 💤 · 中文 · MIT</sub><br><sub>💡 最后更新 2026-03-29，因 424★ 收录；附 Codex 连续创作（马拉松）PowerShell runner 模板；作者称已用其写起点连载</sub>
 
-- **[story-skills](https://github.com/danjdewhurst/story-skills)** · ★ 313<br>人物、伏笔、连续性状态都写成带 frontmatter 的 Markdown，CLI 像编译器查死人复出、伏笔先于铺垫等矛盾；24 个 skill 从构思到投稿<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-10-14 · 英文 · 24 个 skill · MIT</sub>
+- **[story-skills](https://github.com/danjdewhurst/story-skills)** · ★ 313<br>人物、伏笔、连续性状态都写成带 frontmatter 的 Markdown，CLI 像编译器查死人复出、兑现早于铺垫等矛盾；24 个 skill 从构思到投稿<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-10-14 · 英文 · 24 个 skill · MIT</sub>
 
-- **[novel-writer-skills](https://github.com/wordflowlab/novel-writer-skills)** · ★ 265<br>Claude Code 斜杠命令加 Skills：宪法→规格→澄清→计划→任务→写作→分析七步写小说，类型知识和一致性检查自动激活，追踪情节、时间线和关系<br><sub>方法：规划 · 理论 · 记忆 · 修订</sub><br><sub>更新于 2025-10-20 💤 · 中文 · 13 个 skill · MIT</sub><br><sub>💡 跨平台版是 wordflowlab/novel-writer；2025-10 后没再更新，按 265★ 且被多个派生项目沿用收录</sub>
+- **[wordflowlab/novel-writer-skills](https://github.com/wordflowlab/novel-writer-skills)** · ★ 265<br>Claude Code 斜杠命令加 Skills：宪法→规格→澄清→计划→任务→写作→分析七步写小说，类型知识和一致性检查自动激活，追踪情节、时间线和关系<br><sub>方法：规划 · 理论 · 记忆 · 修订</sub><br><sub>更新于 2025-10-20 💤 · 中文 · 13 个 skill · MIT</sub><br><sub>💡 跨平台版是 wordflowlab/novel-writer；2025-10 后没再更新，按 265★ 且被多个派生项目沿用收录</sub>
 
 - **[novel-writing-framework](https://github.com/LAY-lgtm/novel-writing-framework)** · ★ 257<br>五份网文写作方法论：通用长篇流程、番茄快节奏、起点慢热、智斗权谋专项、完稿改良诊断，含三章一轮自检和 AI 指纹量化指标<br><sub>方法：规划 · 理论 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-05-31 · 📝 提示词 · 中文 · MIT</sub><br><sub>💡 每份是单独的 .md，需自己放进 skills 目录或手动加载</sub>
 
@@ -118,7 +150,7 @@
 
 - **[Claude-Book](https://github.com/ThomasHoussin/Claude-Book)** · ★ 124<br>多 agent 写小说：只读 bible 加按章版本化 state，规划→写作→文风/人物/连续性三审循环≤3 轮，用本地小模型困惑度改写降 AI 痕迹<br><sub>方法：记忆 · 多智能体 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-01-22 💤 · 英文 · 4 个 skill · MIT</sub><br><sub>💡 perplexity-improver 需约 16GB 显存跑 Ministral-3-8B；book-analyzer 可从源书拆出 bible</sub>
 
-- **[ai-novel-writer](https://github.com/Jieice/ai-novel-writer)** · ★ 116<br>网文 skill 套装：开书建项目出大纲人设，拆参考书学文风，毒点检测与冲突设计，写完同步降重并更新项目文件，另有 90 年代乡土、港综专用写作器<br><sub>方法：规划 · 理论 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-04-22 · 中文 · 17 个 skill</sub><br><sub>💡 整理自 Linux.do 用户 user2609 分享的流程，README 写安装到 Trae；仓库是作者工作目录，混有具体作品、参考小说原文、网页存档、BypassAIGC 降重和番茄自动发布脚本</sub>
+- **[Jieice/ai-novel-writer](https://github.com/Jieice/ai-novel-writer)** · ★ 116<br>网文 skill 套装：开书建项目出大纲人设，拆参考书学文风，毒点检测与冲突设计，写完同步降重并更新项目文件，另有 90 年代乡土、港综专用写作器<br><sub>方法：规划 · 理论 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-04-22 · 中文 · 17 个 skill</sub><br><sub>💡 整理自 Linux.do 用户 user2609 分享的流程，README 写安装到 Trae；仓库是作者工作目录，混有具体作品、参考小说原文、网页存档、BypassAIGC 降重和番茄自动发布脚本</sub>
 
 - **[novel2agent-jp](https://github.com/kgmkm/novel2agent-jp)** · ★ 105<br>日语小说 skill：企划、世界观、角色、情节写进 TOML 并用脚本校验，编辑和作家分工执笔，再让多个 LLM 从逻辑、文体、考据、读者视角交叉推敲<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-09-25 · 日文 · MIT</sub><br><sub>💡 旧名 novel2hermes_jp；也支持 Hermes、goose；附 40 多项的角色表、插图提示词和 pixiv/カクヨム 投稿格式转换</sub>
 
@@ -126,7 +158,7 @@
 
 - **[padwriter](https://github.com/cheyann4399/padwriter)** · ★ 98<br>节拍写作 skill：收件箱想法自动分级入 L1/L2/L3 设定库，按卷梗概→节拍索引→分镜卡→设定合规校验→初稿→AI 痕迹自检→洁本出章<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-09-04 · 中文</sub><br><sub>💡 仓库只含 skill；同名安卓语音写作 App 只有 APK（Releases），需向作者要测试 Key</sub>
 
-- **[dsh-novel-writer](https://github.com/akira399/dsh-novel-writer)** · ★ 93<br>九阶段门禁（选题→设定→人设→大纲→分卷→细纲→正文→修订→完本），世界书关键词注入，事实账本与伏笔/时间线追踪，三层上下文包，附去 AI 味<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-06 · 中文 · MIT</sub><br><sub>💡 DeepSeek Harness 插件，需 DSH 0.2.0-rc.2+；可导入导出 SillyTavern 世界书；另有黄金三章诊断、市场调研与模板复制</sub>
+- **[akira399/dsh-novel-writer](https://github.com/akira399/dsh-novel-writer)** · ★ 93<br>九阶段门禁（选题→设定→人设→大纲→分卷→细纲→正文→修订→完本），世界书关键词注入，事实账本与伏笔/时间线追踪，三层上下文包，附去 AI 味<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-06 · 中文 · MIT</sub><br><sub>💡 DeepSeek Harness 插件，需 DSH 0.2.0-rc.2+；可导入导出 SillyTavern 世界书；另有黄金三章诊断、市场调研与模板复制</sub>
 
 - **[long-novel-writer](https://github.com/jiaw-Zh/long-novel-writer)** · ★ 93<br>百万字长篇写作 skill：六层摘要冻结、实体档案、正典账本与 POV 知识边界，写后双 agent 校验，防止设定漂移<br><sub>方法：规划 · 理论 · 记忆 · 修订</sub><br><sub>更新于 2026-06-18 · 中文</sub><br><sub>💡 思路来自桌面项目 AI_NovelGenerator；作者另有早期版 jiaw-Zh/long-novel-generator</sub>
 
@@ -144,7 +176,7 @@
 
 - **[book-os](https://github.com/forsonny/book-os)** · ★ 66<br>Novel-OS：写作标准（文风、类型指南、叙事技巧）、小说层（前提、计划、决策）、稿件层（大纲、人物档案、逐场景任务）三层上下文引导 AI 写<br><sub>方法：规划 · 理论 · 记忆 · 风格</sub><br><sub>更新于 2025-08-18 💤 · 英文 · MIT</sub>
 
-- **[oh-story-claudecode](https://github.com/qin1473692580-ux/oh-story-claudecode)** · ★ 63<br>oh-story 派生版：扫榜拆文建模块库再写长短篇，正文落盘后过语言门、错别字门、AI 味与跨章连续性守卫，另加后台数据诊断、资料考证和发布<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-09-01 · 中文 · 18 个 skill · MIT</sub><br><sub>💡 基于 zenstory-ai/oh-story-claudecode，2026-08 起独立演进、不同步上游；另加 story-data-analyze、story-research、story-explore、story-release-package、story-publish 五个 skill，以及错别字门禁、新题材包、TRAE/WorkBuddy 适配</sub>
+- **[qin1473692580-ux/oh-story-claudecode](https://github.com/qin1473692580-ux/oh-story-claudecode)** · ★ 63<br>oh-story 派生版：扫榜拆文建模块库再写长短篇，正文落盘后过语言门、错别字门、AI 味与跨章连续性守卫，另加后台数据诊断、资料考证和发布<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-09-01 · 中文 · 18 个 skill · MIT</sub><br><sub>💡 基于 zenstory-ai/oh-story-claudecode，2026-08 起独立演进、不同步上游；另加 story-data-analyze、story-research、story-explore、story-release-package、story-publish 五个 skill，以及错别字门禁、新题材包、TRAE/WorkBuddy 适配</sub>
 
 - **[ai-fiction-writer](https://github.com/Wooooooooood/ai-fiction-writer)** · ★ 61<br>十个 skill 分管拆文、大纲、角色卡、知识库与世界地图；写前查逻辑矩阵、知情边界和冻结状态防穿帮，写后 9 维去 AI 味评分并四视角审稿<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-10 · 中文 · 10 个 skill · MIT</sub><br><sub>💡 README 只写了克隆仓库，需自行把「纯净版skill/」下各目录放进 agent 的 skills 目录</sub>
 
@@ -152,7 +184,7 @@
 
 - **[ultimate-novel-creation-skill](https://github.com/Fly143/ultimate-novel-creation-skill)** · ★ 50<br>立项→世界观人设→滚动章节规划→单章写作；每章强制跑写后流水线：更新圣经与摘要、金手指/时间/叙事线约束检查、读者审稿、朱雀检测对策，缺步不准写下一章<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 中文 · MIT</sub><br><sub>💡 须先把 system_prompt.md 配成宿主的系统提示词，流程才会被严格执行；写后流水线内置朱雀 AIGC 检测对策</sub>
 
-- **[novel-writer](https://github.com/AI-Practical-Lab/novel-writer)** · ★ 46<br>状态机驱动的长篇 skill：构思→世界观→卷纲→章纲→逐章写，每步跑验证脚本卡关，配 YAML 角色卡、伏笔追踪、检查点回滚和修改经验积累<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-03-18 💤 · 中文 · 10 个 skill</sub><br><sub>💡 也适配 Trae、Antigravity</sub>
+- **[AI-Practical-Lab/novel-writer](https://github.com/AI-Practical-Lab/novel-writer)** · ★ 46<br>状态机驱动的长篇 skill：构思→世界观→卷纲→章纲→逐章写，每步跑验证脚本卡关，配 YAML 角色卡、伏笔追踪、检查点回滚和修改经验积累<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-03-18 💤 · 中文 · 10 个 skill</sub><br><sub>💡 也适配 Trae、Antigravity</sub>
 
 - **[craft-companion](https://github.com/qcx1919788736-collab/craft-companion)** · ★ 37<br>小说协作框架：从零或导入旧作建分层知识库，每章走章纲→初稿→执行层自查→评估层复核→仲裁层修订→终版，并回写知识库和检查点<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-04-07 💤 · 中文 · MIT</sub><br><sub>💡 附小说知识库 MCP 服务器和 CLI；也可在 Cherry Studio 里用</sub>
 
@@ -162,11 +194,11 @@
 
 - **[mimoCode-story](https://github.com/nihaoshi/mimoCode-story)** · ★ 32<br>MiMo Code 版网文技能包：扫榜、拆文、大纲、正文、去 AI 味、审稿 32 个技能，加 9 重质量门禁、6 类毒点检测和 6 平台对标评分<br><sub>方法：规划 · 修订 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-07-18 · 中文 · 47 个 skill</sub><br><sub>💡 基于 zenstory-ai/oh-story-claudecode 二次开发，专为小米 MiMo Code 适配，Claude Code 用户用原版即可；一键安装是 curl \| bash</sub>
 
-- **[novel-writer](https://github.com/sailoumili/novel-writer)** · ★ 31<br>统筹队长调度世界、剧情、人物、执笔、复核 5 个子代理：先定《叙事宪法》、世界白皮书和伏笔台账再动笔，复核按三色灯打回重写<br><sub>方法：设定 · 人物 · 多智能体 · 修订</sub><br><sub>更新于 2026-09-15 · 中文 · MIT</sub><br><sub>💡 DeepSeek Harness（DSH）预设插件，只能在 DSH 里用；章节按版本号存档，改稿不覆盖</sub>
+- **[sailoumili/novel-writer](https://github.com/sailoumili/novel-writer)** · ★ 31<br>统筹队长调度世界、剧情、人物、执笔、复核 5 个子代理：先定《叙事宪法》、世界白皮书和伏笔台账再动笔，复核按三色灯打回重写<br><sub>方法：设定 · 人物 · 多智能体 · 修订</sub><br><sub>更新于 2026-09-15 · 中文 · MIT</sub><br><sub>💡 DeepSeek Harness（DSH）预设插件，只能在 DSH 里用；章节按版本号存档，改稿不覆盖</sub>
 
 - **[thriller](https://github.com/pajama-studio/thriller)** · ★ 31<br>悬疑推理技能包：按子类型走诡计/人物/结构先行路线，追踪人物知情状态与线索公平性（双读者验证、诺克斯检查），七维加权评分改稿，可再转成分支互动小说<br><sub>方法：规划 · 理论 · 记忆 · 修订</sub><br><sub>更新于 2026-03-30 💤 · 中文 · 4 个 skill · MIT</sub><br><sub>💡 融合 McKee、Truby、Sanderson 等 25+ 方法与计算叙事论文（对抗式悬念、动态认知逻辑）；含分镜模块与自我进化（GEP）流程；README 英文、技能正文中文；2026-03 后未更新，因方法独特而收</sub>
 
-- **[novel-master](https://github.com/bbroot/novel-master)** · ★ 30<br>OpenClaw 长篇小说 skill：策划书、分卷大纲与细纲、三层伏笔追踪、角色状态机与节点压缩图谱、每章四维审计<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-07-14 · 中文 · MIT</sub><br><sub>💡 ClawHub 上装到的是 v1，v2 脚本需从 GitHub 获取</sub>
+- **[bbroot/novel-master](https://github.com/bbroot/novel-master)** · ★ 30<br>OpenClaw 长篇小说 skill：策划书、分卷大纲与细纲、三层伏笔追踪、角色状态机与节点压缩图谱、每章四维审计<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-07-14 · 中文 · MIT</sub><br><sub>💡 ClawHub 上装到的是 v1，v2 脚本需从 GitHub 获取</sub>
 
 - **[novelops-skill](https://github.com/qiyan233/novelops-skill)** · ★ 30<br>长篇小说状态化流水线：truth files 记设定与角色认知，生成下一章工作包，LLM 起草，审计修订，状态回写，快照 diff<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-09-28 · 多语言 · MIT</sub><br><sub>💡 基于 Narcooo/inkos 的思路（truth files、审计-修订-状态回写），用纯 Python 标准库重写成不绑宿主的 skill；另加角色知情边界检查、可配置审计规则、快照/diff、同人与番外的 canon 处理。draft 默认调用本地 Ollama。SKILL.md 以英文为主</sub>
 
@@ -174,9 +206,9 @@
 
 - **[dsh-cuigengji-plugin](https://github.com/mistnest/dsh-cuigengji-plugin)** · ★ 26<br>DSH 小说工作台：按卷章写正文，角色卡/世界书/关系图和节点式情节规划图作为 AI 可查可改的案头资料，按需检索后讨论、续写、改稿<br><sub>方法：规划 · 设定 · 记忆 · 共创</sub><br><sub>更新于 2026-10-11 · 中文 · 6 个 skill · MIT</sub><br><sub>💡 DeepSeek Harness 插件，主要适配 DSH Windows 桌面版；可导入酒馆角色卡、世界书与提示词预设</sub>
 
-- **[dsh-novel-writer](https://github.com/siweina/dsh-novel-writer)** · ★ 24<br>写前一次取齐承接口、细纲、人物卡、待回收伏笔、用语禁词等 16 项材料，写后按六维文笔基线对照原著自检，排出带行号的改稿待办<br><sub>方法：记忆 · 修订 · 风格</sub><br><sub>更新于 2026-10-15 · 中文 · MIT</sub><br><sub>💡 DSH 插件，也可作 MCP 服务器；随包附 24MB 中文 ONNX 模型本地推理；工具本身不代写，正文由 agent 执笔</sub>
-
 - **[openclaw-novel-writer-skill](https://github.com/alever520/openclaw-novel-writer-skill)** · ★ 24<br>OpenClaw 网文 skill：读全局大纲写七模块章纲并确认，结合写作指南和读者反馈列要点后写正文，15 项自检，读者反馈回写指南<br><sub>方法：规划 · 理论 · 修订</sub><br><sub>更新于 2026-04-02 💤 · 中文 · MIT</sub><br><sub>💡 每章自动提交 GitHub，需配置 GitHub Token</sub>
+
+- **[siweina/dsh-novel-writer](https://github.com/siweina/dsh-novel-writer)** · ★ 24<br>写前一次取齐承接口、细纲、人物卡、待回收伏笔、用语禁词等 16 项材料，写后按六维文笔基线对照原著自检，排出带行号的改稿待办<br><sub>方法：记忆 · 修订 · 风格</sub><br><sub>更新于 2026-10-15 · 中文 · MIT</sub><br><sub>💡 DSH 插件，也可作 MCP 服务器；随包附 24MB 中文 ONNX 模型本地推理；工具本身不代写，正文由 agent 执笔</sub>
 
 - **[speckit-preset-fiction-book-writing](https://github.com/adaumann/speckit-preset-fiction-book-writing)** · ★ 24<br>把 Spec Kit 规格驱动流程改成写小说：故事简报→结构计划（多种情节框架）→逐场景写作任务，26 个命令覆盖构思到投稿，支持多视角与文风样本<br><sub>方法：规划 · 理论 · 修订 · 风格</sub><br><sub>更新于 2026-07-28 · 英文</sub><br><sub>💡 需 GitHub Spec Kit ≥0.5.0；文风有作者样本或 humanized-ai 两种模式；可导出 DOCX/EPUB/LaTeX</sub>
 
@@ -190,17 +222,17 @@
 
 - **[novel-flow-one-by-one](https://github.com/ZhangDongyang800/novel-flow-one-by-one)** · ★ 19<br>6 个协作 skill：脑暴→大纲→逐场景写作→六维审稿→设定同步，总控按状态路由，内置冷白描/系统爽文/怪诞悬疑三种文风<br><sub>方法：规划 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2026-07-18 · 中文 · 6 个 skill · MIT</sub><br><sub>💡 README 以 Trae 目录结构为例</sub>
 
-- **[hermes-novel-generator](https://github.com/rwcrosk-arch/hermes-novel-generator)** · ★ 18<br>多智能体写长篇：编排者出大纲和状态 YAML，各角色 agent 互不可见地规划场景策略，叙事者编织成文，再经角色声线检查、设定审计和文风润色<br><sub>方法：记忆 · 多智能体 · 模拟 · 修订</sub><br><sub>更新于 2026-04-23 · 英文 · 3 个 skill · MIT</sub><br><sub>💡 为 Hermes Agent 写的 skill，依赖其 delegate_task 派子 agent；附进度看板、EPUB 打包和 diffusers 封面脚本；仓库带 .pyc</sub>
+- **[hermes-novel-generator](https://github.com/rwcrosk-arch/hermes-novel-generator)** · ★ 18<br>多智能体写长篇：编排者出大纲和状态 YAML，各角色 agent 互不可见地规划场景策略，叙事者编织成文，再经角色声线检查、设定审计和文风润色<br><sub>方法：人物 · 记忆 · 多智能体 · 模拟 · 修订</sub><br><sub>更新于 2026-04-23 · 英文 · 3 个 skill · MIT</sub><br><sub>💡 为 Hermes Agent 写的 skill，依赖其 delegate_task 派子 agent；附进度看板、EPUB 打包和 diffusers 封面脚本；仓库带 .pyc</sub>
 
-- **[long-novelist-skill](https://github.com/tianshiemo7/long-novelist-skill)** · ★ 17<br>百万字长篇中文小说：13 步配置问答、副本弧线三级大纲、角色状态档案、JSON 伏笔清单、跨会话恢复，附 11 个网文素材库<br><sub>方法：规划 · 人物 · 记忆 · 共创</sub><br><sub>更新于 2026-06-01 · 中文 · MIT</sub><br><sub>💡 基于 PenglongHuang/chinese-novelist-skill 改写（仓库未注明），另加副本弧线规划、角色状态追踪、伏笔 JSON 清单和网文素材库</sub>
+- **[dashenbibi/novel-master](https://github.com/dashenbibi/novel-master)** · ★ 17<br>长篇网文协议式 skill：总览、角色档案、世界观、卷纲统一管理，章节按骨架→正文→润色→质检→同步推进，带一致性检查和伏笔追踪<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-03-07 💤 · 中文 · MIT</sub>
 
-- **[novel-master](https://github.com/dashenbibi/novel-master)** · ★ 17<br>长篇网文协议式 skill：总览、角色档案、世界观、卷纲统一管理，章节按骨架→正文→润色→质检→同步推进，带一致性检查和伏笔追踪<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-03-07 💤 · 中文 · MIT</sub>
+- **[long-novelist-skill](https://github.com/tianshiemo7/long-novelist-skill)** · ★ 17<br>百万字长篇中文小说：13 步配置问答、副本弧线三级大纲、角色状态档案、JSON 伏笔清单、跨会话恢复，附 11 个网文素材库<br><sub>方法：规划 · 人物 · 记忆</sub><br><sub>更新于 2026-06-01 · 中文 · MIT</sub><br><sub>💡 基于 PenglongHuang/chinese-novelist-skill 改写（仓库未注明），另加副本弧线规划、角色状态追踪、伏笔 JSON 清单和网文素材库</sub>
 
-- **[novel-skills](https://github.com/PhosAQy/novel-skills)** · ★ 16<br>Claude Code 长篇插件：无大纲不写，先做百章级卷规划和章细纲，写完按 OOC、设定、逻辑、文风、重复五维加权打分决定采纳或人审，事实自动入知识库<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-01-19 💤 · 英文 · MIT</sub><br><sub>💡 只有一个 SKILL.md；README 中英双语</sub>
+- **[PhosAQy/novel-skills](https://github.com/PhosAQy/novel-skills)** · ★ 16<br>Claude Code 长篇插件：无大纲不写，先做百章级卷规划和章细纲，写完按 OOC、设定、逻辑、文风、重复五维加权打分决定采纳或人审，事实自动入知识库<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-01-19 💤 · 英文 · MIT</sub><br><sub>💡 只有一个 SKILL.md；README 中英双语</sub>
 
 - **[writeAgent](https://github.com/Ddhjx-code/writeAgent)** · ★ 16<br>Claude Code 多 agent 写长篇：规划→写章→十维度审稿打分定去留→去 AI 味润色→归档故事圣经，逐章循环<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-05-18 · 中文 · 5 个 skill</sub>
 
-- **[novel-writer-skills](https://github.com/Shine8592/novel-writer-skills)** · ★ 15<br>三个 OpenClaw skill：带情绪弧的章纲→调免费 API 分段批量写章→审计、校对、质量总监三段审查，每章复盘更新经验<br><sub>方法：规划 · 修订</sub><br><sub>更新于 2026-04-06 💤 · 中文 · 3 个 skill</sub><br><sub>💡 调用 ModelScope、Fyra、Ph8 等免费档第三方 API；仓库无许可证</sub>
+- **[Shine8592/novel-writer-skills](https://github.com/Shine8592/novel-writer-skills)** · ★ 15<br>三个 OpenClaw skill：带情绪弧的章纲→调免费 API 分段批量写章→审计、校对、质量总监三段审查，每章复盘更新经验<br><sub>方法：规划 · 修订</sub><br><sub>更新于 2026-04-06 💤 · 中文 · 3 个 skill</sub><br><sub>💡 调用 ModelScope、Fyra、Ph8 等免费档第三方 API；仓库无许可证</sub>
 
 - **[silver-novel-skills](https://github.com/jialanhu0915/silver-novel-skills)** · ★ 15<br>男频/女频双系统网文写作：世界观/人物/情节三个框架 agent，按题材加载模板，12 项通用加男女频专项审稿 agent<br><sub>方法：规划 · 理论 · 人物 · 修订</sub><br><sub>更新于 2026-07-07 · 中文 · MIT</sub>
 
@@ -226,7 +258,7 @@
 
 - **[dsh-novel-solo](https://github.com/Tkingxiao/dsh-novel-solo)** · ★ 11<br>面向本地量化小模型的写作预设：叙事方法→世界观→名词索引→大纲→目录→人物档案→逐章写，每章七维红黄绿审稿含 AI 腔检查，最后整书复审<br><sub>方法：规划 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-03 · 中文 · MIT</sub><br><sub>💡 DeepSeek Harness 插件；精简工具表、禁用 JSON 输出以适配量化模型</sub>
 
-- **[scriveno](https://github.com/hannsxpeter/scriveno)** · ★ 11<br>装进编程 agent 的长篇写作命令集：先建作者 Voice DNA，drafter agent 逐单元用作者声音起草，再做编辑审读、连续性与声音检查，后接出版<br><sub>方法：规划 · 设定 · 修订 · 风格</sub><br><sub>更新于 2026-09-27 · 英文 · MIT</sub><br><sub>💡 npm 包 scriveno；支持 50 种作品类型，不限虚构（也覆盖技术文档、出版、翻译）</sub>
+- **[scriveno](https://github.com/hannsxpeter/scriveno)** · ★ 11<br>装进编程 agent 的长篇写作命令集：先建作者 Voice DNA，drafter agent 逐单元用作者声音起草，再做编辑审读、连续性与声音检查，后接出版<br><sub>方法：规划 · 修订 · 风格</sub><br><sub>更新于 2026-09-27 · 英文 · MIT</sub><br><sub>💡 npm 包 scriveno；支持 50 种作品类型，不限虚构（也覆盖技术文档、出版、翻译）</sub>
 
 - **[wangwenwrite-skill](https://github.com/Thatgfsj-easyRep/wangwenwrite-skill)** · ★ 11<br>男频系统流网文单文件 skill：黄金三章、爽点节奏公式、系统设定法则、反 AI 味清单、书名公式与平台差异化<br><sub>方法：规划 · 理论 · 设定 · 去 AI 味</sub><br><sub>更新于 2026-05-04 · 中文 · Apache-2.0</sub>
 
@@ -248,9 +280,9 @@
 
 - **[novel-creation-skill](https://github.com/skye-z/novel-creation-skill)** · ★ 9<br>中文长篇/同人 skill：提取原著资料、头脑风暴定设定和人物卡，按题材模板和三/五/六幕结构推进，读者欲望驱动、桥接情节过渡，带自检和上下文管理<br><sub>方法：规划 · 理论 · 人物 · 记忆</sub><br><sub>更新于 2026-04-08 💤 · 中文 · MIT</sub><br><sub>💡 为 Trae SOLO Web 优化，需智能体有联网搜索和内容提取能力；对同人支持最好</sub>
 
-- **[novel-skills](https://github.com/vicalloy/novel-skills)** · ★ 9<br>长篇小说 skill：用树形 Markdown 摘要（总纲加章节摘要、角色小传、世界观设定）承载剧情，每章写完强制更新相关摘要，写前一次性加载<br><sub>方法：规划 · 记忆</sub><br><sub>更新于 2026-04-12 💤 · 中文</sub><br><sub>💡 与作者的 Sequoia 项目深度绑定（摘要加载工具在那边）；附一部写到一半的 AI 小说作样例</sub>
-
 - **[novel-writer-skill](https://github.com/liuxiao20051106-prog/novel-writer-skill)** · ★ 9<br>中英双语小说写作 skill：构思、人设、章纲、逐章写作与章节衔接检查、去 AI 味，附草稿量化体检脚本和 11 套追踪模板<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-09-17 · 多语言 · 2 个 skill · MIT</sub><br><sub>💡 另附 ChatGPT、DeepSeek、Gemini 等网页端的系统提示词用法</sub>
+
+- **[vicalloy/novel-skills](https://github.com/vicalloy/novel-skills)** · ★ 9<br>长篇小说 skill：用树形 Markdown 摘要（总纲加章节摘要、角色小传、世界观设定）承载剧情，每章写完强制更新相关摘要，写前一次性加载<br><sub>方法：规划 · 记忆</sub><br><sub>更新于 2026-04-12 💤 · 中文</sub><br><sub>💡 与作者的 Sequoia 项目深度绑定（摘要加载工具在那边）；附一部写到一半的 AI 小说作样例</sub>
 
 - **[dsh-novel-craft](https://github.com/shiyan688/dsh-novel-craft)** · ★ 8<br>口味校准：作者对候选稿逐段点赞/点踩，模型提炼成几百字节偏好档案注入写稿；每章先列多种场景决策方向再分篇写，批注只改被标段落<br><sub>方法：规划 · 修订 · 风格 · 共创</sub><br><sub>更新于 2026-09-30 · 中文 · 2 个 skill · MIT</sub><br><sub>💡 DeepSeek Harness 插件，需 Node 22；写稿上下文只放规律、不放已写正文</sub>
 
@@ -264,11 +296,11 @@
 
 - **[xiaoshuo-studio](https://github.com/Zhao73/xiaoshuo-studio)** · ★ 8<br>长篇工作台+skill 包：问答建书向导生成 canon 与首章 brief，导入参考小说做风格卡，逐章规划→起草→连续性检查→回写 canon→去 AI 味<br><sub>方法：规划 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2026-06-01 · 中文 · 20 个 skill · MIT</sub><br><sub>💡 Web 工作台依赖本地已登录的 Codex CLI；风格学习强调学技法、不克隆作者声线</sub>
 
+- **[Dylin-code/NovelGenerator](https://github.com/Dylin-code/NovelGenerator)** · ★ 7<br>两段式 skill：资深编辑七段访谈产出 bible（含三幕结构、人物 want/need），再出大纲，每章跑写手→评论家→修订者子代理最多两轮<br><sub>方法：规划 · 人物 · 多智能体 · 修订</sub><br><sub>更新于 2026-04-28 · 中文 · 2 个 skill</sub><br><sub>💡 写手和修订者默认走本地 LM Studio，评论家用 Claude；繁体中文</sub>
+
 - **[huxiuzhi-novel-agent](https://github.com/huxiuzh-ops/huxiuzhi-novel-agent)** · ★ 7<br>主管→规划→写手→编辑角色流写长篇，角色/章节/伏笔/地点/时间线建结构化索引，伏笔登记→逾期警告→回收验证，关键决策交人确认<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-04-11 💤 · 中文 · 2 个 skill · MIT</sub><br><sub>💡 核心规则在平台无关的 AGENT.md，SKILL.md / CLAUDE.md 只是入口</sub>
 
 - **[Novel-framework](https://github.com/bafeite59/Novel-framework)** · ★ 7<br>Claude Code skill：引导逐模块搭建人物、时间轴、三幕情节节点、情绪起伏、浅/深伏笔、分层结局、风格与内容增减，输出 Mermaid 思维导图框架<br><sub>方法：规划 · 理论</sub><br><sub>更新于 2026-07-19 · 中文 · MIT</sub><br><sub>💡 只产出故事框架思维导图，不写正文</sub>
-
-- **[NovelGenerator](https://github.com/Dylin-code/NovelGenerator)** · ★ 7<br>两段式 skill：资深编辑七段访谈产出 bible（含三幕结构、人物 want/need），再出大纲，每章跑写手→评论家→修订者子代理最多两轮<br><sub>方法：规划 · 人物 · 多智能体 · 修订</sub><br><sub>更新于 2026-04-28 · 中文 · 2 个 skill</sub><br><sub>💡 写手和修订者默认走本地 LM Studio，评论家用 Claude；繁体中文</sub>
 
 - **[novella-xl-15](https://github.com/paradroidlabs/novella-xl-15)** · ★ 7<br>长篇系统提示词：每章先做超详细规划、写完做复盘指导下一章，每章约 8000 字；原 Wordware 流程为标题→改情节→择优→15 章故事线→循环写章<br><sub>方法：规划 · 修订</sub><br><sub>更新于 2025-08-06 💤 · 📝 提示词 · 英文</sub><br><sub>💡 已停止维护（作者标 deprecated）；Wordware 上的 wordapp 本体不在仓库里，仓库只有系统提示词、输出和评价样例；原流程用 ElevenLabs 生成章节音频；无许可证</sub>
 
@@ -282,7 +314,7 @@
 
 - **[inkcraft-writing-skills](https://github.com/Fei2411/inkcraft-writing-skills)** · ★ 6<br>13 种网文体裁的写作方法库，每个体裁分结构、前三章、场景写法、成文规范、自检清单五份，带体裁自动分流 skill<br><sub>方法：规划 · 理论 · 修订</sub><br><sub>更新于 2026-09-12 · 中文 · 14 个 skill</sub><br><sub>💡 CC BY 4.0；由商业产品 InkCraft 的写作材料提炼，不含软件本身</sub>
 
-- **[novel-webfiction](https://github.com/zlbigger/novel-webfiction)** · ★ 6<br>OpenClaw 网文连载 skill：开书问 4 个问题建档，每章先读设定、大纲和最近 3 章再写，正文按章存进 Obsidian<br><sub>方法：规划 · 理论 · 记忆</sub><br><sub>更新于 2026-06-28 · 中文 · MIT</sub><br><sub>💡 单文件、规则较简单，适合轻量连载</sub>
+- **[novel-webfiction](https://github.com/zlbigger/novel-webfiction)** · ★ 6<br>OpenClaw 网文连载 skill：开书问 4 个问题建档，每章先读设定、大纲和最近 3 章再写，正文按章存进 Obsidian<br><sub>方法：规划 · 记忆</sub><br><sub>更新于 2026-06-28 · 中文 · MIT</sub><br><sub>💡 单文件、规则较简单，适合轻量连载</sub>
 
 - **[novel-writer-workflow](https://github.com/GonsonInter/novel-writer-workflow)** · ★ 6<br>两阶段小说 skill：构思出宪法后搭大纲和钩子矩阵，按场景走 8 步 SOP，每个场景两轮独立 agent 审到无 P0/P1，脚本扫硬约束，维护跨章四表<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-04-23 · 中文 · 6 个 skill · MIT</sub><br><sub>💡 命令沿用 novel-writer 七步法；作者称用它写完一部约 13 万字的长篇</sub>
 
@@ -294,31 +326,29 @@
 
 - **[web-novel-master](https://github.com/tinylion1024/web-novel-master)** · ★ 6<br>网文创作工作流：快速、专业、工业、一次生成四种模式，含 11 个赛道的作者文风卡、套路库、平台定位包和项目初始化与校验脚本<br><sub>方法：规划 · 理论 · 修订 · 风格</sub><br><sub>更新于 2026-07-20 · 中文 · MIT</sub><br><sub>💡 基于 PenglongHuang/chinese-novelist-skill（情节结构、人物塑造、对话、扩写等指南沿用原版），另加四种创作模式、作者文风卡、平台定位包、市场数据和项目管理脚本</sub>
 
-- **[book-writer-mcp](https://github.com/arupmaity1/book-writer-mcp)** · ★ 5<br>写书 MCP 工具集：故事圣经记录人物、场景和情节线，文风指南约束语气、视角和时态，连续性检查找矛盾，逐章写入并导出 docx<br><sub>方法：记忆 · 修订 · 风格</sub><br><sub>更新于 2026-04-05 💤 · 英文</sub><br><sub>💡 小说和非虚构通用；附封面规格和 KDP 导出</sub>
+- **[7a-z/NovelClaw](https://github.com/7a-z/NovelClaw)** · ★ 5<br>OpenClaw 网文 skill：先定世界观、人物和 5–10 章大纲，按战斗/情感/悬疑场景切换文风，写完用脚本扫 AI 腔禁用词并自动扩充词库<br><sub>方法：规划 · 去 AI 味 · 共创</sub><br><sub>更新于 2026-05-02 · 中文</sub><br><sub>💡 与 iLearn-Lab/NovelClaw 同名但无关；分段写作时会停下来征求反馈</sub>
 
-- **[chinese-novelist-skill](https://github.com/lvyu-cmd/chinese-novelist-skill)** · ★ 5<br>中文长篇小说 skill：五项输入自动生成设定，逐章或子 Agent 并行写作，三层记忆、七维自动校验、章节评分和三级修订<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-06-17 · 中文</sub><br><sub>💡 基于 PenglongHuang/chinese-novelist-skill，另加 SQLite 持久化、三层记忆、修订模式和 8 个校验/评分脚本；README 里的 clone 地址写成 chinese-novelist-skill-master，要换成本仓库</sub>
+- **[book-writer-mcp](https://github.com/arupmaity1/book-writer-mcp)** · ★ 5<br>写书 MCP 工具集：故事圣经记录人物、场景和情节线，文风指南约束语气、视角和时态，连续性检查找矛盾，逐章写入并导出 docx<br><sub>方法：记忆 · 修订 · 风格</sub><br><sub>更新于 2026-04-05 💤 · 英文</sub><br><sub>💡 小说和非虚构通用；附封面规格和 KDP 导出</sub>
 
 - **[claude-novel-writer](https://github.com/zhiliyouxian/claude-novel-writer)** · ★ 5<br>Claude Code 插件：分析参考小说→策划蓝图（选题、世界观、人物、章纲）过审核门→章节写作与审核修订循环→导出，按类型加载知识包<br><sub>方法：规划 · 理论 · 多智能体 · 修订</sub><br><sub>更新于 2025-12-28 💤 · 多语言 · 9 个 skill · MIT</sub><br><sub>💡 8 个 agent、9 个 skill；发布环节还有有声书优化和视频组装；目前只有中文网文知识包</sub>
 
-- **[dsh-novel](https://github.com/ddedook/dsh-novel)** · ★ 5<br>一个工作区一本书：人物/世界/等级/时间线/大纲/章节存进本地 PGlite canon，先开书设定，再用斜杠命令分步写大纲和章节，附题材模板与文风<br><sub>方法：规划 · 设定 · 记忆 · 风格</sub><br><sub>更新于 2026-08-18 · 中文 · MIT</sub><br><sub>💡 DeepSeek Harness 插件</sub>
+- **[ddedook/dsh-novel](https://github.com/ddedook/dsh-novel)** · ★ 5<br>一个工作区一本书：人物/世界/等级/时间线/大纲/章节存进本地 PGlite canon，先开书设定，再用斜杠命令分步写大纲和章节，附题材模板与文风<br><sub>方法：规划 · 设定 · 记忆 · 风格</sub><br><sub>更新于 2026-08-18 · 中文 · MIT</sub><br><sub>💡 DeepSeek Harness 插件</sub>
 
-- **[dsh-novel](https://github.com/wbb316/dsh-novel)** · ★ 5<br>开书向导填设定、主角、世界观和三幕大纲，大纲拆成按卷分组的情节点挂到章节，写下一章时自动带上未写情节点、卷纲领和角色关系<br><sub>方法：规划 · 人物 · 记忆</sub><br><sub>更新于 2026-10-06 · 中文 · MIT</sub><br><sub>💡 DeepSeek Harness 插件，作者自述练手项目；需 DSH 0.2.0-rc.1+</sub>
+- **[dongyanyuxuana/novel-craft](https://github.com/dongyanyuxuana/novel-craft)** · ★ 5<br>通用小说 skill：主控加 7 个子代理，访谈立项、资料拆分、逐章写作、逐段 17 维审查、修订发布，附 34 位作家技法库<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-09-06 · 中文 · MIT</sub><br><sub>💡 含成人向场景参考文档，按受众分级启用</sub>
 
 - **[fanqie-xiaoshuo-skill](https://github.com/soultt/fanqie-xiaoshuo-skill)** · ★ 5<br>番茄风网文 11 个 skill：设定、总纲与章纲的设计和审查、正文写作和审查、签约潜力评估、日更工作流<br><sub>方法：规划 · 理论 · 修订</sub><br><sub>更新于 2026-06-26 · 中文 · 11 个 skill</sub><br><sub>💡 README 安装说明简略；仓库描述里的「包签约」是宣传语，实际是签约评估模板</sub>
 
 - **[general-novel-skill](https://github.com/xiaoyuCR7/general-novel-skill)** · ★ 5<br>长篇网文 skill：每章正文与摘要、角色状态、伏笔、时间线按事务一起提交，7 道去 AI 味闸口，34 题材与多平台规则按需加载<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-13 · 中文 · MIT</sub><br><sub>💡 体量大（47 个脚本、118 份参考、24 个 MCP 工具），附五章示例书和去 AI 味前后对照</sub>
 
+- **[jiangying3222880/novel-engine](https://github.com/jiangying3222880/novel-engine)** · ★ 5<br>网文写作引擎：拆对标书建素材池，细纲、正文、检验打回、落库四段流水线，管长篇状态，另有短故事模式和 BM25 检索<br><sub>方法：规划 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2026-10-15 · 中文 · 12 个 skill</sub><br><sub>💡 门禁、检索、同步脚本需 Python，不装时降级为手动校验；生成的「叙事总览」目录可作为 Obsidian 库查看</sub>
+
 - **[light-novel-creator](https://github.com/Nya-Nya-Hoshino/light-novel-creator)** · ★ 5<br>轻小说创作 skill：先按指定作品/作者建风格档案，维护双区角色卡（固定属性+每章更新）与时间线双写校验，每章写完做 6 维自审<br><sub>方法：人物 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2026-06-23 · 中文</sub><br><sub>💡 为 Reasonix 平台编写；ACGN 百科抓取依赖另一个未随仓库提供的 skill；含让 agent 自行搜索安装外部 skill/MCP 的指令，使用前留意</sub>
 
-- **[novel-craft](https://github.com/dongyanyuxuana/novel-craft)** · ★ 5<br>通用小说 skill：主控加 7 个子代理，访谈立项、资料拆分、逐章写作、逐段 17 维审查、修订发布，附 34 位作家技法库<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-09-06 · 中文 · MIT</sub><br><sub>💡 含成人向场景参考文档，按受众分级启用</sub>
-
-- **[novel-engine](https://github.com/jiangying3222880/novel-engine)** · ★ 5<br>网文写作引擎：拆对标书建素材池，细纲、正文、检验打回、落库四段流水线，管长篇状态，另有短故事模式和 BM25 检索<br><sub>方法：规划 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2026-10-15 · 中文 · 12 个 skill</sub><br><sub>💡 门禁、检索、同步脚本需 Python，不装时降级为手动校验；生成的「叙事总览」目录可作为 Obsidian 库查看</sub>
+- **[lvyu-cmd/chinese-novelist-skill](https://github.com/lvyu-cmd/chinese-novelist-skill)** · ★ 5<br>中文长篇小说 skill：五项输入自动生成设定，逐章或子 Agent 并行写作，三层记忆、七维自动校验、章节评分和三级修订<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-06-17 · 中文</sub><br><sub>💡 基于 PenglongHuang/chinese-novelist-skill，另加 SQLite 持久化、三层记忆、修订模式和 8 个校验/评分脚本；README 里的 clone 地址写成 chinese-novelist-skill-master，要换成本仓库</sub>
 
 - **[novel-project-strategy](https://github.com/wgwtest/novel-project-strategy)** · ★ 5<br>Codex 长篇项目管理 skill：定义加载顺序、章节状态与同步规则，新会话不读全文也能恢复项目，防止大纲、设定、正文互相漂移<br><sub>方法：规划 · 记忆</sub><br><sub>更新于 2026-04-18 · 英文 · MIT</sub>
 
 - **[novel-writer-agent](https://github.com/ZBA-z/novel-writer-agent)** · ★ 5<br>番茄网文作家人格 skill：大纲→细纲→正文→打磨→审查，从上传的爆款 txt 蒸馏写法，每章按朱雀检测降 AI 味，每 30 章批量审查<br><sub>方法：规划 · 修订 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-09-11 · 中文</sub><br><sub>💡 主打通过朱雀 AI 检测；附网文词库和对爆款作品的蒸馏库</sub>
-
-- **[NovelClaw](https://github.com/7a-z/NovelClaw)** · ★ 5<br>OpenClaw 网文 skill：先定世界观、人物和 5–10 章大纲，按战斗/情感/悬疑场景切换文风，写完用脚本扫 AI 腔禁用词并自动扩充词库<br><sub>方法：规划 · 风格 · 去 AI 味 · 共创</sub><br><sub>更新于 2026-05-02 · 中文</sub><br><sub>💡 与 iLearn-Lab/NovelClaw 同名但无关；分段写作时会停下来征求反馈</sub>
 
 - **[NovelFlow](https://github.com/DongxUETAFFY/NovelFlow)** · ★ 5<br>长篇小说 skill：用文件系统当长期记忆，按章节远近做金字塔式上下文压缩，每章提交结构化 delta，分自由草稿、标准、生产锁定、断书续完等模式<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-05-20 · 中文 · 2 个 skill · MIT</sub>
 
@@ -328,21 +358,37 @@
 
 - **[story-foundry](https://github.com/mmunro3318/story-foundry)** · ★ 5<br>Claude Code 小说工作区：捕获→提炼→生产，子代理按 Truby、Swain 等理论包出大纲和场景卡，起草后批评、出修复单再修订<br><sub>方法：规划 · 理论 · 多智能体 · 修订</sub><br><sub>更新于 2025-09-20 💤 · 英文</sub><br><sub>💡 作者自述是上下文工程实验项目；仓库无许可证</sub>
 
+- **[wbb316/dsh-novel](https://github.com/wbb316/dsh-novel)** · ★ 5<br>开书向导填设定、主角、世界观和三幕大纲，大纲拆成按卷分组的情节点挂到章节，写下一章时自动带上未写情节点、卷纲领和角色关系<br><sub>方法：规划 · 人物 · 记忆</sub><br><sub>更新于 2026-10-06 · 中文 · MIT</sub><br><sub>💡 DeepSeek Harness 插件，作者自述练手项目；需 DSH 0.2.0-rc.1+</sub>
+
 - **[web-novel-writing-skill](https://github.com/XINGANLIU/web-novel-writing-skill)** · ★ 5<br>网文 10 阶段流水线：灵感、世界观、人物、总纲、卷纲、章纲、黄金三章、正文、质检、状态同步，含人物漂移和反派降智检查<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-06-11 · 中文 · MIT</sub>
 
-- **[novel-craft](https://github.com/chaserr/novel-craft)** · ★ 4<br>Claude Code 长篇写作与审稿插件：5 个 skill + 12 个 agent，用 RTK.md 定题材风格，管大纲、前情、伏笔、人物档案和逐章审稿<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-09-18 · 中文 · 6 个 skill · MIT</sub><br><sub>💡 作者另有同流程的桌面版 novel-craft-studio</sub>
+- **[chaserr/novel-craft](https://github.com/chaserr/novel-craft)** · ★ 4<br>Claude Code 长篇写作与审稿插件：5 个 skill + 12 个 agent，用 RTK.md 定题材风格，管大纲、前情、伏笔、人物档案和逐章审稿<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-09-18 · 中文 · 6 个 skill · MIT</sub><br><sub>💡 作者另有同流程的桌面版 novel-craft-studio</sub>
+
+- **[write-continuous-novels](https://github.com/Lzhimie/write-continuous-novels)** · ★ 4<br>强制「分章大纲→读上一章结尾→定本章目标与新冲突→写正文→查连贯与重复套路→不合格先改」逐章循环，要求每章产生实际剧情推进<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-07-24 · 中文</sub><br><sub>💡 README 开头和结尾是作者的 Token 中转站广告</sub>
+
+- **[novel_writting_skill](https://github.com/ruyuehao/novel_writting_skill)** · ★ 3<br>仙侠玄幻网文技巧库：12 个维度（场景、情绪、对白、战斗、钩子等）的参考由本地 MCP 按维度检索，配写作、润色、定向优化、卡文诊断 4 个工作流和 6 份清单<br><sub>方法：理论 · 修订</sub><br><sub>更新于 2026-06-22 · 中文</sub><br><sub>💡 MCP 检索服务打包在 mcp-server.zip 里，需要先解压；也可以把 SYSTEM_PROMPT.md 直接当系统提示词用</sub>
+
+- **[novel-writing-skills-for-agents](https://github.com/230517ydyzs-maker/novel-writing-skills-for-agents)** · ★ 2<br>7 个小说创作 skill：叙事结构（三幕式、轻小说卷级结构、伏笔回收、支线功能）、人物设计、世界观、文笔、主题象征与修订指南，供 agent 分步调用<br><sub>方法：理论 · 设定 · 人物 · 修订</sub><br><sub>更新于 2026-05-10 · 中文 · 7 个 skill</sub><br><sub>💡 README 很简略；SKILL.md 没有 YAML frontmatter，部分宿主需手动加载</sub>
 
 - **[Novelist-Skills](https://github.com/KurohaneKaoruko/Novelist-Skills)** · ★ 2<br>18 个 SKILL：工程初始化、人物/世界观/文风卡建档、情节节奏与章节细纲、行文铁律、连续性检查、改稿，加词级/句式级去 AI 味特征库和 6 种类型文风<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-10 · 中文 · 18 个 skill · MIT</sub>
 
+- **[cherry-agent-skills-public](https://github.com/Zn-lemon/cherry-agent-skills-public)** · ★ 1<br>网文与跑团叙事模板 skill：先定类型、读者、欲望和核心冲突，按钩子→升级→反转→高潮搭大纲，人物按欲望/恐惧/错误信念设计，跑团分表层与隐藏真相<br><sub>方法：规划 · 人物</sub><br><sub>更新于 2026-05-11 · 英文 · 3 个 skill · MIT</sub><br><sub>💡 Cherry Studio 转 Hermes Agent 的模板仓库，只有 moyu-webnovel-dm 与叙事有关（另两个是 A 股和文献）；模板偏简</sub>
+
+- **[Chinese-Novel-Workflow](https://github.com/wp1020/Chinese-Novel-Workflow)** · ★ 1<br>长篇网文全流程：设定→总纲→卷纲→含完整事件链的章节细纲→带前文衔接包的单章指令→正文→连续性审稿→去 AI 润色→章节记忆回写设定库<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-08-01 · 中文 · Apache-2.0</sub>
+
+- **[CN-writer](https://github.com/nanbengmuyuhua999/CN-writer)** · ★ 1<br>中文长篇写/审/改三模式分开：写作时加载叙事距离、感官沉浸、断章钩子、代价节拍等 skill，审稿扫 AI 味与视角，四个 agent 按优先级修复<br><sub>方法：理论 · 多智能体 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-07-30 · 中文 · 14 个 skill · MIT</sub>
+
+- **[writer-skill](https://github.com/lyzxka/writer-skill)** · ★ 1<br>长篇小说 skill：章纲→场景分解→质量循环三层嵌套；每章后更新元/实体/叙事三层记忆和变更日志，内层做一致性检查和 AI 腔检测后修订<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-07-13 · 中文</sub><br><sub>💡 AI 腔检测兜底依赖 humanizer-zh skill（可选）</sub>
+
 - **[clark-typer](https://github.com/niyongsheng/clark-typer)** · ★ 0<br>硬科幻长篇 skill 流程：选题→设定（科学三层标注）→人物→大纲，写作/文学+科学审稿/润色/读者盲读循环，可回溯状态机加 sqlite-vec 一致性扫描<br><sub>方法：规划 · 设定 · 记忆 · 修订</sub><br><sub>更新于 2026-08-24 · 中文 · 20 个 skill</sub><br><sub>💡 仓库根目录同时放着作者自己的创作产物（0-角色档案…7-正文），/typer-init 可重置；支持导入外部作品续写/二创；附 Web 工作台；无许可证</sub>
 
-#### 框架 · 应用（207）
+#### 框架 · 应用（215）
 
 - 🌟 **[inkos](https://github.com/Narcooo/inkos)** · ★ 10.3k<br>统一 harness 管长短篇、剧本、同人仿写、互动影游；长篇用 truth files 记设定、伏笔和角色状态，每章写后审计→修订→状态回写<br><sub>方法：规划 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2026-10-10 · ⚙️ 框架 · 多语言 · 21 个 skill · AGPL-3.0</sub>
 
 - 🌟 **[AI_NovelGenerator](https://github.com/YILING0013/AI_NovelGenerator)** · ★ 6.2k<br>本地部署的长篇小说生成应用：用雪花法从核心创意逐级展开卷、弧、场景、章纲到正文，管理角色/势力/物品/伏笔状态，AI 流程可在画布上改<br><sub>方法：规划 · 理论 · 人物 · 记忆</sub><br><sub>更新于 2026-10-12 · 🧩 应用 · 多语言 · AGPL-3.0</sub><br><sub>💡 main 分支已经重写（Next.js + FastAPI + MongoDB），旧版留在 old 分支，两版数据不兼容</sub>
 
-- 🌟 **[autonovel](https://github.com/NousResearch/autonovel)** · ★ 1.6k<br>仿 autoresearch 的改—评—留弃循环：设定、人物、大纲、文风、canon 打分过阈值，逐章起草评分重写，再经对抗删改、读者评审团和 Opus 审稿<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-03-20 💤 · ⚙️ 框架 · 英文</sub><br><sub>💡 无 License；附 CRAFT.md / ANTI-SLOP.md 等写作原则文档；示例成书在 autonovel/bells 分支；导出阶段另有排版、插画和 ElevenLabs 有声书</sub>
+- 🌟 **[NousResearch/autonovel](https://github.com/NousResearch/autonovel)** · ★ 1.6k<br>仿 autoresearch 的改—评—留弃循环：设定、人物、大纲、文风、canon 打分过阈值，逐章起草评分重写，再经对抗删改、读者评审团和 Opus 审稿<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-03-20 💤 · ⚙️ 框架 · 英文</sub><br><sub>💡 无 License；附 CRAFT.md / ANTI-SLOP.md 等写作原则文档；示例成书在 autonovel/bells 分支；导出阶段另有排版、插画和 ElevenLabs 有声书</sub>
 
 - 🌟 **[neuro-book](https://github.com/notnotype/neuro-book)** · ★ 744<br>长篇写作 IDE：时间线切面事件溯源推算世界状态，伏笔承诺账本，leader/writer 等多 agent 分工写章，llmlint 规则查 AI 味<br><sub>方法：规划 · 记忆 · 多智能体 · 去 AI 味</sub><br><sub>更新于 2026-10-14 · 🧩 应用 · 中文 · 28 个 skill · AGPL-3.0</sub><br><sub>💡 AGPL-3.0；当前分支按 v2 方案重建中，可用版本在 master；去 AI 味 lint 另有独立仓库 notnotype/llmlint</sub>
 
@@ -358,9 +404,9 @@
 
 - **[91Writing](https://github.com/ponysb/91Writing)** · ★ 1.6k<br>前端小说创作台：按类型模板建书，AI 生成大纲与章节、续写和分类润色，世界观模板化管理并做一致性检查，提示词库带变量可自定义<br><sub>方法：规划 · 设定 · 修订</sub><br><sub>更新于 2025-10-14 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 2025-10 后未更新，按 ≥100★ 保留；需自配 OpenAI 兼容 API，内置提示词仅为演示</sub>
 
-- **[AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer)** · ★ 1.6k<br>桌面长篇写作软件：前提、角色、世界观、章节蓝图、草稿、审稿、修稿、定稿逐段推进，可按阶段绑定写作 Skill，支持本地与在线模型<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 多语言 · GPL-3.0</sub><br><sub>💡 提供 Windows/macOS 桌面版；仓库里另有 DeepSeek Harness 插件预览版，已冻结，作者说它的能力不到桌面版一成</sub>
+- **[EthanYoQ/AI-Novel-Writer](https://github.com/EthanYoQ/AI-Novel-Writer)** · ★ 1.6k<br>桌面长篇写作软件：前提、角色、世界观、章节蓝图、草稿、审稿、修稿、定稿逐段推进，可按阶段绑定写作 Skill，支持本地与在线模型<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 多语言 · GPL-3.0</sub><br><sub>💡 提供 Windows/macOS 桌面版；仓库里另有 DeepSeek Harness 插件预览版，已冻结，作者说它的能力不到桌面版一成</sub>
 
-- **[NovelForge](https://github.com/RhythmicWave/NovelForge)** · ★ 1.2k<br>卡片式长篇创作工具：按 JSON Schema 结构化生成设定、角色、大纲卡片，用 @DSL 注入上下文、知识图谱保一致，可编排代码式工作流（含拆书）<br><sub>方法：规划 · 设定 · 人物 · 记忆</sub><br><sub>更新于 2026-09-23 · 🧩 应用 · 中文 · AGPL-3.0</sub>
+- **[RhythmicWave/NovelForge](https://github.com/RhythmicWave/NovelForge)** · ★ 1.2k<br>卡片式长篇创作工具：按 JSON Schema 结构化生成设定、角色、大纲卡片，用 @DSL 注入上下文、知识图谱保一致，可编排代码式工作流（含拆书）<br><sub>方法：规划 · 设定 · 人物 · 记忆</sub><br><sub>更新于 2026-09-23 · 🧩 应用 · 中文 · AGPL-3.0</sub>
 
 - **[Long-Novel-GPT](https://github.com/MaoXiaoYuZ/Long-Novel-GPT)** · ★ 1.2k<br>长篇小说 Agent：章节→剧情→正文逐级扩写并多线程并行；可导入已有小说拆书得剧情纲要，按意见检索片段改写并同步更新纲要<br><sub>方法：规划 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2025-11-05 💤 · 🧩 应用 · 中文</sub><br><sub>💡 2025-11 后未更新（1247★）；附天蚕土豆风格等提示词；Docker 部署</sub>
 
@@ -368,15 +414,15 @@
 
 - **[AI-automatically-generates-novels](https://github.com/wfcz10086/AI-automatically-generates-novels)** · ★ 966<br>种子→根合同→里程碑链→逐章细纲→正文，每层发散 3 个候选由程序选优；评审须引原句证据、由程序扣分并自动返修，也能写短剧和影视剧本<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-09-14 · ⚙️ 框架 · 中文 · Apache-2.0</sub><br><sub>💡 带 Web UI 和守护进程长跑；内容类型由 packs 声明，可扩展；需配置至少一个模型网关</sub>
 
-- **[novel-writer](https://github.com/wordflowlab/novel-writer)** · ★ 959<br>参照 Spec-Kit 的七步法：宪法→规格→澄清→计划→任务→写作→分析，以斜杠命令装进多种 AI 助手，配情节/时间线/关系/世界观追踪做一致性检查<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2025-10-26 💤 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 npm 包 novel-writer-cn，novel init 生成项目和命令；插件含真实人声、风格模仿等</sub>
+- **[wordflowlab/novel-writer](https://github.com/wordflowlab/novel-writer)** · ★ 959<br>参照 Spec-Kit 的七步法：宪法→规格→澄清→计划→任务→写作→分析，以斜杠命令装进多种 AI 助手，配情节/时间线/关系/世界观追踪做一致性检查<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2025-10-26 💤 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 npm 包 novel-writer-cn，novel init 生成项目和命令；插件含真实人声、风格模仿等</sub>
 
 - **[denova](https://github.com/alfredxw/denova)** · ★ 929<br>小说写作与 AI 文字冒险一体平台：资料库按组给 Agent 供上下文，支持 SubAgent 协作和定时续写/审阅；游戏侧有剧情分支、角色世界状态与规则检定<br><sub>方法：规划 · 记忆 · 多智能体 · 共创</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 多语言 · 8 个 skill · Apache-2.0</sub><br><sub>💡 发布版默认开启匿名使用统计（Umami，可关）；一键安装为 curl \| sh 脚本</sub>
 
-- **[storyforge](https://github.com/yuanbw2025/storyforge)** · ★ 861<br>本地优先叙事工作台：长短篇小说、剧本、漫画/漫剧素材共用世界设定，按需检索上下文并限定字段写回，支持节点流程、插件，还能从作品派生跑团等互动体验<br><sub>方法：规划 · 设定 · 记忆 · 共创</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 多语言 · MIT</sub><br><sub>💡 README 有九种语言，正文以中文为主；可经 Codex app-server 复用 ChatGPT 登录；含插件作者包 zip；漫剧部分只做到分镜交付包</sub>
+- **[yuanbw2025/storyforge](https://github.com/yuanbw2025/storyforge)** · ★ 861<br>本地优先叙事工作台：长短篇小说、剧本、漫画/漫剧素材共用世界设定，按需检索上下文并限定字段写回，支持节点流程、插件，还能从作品派生跑团等互动体验<br><sub>方法：规划 · 设定 · 记忆 · 共创</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 多语言 · MIT</sub><br><sub>💡 README 有九种语言，正文以中文为主；可经 Codex app-server 复用 ChatGPT 登录；含插件作者包 zip；漫剧部分只做到分镜交付包</sub>
 
 - **[QMAI](https://github.com/Mochocyang/QMAI)** · ★ 817<br>总纲→卷纲→17 节章纲三级大纲；每章定稿后摄取摘要/人物状态/伏笔/图谱，写前按优先级组装上下文混合检索；拆文库提取文风与角色，六维审查<br><sub>方法：规划 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 中文 · 128 个 skill</sub><br><sub>💡 Tauri 桌面应用，官网 qmai.pro；许可证非标准声明（NOASSERTION）</sub>
 
-- **[Ai-Novel](https://github.com/inliver233/Ai-Novel)** · ★ 790<br>自托管长篇写作平台：项目→大纲/细纲→章节，角色与世界观条目结构化存储，pgvector 检索故事记忆注入生成，可调试 Prompt 模板并批量生成<br><sub>方法：规划 · 设定 · 人物 · 记忆</sub><br><sub>更新于 2026-07-28 · 🧩 应用 · 中文</sub><br><sub>💡 README 对应 lite 分支；部署需 Docker Compose（PostgreSQL + pgvector、Redis）</sub>
+- **[inliver233/Ai-Novel](https://github.com/inliver233/Ai-Novel)** · ★ 790<br>自托管长篇写作平台：项目→大纲/细纲→章节，角色与世界观条目结构化存储，pgvector 检索故事记忆注入生成，可调试 Prompt 模板并批量生成<br><sub>方法：规划 · 设定 · 人物 · 记忆</sub><br><sub>更新于 2026-07-28 · 🧩 应用 · 中文</sub><br><sub>💡 README 对应 lite 分支；部署需 Docker Compose（PostgreSQL + pgvector、Redis）</sub>
 
 - **[easy-writing](https://github.com/yilujian/easy-writing)** · ★ 716<br>本地网文写作桌面软件：工作流一键建书（灵感→大纲→设定→逐章自动生文，可断点续），配合续写、润色扩写和大纲/角色/时间线资料库<br><sub>方法：规划 · 记忆 · 共创</sub><br><sub>更新于 2026-10-09 · 🧩 应用 · 中文 · AGPL-3.0</sub><br><sub>💡 Tauri 桌面应用，BYOK；提示词为本地 md 可改；附竞品拆书与榜单爬虫；AGPL-3.0，另有商业授权</sub>
 
@@ -398,7 +444,7 @@
 
 - **[WenShape](https://github.com/unitagain/WenShape)** · ★ 417<br>长篇小说智能体：卷章结构+人物/世界/文风卡，事实按章节距离衰减与 BM25 选择注入，Writer/Editor/Archivist 分工，可抓百科建同人设定<br><sub>方法：设定 · 记忆 · 多智能体</sub><br><sub>更新于 2026-10-03 · 🧩 应用 · 中文</sub><br><sub>💡 原名 NOVIX；许可证为 NOASSERTION，商用前看清条款</sub>
 
-- **[NovelClaw](https://github.com/iLearn-Lab/NovelClaw)** · ★ 378<br>以动态记忆为核心的长篇协作写作平台：会话、故事板、人物和世界面板、可编辑记忆库，逐章起草，每次运行的日志和稿件都可检查<br><sub>方法：规划 · 记忆 · 多智能体 · 共创</sub><br><sub>更新于 2026-10-12 · 🧩 应用 · 多语言 · MIT</sub><br><sub>💡 出自 HITSZ 团队（CoLong-Idea-Studio），有在线版；仓库根目录带一个 ISTask.dll（Inno Setup 插件），本地运行前留意</sub>
+- **[iLearn-Lab/NovelClaw](https://github.com/iLearn-Lab/NovelClaw)** · ★ 378<br>以动态记忆为核心的长篇协作写作平台：会话、故事板、人物和世界面板、可编辑记忆库，逐章起草，每次运行的日志和稿件都可检查<br><sub>方法：规划 · 记忆 · 多智能体 · 共创</sub><br><sub>更新于 2026-10-12 · 🧩 应用 · 多语言 · MIT</sub><br><sub>💡 出自 HITSZ 团队（CoLong-Idea-Studio），有在线版；仓库根目录带一个 ISTask.dll（Inno Setup 插件），本地运行前留意</sub>
 
 - **[MirrorNovel](https://github.com/Aerdelan/MirrorNovel)** · ★ 365<br>长篇平台：大纲确认后 AI 提阶段、支线、反转蓝图再写正文，持久化章节摘要、伏笔、角色状态和情绪曲线，每章专家团审稿修订，两遍去 AI 味<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 中文</sub><br><sub>💡 需 MongoDB；桌面版只是外壳，默认连作者服务器（可改成自己的）；内置番茄小说下载器需 SVIP 账号；拆书蒸馏功能暂时移除</sub>
 
@@ -406,15 +452,15 @@
 
 - **[AIxiezuo](https://github.com/yefeng2renxing/AIxiezuo)** · ★ 356<br>按章节大纲生成正文，写完由 LLM 更新主角状态 JSON（境界、物品、关系、剧情摘要）和版本化世界设定，下一章自动注入；可多模型多版本对比<br><sub>方法：设定 · 记忆</sub><br><sub>更新于 2025-07-21 💤 · 🧩 应用 · 中文</sub><br><sub>💡 基于 LangChain 的 Web 工具；无 License；2025-07 后未更新</sub>
 
-- **[novelwriter](https://github.com/Hurricane0698/novelwriter)** · ★ 293<br>长篇续写的世界模型引擎：从正文提取实体、关系、体系成结构化世界模型（作者审核），续写时只注入本章相关设定，多版本草稿由作者采纳<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-09-20 · 🧩 应用 · 中文 · AGPL-3.0</sub><br><sub>💡 AGPL-3.0；有 Windows/macOS 桌面版和 Docker 自部署；需 OpenAI 兼容 API</sub>
+- **[Hurricane0698/novelwriter](https://github.com/Hurricane0698/novelwriter)** · ★ 293<br>长篇续写的世界模型引擎：从正文提取实体、关系、体系成结构化世界模型（作者审核），续写时只注入本章相关设定，多版本草稿由作者采纳<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-09-20 · 🧩 应用 · 中文 · AGPL-3.0</sub><br><sub>💡 AGPL-3.0；有 Windows/macOS 桌面版和 Docker 自部署；需 OpenAI 兼容 API</sub>
 
-- **[AI_novel](https://github.com/tyxben/AI_novel)** · ★ 280<br>长篇 5 agent：架构师出骨架，卷导演出细纲，章规划从伏笔/叙事债务账本组装章前简报，写手写章，审稿只标问题；7 维评估，伏笔兑现率设硬门禁<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-08-18 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 仓库同时是小说转短视频（推文）流水线；小说模块有 CLI、Web UI 和 MCP Server（README 写可由 Claude Code 调用）</sub>
+- **[tyxben/AI_novel](https://github.com/tyxben/AI_novel)** · ★ 280<br>长篇 5 agent：架构师出骨架，卷导演出细纲，章规划从伏笔/叙事债务账本组装章前简报，写手写章，审稿只标问题；7 维评估，伏笔兑现率设硬门禁<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-08-18 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 仓库同时是小说转短视频（推文）流水线；小说模块有 CLI、Web UI 和 MCP Server（README 写可由 Claude Code 调用）</sub>
 
 - **[AIStoryWriter](https://github.com/datacrystals/AIStoryWriter)** · ★ 258<br>从一段提示词先生成全书大纲，再拆章节大纲，逐章分阶段写情节、人物、对白，每步经 LLM 评审反馈修订；大纲、章节、修订可各配不同模型<br><sub>方法：规划 · 修订</sub><br><sub>更新于 2025-11-24 💤 · ⚙️ 框架 · 英文 · AGPL-3.0</sub><br><sub>💡 命令行工具，默认 Ollama 本地模型，也支持 Google / OpenRouter；附 Evaluate.py 评测脚本；2025-11 后未更新</sub>
 
-- **[AI_Novel](https://github.com/kele-tao/AI_Novel)** · ★ 257<br>小说写作台：按题材模板生成大纲后实时逐章写，每章先写章节计划再动态更新世界观，滑动窗口固定上下文长度，可暂停改设定或单章重写<br><sub>方法：规划 · 设定 · 记忆</sub><br><sub>更新于 2026-07-30 · 🧩 应用 · 多语言 · Apache-2.0</sub><br><sub>💡 也能生成课程讲义（非虚构）；接任意 OpenAI 兼容接口，作者推荐 vLLM / LM Studio</sub>
+- **[kele-tao/AI_Novel](https://github.com/kele-tao/AI_Novel)** · ★ 257<br>小说写作台：按题材模板生成大纲后实时逐章写，每章先写章节计划再动态更新世界观，滑动窗口固定上下文长度，可暂停改设定或单章重写<br><sub>方法：规划 · 设定 · 记忆</sub><br><sub>更新于 2026-07-30 · 🧩 应用 · 多语言 · Apache-2.0</sub><br><sub>💡 也能生成课程讲义（非虚构）；接任意 OpenAI 兼容接口，作者推荐 vLLM / LM Studio</sub>
 
-- **[ai-novel-generator](https://github.com/yangqi1309134997-coder/ai-novel-generator)** · ★ 243<br>长篇生成平台：雪花法从核心创意分层展开大纲，按章节蓝图（情节节点、角色弧线、场景）逐章写，再做风格润色去 AI 味和跨章连贯性检测<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-04-04 💤 · 🧩 应用 · 中文</sub><br><sub>💡 分本地 Gradio 版和商业版（会员、卡密、支付）；README 声明公司版权，许可证却写 MIT</sub>
+- **[yangqi1309134997-coder/ai-novel-generator](https://github.com/yangqi1309134997-coder/ai-novel-generator)** · ★ 243<br>长篇生成平台：雪花法从核心创意分层展开大纲，按章节蓝图（情节节点、角色弧线、场景）逐章写，再做风格润色去 AI 味和跨章连贯性检测<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-04-04 💤 · 🧩 应用 · 中文</sub><br><sub>💡 分本地 Gradio 版和商业版（会员、卡密、支付）；README 声明公司版权，许可证却写 MIT</sub>
 
 - **[ReNovel-AI](https://github.com/BiranSama/ReNovel-AI)** · ★ 240<br>导入现有小说分章入向量库，Writer 按指令与保留度/扩写度逐段改写扩写，独立 Reviewer 查 OOC 与逻辑漏洞并拦截，可全书批量精修续跑<br><sub>方法：记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-10-14 · 🧩 应用 · 中文 · GPL-3.0</sub><br><sub>💡 定位是重写/扩写已有文本（含 NSFW 加料）；需 OpenAI 兼容接口；Windows 绿色版在 Releases</sub>
 
@@ -434,23 +480,25 @@
 
 - **[GOAT-Storytelling-Agent](https://github.com/GOAT-AI-lab/GOAT-Storytelling-Agent)** · ★ 164<br>主题→书籍设定（类型/视角/人物/前提）→增强→分幕分章情节→增强→拆成场景→结合上一场景逐场写，可在任意层级介入<br><sub>方法：规划 · 修订</sub><br><sub>更新于 2025-11-12 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 默认用自家 GOAT-70B-Storytelling 模型，可接 TGI/llama.cpp；HF 上附 20 部无人工干预生成的中篇</sub>
 
-- **[NovelGenerator](https://github.com/KazKozDev/NovelGenerator)** · ★ 153<br>从一段前提生成整本小说：先建人物、世界规则、因果图和章节图并自审，逐场景写，事实抽取必须引用原段落，场景交接后重定下一场的因果计划<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-10-09 · 🧩 应用 · 英文</sub><br><sub>💡 writer 和 editor 双模型分工；支持 Gemini 和本地 Ollama；source-available 许可</sub>
+- **[KazKozDev/NovelGenerator](https://github.com/KazKozDev/NovelGenerator)** · ★ 153<br>从一段前提生成整本小说：先建人物、世界规则、因果图和章节图并自审，逐场景写，事实抽取必须引用原段落，场景交接后重定下一场的因果计划<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-10-09 · 🧩 应用 · 英文</sub><br><sub>💡 writer 和 editor 双模型分工；支持 Gemini 和本地 Ollama；source-available 许可</sub>
 
 - **[OrisonSpace](https://github.com/LumenStorm/OrisonSpace)** · ★ 144<br>小说 IDE：大纲、章节、人物/世界观资产卡同处一个工作区，AI 生成/续写/审阅以可回退 diff 落地，Story Sync 从正文抽设定补丁<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-07-17 · 🧩 应用 · 中文 · Apache-2.0</sub><br><sub>💡 Alpha；定位用户主导、AI 辅助；Agent 编排与 Auto Mode 为实验功能；Release 提供安装包，仓库源码完整</sub>
 
-- **[novel-studio](https://github.com/Xiaoyangy/novel-studio)** · ★ 137<br>先冻结全书章位并整弧预演，重要角色以独立 agent 在至多 3 章窗口内决策、世界仲裁者裁决后果，封存章节合同后逐章渲染审核，验收正文才入正史台账<br><sub>方法：规划 · 记忆 · 模拟 · 修订</sub><br><sub>更新于 2026-09-23 · ⚙️ 框架 · 中文 · 20 个 skill · Apache-2.0</sub><br><sub>💡 Go CLI + 只读 Dashboard；RAG（embedding + Qdrant）可选；仓库附 20 个 SKILL.md；建议审稿角色单独路由 DeepSeek</sub>
+- **[Xiaoyangy/novel-studio](https://github.com/Xiaoyangy/novel-studio)** · ★ 137<br>先冻结全书章位并整弧预演，重要角色以独立 agent 在至多 3 章窗口内决策、世界仲裁者裁决后果，封存章节合同后逐章渲染审核，验收正文才入正史台账<br><sub>方法：规划 · 记忆 · 模拟 · 修订</sub><br><sub>更新于 2026-09-23 · ⚙️ 框架 · 中文 · 20 个 skill · Apache-2.0</sub><br><sub>💡 Go CLI + 只读 Dashboard；RAG（embedding + Qdrant）可选；仓库附 20 个 SKILL.md；建议审稿角色单独路由 DeepSeek</sub>
 
 - **[xunlong](https://github.com/jaguarliuu/xunlong)** · ★ 135<br>LangGraph 多 agent 内容生成 CLI：小说模式按类型和章数先设计大纲再逐章创作并做人物一致性检查，可导入设定文档，支持局部/全局迭代修改<br><sub>方法：规划 · 多智能体 · 修订</sub><br><sub>更新于 2025-10-25 💤 · ⚙️ 框架 · 多语言 · MIT</sub><br><sub>💡 同时做研究报告与 PPT，小说只是三种模式之一；2025-10 后未更新，但 ≥100★</sub>
 
-- **[Fibb](https://github.com/Ckokoski/Fibb)** · ★ 127<br>研究→大纲→逐章写→修订的自主流水线；三层记忆加夜间整理，按实体库查矛盾，角色分身审自己台词，评判→修订→复评只留变好的版本<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-07-11 · 🧩 应用 · 英文 · 48 个 skill · MIT</sub><br><sub>💡 README 名为 AuthorAgent（克隆地址仍是 authoragent）；同时面向非虚构，另带选题调研、宣发模块；需自备模型 API key</sub>
+- **[Fibb](https://github.com/Ckokoski/Fibb)** · ★ 127<br>研究→大纲→逐章写→修订的自主流水线；三层记忆加夜间整理，按实体库查矛盾，角色分身审自己台词，评判→修订→复评只留变好的版本<br><sub>方法：规划 · 人物 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-07-11 · 🧩 应用 · 英文 · 48 个 skill · MIT</sub><br><sub>💡 README 名为 AuthorAgent（克隆地址仍是 authoragent）；同时面向非虚构，另带选题调研、宣发模块；需自备模型 API key</sub>
 
 - **[narralume](https://github.com/abligail/narralume)** · ★ 122<br>长篇写作环境：作者意图、大纲、实体、正典事实、时间线、伏笔共用一份故事圣经，AI 正文和设定变更都先作候选，审稿附证据，撞上锁定事实就暂停<br><sub>方法：规划 · 记忆 · 修订 · 共创</sub><br><sub>更新于 2026-10-13 · 🧩 应用 · 多语言 · Apache-2.0</sub><br><sub>💡 不接模型也能纯手写；AI 长任务有检查点和运行记录；Docker 或脚本自部署，有托管 demo</sub>
 
 - **[gptauthor](https://github.com/dylanhogg/gptauthor)** · ★ 116<br>人写故事提示（风格、人物）→AI 生成带各章摘要的梗概→人工审阅可重生成→按梗概加上一章逐章写出长篇<br><sub>方法：规划 · 共创</sub><br><sub>更新于 2026-08-15 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 pip 可装的命令行工具，故事提示用 YAML 描述</sub>
 
-- **[saga](https://github.com/Lanerra/saga)** · ★ 113<br>前提→大纲→逐场景草稿→导出：Neo4j 知识图谱追踪人物、事件与关系，嵌入检索补上下文，LangGraph 检查点可中断续跑，自动质量验收<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-09-15 · ⚙️ 框架 · 英文 · Apache-2.0</sub><br><sub>💡 需自备 OpenAI 兼容文本接口、Ollama 嵌入接口与 Neo4j；仅验证 Linux</sub>
+- **[saga](https://github.com/Lanerra/saga)** · ★ 113<br>前提→大纲→逐场景草稿→导出：Neo4j 知识图谱追踪人物、事件与关系，嵌入检索补上下文，LangGraph 检查点可中断续跑，自动质量验收<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-09-15 · ⚙️ 框架 · 英文 · Apache-2.0</sub><br><sub>💡 需自备 OpenAI 兼容文本接口、Ollama 嵌入接口与 Neo4j；仅验证 Linux；README 自述修复后的流程只在约 2 章、8 场、6700 词的项目上跑通过</sub>
 
 - **[narracat-novel-agent](https://github.com/yannikzz/narracat-novel-agent)** · ★ 109<br>网文桌面应用：立项卡定题材和金手指→大纲→章纲→成稿，NovelMemory 长程记忆追踪伏笔，能力包从书中学写法，写作 agent/skill 提示词全开源<br><sub>方法：规划 · 人物 · 记忆 · 风格</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 中文 · 7 个 skill · AGPL-3.0</sub><br><sub>💡 自带 API Key；默认收集匿名使用统计（首次启动告知，可关闭）；AGPL-3.0</sub>
+
+- **[MetaNovel-Engine](https://github.com/hahagood/MetaNovel-Engine)** · ★ 103<br>命令行七步写长篇：一句话主题→AI 扩展并推荐类型→角色/场景/道具设定→故事大纲→分章细纲→章节概要→正文，每步可编辑重生成，提示词按项目隔离<br><sub>方法：规划 · 设定 · 人物</sub><br><sub>更新于 2025-11-06 💤 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 需要 OpenRouter API</sub>
 
 - **[Storydex](https://github.com/TensorHub-ORG/Storydex)** · ★ 102<br>本地长篇写作台：Agent 先查全文、章节摘要、相关旧文和 WIKI 再续写或修改，写入以 Diff 审阅、Git 记版本可回滚，内置连续性、悬疑、润色技能<br><sub>方法：记忆 · 修订</sub><br><sub>更新于 2026-10-14 · 🧩 应用 · 中文 · 6 个 skill</sub><br><sub>💡 许可证为 Apache-2.0 + Commons Clause（限制商用）；仓库自带 MinGit 的 exe/dll 和 Android bootstrap zip 等第三方二进制</sub>
 
@@ -460,17 +508,17 @@
 
 - **[obsidian-writing-buddy](https://github.com/xtenlab/obsidian-writing-buddy)** · ★ 92<br>Obsidian 长篇写作插件：Recanta 小说记忆追踪事件、状态、关系与角色所知，按写到的位置供上下文；续写、改写、一致性检查先出 diff 再采纳<br><sub>方法：记忆 · 修订 · 共创</sub><br><sub>更新于 2026-09-23 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 原 onezeroooo/obsidian-writing-buddy，已转移到 xtenlab（API 重定向确认）；作者主写、AI 出候选为主；自带模型 Key</sub>
 
-- **[novel_agent](https://github.com/blackzhanzhan/novel_agent)** · ★ 90<br>Git 原生的长篇网文工作台：导入小说蒸馏世界观、协作出大纲、生成续写草稿后审核归档，章节和剧情分支用 Git 管理，可回滚<br><sub>方法：规划 · 记忆 · 修订 · 共创</sub><br><sub>更新于 2026-05-27 · 🧩 应用 · 中文</sub><br><sub>💡 依赖 Dify 编排工作流；提供 Docker 和 Release 包部署</sub>
+- **[blackzhanzhan/novel_agent](https://github.com/blackzhanzhan/novel_agent)** · ★ 90<br>Git 原生的长篇网文工作台：导入小说蒸馏世界观、协作出大纲、生成续写草稿后审核归档，章节和剧情分支用 Git 管理，可回滚<br><sub>方法：规划 · 记忆 · 修订 · 共创</sub><br><sub>更新于 2026-05-27 · 🧩 应用 · 中文</sub><br><sub>💡 依赖 Dify 编排工作流；提供 Docker 和 Release 包部署</sub>
 
 - **[InkAI-](https://github.com/yan2959088709/InkAI-)** · ★ 89<br>规划器先出全书蓝图和结构化章节卡（节拍、必现元素、伏笔编号、章末钩子），写作器按卡生成后硬校验、失败带反馈重写，跨章状态快照注入下一章<br><sub>方法：规划 · 理论 · 记忆 · 修订</sub><br><sub>更新于 2026-08-01 · ⚙️ 框架 · 中文</sub><br><sub>💡 题材规则包（文风、禁用语）贯穿规划与写作；默认阿里云百炼，可切 DeepSeek/OpenAI；有 Flask Web 界面；仓库无许可证</sub>
 
-- **[ai-novel-writer](https://github.com/eliumusk/ai-novel-writer)** · ★ 88<br>PyQt 写作应用：Gemini 按全书大纲和章纲生成正文，SQLite 存角色、关系和章节摘要，自动摘要并追踪情节线与伏笔，支持文风模仿<br><sub>方法：规划 · 人物 · 记忆 · 风格</sub><br><sub>更新于 2025-01-09 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 需 Gemini API</sub>
-
 - **[AI_NovelCraft-](https://github.com/15673312611/AI_NovelCraft-)** · ★ 88<br>先生成含主线/支线/伏笔/角色弧线的超级大纲并拆卷、写章节细纲，按项目/卷/章管理上下文逐章流式生成，最后用消痕提示去 AI 味<br><sub>方法：规划 · 记忆 · 去 AI 味</sub><br><sub>更新于 2026-04-20 · 🧩 应用 · 中文</sub><br><sub>💡 Java + React 平台，作者另有在线版；License 未声明标准协议；同作者的 AnimaHub 是视频平台，未收</sub>
+
+- **[eliumusk/ai-novel-writer](https://github.com/eliumusk/ai-novel-writer)** · ★ 88<br>PyQt 写作应用：Gemini 按全书大纲和章纲生成正文，SQLite 存角色、关系和章节摘要，自动摘要并追踪情节线与伏笔，支持文风模仿<br><sub>方法：规划 · 人物 · 记忆 · 风格</sub><br><sub>更新于 2025-01-09 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 需 Gemini API</sub>
 
 - **[Narraverse-Engine](https://github.com/wssyh339/Narraverse-Engine)** · ★ 86<br>长篇大纲与世界观推演工作室：LangGraph swarm 多 agent 回合制议事，维护正典库和关系图谱，推演世界规则、大纲、伏笔和正文，人工确认后入库<br><sub>方法：规划 · 设定 · 记忆 · 多智能体</sub><br><sub>更新于 2026-07-22 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 0.2.0 Alpha；Docker Compose 一键启动，数据存本地 SQLite</sub>
 
-- **[NovelWriter](https://github.com/EdwardAThomson/NovelWriter)** · ★ 83<br>多类型小说写作 GUI：按类型套路生成宇宙设定、势力和人物，再做结构大纲、场景规划和逐章正文，多 agent 编排，多级审阅<br><sub>方法：规划 · 设定 · 多智能体 · 修订</sub><br><sub>更新于 2026-10-10 · 🧩 应用 · 英文</sub><br><sub>💡 Tkinter 界面；可走 API 或本地 codex/gemini/claude CLI；作者另有 EdwardAThomson/StoryDaemon</sub>
+- **[EdwardAThomson/NovelWriter](https://github.com/EdwardAThomson/NovelWriter)** · ★ 83<br>多类型小说写作 GUI：按类型套路生成宇宙设定、势力和人物，再做结构大纲、场景规划和逐章正文，多 agent 编排，多级审阅<br><sub>方法：规划 · 设定 · 多智能体 · 修订</sub><br><sub>更新于 2026-10-10 · 🧩 应用 · 英文</sub><br><sub>💡 Tkinter 界面；可走 API 或本地 codex/gemini/claude CLI；作者另有 EdwardAThomson/StoryDaemon</sub>
 
 - **[StoryMoss](https://github.com/91zgaoge/StoryMoss)** · ★ 77<br>主创、管理、编辑审计三代理黑板协作，每章过加权质量门才交付；续写前检索前文原文，按书纲→卷纲→章纲规划，正文写完自动回流角色/设定/伏笔入库<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 中文 · 37 个 skill</sub><br><sub>💡 Tauri+Rust 桌面应用，支持 OpenAI/Anthropic/Ollama；另有 StyleDNA 文风、拆书、按公版人类语料校准的 AI 腔检测；GitHub 未识别许可证（README 徽章写 ISC），仓库根目录混有构建日志等杂项</sub>
 
@@ -478,7 +526,7 @@
 
 - **[ProseForge](https://github.com/remacheybn408-boop/ProseForge)** · ★ 73<br>六席位 agent 流水线：分析→四路并行场景草稿择优→连续性/对抗/文风三审合议→定点改写；章节摘要金字塔+承诺台账+叙事 RAG 防失忆<br><sub>方法：记忆 · 多智能体 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-08 · 🧩 应用 · 中文 · 87 个 skill · AGPL-3.0</sub><br><sub>💡 Docker 或原生安装包本地部署，模型走 OpenAI 兼容接口；packs/ 附 80 余个题材与技法 SKILL.md</sub>
 
-- **[novel-engine](https://github.com/john-paul-ruf/novel-engine)** · ★ 70<br>七个 AI 编辑角色（故事教练、代笔、初读、发展编辑、校对等）走 15 步流程从 pitch 到出版稿，访谈作者建 Voice Profile 保持文风<br><sub>方法：规划 · 多智能体 · 修订 · 风格</sub><br><sub>更新于 2026-07-29 · 🧩 应用 · 英文 · AGPL-3.0</sub><br><sub>💡 Electron 桌面应用，AGPL；使用 Claude、Codex 或 Ollama；作者称已用其出版 10 本 Amazon 书</sub>
+- **[john-paul-ruf/novel-engine](https://github.com/john-paul-ruf/novel-engine)** · ★ 70<br>七个 AI 编辑角色（故事教练、代笔、初读、发展编辑、校对等）走 15 步流程从 pitch 到出版稿，访谈作者建 Voice Profile 保持文风<br><sub>方法：规划 · 多智能体 · 修订 · 风格</sub><br><sub>更新于 2026-07-29 · 🧩 应用 · 英文 · AGPL-3.0</sub><br><sub>💡 Electron 桌面应用，AGPL；使用 Claude、Codex 或 Ollama；作者称已用其出版 10 本 Amazon 书</sub>
 
 - **[zenstory](https://github.com/zenstory-ai/zenstory)** · ★ 70<br>对话式小说工作台：路由按请求选五条流程，大纲规划师、爽点设计师、内容创作者、质量审稿人接力，超 500 字自动送审；每轮按预算注入 AI 记忆和相关文件<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 MIT 可自部署，另有官方在线版 app.zenstory.ai；外部 agent 通过 npx zenstory CLI 与 skill 接入</sub>
 
@@ -488,7 +536,7 @@
 
 - **[mythpen](https://github.com/niyongsheng/mythpen)** · ★ 60<br>桌面写作应用：写作模式下 AI 按六步工作流读设定和前章，写含认知、情感、悬念等五维度的章纲，再成文、润色；另有协作共写模式<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-07-29 · 🧩 应用 · 中文 · GPL-3.0</sub><br><sub>💡 Tauri 桌面，数据存本地 SQLite；作者另有 Claude Code 工作流版 niyongsheng/clark-typer</sub>
 
-- **[moshu](https://github.com/huihuijiangqiang/moshu)** · ★ 59<br>长篇网文工作台：卷纲、章纲和场景卡（POV、目标、阻力、转折、钩子）配 pgvector 设定库与时间线检索生成候选正文，再过一致性守卫和自然化审查<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-09-27 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 自部署需 PostgreSQL/pgvector、Redis、Celery；含积分计费和漫剧分镜管理模块；有在线体验站</sub>
+- **[huihuijiangqiang/moshu](https://github.com/huihuijiangqiang/moshu)** · ★ 59<br>长篇网文工作台：卷纲、章纲和场景卡（POV、目标、阻力、转折、钩子）配 pgvector 设定库与时间线检索生成候选正文，再过一致性守卫和自然化审查<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-09-27 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 自部署需 PostgreSQL/pgvector、Redis、Celery；含积分计费和漫剧分镜管理模块；有在线体验站</sub>
 
 - **[fictionforge](https://github.com/wanqili857-byte/fictionforge)** · ★ 56<br>每个角色是带记忆和信念的 agent，先演出事件；导演把多视角事件线合成章节 spec 再写，逐章过禁词/AI 腔门禁，不合格就返工<br><sub>方法：记忆 · 多智能体 · 模拟 · 修订</sub><br><sub>更新于 2026-10-01 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 README 首屏是从门禁里抽出的 CanonBench 长篇一致性基准（零 LLM 判定器，三档 harness 消融）；换小说只换内容包</sub>
 
@@ -502,13 +550,13 @@
 
 - **[novel-distiller](https://github.com/FutureFuzzy/novel-distiller)** · ★ 49<br>创世蓝图→为角色蒸馏思维 SKILL.md→蒸馏参考作者文风→多智能体推演场景→撰写→8 维锚定自检，YAML 数值状态层追踪暗线，叠加番茄/起点平台规则<br><sub>方法：人物 · 记忆 · 模拟 · 风格</sub><br><sub>更新于 2026-05-11 · ⚙️ 框架 · 中文 · 2 个 skill · MIT</sub><br><sub>💡 Python CLI 负责组装 prompt，LLM 推理交给 Claude Code；剧情推演借用 MiroFish 多智能体模拟思路；demo 含孙悟空、刘慈欣蒸馏</sub>
 
-- **[novel-master](https://github.com/bloodycrownD/novel-master)** · ★ 48<br>长篇写作 agent 工作台：世界观/人设/卷纲/章节放入虚拟文件树，目录级规则控制注入上下文的档位，只读分析/写作/资料整理多智能体分工，可派子代理<br><sub>方法：记忆 · 多智能体</sub><br><sub>更新于 2026-10-12 · 🧩 应用 · 中文 · 4 个 skill</sub><br><sub>💡 PolyForm Noncommercial 许可，禁止商用；桌面/安卓/CLI 三端；具体叙事方法需用户自建模板或导入 SKILL.md</sub>
+- **[bloodycrownD/novel-master](https://github.com/bloodycrownD/novel-master)** · ★ 48<br>长篇写作 agent 工作台：世界观/人设/卷纲/章节放入虚拟文件树，目录级规则控制注入上下文的档位，只读分析/写作/资料整理多智能体分工，可派子代理<br><sub>方法：记忆 · 多智能体</sub><br><sub>更新于 2026-10-12 · 🧩 应用 · 中文 · 4 个 skill</sub><br><sub>💡 PolyForm Noncommercial 许可，禁止商用；桌面/安卓/CLI 三端；具体叙事方法需用户自建模板或导入 SKILL.md</sub>
 
 - **[QianBi-Novel](https://github.com/GLFzr/QianBi-Novel)** · ★ 48<br>立项→设定→总纲→世界书与正则→细纲→正文六阶段共写；世界书按锚点注入，must 契约确定性复检，终审引证验真+三票投票，新设定回写<br><sub>方法：规划 · 设定 · 记忆 · 修订</sub><br><sub>更新于 2026-09-27 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 Windows 桌面应用（PySide6），BYOK 全本地；内置 10 套题材预设，含同人设定集导入路径</sub>
 
 - **[flutter-novel-main](https://github.com/xy9144/flutter-novel-main)** · ★ 47<br>按大纲→分卷规划→范围规划→章节规划→正文五级提示词逐章生成，用进度追踪文件支撑自动续写，可随机生成书名和题材<br><sub>方法：规划 · 记忆</sub><br><sub>更新于 2026-04-22 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 Flutter 多端；支持 OpenRouter、Ollama 等自定义接口</sub>
 
-- **[novel-writer](https://github.com/curvedinf/novel-writer)** · ★ 46<br>三段脚本写长篇：先依次生成梗概、人物、场景设定、情节和标题（每步可重做、可手改 JSON），再逐章起草，最后定稿<br><sub>方法：规划 · 设定 · 人物</sub><br><sub>更新于 2024-04-11 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 README 极简；API Key 写在 writer.py；作者建议用 Gemini 做设定、Claude/GPT-4 写正文</sub>
+- **[curvedinf/novel-writer](https://github.com/curvedinf/novel-writer)** · ★ 46<br>三段脚本写长篇：先依次生成梗概、人物、场景设定、情节和标题（每步可重做、可手改 JSON），再逐章起草，最后定稿<br><sub>方法：规划 · 设定 · 人物</sub><br><sub>更新于 2024-04-11 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 README 极简；API Key 写在 writer.py；作者建议用 Gemini 做设定、Claude/GPT-4 写正文</sub>
 
 - **[novel-agent-studio](https://github.com/skuramatata/novel-agent-studio)** · ★ 45<br>设定作者声音后对话生成总纲、人物关系、双时间线与章纲，按场景起草，审稿回查原文核对时间/知情并局部修订，采纳正文才提取带出处的故事记忆<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-09-18 · 🧩 应用 · 中文</sub><br><sub>💡 Electron 桌面应用，仅验证 macOS Apple Silicon；接 GLM / MiniMax；附 desktop-app/runtime/skills/novel-workflow/SKILL.md</sub>
 
@@ -530,7 +578,7 @@
 
 - **[novelIDE](https://github.com/qq1375828505/novelIDE)** · ★ 37<br>安卓离线网文 IDE：主 Agent 调 40 多个工具读写角色、设定、伏笔资料库，委派大纲、角色、爽点检查、水文检测、去 AI 味等子 Agent 多轮推敲<br><sub>方法：记忆 · 多智能体 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-06-07 · 🧩 应用 · 中文</sub><br><sub>💡 Flutter 源码在仓库里；仓库还夹带日志压缩包和改 hosts 的 .bat 工具脚本</sub>
 
-- **[ai-novel-writer](https://github.com/KKKenChow/ai-novel-writer)** · ★ 35<br>全链路写长篇：世界观→人物→大纲→场景卡逐段写；按六阶段放宽大纲可见范围、过滤剧透防抢跑，章后更新伏笔台账和滚动摘要，五维评审后改写<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-09-09 · 🧩 应用 · 中文 · 4 个 skill · MIT</sub><br><sub>💡 默认火山方舟豆包 API，也可接 OpenAI 兼容接口；能把写作技巧文章蒸馏成 skill 包按步骤注入；数据存本地 JSON</sub>
+- **[KKKenChow/ai-novel-writer](https://github.com/KKKenChow/ai-novel-writer)** · ★ 35<br>全链路写长篇：世界观→人物→大纲→场景卡逐段写；按六阶段放宽大纲可见范围、过滤剧透防抢跑，章后更新伏笔台账和滚动摘要，五维评审后改写<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-09-09 · 🧩 应用 · 中文 · 4 个 skill · MIT</sub><br><sub>💡 默认火山方舟豆包 API，也可接 OpenAI 兼容接口；能把写作技巧文章蒸馏成 skill 包按步骤注入；数据存本地 JSON</sub>
 
 - **[lore-weave](https://github.com/letuhao/lore-weave)** · ★ 35<br>长篇共写平台：每章自动抽取人物、地点、事件和关系进知识图谱，聊天、共写与翻译都以此为据，批评 agent 对照正史检查建议<br><sub>方法：设定 · 记忆 · 修订</sub><br><sub>更新于 2026-10-05 · 🧩 应用 · 英文 · 31 个 skill · AGPL-3.0</sub><br><sub>💡 多服务自托管、体量很大；写作合成引擎仍在开发（Phase 3）；另含术语一致的多语翻译和 MMO RPG 扩展；AGPL-3.0</sub>
 
@@ -543,6 +591,8 @@
 - **[novel_writer_agent](https://github.com/nonever2109/novel_writer_agent)** · ★ 32<br>本地长篇写作助手：选题→大纲和章节计划→每章经规划、生成、修订、连续性检查、体验评估、风险检查，写完更新角色、时间线、伏笔和主支线记忆<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-05-13 · 🧩 应用 · 中文</sub><br><sub>💡 Windows 本地运行；每章约跑 20 个流程，Token 消耗大</sub>
 
 - **[bragi](https://github.com/wailers9/bragi)** · ★ 31<br>架空世界故事引擎：用数字路径管理时间树与空间树，当前节点保留全文、邻近节点只留摘要按需扩写，结合角色状态与事件记录续写剧情<br><sub>方法：设定 · 人物 · 记忆 · 共创</sub><br><sub>更新于 2026-05-17 · ⚙️ 框架 · 中文</sub><br><sub>💡 CLI + 本地 Web UI；支持 OpenAI / DeepSeek，附离线 Demo Agent</sub>
+
+- **[bookbuilder_ai](https://github.com/Nachoeigu/bookbuilder_ai)** · ★ 30<br>LangGraph 多 agent 写书：先追问需求，按激励事件、中点、高潮等结构出大纲，批评 agent 循环审稿，再出分章摘要并逐章写、逐章审<br><sub>方法：规划 · 理论 · 多智能体 · 修订</sub><br><sub>更新于 2025-01-31 💤 · ⚙️ 框架 · 英文</sub>
 
 - **[Project-Wannabe](https://github.com/kawaii-justice/Project-Wannabe)** · ★ 30<br>配合小说微调模型 wanabi：先生成标题/梗概/设定/情节转入详情栏，再按「下一段展开指示」反复出候选卡片，人挑选插入正文<br><sub>方法：规划 · 共创</sub><br><sub>更新于 2026-06-01 · 🧩 应用 · 日文</sub><br><sub>💡 需本地 KoboldCpp 加载 wanabi 系列 GGUF 小说模型（含 Gemma 4 31B 版）；Windows 桌面应用</sub>
 
@@ -562,31 +612,31 @@
 
 - **[fiction-forge](https://github.com/geobond13/fiction-forge)** · ★ 26<br>Claude Code 通过 MCP 设定库按章节查人物已知信息；冷读协议带状态账本找连续性错误；按目标语料量化文风画像，扫描器防 AI 腔回潮<br><sub>方法：记忆 · 修订 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-07-26 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 总结自作者写完约 29 万字小说的经验；另含 EPUB/PDF 发布和 DALL-E 插图脚本</sub>
 
-- **[MortalAINovel-AIWritingSystem-ai-](https://github.com/hezhengtao/MortalAINovel-AIWritingSystem-ai-)** · ★ 26<br>本地桌面写作软件：按书/卷/章管理，AI 续写、润色和风格模仿；角色档案可一键生成关系图谱，拆书知识库分析范文「文笔DNA」供仿写<br><sub>方法：人物 · 风格</sub><br><sub>更新于 2025-12-29 💤 · 🧩 应用 · 中文</sub><br><sub>💡 Releases 提供 Windows exe，源码可用 Streamlit 直接运行</sub>
+- **[Jackn0/novel_agent](https://github.com/Jackn0/novel_agent)** · ★ 26<br>Next.js 写作助手：小说预设→大纲→章纲→小节列表→正文五阶段，每阶段 AI 起稿用户审定，追踪人物状态和伏笔，五档记忆等级，可导入旧作续写<br><sub>方法：规划 · 记忆 · 共创</sub><br><sub>更新于 2026-03-23 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 附多角色有声书制作（Edge TTS / 百度 TTS）；支持 Claude 和 OpenAI 兼容接口</sub>
 
-- **[novel_agent](https://github.com/Jackn0/novel_agent)** · ★ 26<br>Next.js 写作助手：小说预设→大纲→章纲→小节列表→正文五阶段，每阶段 AI 起稿用户审定，追踪人物状态和伏笔，五档记忆等级，可导入旧作续写<br><sub>方法：规划 · 记忆 · 共创</sub><br><sub>更新于 2026-03-23 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 附多角色有声书制作（Edge TTS / 百度 TTS）；支持 Claude 和 OpenAI 兼容接口</sub>
+- **[MortalAINovel-AIWritingSystem-ai-](https://github.com/hezhengtao/MortalAINovel-AIWritingSystem-ai-)** · ★ 26<br>本地桌面写作软件：按书/卷/章管理，AI 续写、润色和风格模仿；角色档案可一键生成关系图谱，拆书知识库分析范文「文笔DNA」供仿写<br><sub>方法：人物 · 风格</sub><br><sub>更新于 2025-12-29 💤 · 🧩 应用 · 中文</sub><br><sub>💡 Releases 提供 Windows exe，源码可用 Streamlit 直接运行</sub>
 
 - **[OpenNovelWriter](https://github.com/vibe-creator-art/OpenNovelWriter)** · ★ 23<br>类 Novelcrafter 的写作应用：章节、大纲、术语、摘要投影成文件交给 Codex 会话，靠 story-state 与上下文检索 skill 管上下文<br><sub>方法：规划 · 记忆</sub><br><sub>更新于 2026-10-06 · 🧩 应用 · 中文 · 12 个 skill · AGPL-3.0</sub><br><sub>💡 依赖本机 Codex CLI；作者提示 Codex 有本地写权限、可能改删稿件，只建议自托管自用；AGPL-3.0</sub>
 
 - **[write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay)** · ★ 22<br>中文长篇小说/剧本状态 harness：人物、能力、资源与作者政策存为正典，每章先组装章纲与写前状态，候选正文附状态变更，过检查才落盘<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-09-12 · ⚙️ 框架 · 中文 · 2 个 skill · GPL-3.0</sub>
 
-- **[Muses](https://github.com/zestor/Muses)** · ★ 21<br>GPT-3 长篇续写脚本：每场景依据上一场景、人物表、滚动摘要和随机情节队列生成，三选一取最长后补感官细节，再更新人物和摘要<br><sub>方法：人物 · 记忆 · 修订</sub><br><sub>更新于 2023-02-23 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 基于 GPT-3 / NLP Cloud 旧接口；可设定不会死亡的主角</sub>
+- **[ldblckrs-258/novel-studio](https://github.com/ldblckrs-258/novel-studio)** · ★ 21<br>越南语写作工作台：章节→全书→人物三阶段分析，六步自动写作（上下文→方向→大纲→写手→审稿→重写），另含中译越翻译、TTS 与爬虫导入<br><sub>方法：规划 · 修订</sub><br><sub>更新于 2026-09-29 · 🧩 应用 · 多语言 · MIT</sub><br><sub>💡 界面与提示词为越南语（lang 无对应项，暂填 multi）；数据存浏览器 IndexedDB；工具重心偏翻译</sub>
 
-- **[novel-studio](https://github.com/ldblckrs-258/novel-studio)** · ★ 21<br>越南语写作工作台：章节→全书→人物三阶段分析，六步自动写作（上下文→方向→大纲→写手→审稿→重写），另含中译越翻译、TTS 与爬虫导入<br><sub>方法：规划 · 修订</sub><br><sub>更新于 2026-09-29 · 🧩 应用 · 多语言 · MIT</sub><br><sub>💡 界面与提示词为越南语（lang 无对应项，暂填 multi）；数据存浏览器 IndexedDB；工具重心偏翻译</sub>
+- **[Muses](https://github.com/zestor/Muses)** · ★ 21<br>GPT-3 长篇续写脚本：每场景依据上一场景、人物表、滚动摘要和随机情节队列生成，三选一取最长后补感官细节，再更新人物和摘要<br><sub>方法：人物 · 记忆 · 修订</sub><br><sub>更新于 2023-02-23 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 基于 GPT-3 / NLP Cloud 旧接口；可设定不会死亡的主角</sub>
 
 - **[NovelWritingAgent](https://github.com/xindaaW/NovelWritingAgent)** · ★ 21<br>多 agent 写小说：先生成并收敛设定 canon，章节写→审→改，评审团并行打分再由总评汇总，修订经 canon_patch 反写设定，长期记忆分级检索<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-04-02 💤 · ⚙️ 框架 · 中文 · 8 个 skill · MIT</sub><br><sub>💡 各 agent 提示词以 SKILL.md 形式放在包内；有不调模型的骨架调试模式</sub>
 
 - **[WorldScript-Studio](https://github.com/qnbs/WorldScript-Studio)** · ★ 21<br>本地优先的小说/剧本写作工作室：大纲生成器可把结构化提纲写进稿件，配人物与世界档案、故事圣经、节拍表，AI 可续写、生成对白与梗概<br><sub>方法：规划 · 设定 · 人物</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 多语言 · MIT</sub><br><sub>💡 以人写稿为主，AI 为可选能力（云端 BYOK、浏览器本地模型或 Ollama）；PWA + Tauri 桌面版</sub>
 
-- **[ai-novel-generator](https://github.com/inyhow/ai-novel-generator)** · ★ 19<br>网文 Web 应用 + SKILL.md：5 问确认题材、主角缺陷、冲突、节奏和篇幅，出总纲与角色弧线，逐章写并补悬念钩子，每 5 章查连贯，最后去 AI 味<br><sub>方法：规划 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-04-17 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 根目录 SKILL.md 可单独当 skill 用；应用附番茄小说 CDP 自动发布和敏感词检测</sub>
-
 - **[arcvellum](https://github.com/o-1717986918/arcvellum)** · ★ 19<br>本地长篇创作工作室：项目 Agent 接长期目标交后台推进；每个场景作为事务，主创定意图并向角色续演、描写器取候选，经审查修订后提交并写回人物与 Canon<br><sub>方法：规划 · 记忆 · 模拟 · 修订</sub><br><sub>更新于 2026-10-14 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 Windows 安装包 + 完整源码，Beta；也支持剧本与伪纪录体；作者自述多题材长篇稳定性仍待验证；需自配模型</sub>
 
 - **[DAWO](https://github.com/dawo4/DAWO)** · ★ 19<br>长篇网文桌面软件：一句话建书→设定集→分卷大纲→逐章生文，按卷和出场裁剪注入大纲与角色卡，悬置伏笔作硬约束注入，配六维去 AI 味打分<br><sub>方法：规划 · 记忆 · 多智能体 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 中文</sub><br><sub>💡 仓库未附开源许可证（README 称暂未开源授权）；含 15 个提案制智能体、拆书与朱雀对抗手册；Windows 安装包未签名</sub>
 
-- **[StoryForge](https://github.com/XZZKANY/StoryForge)** · ★ 19<br>长篇小说桌面 IDE：Agent 用只读工具跨文件取证，做多视角审稿并产出修订补丁，作者看 diff 决定写回；配 canon 防漂移、一致性扫描和逐章生成<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 作者自述仍在自用阶段，30 章长程生成人工通读未通过；本地需 Docker 起 Postgres/Redis/MinIO</sub>
+- **[inyhow/ai-novel-generator](https://github.com/inyhow/ai-novel-generator)** · ★ 19<br>网文 Web 应用 + SKILL.md：5 问确认题材、主角缺陷、冲突、节奏和篇幅，出总纲与角色弧线，逐章写并补悬念钩子，每 5 章查连贯，最后去 AI 味<br><sub>方法：规划 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-04-17 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 根目录 SKILL.md 可单独当 skill 用；应用附番茄小说 CDP 自动发布和敏感词检测</sub>
 
-- **[302_novel_writing](https://github.com/302ai/302_novel_writing)** · ★ 18<br>网页小说写作工具：填书名、作者和简介建书，AI 先生成章节剧情规划再写章节正文，可选现代/古风/奇幻等文风，也能全自动写完整本<br><sub>方法：规划 · 风格</sub><br><sub>更新于 2025-08-26 💤 · 🧩 应用 · 多语言 · Apache-2.0</sub><br><sub>💡 302.AI 在线产品的开源版，需 302.AI API；界面中英日三语</sub>
+- **[XZZKANY/StoryForge](https://github.com/XZZKANY/StoryForge)** · ★ 19<br>长篇小说桌面 IDE：Agent 用只读工具跨文件取证，做多视角审稿并产出修订补丁，作者看 diff 决定写回；配 canon 防漂移、一致性扫描和逐章生成<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 作者自述仍在自用阶段，30 章长程生成人工通读未通过；本地需 Docker 起 Postgres/Redis/MinIO</sub>
+
+- **[302_novel_writing](https://github.com/302ai/302_novel_writing)** · ★ 18<br>网页小说写作工具：填书名、作者和简介建书，AI 先生成章节剧情规划再写章节正文，可选现代/古风/奇幻等文风，也能全自动写完整本<br><sub>方法：规划</sub><br><sub>更新于 2025-08-26 💤 · 🧩 应用 · 多语言 · Apache-2.0</sub><br><sub>💡 302.AI 在线产品的开源版，需 302.AI API；界面中英日三语</sub>
 
 - **[Closure](https://github.com/AoharuCat/Closure)** · ★ 18<br>小说 IDE：先在结构化叙事状态上操控信息差、情绪弧与角色欲望再落笔，每章抽取世界事件分「事实/读者所知」两本账，改设定沿依赖图追踪下游影响<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-11 · 🧩 应用 · 中文 · AGPL-3.0</sub><br><sub>💡 基于 LumenStorm/OrisonSpace 的派生版，叠加叙事状态机、混合检索、情绪闭环、风格卡与内嵌 llmlint 去 AI 味；接 OpenAI 兼容端点或经 Antigravity CLI 调 Gemini；AGPL-3.0</sub>
 
@@ -600,7 +650,7 @@
 
 - **[knowrite](https://github.com/knoai/knowrite)** · ★ 17<br>小说写作后端：多 Agent 接力完成大纲、写章、审稿、去 AI 味和读者反馈，配时序事实库、作者指纹、RAG 记忆与提示词自动进化<br><sub>方法：记忆 · 多智能体 · 修订 · 风格</sub><br><sub>更新于 2026-05-09 · ⚙️ 框架 · 多语言 · AGPL-3.0</sub><br><sub>💡 Node.js 后端服务，图形界面需另装 knoai/knowrite-ui；AGPL-3.0；自配 OpenAI 兼容 API</sub>
 
-- **[novel-generator](https://github.com/mushroomfk/novel-generator)** · ★ 16<br>本地长篇工作台：导入资料建 FTS5+embedding 检索，生成整书架构与章节蓝图，逐章经正文生成→小说专用去 AI 改稿→一致性复查→核验，作者确认后写回<br><sub>方法：记忆 · 修订 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-06-14 · 🧩 应用 · 中文</sub><br><sub>💡 应用名「稿匣」，Tauri + Vue + FastAPI；可接入 Obsidian Vault、支持旧稿接管</sub>
+- **[mushroomfk/novel-generator](https://github.com/mushroomfk/novel-generator)** · ★ 16<br>本地长篇工作台：导入资料建 FTS5+embedding 检索，生成整书架构与章节蓝图，逐章经正文生成→小说专用去 AI 改稿→一致性复查→核验，作者确认后写回<br><sub>方法：记忆 · 修订 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-06-14 · 🧩 应用 · 中文</sub><br><sub>💡 应用名「稿匣」，Tauri + Vue + FastAPI；可接入 Obsidian Vault、支持旧稿接管</sub>
 
 - **[pulpgen](https://github.com/frobwick/pulpgen)** · ★ 16<br>CLI 写书 agent：Gemini 先生成标题、梗概、人物和逐章摘要，再按疏密策略分批写章，最后交互式 AI 编辑，XML 补丁记录状态可续跑<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2025-04-10 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 需 Gemini API、Python 3.13+；可导出 HTML/EPUB</sub>
 
@@ -616,29 +666,27 @@
 
 - **[novel-workspace-mcp](https://github.com/LiZh132707/novel-workspace-mcp)** · ★ 14<br>长篇小说工作区：世界观、人物、章纲、时间线、事实和伏笔存成可审计的项目状态，经本地网页、MCP 工具或 Codex Skill 调模型起草和审校<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-10-01 · ⚙️ 框架 · 多语言 · MIT</sub><br><sub>💡 默认接 LM Studio 本地模型，也可接 OpenAI 兼容 API；界面支持英/中/日三语</sub>
 
-- **[MyAINovel](https://github.com/sEwhappend/MyAINovel)** · ★ 13<br>桌面长篇流水线：标签化生成初始方案，全书大纲确认后拆章→小节规划→场景导演→对白心理→正文→审稿→改写→定稿，资料库检索并回写<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-07-02 · 🧩 应用 · 中文 · AGPL-3.0</sub><br><sub>💡 PySide6 桌面程序，项目以 .json/.md 文件夹保存；AGPL-3.0</sub>
+- **[Lin-A1/novel-agent](https://github.com/Lin-A1/novel-agent)** · ★ 13<br>MetaGPT 多 agent 写小说：情节架构师出整体架构→评审打分→修订，章节规划拆章定目标，审阅者读前章给下章指导，写手逐章写<br><sub>方法：规划 · 多智能体 · 修订</sub><br><sub>更新于 2025-01-13 💤 · ⚙️ 框架 · 中文</sub><br><sub>💡 基于 MetaGPT；附生成样例 novel.txt；仓库无许可证</sub>
 
-- **[novel-agent](https://github.com/Lin-A1/novel-agent)** · ★ 13<br>MetaGPT 多 agent 写小说：情节架构师出整体架构→评审打分→修订，章节规划拆章定目标，审阅者读前章给下章指导，写手逐章写<br><sub>方法：规划 · 多智能体 · 修订</sub><br><sub>更新于 2025-01-13 💤 · ⚙️ 框架 · 中文</sub><br><sub>💡 基于 MetaGPT；附生成样例 novel.txt；仓库无许可证</sub>
+- **[LunaRime/novelforge](https://github.com/LunaRime/novelforge)** · ★ 13<br>小说 IDE：AI 出大纲和细纲后逐章流式写，5 角色编辑部并行审阅加权评分，多稿择优，定稿后提取剧情、角色声音和伏笔并做三级摘要记忆<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 多语言 · GPL-3.0</sub><br><sub>💡 Electron 桌面应用，本地 RAG（SQLite + LanceDB）；界面中/英/俄三语</sub>
+
+- **[MyAINovel](https://github.com/sEwhappend/MyAINovel)** · ★ 13<br>桌面长篇流水线：标签化生成初始方案，全书大纲确认后拆章→小节规划→场景导演→对白心理→正文→审稿→改写→定稿，资料库检索并回写<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-07-02 · 🧩 应用 · 中文 · AGPL-3.0</sub><br><sub>💡 PySide6 桌面程序，项目以 .json/.md 文件夹保存；AGPL-3.0</sub>
 
 - **[novel-app](https://github.com/gelijunge22-code/novel-app)** · ★ 13<br>自托管写作台：出方案→挑刺→取料查证→写正文→复审改稿各为独立模型调用，可多角色分工；世界引擎存主体状态检测设定冲突，568 条规则查 AI 味<br><sub>方法：记忆 · 多智能体 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-09-22 · 🧩 应用 · 中文 · AGPL-3.0</sub><br><sub>💡 FastAPI 后端 + 网页 + 安卓壳，仓库附带 apk；世界引擎、讨论/计划/执行三模式等思路与 notnotype/neuro-book 相近，但为独立 Python 实现</sub>
 
 - **[novel-multi-agents](https://github.com/QSPBU-LONG/novel-multi-agents)** · ★ 13<br>OpenAI Agents SDK 五 agent：大纲专家→角色开发专家深化人物弧线→章节撰写→编辑评估并给修改建议，由协调者串联<br><sub>方法：规划 · 人物 · 多智能体 · 修订</sub><br><sub>更新于 2025-03-13 💤 · ⚙️ 框架 · 中文</sub><br><sub>💡 默认本地 Ollama qwen2.5:14b，也可接在线模型；仓库未声明许可证</sub>
 
-- **[novelforge](https://github.com/LunaRime/novelforge)** · ★ 13<br>小说 IDE：AI 出大纲和细纲后逐章流式写，5 角色编辑部并行审阅加权评分，多稿择优，定稿后提取剧情、角色声音和伏笔并做三级摘要记忆<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 多语言 · GPL-3.0</sub><br><sub>💡 Electron 桌面应用，本地 RAG（SQLite + LanceDB）；界面中/英/俄三语</sub>
-
-- **[autoNovel](https://github.com/youyouxia263/autoNovel)** · ★ 12<br>悬疑/言情长篇生成器：生成前提、世界观（地点、时间线）和人物卡，再出逐章大纲写章节、章后摘要，并做一致性、节奏和情节逻辑检查与修复<br><sub>方法：规划 · 设定 · 人物 · 修订</sub><br><sub>更新于 2026-01-12 💤 · 🧩 应用 · 多语言</sub><br><sub>💡 界面中文、默认提示词英文；支持 Gemini、通义千问和 OpenAI 兼容接口</sub>
-
 - **[Hi-Story](https://github.com/mofeifeifei/Hi-Story)** · ★ 12<br>本地长篇工作台：设定与题材约束→全书大纲和分卷→章节细纲→正文，生成后查衔接、因果、人设、重复并修订，定稿后抽章节记忆供后文用<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-08-23 · 🧩 应用 · 中文</sub><br><sub>💡 Python + React + SQLite，Windows 下用 bat 启动；支持 OpenAI 兼容和 Anthropic 协议，也有 CLI</sub>
 
-- **[Moshu](https://github.com/HXSLtim/Moshu)** · ★ 12<br>作者主导的长篇工具：Story Bible 事实与事件账本按目标章取当时有效设定，LangGraph 三阶段续写配 Chroma RAG，AI 产出都需作者审核<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-10-12 · 🧩 应用 · 中文</sub><br><sub>💡 与 huihuijiangqiang/moshu 同名但不是同一项目；六维章节审核后端已实现，独立入口待露出</sub>
+- **[HXSLtim/Moshu](https://github.com/HXSLtim/Moshu)** · ★ 12<br>作者主导的长篇工具：Story Bible 事实与事件账本按目标章取当时有效设定，LangGraph 三阶段续写配 Chroma RAG，AI 产出都需作者审核<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-10-12 · 🧩 应用 · 中文</sub><br><sub>💡 与 huihuijiangqiang/moshu 同名但不是同一项目；六维章节审核后端已实现，独立入口待露出</sub>
 
 - **[Novel-Claude](https://github.com/wzxsph/Novel-Claude)** · ★ 12<br>CLI 依次生成金手指→梗概→大纲→世界设定→蓝图，再分卷细纲、按章写作，ChromaDB RAG 检索记忆，审核与实体跟踪，skill 插件注入上下文<br><sub>方法：规划 · 设定 · 记忆</sub><br><sub>更新于 2026-08-09 · ⚙️ 框架 · 中文 · GPL-3.0</sub><br><sub>💡 作者自称新手练手的实验项目；RAG 嵌入需智谱密钥，支持智谱 Batch API</sub>
 
 - **[NovelForger](https://github.com/cedrusdang/NovelForger)** · ★ 12<br>LangGraph+Gemini notebook：按英雄之旅、三幕、七点结构定情节，人物贴合节拍生成，章节取结构化元数据和嵌入记忆，另一 agent 打分返工<br><sub>方法：规划 · 理论 · 人物 · 修订</sub><br><sub>更新于 2025-04-21 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 Kaggle 上可运行的课程项目 notebook，需 Gemini API；人工把关可选；附越南语样例</sub>
 
-- **[ai-novel](https://github.com/AI-Practical-Lab/ai-novel)** · ★ 11<br>网页长篇写作台：书架→分卷→章节三级结构，先定剧情路标并自动生成过渡细纲，再按细纲流式写正文，自动带入设定集、大纲和上一章<br><sub>方法：规划 · 记忆</sub><br><sub>更新于 2026-04-07 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 README 写后端是 Express，仓库实际以 Java 后端为主，文档与代码不一致；兼容 OpenAI/DeepSeek 接口；有在线体验站</sub>
+- **[youyouxia263/autoNovel](https://github.com/youyouxia263/autoNovel)** · ★ 12<br>悬疑/言情长篇生成器：生成前提、世界观（地点、时间线）和人物卡，再出逐章大纲写章节、章后摘要，并做一致性、节奏和情节逻辑检查与修复<br><sub>方法：规划 · 设定 · 人物 · 修订</sub><br><sub>更新于 2026-01-12 💤 · 🧩 应用 · 多语言</sub><br><sub>💡 界面中文、默认提示词英文；支持 Gemini、通义千问和 OpenAI 兼容接口</sub>
 
-- **[ai-novel](https://github.com/silly-zero/ai-novel)** · ★ 11<br>Go+Eino 多 agent 写长篇：架构师定大纲，人设/设定 agent 维护角色卡与世界观，主编拆场景卡，资料员规划 RAG 检索，审查员不合格打回重写<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-09-01 · ⚙️ 框架 · 中文</sub><br><sub>💡 只有后端服务（REST/SSE），默认智谱 GLM 与 embedding-3，需 PostgreSQL；根目录有无扩展名的 main、server 文件（疑似编译产物）</sub>
+- **[AI-Practical-Lab/ai-novel](https://github.com/AI-Practical-Lab/ai-novel)** · ★ 11<br>网页长篇写作台：书架→分卷→章节三级结构，先定剧情路标并自动生成过渡细纲，再按细纲流式写正文，自动带入设定集、大纲和上一章<br><sub>方法：规划 · 记忆</sub><br><sub>更新于 2026-04-07 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 README 写后端是 Express，仓库实际以 Java 后端为主，文档与代码不一致；兼容 OpenAI/DeepSeek 接口；有在线体验站</sub>
 
 - **[AI-StorySmith](https://github.com/takimdigital/AI-StorySmith)** · ★ 11<br>本地模型写书脚本：先按主角/目标/危机/独特点生成前提，再出标题、目录、每章内容类型并细化，最后逐章级联写作，中间结果落盘可续跑<br><sub>方法：规划</sub><br><sub>更新于 2025-10-23 💤 · ⚙️ 框架 · 英文 · Apache-2.0</sub><br><sub>💡 面向 LM Studio / Ollama 本地模型</sub>
 
@@ -649,6 +697,8 @@
 - **[Moyun](https://github.com/Not1a-del/Moyun)** · ★ 11<br>纯前端长篇写作台：大纲→细纲→正文，细纲按 ID 钉选本章活跃角色和世界资料作为生成上下文，角色资料分三档，AI 草案逐项审阅<br><sub>方法：规划 · 人物 · 记忆</sub><br><sub>更新于 2026-10-14 · 🧩 应用 · 中文</sub><br><sub>💡 CC BY-NC 4.0，禁止商用；可直接在 GitHub Pages 使用，数据存浏览器；兼容白鸟扩展和 MOD</sub>
 
 - **[One-flower](https://github.com/sleepykino/One-flower)** · ★ 11<br>AI 小说工作台：摘要链+世界书 RAG+角色卡拼上下文续写，长文按节拍规划→逐拍生成→接缝自检，总纲、文风 Skill 包与 hook.md 校验三层约束<br><sub>方法：规划 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2026-09-07 · 🧩 应用 · 中文 · 19 个 skill · Apache-2.0</sub><br><sub>💡 附 19 个文风 SKILL.md（金庸、老舍、海明威冰山等）；另含小说→剧本→分镜转化</sub>
+
+- **[silly-zero/ai-novel](https://github.com/silly-zero/ai-novel)** · ★ 11<br>Go+Eino 多 agent 写长篇：架构师定大纲，人设/设定 agent 维护角色卡与世界观，主编拆场景卡，资料员规划 RAG 检索，审查员不合格打回重写<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-09-01 · ⚙️ 框架 · 中文</sub><br><sub>💡 只有后端服务（REST/SSE），默认智谱 GLM 与 embedding-3，需 PostgreSQL；根目录有无扩展名的 main、server 文件（疑似编译产物）</sub>
 
 - **[story](https://github.com/ATAIN000/story)** · ★ 11<br>长篇写作台：315 题材与 20 层世界观向导→宏观规划；每章先出决策卡再生成，抽取事件后经七步硬约束验证（含 Z3）自动修正，事件溯源可回滚<br><sub>方法：规划 · 记忆 · 模拟 · 修订</sub><br><sub>更新于 2026-10-07 · 🧩 应用 · 中文</sub><br><sub>💡 单用户部署；首次启动为 Mock 演示模式</sub>
 
@@ -662,9 +712,11 @@
 
 - **[agent](https://github.com/sfxyn/agent)** · ★ 9<br>AI 先分析提示定类型、视角、结构等参数，再依次生成概念、角色、总纲和章纲，每章多轮生成凑足字数，可指定作家文风模仿，状态存档可续写<br><sub>方法：规划 · 人物 · 风格</sub><br><sub>更新于 2025-03-17 💤 · ⚙️ 框架 · 中文</sub><br><sub>💡 测试版；默认豆包/火山方舟接口；仓库未声明许可证；README 里的克隆地址是占位仓库名</sub>
 
-- **[ai-novel](https://github.com/leehong0704/ai-novel)** · ★ 9<br>设定→章纲→正文，正文中插【标记】让 AI 只重写标记处；定稿时自动抽取人物变化同步角色卡，并增量更新全书梗概和近三章回顾<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-04-13 💤 · 🧩 应用 · 中文 · EPL-1.0</sub><br><sub>💡 Python 桌面应用，支持 DeepSeek/OpenAI/Gemini；仓库另附 Windows 打包 zip（release/ai-novel.zip），源码完整</sub>
-
 - **[aiAIfiction](https://github.com/liaoma1993/aiAIfiction)** · ★ 9<br>从策划对话到世界观、角色势力、卷/弧/章节蓝图逐级生成正文；上传样本抽取写法 Skill 跨项目复用，按审计结果定位到句/段/整章局部修复<br><sub>方法：规划 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2026-06-24 · 🧩 应用 · 中文</sub><br><sub>💡 FastAPI + React；默认管理员账号密码写在 README，部署需改；无 License</sub>
+
+- **[kapaiverki](https://github.com/Idun/kapaiverki)** · ★ 9<br>用卡牌组合主题、类型、角色、情节和世界观灵感卡，按可改的雪花写作法模板生成小说大纲；另有四阶段角色塑造工坊和情节/角色专家对话<br><sub>方法：规划 · 理论 · 人物</sub><br><sub>更新于 2025-10-11 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 只出大纲，不写正文</sub>
+
+- **[leehong0704/ai-novel](https://github.com/leehong0704/ai-novel)** · ★ 9<br>设定→章纲→正文，正文中插【标记】让 AI 只重写标记处；定稿时自动抽取人物变化同步角色卡，并增量更新全书梗概和近三章回顾<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-04-13 💤 · 🧩 应用 · 中文 · EPL-1.0</sub><br><sub>💡 Python 桌面应用，支持 DeepSeek/OpenAI/Gemini；仓库另附 Windows 打包 zip（release/ai-novel.zip），源码完整</sub>
 
 - **[NovelizeAI](https://github.com/paradroidlabs/NovelizeAI)** · ★ 9<br>Gemini 长篇写作应用：按类型、视角、语调等修饰项分三阶段出概念、人物设定和情节大纲，再逐章生成，根据评审反馈迭代<br><sub>方法：规划 · 修订 · 共创</sub><br><sub>更新于 2026-05-01 · 🧩 应用 · 英文</sub><br><sub>💡 源自作者早期的 Wordware 版 para-droid-ai/novella-xl-15；需 Gemini API</sub>
 
@@ -698,9 +750,11 @@
 
 - **[word-compiler](https://github.com/2389-research/word-compiler)** · ★ 7<br>长篇小说上下文编译器：设定圣经+场景计划按系统/章/场景三环组装并控 token 预算，逐块生成后人工审阅，审计禁用词与潜台词，从修改差异学规则<br><sub>方法：规划 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2026-04-16 💤 · 🧩 应用 · 英文 · Apache-2.0</sub><br><sub>💡 需要 Anthropic API key</sub>
 
-- **[ai-novel-generator](https://github.com/Cody8722/ai-novel-generator)** · ★ 6<br>命令行长篇生成器：先出大纲再逐章写，每章重建提示词并传入上一章结尾，配角色弧线强制器、冲突升级器和事件依赖图维持连贯<br><sub>方法：规划 · 理论 · 人物 · 记忆</sub><br><sub>更新于 2026-01-29 💤 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 默认走硅基流动 API（GLM-4、DeepSeek R1 等）；README 侧重速度和成本，方法模块要看 core/ 代码</sub>
-
 - **[autow](https://github.com/Alexsun1one/autow)** · ★ 6<br>长篇小说引擎库：规划→写作→审稿→修订→润色→校验→出版七阶段状态机，编辑部多角色分工，质量门打分决定返修，维护角色矩阵与伏笔板<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-06-26 · ⚙️ 框架 · 中文 · AGPL-3.0</sub><br><sub>💡 从商业产品「卷舍」抽出的引擎内核，附 CLI；需自备 OpenAI 兼容 API；AGPL-3.0</sub>
+
+- **[Cody8722/ai-novel-generator](https://github.com/Cody8722/ai-novel-generator)** · ★ 6<br>命令行长篇生成器：先出大纲再逐章写，每章重建提示词并传入上一章结尾，配角色弧线强制器、冲突升级器和事件依赖图维持连贯<br><sub>方法：规划 · 理论 · 人物 · 记忆</sub><br><sub>更新于 2026-01-29 💤 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 默认走硅基流动 API（GLM-4、DeepSeek R1 等）；README 侧重速度和成本，方法模块要看 core/ 代码</sub>
+
+- **[Jackela/Novel-Engine](https://github.com/Jackela/Novel-Engine)** · ★ 6<br>自托管长篇写作 IDE：章节挂接大纲节拍，Copilot 续写/重写以提案形式待作者采纳，按标题触发注入稳定状态的人物/世界词条，可按序整书生成<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-10-13 · 🧩 应用 · 多语言 · 5 个 skill · MIT</sub><br><sub>💡 Node.js + SQLite，Docker 部署；界面中英双语；本地开发默认 mock provider，需自配 DashScope/DeepSeek 等</sub>
 
 - **[kealin-AI-novels](https://github.com/XN-289/kealin-AI-novels)** · ★ 6<br>反 AI 味网文工作台：结构化角色卡、逐章场景控制（角色、节奏、情绪、目标）、分层记忆和五维一致性检查，生成时内置禁用词，生成后四阶段去味重写<br><sub>方法：人物 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-07-11 · 🧩 应用 · 中文</sub><br><sub>💡 README 自述借鉴 SillyTavern 角色卡和 Novelcrafter 场景控制；Windows 下用 bat 启动；仓库无许可证</sub>
 
@@ -709,8 +763,6 @@
 - **[million-word-novel-ai-creator](https://github.com/kevinchcn/million-word-novel-ai-creator)** · ★ 6<br>LangChain + DeepSeek 长篇系统：由创意生成大纲、人物、世界观，章级/卷级分层摘要做长时记忆，按人物、情节、世界观规则查一致性，可批量写章<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2025-12-14 💤 · 🧩 应用 · 中文</sub><br><sub>💡 Streamlit 界面和命令行；未声明许可证</sub>
 
 - **[novel-continuation](https://github.com/hsong6809-boop/novel-continuation)** · ★ 6<br>导入已有章节续写：总纲→分卷→章纲三层大纲约束，指定参考章节锚定文风，自动组装前文/角色/伏笔/世界观上下文，自动提取伏笔与时间线并续写自审<br><sub>方法：规划 · 记忆 · 风格</sub><br><sub>更新于 2026-05-11 · 🧩 应用 · 中文</sub><br><sub>💡 FastAPI + React 本地应用；面向续写作者已有长篇；受小米 MiMo 激励计划赞助</sub>
-
-- **[Novel-Engine](https://github.com/Jackela/Novel-Engine)** · ★ 6<br>自托管长篇写作 IDE：章节挂接大纲节拍，Copilot 续写/重写以提案形式待作者采纳，按标题触发注入稳定状态的人物/世界词条，可按序整书生成<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-10-13 · 🧩 应用 · 多语言 · 5 个 skill · MIT</sub><br><sub>💡 Node.js + SQLite，Docker 部署；界面中英双语；本地开发默认 mock provider，需自配 DashScope/DeepSeek 等</sub>
 
 - **[Plotforge](https://github.com/1while1/Plotforge)** · ★ 6<br>本地 AI 长篇工坊：大纲节拍与节奏热力条，人物/世界观/事件账本由 AI 提案、人工采纳，本地向量检索章节，作家卡（人设+指纹+范文）管理文风<br><sub>方法：规划 · 记忆 · 风格</sub><br><sub>更新于 2026-10-11 · 🧩 应用 · 中文 · MIT</sub>
 
@@ -722,21 +774,23 @@
 
 - **[xsun_novel_agent](https://github.com/xiaoSun1997/xsun_novel_agent)** · ★ 6<br>LangGraph 长篇流水线：Milvus 检索参考作品和写作理论出大纲待确认，逐章写后用 Neo4j 人物关系图谱查一致性，审稿不过重写，每 10 章总结<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-02-09 💤 · ⚙️ 框架 · 中文</sub>
 
+- **[ausdai-dev/novel-generator](https://github.com/ausdai-dev/novel-generator)** · ★ 5<br>PySide6 桌面小说生成器：按类型、文风、人物数生成书名和梗概，再出章节大纲并逐章扩写，可选翻译成其他语言<br><sub>方法：规划</sub><br><sub>更新于 2024-12-31 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 需 OpenAI 兼容接口；仓库附两部生成样例</sub>
+
 - **[Cloud-Dream-Novel-Agent](https://github.com/XiongJL/Cloud-Dream-Novel-Agent)** · ★ 5<br>长篇小说桌面工作台：故事线/情节点/角色/世界观资料库配 RAG 检索，六种视角 Agent 先出计划再生成草稿，原文对照审核后事务性写回<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-10-13 · 🧩 应用 · 中文 · AGPL-3.0</sub><br><sub>💡 Electron + LangGraph Python Runtime；可经 MCP 接入 Codex / Claude Code 等本地 CLI；Releases 提供安装包</sub>
 
 - **[dodo](https://github.com/653390665/dodo)** · ★ 5<br>本地小说写作助手：开书向导生成设定/大纲/正文候选，编辑器实时命中人物道具做故事记忆，去 AI 味审稿给证据并出精修预览，确认后才写入 Canon<br><sub>方法：规划 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-06 · 🧩 应用 · 中文</sub><br><sub>💡 仓库名 dodo，产品名 InkFlow 墨影；未附开源许可证；需自配模型 API Key</sub>
 
+- **[HuangLeijiana/novel-agent](https://github.com/HuangLeijiana/novel-agent)** · ★ 5<br>LangGraph 串起 12 个 agent：选题→世界观→人物→场景级章纲→两遍写作→编辑/连续性/读者模拟/对抗审稿→精修，记忆管理器追踪事实与伏笔<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-08-21 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 README 英文、提示词模板为中文；支持 ModelScope 免费额度、DeepSeek、Claude、Ollama 等</sub>
+
 - **[InkMind](https://github.com/jastfkjg/InkMind)** · ★ 5<br>长篇写作工作台：结合作品设定、人物、备忘和前文生成章节概要与正文，支持续写、选区扩写润色，生成后可自动质量评估并预览确认<br><sub>方法：人物 · 记忆 · 修订</sub><br><sub>更新于 2026-10-10 · 🧩 应用 · 多语言 · GPL-3.0</sub><br><sub>💡 Web 与 macOS 桌面版；助手需 Anthropic 兼容连接；方法较常规</sub>
 
-- **[novel-agent](https://github.com/HuangLeijiana/novel-agent)** · ★ 5<br>LangGraph 串起 12 个 agent：选题→世界观→人物→场景级章纲→两遍写作→编辑/连续性/读者模拟/对抗审稿→精修，记忆管理器追踪事实与伏笔<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-08-21 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 README 英文、提示词模板为中文；支持 ModelScope 免费额度、DeepSeek、Claude、Ollama 等</sub>
+- **[KudoShusak/NovelWriter](https://github.com/KudoShusak/NovelWriter)** · ★ 5<br>Ollama 本地长篇流水线：情节（起中结）→人物卡和世界设定→章节/场景大纲→逐场景写作，状态存 JSON，手改场景后可重建一致性状态<br><sub>方法：规划 · 记忆</sub><br><sub>更新于 2026-01-30 💤 · ⚙️ 框架 · 日文 · MIT</sub><br><sub>💡 默认输出日语</sub>
 
 - **[novel-agent-workflow](https://github.com/realwindjpn/novel-agent-workflow)** · ★ 5<br>文件优先的关卡式流程：访谈→概念→故事圣经→总/卷/章纲逐级 PASS 锁定后发章，作者起草，编辑（去 AI）、读者、军事/科学顾问独立审，改稿重置关卡<br><sub>方法：规划 · 多智能体 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-09 · ⚙️ 框架 · 多语言 · 5 个 skill · Apache-2.0</sub><br><sub>💡 Python CLI + 5 个 SKILL.md；面向长篇中文科幻网文；作者起草角色可由人或 AI agent 承担，工具中立</sub>
 
 - **[novel-ai-agent](https://github.com/redmaplewww/novel-ai-agent)** · ★ 5<br>一句话简介→设定集/世界观（硬约束）→卷章大纲→分章写作，注入连续性约束与灵感库；写后审校偏离度、节奏曲线打分、文风指纹漂移检测、时间线校核<br><sub>方法：规划 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2026-07-11 · ⚙️ 框架 · 中文</sub><br><sub>💡 CLI / Gradio WebUI / 飞书 Bot 三种入口；默认 DeepSeek，语义搜索用硅基流动 bge-m3</sub>
 
 - **[novel-engine-template](https://github.com/ohh567/novel-engine-template)** · ★ 5<br>Director 章节设计→Writer 初稿→Critic 评审→不过则局部 patch 修订→质量门禁→Archivist 按证据段更新状态库的长篇模板<br><sub>方法：记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-05-11 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 需自行填写 state_db 角色/世界规则/伏笔与分卷节拍；OpenAI 兼容接口</sub>
-
-- **[novel-generator](https://github.com/ausdai-dev/novel-generator)** · ★ 5<br>PySide6 桌面小说生成器：按类型、文风、人物数生成书名和梗概，再出章节大纲并逐章扩写，可选翻译成其他语言<br><sub>方法：规划</sub><br><sub>更新于 2024-12-31 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 需 OpenAI 兼容接口；仓库附两部生成样例</sub>
 
 - **[novel-novel-generator](https://github.com/mike-cramblett/novel-novel-generator)** · ★ 5<br>一键长篇：先生成 story bible 并给主要角色注入语言指纹，规划师出逐章大纲，写手逐章写，连贯性编辑更新摘要并把新发现的 AI 套话加入禁用表<br><sub>方法：规划 · 人物 · 记忆 · 去 AI 味</sub><br><sub>更新于 2025-12-30 💤 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 需 Gemini API；API 密钥暴露在浏览器，只宜本地运行</sub>
 
@@ -746,11 +800,19 @@
 
 - **[novelos](https://github.com/ayermac/novelos)** · ★ 5<br>桌面长篇工作台：LangGraph 串起规划、编剧、执笔、润色、审核、记忆整理、发布 agent，用故事契约约束，按正文证据检查爽点兑现和数值继承<br><sub>方法：记忆 · 多智能体 · 修订 · 风格</sub><br><sub>更新于 2026-08-13 · 🧩 应用 · 中文 · 11 个 skill · MIT</sub><br><sub>💡 Electron + 本地 FastAPI；目前只打包 macOS 版</sub>
 
-- **[NovelWriter](https://github.com/KudoShusak/NovelWriter)** · ★ 5<br>Ollama 本地长篇流水线：情节（起中结）→人物卡和世界设定→章节/场景大纲→逐场景写作，状态存 JSON，手改场景后可重建一致性状态<br><sub>方法：规划 · 记忆</sub><br><sub>更新于 2026-01-30 💤 · ⚙️ 框架 · 日文 · MIT</sub><br><sub>💡 默认输出日语</sub>
-
 - **[StoryMemory-Studio](https://github.com/Jackeyhate9/StoryMemory-Studio)** · ★ 5<br>SQLite 结构化记忆库存人物状态、伏笔、时间线和世界规则，长上下文编排逐章生成；写后做穿帮检测、伏笔管理、文风学习与 AI 腔治理，可转短剧/漫画改编<br><sub>方法：记忆 · 修订 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-07-06 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 受 OpenHuman 长期记忆思想启发（自述非 fork、未复制代码）；Streamlit 本地应用，另提供 Windows exe；支持 DeepSeek/GLM/Ollama 等</sub>
 
 - **[storyteller](https://github.com/johannhartmann/storyteller)** · ★ 5<br>自主生成多章故事：从英雄之旅、起承转合等 6 种叙事结构中选型并按章/场景分配篇幅，追踪情节线与每个角色的知情状态，可联网调研世界观，分场景/章/文风多级修订<br><sub>方法：规划 · 理论 · 记忆 · 修订</sub><br><sub>更新于 2026-01-26 💤 · ⚙️ 框架 · 多语言</sub><br><sub>💡 支持 Gemini/OpenAI/Anthropic，12 种语言模板，可模仿指定作者文风；可选 Tavily 调研与 Azure TTS 有声书；2026-01 后未更新</sub>
+
+- **[NovelCraft](https://github.com/HiTrong/NovelCraft)** · ★ 4<br>Streamlit 轻小说生成：先从一句想法抽取书名、章数、人物卡、背景和分段故事线，再生成正文并由 AI 打分点评，可配插图<br><sub>方法：规划 · 人物 · 修订</sub><br><sub>更新于 2024-08-07 💤 · 🧩 应用 · 多语言</sub><br><sub>💡 需 Gemini API，配图要自建 diffusers 服务；提示词有越南语和英语两套</sub>
+
+- **[StoryPipeline](https://github.com/yinghan-dev/StoryPipeline)** · ★ 4<br>用 CSV 定义人物、国家、阵营、时间线、事件和章节目标，分层约束模型逐章流式生成正文，每章写完更新故事线摘要供后文参考<br><sub>方法：规划 · 设定 · 记忆</sub><br><sub>更新于 2026-08-18 · ⚙️ 框架 · 中文 · MIT</sub><br><sub>💡 只有后端（FastAPI），默认用 deepseek-chat</sub>
+
+- **[NovelLoom](https://github.com/HisenL/NovelLoom)** · ★ 2<br>先推演世界关系图和事件因果图（强制 DAG）形成架构，再按图谱为一部正本和多本伴生传记同步规划章节、分批写作，正文抽取事实做跨书一致性审核<br><sub>方法：规划 · 设定 · 记忆 · 修订</sub><br><sub>更新于 2026-06-26 · 🧩 应用 · 中文 · Apache-2.0</sub><br><sub>💡 v0.1.0-alpha；自配 OpenAI 兼容 / Anthropic / Gemini API；作者说明真实模型的长篇成稿验收尚未完成</sub>
+
+- **[ollama_storyline_creator](https://github.com/tillo13/ollama_storyline_creator)** · ★ 2<br>用本地 Ollama 模型按开端、发展、结局分阶段迭代续写故事，以余弦相似度拦截重复的剧情更新，再逐章生成摘要和配图提示词<br><sub>方法：规划 · 修订</sub><br><sub>更新于 2024-09-07 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 本地 Ollama 运行；方法较简单</sub>
+
+- **[multi-agent-novel-system](https://github.com/woshishaoaige-png/multi-agent-novel-system)** · ★ 1<br>七个 agent 分工写小说：规划师出大纲，世界、角色、情节三位策划做设定和转折，主笔逐章写，编辑统一文风，审核员查一致性；可上传作家文本生成风格 agent<br><sub>方法：规划 · 多智能体 · 修订 · 风格</sub><br><sub>更新于 2026-03-28 💤 · ⚙️ 框架 · 中文 · MIT</sub>
 
 #### 研究代码（4）
 
@@ -767,11 +829,11 @@
 
 ```bash
 # 默认命令基于 skills CLI，未逐个验证，以各仓库 README 为准
-# oh-story-claudecode
+# zenstory-ai/oh-story-claudecode
 npx -y skills add zenstory-ai/oh-story-claudecode --agent claude-code
 # webnovel-writer
 npx skills add lingfengQAQ/webnovel-writer
-# chinese-novelist-skill
+# PenglongHuang/chinese-novelist-skill
 npx skills add PenglongHuang/chinese-novelist-skill
 # Chinese-WebNovel-Skill
 npx skills add Tomsawyerhu/Chinese-WebNovel-Skill
@@ -787,7 +849,7 @@ npx skills add zenstory-ai/oh-story-dsh
 npx skills add jingtai123/Novel-Control-Station-Skill
 # story-skills
 npx skills add danjdewhurst/story-skills
-# novel-writer-skills
+# wordflowlab/novel-writer-skills
 npx skills add wordflowlab/novel-writer-skills
 # Lorn.NovelWriteSkills
 npx skills add lornshrimp/Lorn.NovelWriteSkills
@@ -809,7 +871,7 @@ npx skills add felipelobomotta-blip/book-genesis-studio
 npx skills add manhai934/novel-harness
 # Claude-Book
 npx skills add ThomasHoussin/Claude-Book
-# ai-novel-writer
+# Jieice/ai-novel-writer
 npx skills add Jieice/ai-novel-writer
 # novel2agent-jp
 npx skills add kgmkm/novel2agent-jp
@@ -817,7 +879,7 @@ npx skills add kgmkm/novel2agent-jp
 npx skills add ExplosiveCoderflome/ani-book-skill
 # padwriter
 npx skills add cheyann4399/padwriter
-# dsh-novel-writer
+# akira399/dsh-novel-writer
 npx skills add akira399/dsh-novel-writer
 # long-novel-writer
 npx skills add jiaw-Zh/long-novel-writer
@@ -835,7 +897,7 @@ npx skills add skyfiredao/dreampowers
 npx skills add xiaofeng-928/chinese-longnovel-skill
 # book-os
 npx skills add forsonny/book-os
-# oh-story-claudecode
+# qin1473692580-ux/oh-story-claudecode
 npx skills add qin1473692580-ux/oh-story-claudecode
 # ai-fiction-writer
 npx skills add Wooooooooood/ai-fiction-writer
@@ -843,7 +905,7 @@ npx skills add Wooooooooood/ai-fiction-writer
 npx skills add forsonny/The-Crucible-Writing-System-For-Claude
 # ultimate-novel-creation-skill
 npx skills add Fly143/ultimate-novel-creation-skill
-# novel-writer
+# AI-Practical-Lab/novel-writer
 npx skills add AI-Practical-Lab/novel-writer
 # craft-companion
 npx skills add qcx1919788736-collab/craft-companion
@@ -853,11 +915,11 @@ npx skills add jblemee/bmad-book-builder
 npx skills add lgz-star/novel-pro
 # mimoCode-story
 npx skills add nihaoshi/mimoCode-story
-# novel-writer
+# sailoumili/novel-writer
 npx skills add sailoumili/novel-writer
 # thriller
 npx skills add pajama-studio/thriller
-# novel-master
+# bbroot/novel-master
 npx skills add bbroot/novel-master
 # novelops-skill
 npx skills add qiyan233/novelops-skill
@@ -865,10 +927,10 @@ npx skills add qiyan233/novelops-skill
 npx skills add TulanCN/vibe-noveling
 # dsh-cuigengji-plugin
 npx skills add mistnest/dsh-cuigengji-plugin
-# dsh-novel-writer
-npx skills add siweina/dsh-novel-writer
 # openclaw-novel-writer-skill
 npx skills add alever520/openclaw-novel-writer-skill
+# siweina/dsh-novel-writer
+npx skills add siweina/dsh-novel-writer
 # speckit-preset-fiction-book-writing
 npx skills add adaumann/speckit-preset-fiction-book-writing
 # xt-webnovel-writing
@@ -883,15 +945,15 @@ npx skills add huangziyuan-general/dsh-novel-forge
 npx skills add ZhangDongyang800/novel-flow-one-by-one
 # hermes-novel-generator
 npx skills add rwcrosk-arch/hermes-novel-generator
+# dashenbibi/novel-master
+npx skills add dashenbibi/novel-master
 # long-novelist-skill
 npx skills add tianshiemo7/long-novelist-skill
-# novel-master
-npx skills add dashenbibi/novel-master
-# novel-skills
+# PhosAQy/novel-skills
 npx skills add PhosAQy/novel-skills
 # writeAgent
 npx skills add Ddhjx-code/writeAgent
-# novel-writer-skills
+# Shine8592/novel-writer-skills
 npx skills add Shine8592/novel-writer-skills
 # silver-novel-skills
 npx skills add jialanhu0915/silver-novel-skills
@@ -929,10 +991,10 @@ npx skills add qinpeizhan77/deepseek-harness-novel-studio
 npx skills add LittleLollipop/human-like-novel-workbuddy-skill
 # novel-creation-skill
 npx skills add skye-z/novel-creation-skill
-# novel-skills
-npx skills add vicalloy/novel-skills
 # novel-writer-skill
 npx skills add liuxiao20051106-prog/novel-writer-skill
+# vicalloy/novel-skills
+npx skills add vicalloy/novel-skills
 # dsh-novel-craft
 npx skills add shiyan688/dsh-novel-craft
 # dsh-novel-writing
@@ -945,12 +1007,12 @@ npx skills add vagabondshun/snowflake-writer
 npx skills add danieltao118/ty-xiaoshuo-skill
 # xiaoshuo-studio
 npx skills add Zhao73/xiaoshuo-studio
+# Dylin-code/NovelGenerator
+npx skills add Dylin-code/NovelGenerator
 # huxiuzhi-novel-agent
 npx skills add huxiuzh-ops/huxiuzhi-novel-agent
 # Novel-framework
 npx skills add bafeite59/Novel-framework
-# NovelGenerator
-npx skills add Dylin-code/NovelGenerator
 # agent-novel
 npx skills add RTY798/agent-novel
 # Claude-Code-Novel-Writing
@@ -973,32 +1035,30 @@ npx skills add Ink-dark/novelist.skills
 npx skills add kongxcer555/open-novel-fanqie
 # web-novel-master
 npx skills add tinylion1024/web-novel-master
+# 7a-z/NovelClaw
+npx skills add 7a-z/NovelClaw
 # book-writer-mcp
 npx skills add arupmaity1/book-writer-mcp
-# chinese-novelist-skill
-npx skills add lvyu-cmd/chinese-novelist-skill
 # claude-novel-writer
 npx skills add zhiliyouxian/claude-novel-writer
-# dsh-novel
+# ddedook/dsh-novel
 npx skills add ddedook/dsh-novel
-# dsh-novel
-npx skills add wbb316/dsh-novel
+# dongyanyuxuana/novel-craft
+npx skills add dongyanyuxuana/novel-craft
 # fanqie-xiaoshuo-skill
 npx skills add soultt/fanqie-xiaoshuo-skill
 # general-novel-skill
 npx skills add xiaoyuCR7/general-novel-skill
+# jiangying3222880/novel-engine
+npx skills add jiangying3222880/novel-engine
 # light-novel-creator
 npx skills add Nya-Nya-Hoshino/light-novel-creator
-# novel-craft
-npx skills add dongyanyuxuana/novel-craft
-# novel-engine
-npx skills add jiangying3222880/novel-engine
+# lvyu-cmd/chinese-novelist-skill
+npx skills add lvyu-cmd/chinese-novelist-skill
 # novel-project-strategy
 npx skills add wgwtest/novel-project-strategy
 # novel-writer-agent
 npx skills add ZBA-z/novel-writer-agent
-# NovelClaw
-npx skills add 7a-z/NovelClaw
 # NovelFlow
 npx skills add DongxUETAFFY/NovelFlow
 # novelist-skill
@@ -1007,12 +1067,28 @@ npx skills add chanceline-max/novelist-skill
 npx skills add richardelder2/Soundingboard
 # story-foundry
 npx skills add mmunro3318/story-foundry
+# wbb316/dsh-novel
+npx skills add wbb316/dsh-novel
 # web-novel-writing-skill
 npx skills add XINGANLIU/web-novel-writing-skill
-# novel-craft
+# chaserr/novel-craft
 npx skills add chaserr/novel-craft
+# write-continuous-novels
+npx skills add Lzhimie/write-continuous-novels
+# novel_writting_skill
+npx skills add ruyuehao/novel_writting_skill
+# novel-writing-skills-for-agents
+npx skills add 230517ydyzs-maker/novel-writing-skills-for-agents
 # Novelist-Skills
 npx skills add KurohaneKaoruko/Novelist-Skills
+# cherry-agent-skills-public
+npx skills add Zn-lemon/cherry-agent-skills-public
+# Chinese-Novel-Workflow
+npx skills add wp1020/Chinese-Novel-Workflow
+# CN-writer
+npx skills add nanbengmuyuhua999/CN-writer
+# writer-skill
+npx skills add lyzxka/writer-skill
 # clark-typer
 npx skills add niyongsheng/clark-typer
 ```
@@ -1024,7 +1100,7 @@ npx skills add niyongsheng/clark-typer
 
 短篇小说、短故事、微小说、儿童故事和睡前故事。
 
-#### skill · 提示词（14）
+#### skill · 提示词（17）
 
 - 🌟 **[lengdu](https://github.com/asass-11/lengdu)** · ★ 39<br>中文短篇创作与冷读：先写完正文，再由独立校准 Agent 和全新读者 Agent 首读，检验看懂、流畅、好看<br><sub>方法：多智能体 · 修订</sub><br><sub>更新于 2026-08-16 · 中文</sub><br><sub>💡 PolyForm Noncommercial 许可，禁止任何商业使用</sub>
 
@@ -1033,6 +1109,8 @@ npx skills add niyongsheng/clark-typer
 - **[bookflow-skill](https://github.com/LanyXiaosheng/bookflow-skill)** · ★ 200<br>番茄短篇项目化生产：选题打分、对标拆解、人物、大纲到 beat 再写正文，每步定输入输出与人工确认点，写后 QA 与复盘<br><sub>方法：规划 · 理论 · 人物 · 修订</sub><br><sub>更新于 2026-09-18 · 中文 · MIT</sub>
 
 - **[salt-story](https://github.com/yfge/salt-story)** · ★ 85<br>对齐知乎盐选投稿标准写付费短篇：按官方篇幅与拒稿原因自检，规定每段 1-3 句、独句段≥30%、对白占 40-50%，参照爆款拆解设计反转<br><sub>方法：理论 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-03-13 💤 · 中文</sub><br><sub>💡 无 README，仅 SKILL.md 与 references；最后更新 2026-03，按平台化方法独特收录</sub>
+
+- **[AI100Stories](https://github.com/joeseesun/AI100Stories)** · ★ 76<br>通用故事提示词：识别类型、主题与文化背景，选三幕、英雄之旅或起承转合，设定主角渴望、需求、谎言、幽灵和冲突升级再成文；附 100 篇 AI 概念故事<br><sub>方法：规划 · 理论 · 人物</sub><br><sub>更新于 2025-05-31 💤 · 📝 提示词 · 中文</sub><br><sub>💡 仓库主体是用 story_prompt.md 写成的 100 篇 AI 概念故事和 EPUB；概念知识没有核查步骤</sub>
 
 - **[oh-my-folkstoryphoto](https://github.com/isLiuyx1/oh-my-folkstoryphoto)** · ★ 60<br>Codex 民间怪谈伪纪录图文技能：先定拍摄者与设备，写声音卡和八段式证据链故事，逐图字幕过连续三图测试与 AI 腔审计，再分镜生图并自审返修<br><sub>方法：理论 · 人物 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-08-25 · 中文 · MIT</sub><br><sub>💡 成品是 30–39 张 4:5 图文轮播，需要生图能力；字幕去公式化规则借鉴 op7418/Humanizer-zh</sub>
 
@@ -1054,9 +1132,13 @@ npx skills add niyongsheng/clark-typer
 
 - **[jiamama-bedtime-story-skill](https://github.com/leonluo2008-ops/jiamama-bedtime-story-skill)** · ★ 4<br>从 2101 篇儿童睡前故事语料双轨蒸馏出叙事人格：先承认情绪再化解、用具体动作表达爱、固定结尾公式等 11 条铁律和 12 条反模式<br><sub>方法：理论 · 风格</sub><br><sub>更新于 2026-06-15 · 中文</sub>
 
-#### 框架 · 应用（19）
+- **[ankey-story-skill](https://github.com/miuflow/ankey-story-skill)** · ★ 1<br>按孩子当天的真实事件和兴趣，套用 Life Anchor 与 SEL 方法先出 3 个带情绪目标的大纲，家长选定后再写完整睡前故事<br><sub>方法：规划 · 理论 · 共创</sub><br><sub>更新于 2026-07-06 · 多语言</sub><br><sub>💡 面向 3–6 岁；skill 会引导用户去用「小锚助手」小程序（商业引流）</sub>
 
-- **[Picture_book_production](https://github.com/whotto/Picture_book_production)** · ★ 58<br>批量绘本：按主题列表用含故事类型指南和结构要求的提示词生成 JSON 故事（标题、角色描述、段落），再做场景分析，用角色特征库保持形象一致并配图<br><sub>方法：理论 · 人物</sub><br><sub>更新于 2024-12-06 💤 · ⚙️ 框架 · 中文</sub><br><sub>💡 故事由单次结构化提示生成，方法重心偏插图一致性；需 OpenAI 和 Fal.ai Key；README 含第三方 API 中转推荐和推广链接；README 写 MIT 但未声明许可证</sub>
+- **[picturebook-story-illustrations](https://github.com/Kelin-wu/picturebook-story-illustrations)** · ★ 1<br>把书籍、人物传记、读书笔记拆成系列绘本：建档和系列策划，整理人物卡与故事卡，确认风格后写正文母稿和分镜，再出逐张图片提示词，每册复盘回写规则<br><sub>方法：规划 · 人物 · 修订</sub><br><sub>更新于 2026-05-22 · 中文</sub><br><sub>💡 仅限个人学习和非商业使用，商用需付费授权；历史人物绘本要求不乱编关键史实</sub>
+
+#### 框架 · 应用（21）
+
+- **[Picture_book_production](https://github.com/whotto/Picture_book_production)** · ★ 58<br>批量绘本：按主题列表用含故事类型指南和结构要求的提示词生成 JSON 故事（标题、角色描述、段落），再做场景分析，用角色特征库保持形象一致并配图<br><sub>方法：理论</sub><br><sub>更新于 2024-12-06 💤 · ⚙️ 框架 · 中文</sub><br><sub>💡 故事由单次结构化提示生成，方法重心偏插图一致性；需 OpenAI 和 Fal.ai Key；README 含第三方 API 中转推荐和推广链接；README 写 MIT 但未声明许可证</sub>
 
 - **[StoryWriter](https://github.com/Avdpro/StoryWriter)** · ★ 58<br>AI2Apps 短篇写作 agent：先由 AI 生成背景设定，再按指示逐段写、每次给三个备选，可逐段 AI 改写和配插图，靠设定和内容提炼续写长文<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2023-12-25 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 需在 AI2Apps 环境（在线或本地部署）运行；GPT-3.5/4；受 MidReal 启发</sub>
 
@@ -1094,9 +1176,13 @@ npx skills add niyongsheng/clark-typer
 
 - **[llm_novel_picture_writer](https://github.com/aigengen5-ship-it/llm_novel_picture_writer)** · ★ 5<br>轻小说分集生成脚本：用角色表、全局风格覆盖、分集剧情和背景四段设定驱动模型逐集写作，另有修订脚本，可同步生成插图提示词或调用 ComfyUI<br><sub>方法：规划 · 人物 · 修订</sub><br><sub>更新于 2026-04-11 💤 · ⚙️ 框架 · 韩文</sub><br><sub>💡 韩语说明；走 OpenAI 兼容接口，推荐本地 gemma-4-31b</sub>
 
+- **[reality-remix-agent](https://github.com/soham1105-tech/reality-remix-agent)** · ★ 1<br>LangGraph 编排：先构思再并行分出多条故事分支，注入超现实元素，LLM 自评打分后改写，长期记忆保持人物与世界一致<br><sub>方法：记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-01-11 💤 · ⚙️ 框架 · 英文</sub><br><sub>💡 需 Gemini API；SerpAPI 搜索可选</sub>
+
+- **[StoryTailor.ai](https://github.com/deokhwajeong/StoryTailor.ai)** · ★ 1<br>面向小学课堂的分级故事生成：按年级、兴趣和回避话题拼提示，BM25 检索事实做依据，生成后测可读性，超难则简化重写，学生反馈调整下一篇难度<br><sub>方法：修订 · 事实</sub><br><sub>更新于 2026-10-13 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 含 PII 脱敏、内容安全审核和教师看板；需 OpenAI API</sub>
+
 #### 研究代码（3）
 
-- **[SEED-Story](https://github.com/TencentARC/SEED-Story)** · ★ 885<br>多模态大模型生成图文交错长故事：给定开头图文逐段续写文本，同时生成角色与画风一致的配图，用注意力汇聚机制支撑长序列<br><sub>方法：人物 · 记忆</sub><br><sub>更新于 2024-10-11 💤 · 🎓 研究 · 英文</sub><br><sub>💡 基于 SEED-X 微调，需 GPU 与 HF 权重；同时发布 StoryStream 数据集（训练数据来自动画片）</sub>
+- **[SEED-Story](https://github.com/TencentARC/SEED-Story)** · ★ 885<br>多模态大模型生成图文交错长故事：给定开头图文逐段续写文本，同时生成角色与画风一致的配图，用注意力汇聚机制支撑长序列<br><sub>方法：记忆</sub><br><sub>更新于 2024-10-11 💤 · 🎓 研究 · 英文</sub><br><sub>💡 基于 SEED-X 微调，需 GPU 与 HF 权重；同时发布 StoryStream 数据集（训练数据来自动画片）</sub>
 
 - **[StoryReasoning](https://github.com/daniel3303/StoryReasoning)** · ★ 41<br>根据图片序列写故事：微调 Qwen2.5-VL 先用思维链列出人物、物体、场景与叙事结构表，再写出用标签绑定画面实体的故事，跨帧保持角色身份一致、减少指代幻觉<br><sub>方法：规划 · 人物</sub><br><sub>更新于 2025-05-16 💤 · 🎓 研究 · 英文</sub><br><sub>💡 论文配套代码，同时发布 StoryReasoning 数据集（4,178 个故事）与 QwenStoryteller 模型；需 GPU 运行 7B 视觉语言模型</sub>
 
@@ -1135,6 +1221,10 @@ npx skills add weistiger/human-story-writer
 npx skills add FerryCorleone/pingshu-skill
 # jiamama-bedtime-story-skill
 npx skills add leonluo2008-ops/jiamama-bedtime-story-skill
+# ankey-story-skill
+npx skills add miuflow/ankey-story-skill
+# picturebook-story-illustrations
+npx skills add Kelin-wu/picturebook-story-illustrations
 ```
 
 </details>
@@ -1144,7 +1234,7 @@ npx skills add leonluo2008-ops/jiamama-bedtime-story-skill
 
 影视剧本、短剧和漫剧的剧情写作。只做分镜和视频生成的不收，见 [awesome-short-drama-skills](https://github.com/UnderleveledBuilder/awesome-short-drama-skills)。
 
-#### skill · 提示词（50）
+#### skill · 提示词（55）
 
 - 🌟 **[screenwriting-skills](https://github.com/jtydhr88/screenwriting-skills)** · ★ 1.7k<br>从 47 本编剧书与 23 卷剧本蒸馏 26 个 skill：结构、Truby、场景、对白、剧集圣经、编剧室与改编，附中美日韩法剧作和戏曲案例<br><sub>方法：规划 · 理论 · 人物</sub><br><sub>更新于 2026-10-03 · 中文 · 26 个 skill · MIT</sub><br><sub>💡 skill 正文为中文，README 有五种语言</sub>
 
@@ -1196,6 +1286,8 @@ npx skills add leonluo2008-ops/jiamama-bedtime-story-skill
 
 - **[how-to-make-script](https://github.com/XucroYuri/how-to-make-script)** · ★ 19<br>编剧知识基建：按意图×媒介×阶段×产出把请求路由到 29 个子技能，加载协议、评分量表和知识原子生成节拍表或剧本，按量表自检后回收反馈<br><sub>方法：规划 · 理论 · 人物 · 修订</sub><br><sub>更新于 2026-08-24 · 多语言 · 30 个 skill · MIT</sub><br><sub>💡 也覆盖品牌广告脚本和互动分支脚本；中英双语文档</sub>
 
+- **[tj-short](https://github.com/tttg2010/tj-short)** · ★ 18<br>短剧带货 skill：产品分析→brief→产品证明圣经→角色/场景/道具/证据四库与 12 镜头表；先立冲突和关系压力，产品后置为证据，再出首帧和视频提示词<br><sub>方法：规划 · 理论 · 人物</sub><br><sub>更新于 2026-09-02 · 中文 · MIT</sub><br><sub>💡 面向电商带货短剧；默认用 salpx 中转站生图、MiniMax H3 API 生视频</sub>
+
 - **[aivideo-production-skills](https://github.com/RandomNest/aivideo-production-skills)** · ★ 15<br>AI 影视生产门禁式技能集：先出节拍表和场景表，经角色心理、叙事红队、观众模拟、连续性锁定等关卡把关，再做镜头规划和提示词打包<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-02-20 💤 · 英文 · 23 个 skill · MIT</sub><br><sub>💡 以 AI 视频生产为主，另含成本门禁、模型路由等非叙事 skill</sub>
 
 - **[short-drama-scriptwriter](https://github.com/SumOneHK/short-drama-scriptwriter)** · ★ 13<br>AI 竖屏剧/漫剧编剧流程：立项选题→剧本圣经（世界观、人物、节拍、分集大纲）→分批写场次稿并做硬阈值质检→全剧复核后交付，状态文件门禁防跳步<br><sub>方法：规划 · 设定 · 人物 · 修订</sub><br><sub>更新于 2026-05-08 · 中文 · MIT</sub><br><sub>💡 明确不做分镜、视频提示词和配音；区分抖音国内与 TikTok 出海市场</sub>
@@ -1242,11 +1334,19 @@ npx skills add leonluo2008-ops/jiamama-bedtime-story-skill
 
 - **[zhang-yimou-skill](https://github.com/Ye-Zayne/zhang-yimou-skill)** · ★ 5<br>短剧 skill：把张艺谋式色彩叙事、仪式化调度、空间权力、道具母题等原则转成写作规则，从一句灵感写出短剧剧本，再拆镜头表、故事版和 Seedance 提示词<br><sub>方法：规划 · 理论 · 风格</sub><br><sub>更新于 2026-06-10 · 中文</sub><br><sub>💡 不扮演张艺谋本人，只用公开可观察的导演原则；七步流程中后五步是分镜/视频/剪辑</sub>
 
+- **[Story-Film-Skills](https://github.com/badgids/Story-Film-Skills)** · ★ 4<br>从故事简报、节拍表、人物与世界圣经写到小说和剧本，再接分镜、生成与剪辑的技能套件；用稳定 ID 和项目文件记录故事状态，跨长片保持连续<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-08-24 · 英文 · 140 个 skill · Apache-2.0</sub><br><sub>💡 同一套件还覆盖生图、配音、视频生成、剪辑和发行；故事部分见 write-story、write-book、beat-sheet、story-state、revise-screenplay 等技能</sub>
+
+- **[story-room-the-legacy-patch](https://github.com/shenquanzhen/story-room-the-legacy-patch)** · ★ 3<br>OpenClaw 多代理编剧室：任务简报先锁钩子和悬念，再做季圣经→分集大纲→连贯骨架→批量剧本→审校检查点→分镜与制片资产包，按协议分工交接<br><sub>方法：规划 · 记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-03-30 💤 · 中文</sub><br><sub>💡 最初用于都市家庭伦理短剧，附示例项目 perfect-heir；开新项目只复制方法层文件</sub>
+
+- **[AI-ShortVideo-Story-Engine](https://github.com/slad-dev/AI-ShortVideo-Story-Engine)** · ★ 2<br>一句话生成人生副本、商业反转类短视频剧本：先立故事契约（情绪承诺、权力对抗、核心反转、伏笔回收表），配钩子库和压力阶梯，再出分镜与配音施工表<br><sub>方法：规划 · 理论 · 风格</sub><br><sub>更新于 2026-10-04 · 中文 · 2 个 skill · MIT</sub><br><sub>💡 附爆款视频逆向拆解法和商业模式拆解子 skill；分镜 Prompt 与抖音/小红书发布包随附</sub>
+
+- **[AI-Drama-Skill](https://github.com/rouql/AI-Drama-Skill)** · ★ 1<br>短剧多 agent 技能包：市场分析→定位→IP 与人物→100 集结构→分集→剧本→QA，内置前 30 秒钩子、每 10 集高潮等规则和项目记忆<br><sub>方法：规划 · 理论 · 记忆 · 多智能体</sub><br><sub>更新于 2026-09-08 · 中文 · MIT</sub><br><sub>💡 作者称只在 Codex 上测过；精简量产版见 rouql/ai-short-drama-production</sub>
+
 - **[emma-screenwriting-skills](https://github.com/adoria111/emma-screenwriting-skills)** · ★ 1<br>八个短剧编剧方法：拆对标结构、迁移剧情引擎做改编、设计全剧期待与兑现链，按观众期待→戏剧机制→可拍呈现修集尾钩子，再扩集纲、诊断对白、删冗余<br><sub>方法：规划 · 理论 · 修订</sub><br><sub>更新于 2026-10-13 · 中文 · 10 个 skill · MIT</sub>
 
 - **[hongguo-shortdrama-screenwriting](https://github.com/zhu5859243-free/hongguo-shortdrama-screenwriting)** · ★ 0<br>以 short-drama-factory 结构引擎为底，并入红果《短剧编剧第一课》的选题、黄金开场、钩子与情绪点方法，机检加查黄金三角与对白占比<br><sub>方法：规划 · 理论 · 修订</sub><br><sub>更新于 2026-09-22 · 中文 · MIT</sub><br><sub>💡 方法论来源为作者自述，未核实</sub>
 
-#### 框架 · 应用（23）
+#### 框架 · 应用（27）
 
 - **[aid-studio](https://github.com/gzxx-2025/aid-studio)** · ★ 922<br>漫剧/短剧平台的剧本技能：分创作、续写、改写、规范化、修复五模式，按「行动→结果→下一动作」写场景，凭独立审核报告修硬伤，再接分镜和视频<br><sub>方法：理论 · 记忆 · 修订</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 中文 · 2 个 skill · MIT</sub><br><sub>💡 主体是 AI 漫剧/短剧视频生产平台，剧本 skill 在 aid-interface 资源目录（screenplay / screenplay-write / screenplay-review）；图像、视频模型需自付 API</sub>
 
@@ -1288,11 +1388,19 @@ npx skills add leonluo2008-ops/jiamama-bedtime-story-skill
 
 - **[Novel2Script_AI](https://github.com/LYGSYJ/Novel2Script_AI)** · ★ 6<br>小说转剧本：按章让 LLM 改写成场景化剧本，人物地点存 ChromaDB 长期记忆、章节摘要作短期记忆，可选 LangGraph 多 Agent 审稿<br><sub>方法：记忆 · 多智能体 · 修订</sub><br><sub>更新于 2026-06-22 · 🧩 应用 · 中文</sub><br><sub>💡 需 OpenAI 兼容接口（默认 DeepSeek）；支持 EPUB 输入；README 叫「分镜脚本」，实际产出场景、动作、对白结构的剧本初稿</sub>
 
-- **[StoryForge](https://github.com/zhiyuzi/StoryForge)** · ★ 6<br>短剧运行时：采访→梗概→评审自动修正→用户确认硬卡点→剧本或分镜，再由叙事/角色/逻辑/格式评审 agent 循环修正，附赛道与结构知识库<br><sub>方法：规划 · 理论 · 多智能体 · 修订</sub><br><sub>更新于 2026-03-24 💤 · ⚙️ 框架 · 中文 · 3 个 skill</sub>
+- **[zhiyuzi/StoryForge](https://github.com/zhiyuzi/StoryForge)** · ★ 6<br>短剧运行时：采访→梗概→评审自动修正→用户确认硬卡点→剧本或分镜，再由叙事/角色/逻辑/格式评审 agent 循环修正，附赛道与结构知识库<br><sub>方法：规划 · 理论 · 多智能体 · 修订</sub><br><sub>更新于 2026-03-24 💤 · ⚙️ 框架 · 中文 · 3 个 skill</sub>
 
 - **[MiaoMuse](https://github.com/15673312611/MiaoMuse)** · ★ 5<br>短剧剧本工作台：故事设定→角色小传→阶段大纲→分集大纲→分集正文逐级流式生成，另有剧本改写和网文改编入口，可导出 Word<br><sub>方法：规划 · 人物</sub><br><sub>更新于 2026-06-15 · 🧩 应用 · 中文</sub><br><sub>💡 Go 后端和 Vue 前端各只有一个源文件；需 MySQL；钱包、会员、充值界面仅作演示；作者留微信接定制开发</sub>
 
 - **[screenplay-writer-agent](https://github.com/raahulrahl/screenplay-writer-agent)** · ★ 5<br>CrewAI 剧本 agent：分析素材→建人物、情节与分场→写剧本→严格格式化→质量评估五阶段，人物与对白专员分工，可接 Mem0 保持人物一致<br><sub>方法：规划 · 人物 · 多智能体 · 修订</sub><br><sub>更新于 2026-03-11 💤 · ⚙️ 框架 · 英文 · Apache-2.0</sub><br><sub>💡 仓库由 Paraschamoli/screenplay-writer-agent 转移而来；基于 bindu 模板；需 OpenAI 或 OpenRouter</sub>
+
+- **[nova-story](https://github.com/eric20170524/nova-story)** · ★ 3<br>AI 短剧创作工具：先做多章故事规划和故事圣经，按分层上下文逐章写正文并评估改动影响，定稿后转分场剧本，再提取角色、场景、道具资产做分镜、关键帧和视频<br><sub>方法：规划 · 记忆 · 修订</sub><br><sub>更新于 2026-10-11 · 🧩 应用 · 中文</sub><br><sub>💡 出图和视频依赖本地或远程 ComfyUI；单机单用户</sub>
+
+- **[fount](https://github.com/nshkrdotcom/fount)** · ★ 2<br>剧本修订引擎：把剧本解析成带稳定场景 / 元素 ID 的结构模型，AI 生成多个备选页面，追踪大改动对前后场的影响并修复，由人决定哪些进入定稿<br><sub>方法：记忆 · 修订 · 共创</sub><br><sub>更新于 2026-10-03 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 Elixir / Phoenix，支持 Fountain 无损往返；依赖 System One SDK 和 Codex 登录</sub>
+
+- **[AI-novel-to-script](https://github.com/a2831300106/AI-novel-to-script)** · ★ 1<br>上传 3 章以上小说，自动切章→AI 抽取人物/场景/剧情线→按网剧/电影/短剧逐章改编成动作、台词、转场，输出用 ID 引用人物场景的 YAML 剧本<br><sub>方法：规划 · 人物</sub><br><sub>更新于 2026-06-06 · 🧩 应用 · 中文</sub><br><sub>💡 需要文心一言或通义千问 API</sub>
+
+- **[danydenis560-beep/storyforge-ai](https://github.com/danydenis560-beep/storyforge-ai)** · ★ 1<br>AI 影视故事工作室：一句话生成故事、分集、对白和故事圣经，锁定角色外观生成一致性标记，检索故事圣经标出前后漂移，再编译成各视频平台提示词<br><sub>方法：规划 · 人物 · 记忆</sub><br><sub>更新于 2026-07-02 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 故事、角色、分镜模块仍是 MVP，另一半重心是编译 Veo/Kling 等视频提示词；支持 Anthropic/OpenAI/Ollama，可用 mock 免密钥试用</sub>
 
 #### 研究代码（2）
 
@@ -1355,6 +1463,8 @@ npx skills add mengxiujie/ManjuForge
 npx skills add tjh-aoao/aishiji-director
 # how-to-make-script
 npx skills add XucroYuri/how-to-make-script
+# tj-short
+npx skills add tttg2010/tj-short
 # aivideo-production-skills
 npx skills add RandomNest/aivideo-production-skills
 # short-drama-scriptwriter
@@ -1401,6 +1511,14 @@ npx skills add yangjiaxin2007123-dot/manju-full-pipeline
 npx skills add egguy886/write-screenplay-skill
 # zhang-yimou-skill
 npx skills add Ye-Zayne/zhang-yimou-skill
+# Story-Film-Skills
+npx skills add badgids/Story-Film-Skills
+# story-room-the-legacy-patch
+npx skills add shenquanzhen/story-room-the-legacy-patch
+# AI-ShortVideo-Story-Engine
+npx skills add slad-dev/AI-ShortVideo-Story-Engine
+# AI-Drama-Skill
+npx skills add rouql/AI-Drama-Skill
 # emma-screenwriting-skills
 npx skills add adoria111/emma-screenwriting-skills
 # hongguo-shortdrama-screenwriting
@@ -1414,7 +1532,7 @@ npx skills add zhu5859243-free/hongguo-shortdrama-screenwriting
 
 AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、文字冒险、跑团、视觉小说、角色扮演。
 
-#### skill · 提示词（19）
+#### skill · 提示词（23）
 
 - **[novel-to-game](https://github.com/zenstory-ai/novel-to-game)** · ★ 859<br>小说改编游戏：带原文出处的设计文档、网页游戏构建与基于证据的 QA，附三个可玩示例<br><sub>方法：规划 · 设定 · 修订</sub><br><sub>更新于 2026-10-15 · 多语言 · 7 个 skill · MIT</sub>
 
@@ -1446,6 +1564,8 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[speckit-preset-game-narrative-writing](https://github.com/adaumann/speckit-preset-game-narrative-writing)** · ★ 9<br>Spec Kit 游戏叙事预设：叙事简报→故事地图→对白与场景写作任务，支持分支、多结局、多视角与状态机，输出 Twine/Ink 并做校验<br><sub>方法：规划 · 理论 · 共创</sub><br><sub>更新于 2026-07-16 · 英文</sub><br><sub>💡 需 GitHub Spec Kit ≥0.5.0；与 fiction-book-writing 同一作者</sub>
 
+- **[tragedy-narrative-guard](https://github.com/zhlmi/tragedy-narrative-guard)** · ★ 9<br>长会话角色扮演的爱情悲剧护栏：阻止模型甜化、过早修复冲突和无代价承诺，用终局锚点守住不圆满的结局方向，关键选择留给作者<br><sub>方法：理论 · 人物</sub><br><sub>更新于 2026-05-29 · 中文</sub>
+
 - **[DeekSeek-V4-text-adventure-prompt-builder](https://github.com/EdenBush/DeekSeek-V4-text-adventure-prompt-builder)** · ★ 7<br>元提示词 skill：把世界观描述编译成文字冒险 DM 提示词，内嵌三幕蓝图、冲突预算与无聊度降阈、选择账本定期回调和每轮 think 自检<br><sub>方法：规划 · 理论 · 记忆 · 共创</sub><br><sub>更新于 2026-06-21 · 中文</sub><br><sub>💡 针对 DeepSeek V4 调优；含后宫、福利等成人向模块</sub>
 
 - **[novel-rpg](https://github.com/kiki123124/novel-rpg)** · ★ 7<br>小说 RPG skill：导入 PDF 小说自动切章、抽角色、生成场景图，玩家扮演任一角色做选择，属性影响选项，偏离度记录与原著的分歧<br><sub>方法：规划 · 记忆 · 共创</sub><br><sub>更新于 2026-04-02 💤 · 多语言 · MIT</sub><br><sub>💡 内置《呼啸山庄》《西游记》场景数据；支持存档续玩</sub>
@@ -1454,17 +1574,23 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[Frankkie](https://github.com/TaigaNoeru/Frankkie)** · ★ 6<br>SillyTavern 角色扮演预设：48 个可开关模块，含反套话规则、写前规划与连贯性检查、人物心理深度框架、文风预设、分题材思维链和长团一致性追踪<br><sub>方法：人物 · 记忆 · 修订 · 去 AI 味</sub><br><sub>更新于 2025-12-30 💤 · 📝 提示词 · 英文</sub><br><sub>💡 原名 APEX v4.1；含成人内容开关</sub>
 
-#### 框架 · 应用（162）
+- **[gamebook](https://github.com/alanl1234/gamebook)** · ★ 3<br>把任意文档（小说、教材、传记）改成互动游戏书：解析章节，抽 10 字段人物卡和 8 维文风指纹，建变量/成就/多结局状态表，每场给 2–4 个分支选择<br><sub>方法：人物 · 记忆 · 风格 · 共创</sub><br><sub>更新于 2026-06-03 · 英文 · MIT</sub><br><sub>💡 非虚构文档走「知识探索」模式；按 32K/128K/1M 上下文自动调整处理粒度</sub>
+
+- **[Chat-RPG](https://github.com/miguel-caetano/Chat-RPG)** · ★ 2<br>粘贴即用的文字冒险跑团提示词：让 ChatGPT 当主持人，维护生命值、等级、背包和属性，每回合给选项也允许自由行动；另有无回合版本<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2024-01-25 💤 · 📝 提示词 · 多语言 · MIT</sub><br><sub>💡 基于 Sean Huggins 在 Medium 发表的 ChatRPG 提示词扩展；附葡萄牙语版</sub>
+
+- **[LED.AI](https://github.com/ARZ023/LED.AI)** · ★ 1<br>角色扮演提示框架：Friction Engine 不让 AI 替玩家化解冲突、NPC 按私利行事；感官规则禁抽象形容词；每轮附 State Ledger 防漂移<br><sub>方法：理论 · 人物 · 记忆</sub><br><sub>更新于 2026-08-06 · 📝 提示词 · 英文 · MIT</sub>
+
+#### 框架 · 应用（173）
 
 - 🌟 **[Marinara-Engine](https://github.com/Pasta-Devs/Marinara-Engine)** · ★ 712<br>角色扮演与游戏引擎：AI 游戏主持带队伍/任务/战斗，可按需安装叙事导演、连续性检查、世界状态与关系追踪、长期记忆、Lorebook 维护等代理<br><sub>方法：设定 · 记忆 · 多智能体</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 英文 · AGPL-3.0</sub><br><sub>💡 AGPL-3.0，Beta；代理需从 Pasta-Devs/Marinara-Agents 下载；仓库附带 Windows 启动器 exe，但源码完整；可导入 SillyTavern 数据</sub>
 
 - 🌟 **[OpenStory](https://github.com/ZJU-LLMs/OpenStory)** · ★ 430<br>多智能体故事世界推演框架：角色按感知→计划→执行→反思插件自主行动演出剧情，玩家可下指令、回溯分支；WorldKernel 一句话生成角色、地点与规则<br><sub>方法：设定 · 多智能体 · 模拟 · 共创</sub><br><sub>更新于 2026-08-19 · ⚙️ 框架 · 中文 · Apache-2.0</sub><br><sub>💡 基于 ZJU-LLMs/Agent-Kernel，需本地 Redis；内置红楼梦、西部世界示例；另有 DeepSeek Harness 插件</sub>
 
-- 🌟 **[Sonder_Engine](https://github.com/N0819/Sonder_Engine)** · ★ 59<br>互动小说引擎：导演裁定客观因果，感知层决定每个角色能知道什么，角色代理只凭私有记忆行动，叙述者只写玩家可见部分，再统一提交状态<br><sub>方法：记忆 · 多智能体 · 模拟 · 共创</sub><br><sub>更新于 2026-10-12 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 本地单人引擎；每回合多次模型调用，成本较高；每个阶段可重掷或手改</sub>
+- 🌟 **[Sonder_Engine](https://github.com/N0819/Sonder_Engine)** · ★ 59<br>互动小说引擎：导演裁定客观因果，感知层决定每个角色能知道什么，角色代理只凭私有记忆行动，叙述者只写玩家可见部分，再统一提交状态<br><sub>方法：人物 · 记忆 · 多智能体 · 模拟 · 共创</sub><br><sub>更新于 2026-10-12 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 本地单人引擎；每回合多次模型调用，成本较高；每个阶段可重掷或手改</sub>
 
 - **[SillyTavern](https://github.com/SillyTavern/SillyTavern)** · ★ 34.5k<br>LLM 角色扮演前端：World Info 世界书按关键词注入设定，配合角色卡、群聊、视觉小说模式和扩展生态支撑长篇互动叙事<br><sub>方法：设定 · 人物 · 记忆 · 共创</sub><br><sub>更新于 2026-10-02 · 🧩 应用 · 多语言 · AGPL-3.0</sub><br><sub>💡 基于 TavernAI 1.2.8 分叉后独立发展；通用 LLM 前端，叙事机制主要靠世界书与扩展；AGPL-3.0</sub>
 
-- **[KoboldAI-Client](https://github.com/KoboldAI/KoboldAI-Client)** · ★ 4k<br>浏览器里的 AI 写作前端，最早把 Memory、Author's Note、World Info 做成一套，可在小说、文字冒险、聊天模式间切换<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-10-14 · 🧩 应用 · 英文 · AGPL-3.0</sub><br><sub>💡 已停止维护，跑不了新模型，后继是 KoboldCpp 和 KoboldAI Lite</sub>
+- **[KoboldAI-Client](https://github.com/KoboldAI/KoboldAI-Client)** · ★ 4k<br>浏览器里的 AI 写作前端，用 Memory、Author's Note、World Info 三件套管理上下文，可在小说、文字冒险、聊天模式间切换<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-10-14 · 🧩 应用 · 英文 · AGPL-3.0</sub><br><sub>💡 已停止维护，跑不了新模型，后继是 KoboldCpp 和 KoboldAI Lite</sub>
 
 - **[TavernAI-v1](https://github.com/TavernAI/TavernAI-v1)** · ★ 2.7k<br>角色扮演/故事写作前端：角色卡、多角色群聊、故事模式，World Info 世界书注入设定，可接 KoboldAI、NovelAI、OpenAI 等后端<br><sub>方法：设定 · 人物 · 共创</sub><br><sub>更新于 2026-06-16 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 README 自称旧版仓库，新版为 TavernAI/TavernAI；SillyTavern 由其分叉而来</sub>
 
@@ -1550,7 +1676,7 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[GameMasterAI](https://github.com/deckofdmthings/GameMasterAI)** · ★ 37<br>单人 TTRPG 网页应用：GPT 扮演地下城主叙事，另一个 AI 记录员整理游戏笔记供后续回合参考，存档存在 MongoDB<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2023-11-11 💤 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 原为 YouTube 频道 Deck of DM Things 的 Patreon 项目，作者无力维护后开源；需 OpenAI Key 和 MongoDB Atlas</sub>
 
-- **[storyforge-ai](https://github.com/Qiuerjun/storyforge-ai)** · ★ 37<br>小说/跑团对话式共创：每轮自动注入角色、世界状态和关键词触发的世界观词条，AI 从对话中抽取事实存入记忆并检索，追踪主线进度等变量，支持 KP 隐藏设定<br><sub>方法：设定 · 人物 · 记忆 · 共创</sub><br><sub>更新于 2026-07-04 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 兼容 OpenAI API 和本地 Ollama</sub>
+- **[Qiuerjun/storyforge-ai](https://github.com/Qiuerjun/storyforge-ai)** · ★ 37<br>小说/跑团对话式共创：每轮自动注入角色、世界状态和关键词触发的世界观词条，AI 从对话中抽取事实存入记忆并检索，追踪主线进度等变量，支持 KP 隐藏设定<br><sub>方法：设定 · 人物 · 记忆 · 共创</sub><br><sub>更新于 2026-07-04 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 兼容 OpenAI API 和本地 Ollama</sub>
 
 - **[yikes](https://github.com/psema4/yikes)** · ★ 35<br>文字冒险上下文工程规范：状态分系统/角色/世界三层，LLM 按固定 JSON 返回叙事、效果和可选行动，效果校验后回写状态形成闭环，附 Node.js 实现<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2025-10-16 💤 · ⚙️ 框架 · 英文 · ISC</sub><br><sub>💡 参考实现需本地 Ollama</sub>
 
@@ -1570,7 +1696,7 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[gamentic](https://github.com/hec-ovi/gamentic)** · ★ 27<br>叙事者加每个角色一个 agent（人设、私聊记忆、秘密）；角色只能向叙事者申请改动世界状态，近期场景读原文，旧场景折叠成滚动摘要<br><sub>方法：人物 · 记忆 · 多智能体 · 模拟</sub><br><sub>更新于 2026-07-25 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 按 AMD Strix Halo 本地全栈调优（llama.cpp、FLUX、Maya1 TTS），docker-compose 部署</sub>
 
-- **[DnD-AI](https://github.com/QuitoTactico/DnD-AI)** · ★ 25<br>Django 版 AI 跑团：按主题生成战役故事、八种地形地图、敌人、宝物和三个最终 Boss，玩家用自然语言下指令，关键场景配 AI 插图，支持多人<br><sub>方法：设定 · 共创</sub><br><sub>更新于 2024-11-12 💤 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 EAFIT 课程项目；作者已转向后继 QuitoTactico/DnD-AI-2.0；需 OpenAI/Gemini 等 Key</sub>
+- **[QuitoTactico/DnD-AI](https://github.com/QuitoTactico/DnD-AI)** · ★ 25<br>Django 版 AI 跑团：按主题生成战役故事、八种地形地图、敌人、宝物和三个最终 Boss，玩家用自然语言下指令，关键场景配 AI 插图，支持多人<br><sub>方法：设定 · 共创</sub><br><sub>更新于 2024-11-12 💤 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 EAFIT 课程项目；作者已转向后继 QuitoTactico/DnD-AI-2.0；需 OpenAI/Gemini 等 Key</sub>
 
 - **[soul-killer](https://github.com/Xeonice/soul-killer)** · ★ 25<br>从任意人物的公开数字足迹提取身份、语言风格和行为模式，蒸馏成角色，再和世界观合成可游玩的 Galgame 剧本 skill<br><sub>方法：设定 · 人物 · 风格 · 共创</sub><br><sub>更新于 2026-04-15 💤 · ⚙️ 框架 · 多语言 · GPL-3.0</sub><br><sub>💡 CLI 工具（TypeScript 源码在仓库），导出的 .skill 档案在 Claude Code / OpenClaw 里游玩；官方安装脚本从作者的 Cloudflare 下载二进制，也可以从源码构建</sub>
 
@@ -1584,11 +1710,13 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[Dungeon-master-OS-WFGY](https://github.com/djnightmare9909/Dungeon-master-OS-WFGY)** · ★ 23<br>Gemini 驱动的 D&D 长篇战役地下城主：持久化世界状态，玩家选择留下长期后果，程序化生成冒险；另提供可粘贴进任意聊天 AI 的 DM 内核提示词<br><sub>方法：记忆 · 模拟 · 共创</sub><br><sub>更新于 2026-09-30 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 需 Google AI Studio API Key；提示词基于 WFGY 语义推理引擎；线上版启用 Vercel Analytics</sub>
 
-- **[AI-Novel](https://github.com/shuaihaoV/AI-Novel)** · ★ 22<br>按题材预设提示写一两千字开篇，之后每段生成三个走向不同的剧情选项，读者选定后带前文续写，逐步推进故事线<br><sub>方法：理论 · 共创</sub><br><sub>更新于 2025-06-26 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 参考 Linux.do 上 TQmyLady 的实现；需 OpenAI 兼容接口</sub>
+- **[RPGBox](https://github.com/sleepydeer666/RPGBox)** · ★ 23<br>Galgame 式 AI RPG 客户端：旁白与多 NPC 对话分层显示，每段用选项推进剧情；角色可配多立绘，自动总结剧情记忆和人物经历<br><sub>方法：人物 · 记忆 · 共创</sub><br><sub>更新于 2026-09-12 · 🧩 应用 · 中文 · GPL-3.0</sub><br><sub>💡 预设含 NSFW 内容；预设借用 DMM《闪耀星骑士》等游戏的设定和立绘；作者称代码全部由 AI 编写</sub>
 
 - **[Omni-plane-Travels](https://github.com/xuegao1416/Omni-plane-Travels)** · ★ 22<br>AI 互动小说引擎：四阶段编织世界与角色，剧情导演写前指导、写后核对，NPC 幕后行动、被见闻后才更新认知，编译式记忆存长期事实；可把小说拆成世界书开局<br><sub>方法：规划 · 设定 · 记忆 · 模拟</sub><br><sub>更新于 2026-10-13 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 BYOK；Web/PWA，Tauri 原生工程不在本版源码内；可选 Cloudflare 云存档与创意工坊</sub>
 
 - **[rekallhalo](https://github.com/Idun/rekallhalo)** · ★ 22<br>Gemini 互动小说：开局选叙事结构与手法，分层记忆（核心/长期/剧情），导演模式预设事件由 AI 融入剧情，剧情蓝图按章字数与必触发事件推进<br><sub>方法：规划 · 理论 · 记忆 · 共创</sub><br><sub>更新于 2025-12-18 💤 · 🧩 应用 · 中文</sub><br><sub>💡 需 Gemini API Key；附实时配图与特效；最后更新 2025-12，按方法独特收录</sub>
+
+- **[shuaihaoV/AI-Novel](https://github.com/shuaihaoV/AI-Novel)** · ★ 22<br>按题材预设提示写一两千字开篇，之后每段生成三个走向不同的剧情选项，读者选定后带前文续写，逐步推进故事线<br><sub>方法：理论 · 共创</sub><br><sub>更新于 2025-06-26 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 参考 Linux.do 上 TQmyLady 的实现；需 OpenAI 兼容接口</sub>
 
 - **[shadowrealms-ai](https://github.com/Somnius/shadowrealms-ai)** · ★ 21<br>自托管的《黑暗世界》跑团 AI 说书人：按角色卡掷骰池判定，本地模型配 RAG 检索规则书和剧情记忆，支持 oWoD 与 V5 规则<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 多语言 · MIT</sub>
 
@@ -1624,6 +1752,8 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[True-Auto-Stats-for-AIDungeon-RPG-Scenarios](https://github.com/Yi1i1i/True-Auto-Stats-for-AIDungeon-RPG-Scenarios)** · ★ 14<br>AI Dungeon 场景脚本：根据玩家输入和 AI 输出自动建立并更新属性、背包、技能、伤病、饥饿等状态，存进故事卡再转述给模型，限制玩家全能<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2025-08-23 💤 · ⚙️ 框架 · 英文</sub><br><sub>💡 粘贴到 AI Dungeon 脚本编辑器的四个钩子中使用</sub>
 
+- **[BetterDungeon](https://github.com/ComputerKWasTaken/BetterDungeon)** · ★ 13<br>AI Dungeon 浏览器扩展：给冒险加笔记、剧情和角色预设、Story Card 扫描分析，Navigator 助手读冒险上下文后提出可审阅的设定修改<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-10-11 · 🧩 应用 · 英文</sub><br><sub>💡 依附 AI Dungeon 使用，Navigator 等 AI 功能需自备模型 key；source-available 许可，不是 OSI 开源</sub>
+
 - **[DungeonGPT-JS](https://github.com/EdwardAThomson/DungeonGPT-JS)** · ★ 13<br>AI 地下城主网页 RPG：骰点、战斗和战役里程碑由确定性引擎裁决，AI 只负责叙述结果；程序生成世界与城镇，RAG 检索历史剧情保持记忆<br><sub>方法：规划 · 记忆 · 共创</sub><br><sub>更新于 2026-10-12 · 🧩 应用 · 英文 · Apache-2.0</sub><br><sub>💡 基于同作者 Python 版 EdwardAThomson/DungeonGPT；线上版有会员分级</sub>
 
 - **[living-story-world](https://github.com/jonmartin721/living-story-world)** · ★ 13<br>持续世界的配图章节生成：用知识图谱记住人物、地点和剧情线，玩家选择影响后续章节，文本与插图模型分别可换<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-09-21 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 默认本地 Ollama，可选 Gemini/Groq/OpenRouter 等；配图可接 ComfyUI/AI Horde</sub>
@@ -1642,7 +1772,7 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[openovel](https://github.com/Feed-Scription/openovel)** · ★ 12<br>互动小说双循环：前台叙事者只管流式出正文，后台 Showrunner、导演、世界、记忆等 agent 异步读回合，改写 Markdown/JSON 状态文件<br><sub>方法：记忆 · 多智能体 · 共创</sub><br><sub>更新于 2026-06-17 · 🧩 应用 · 英文 · Apache-2.0</sub><br><sub>💡 beta；不用向量库，故事状态全是普通文件；Electron 桌面版</sub>
 
-- **[UnscriptedAdventures](https://github.com/dspencej/UnscriptedAdventures)** · ★ 12<br>5e 风格文字 RPG：先建角色（特质、职业、背景），LLM 主持人和 NPC 随玩家选择推进剧情，奖励系统评估玩家投入度并调整主持策略<br><sub>方法：人物 · 修订 · 共创</sub><br><sub>更新于 2024-12-11 💤 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 作者标注 Alpha 阶段</sub>
+- **[UnscriptedAdventures](https://github.com/dspencej/UnscriptedAdventures)** · ★ 12<br>5e 风格文字 RPG：先建角色（特质、职业、背景），LLM 主持人和 NPC 随玩家选择推进剧情，奖励系统评估玩家投入度并调整主持策略<br><sub>方法：人物 · 共创</sub><br><sub>更新于 2024-12-11 💤 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 作者标注 Alpha 阶段</sub>
 
 - **[Dungeo-ai-new](https://github.com/Laszlobeer/Dungeo-ai-new)** · ★ 11<br>Ollama 终端文字冒险：选题材和角色后，DM 提示强制「行动→即时后果」，先分析玩家动作的动词和力度再注入题材规则续写，可存档和重抽<br><sub>方法：共创</sub><br><sub>更新于 2026-02-17 💤 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 作者旧版为 Laszlobeer/-Dungeo_ai-otudated-</sub>
 
@@ -1656,7 +1786,7 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[StoryWeaver-AI](https://github.com/1195214305/StoryWeaver-AI)** · ★ 11<br>无限流互动小说：按题材开局逐章生成 300–500 字并给选项，边缘函数注入文风指导、禁词过滤和上下文一致性校验，读者阅读时预生成后续分支<br><sub>方法：记忆 · 去 AI 味 · 共创</sub><br><sub>更新于 2025-12-23 💤 · 🧩 应用 · 中文</sub><br><sub>💡 阿里云 ESA 活动作品；依赖通义千问、通义万相和 ESA 边缘函数</sub>
 
-- **[dnd-ai](https://github.com/chungs10/dnd-ai)** · ★ 10<br>本地 D&D 主持人实验：mem0 + ChromaDB 存角色与世界的长期记忆，掷骰、战斗等规则走确定性函数调用，提示模板维持人设和世界观<br><sub>方法：设定 · 记忆</sub><br><sub>更新于 2025-12-23 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 学生课程项目，多份实验脚本并存；需本地 Ollama（Qwen3:8B）；README 安装命令里的仓库名写错了</sub>
+- **[chungs10/dnd-ai](https://github.com/chungs10/dnd-ai)** · ★ 10<br>本地 D&D 主持人实验：mem0 + ChromaDB 存角色与世界的长期记忆，掷骰、战斗等规则走确定性函数调用，提示模板维持人设和世界观<br><sub>方法：设定 · 记忆</sub><br><sub>更新于 2025-12-23 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 学生课程项目，多份实验脚本并存；需本地 Ollama（Qwen3:8B）；README 安装命令里的仓库名写错了</sub>
 
 - **[GameMaster-GPT](https://github.com/dmkilday/GameMaster-GPT)** · ★ 10<br>命令行 AI 跑团 GM：读入角色卡文本，按角色生成冒险前提，玩家掷骰由程序结算后回报 GM，附对话压缩脚本控制上下文长度<br><sub>方法：人物 · 记忆 · 共创</sub><br><sub>更新于 2023-07-17 💤 · 🧩 应用 · 英文 · GPL-3.0</sub>
 
@@ -1666,8 +1796,6 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[venger](https://github.com/murderteeth/venger)** · ★ 10<br>GPT 跑团式选择冒险：先按提示生成世界和角色，再按 d20 规则推进玩家行动，每步给出选项<br><sub>方法：设定 · 共创</sub><br><sub>更新于 2023-11-08 📦 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 已停止维护（仓库已归档）</sub>
 
-- **[ai-dungeon-master](https://github.com/ITMO-Agentic-AI/ai-dungeon-master)** · ★ 9<br>LangGraph 八 agent 跑 D&D：故事架构师规划节拍，DM 叙述，世界引擎、规则裁判、动作结算、传说构建分工，共享一个 GameState<br><sub>方法：规划 · 设定 · 多智能体 · 模拟</sub><br><sub>更新于 2025-12-17 💤 · 🧩 应用 · 英文</sub><br><sub>💡 Chainlit 界面；支持任意 OpenAI 兼容接口；仓库未声明许可证</sub>
-
 - **[AI-Game-From-Story](https://github.com/top777/AI-Game-From-Story)** · ★ 9<br>把任意小说 txt 抽取成世界书再转成 MUD 式互动游戏：状态层 JSON 记录世界真相，提示词由世界书、状态、滑动窗口和长期记忆组装<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-09-03 · 🧩 应用 · 中文</sub><br><sub>💡 自带示例游戏《剑起归墟》，可导出单文件 HTML5</sub>
 
 - **[AI-TRPG-Demo](https://github.com/GA10d/AI-TRPG-Demo)** · ★ 9<br>DeepSeek 当跑团主持人：规则插件（COC/VHS 等）定义状态栏、技能判定和专属提示模板，状态管理跟踪玩家数值，附三套剧本和语音播报<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2026-02-13 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 需要 DeepSeek API</sub>
@@ -1675,6 +1803,8 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 - **[AiChatTrpg](https://github.com/Leehow/AiChatTrpg)** · ★ 9<br>导入规则书 PDF 和模组跑团：预处理→生成→后处理三段流水线，结构化 JSON 场景/NPC/剧情线加压缩叙事双记忆，预掷骰池使检定可审计<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2026-05-28 · 🧩 应用 · 多语言 · 4 个 skill · Apache-2.0</sub><br><sub>💡 Pre-alpha；需 PostgreSQL；仓库里的 .agents/skills 是开发流程用的，不是创作 skill</sub>
 
 - **[dreamengine](https://github.com/onzag/dreamengine)** · ★ 9<br>LLM 角色扮演模拟引擎：维护物品位置、角色特质/隐藏状态/触发器、羁绊关系和世界规则，角色只知道亲历之事，上下文动态压缩<br><sub>方法：设定 · 人物 · 记忆 · 模拟</sub><br><sub>更新于 2026-10-10 · 🧩 应用 · 英文 · AGPL-3.0</sub><br><sub>💡 WIP，Electron 应用，面向 llama.cpp / vLLM 本地模型；支持条件化 NSFW 内容</sub>
+
+- **[ITMO-Agentic-AI/ai-dungeon-master](https://github.com/ITMO-Agentic-AI/ai-dungeon-master)** · ★ 9<br>LangGraph 八 agent 跑 D&D：故事架构师规划节拍，DM 叙述，世界引擎、规则裁判、动作结算、传说构建分工，共享一个 GameState<br><sub>方法：规划 · 设定 · 多智能体 · 模拟</sub><br><sub>更新于 2025-12-17 💤 · 🧩 应用 · 英文</sub><br><sub>💡 Chainlit 界面；支持任意 OpenAI 兼容接口；仓库未声明许可证</sub>
 
 - **[llm-dungeon](https://github.com/TJurijs/llm-dungeon)** · ★ 9<br>本地单人跑团：AI DM 维护持久世界记录和隐藏秘密，d100 由代码掷骰，可自写设定/剧本/角色或用冒险模板，英俄双语<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-09-07 · 🧩 应用 · 多语言 · Apache-2.0</sub><br><sub>💡 Node.js 免安装依赖；默认 Gemini，可接 OpenRouter/OpenAI/Anthropic/DeepSeek/xAI</sub>
 
@@ -1710,7 +1840,7 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[agentic-quest](https://github.com/intelc/agentic-quest)** · ★ 6<br>Claude Code/Codex 里的文字 RPG：从任意小说文本生成世界，谜题由 Python 校验函数判成败，同伴是真子 agent，按玩法偏好生成新区域<br><sub>方法：设定 · 多智能体 · 共创</sub><br><sub>更新于 2026-04-07 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 最后更新 2026-04-07，早于时效线；因谜题用代码校验、同伴派子 agent 的思路少见而保留</sub>
 
-- **[ai-dungeon-master](https://github.com/samvoisin/ai-dungeon-master)** · ★ 6<br>Discord 跑团 GM 机器人：GPT-4 + LlamaIndex 按玩家行动即时推进剧情、扮演 NPC 对话并执行 TTRPG 规则，带存档目录<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2026-03-08 💤 · 🧩 应用 · 英文 · GPL-3.0</sub><br><sub>💡 需自备 OpenAI API 与 Discord 机器人令牌</sub>
+- **[AI-text-adv](https://github.com/687jsassd/AI-text-adv)** · ★ 6<br>终端文字冒险引擎：AI 每轮生成剧情和普通/检定/门槛三类选项，六维属性、背包、概率检定持久化，历史自动压缩以控制 token<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2026-02-25 💤 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 需要 OpenAI 兼容 API；配置里可调色情、暴力等偏好</sub>
 
 - **[AIDND](https://github.com/Transcenduality/AIDND)** · ★ 6<br>单文件 Pygame 跑团引擎：LLM 当 DM 叙事，角色卡、物品、属性用结构化 JSON 维护，程序负责 d20 掷骰和数值，带存档与历史追踪<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2026-03-08 💤 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 作者标注 WIP，只有一个 Python 文件；兼容 OpenAI 接口及 Ollama / LM Studio</sub>
 
@@ -1732,17 +1862,19 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[reveriesoil](https://github.com/reveriesoil/reveriesoil)** · ★ 6<br>一句提示生成可玩视觉小说：故事大纲→剧情校验→美术风格→完整台词→立绘/背景/CG→打包，交互深度五档可调，从观影式到高分支<br><sub>方法：规划 · 修订 · 共创</sub><br><sub>更新于 2026-05-14 · 🧩 应用 · 中文</sub><br><sub>💡 BYOK（DeepSeek/Kimi 等），图像与 TTS 可选；Windows/Android 安装包在 Releases</sub>
 
+- **[samvoisin/ai-dungeon-master](https://github.com/samvoisin/ai-dungeon-master)** · ★ 6<br>Discord 跑团 GM 机器人：GPT-4 + LlamaIndex 按玩家行动即时推进剧情、扮演 NPC 对话并执行 TTRPG 规则，带存档目录<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2026-03-08 💤 · 🧩 应用 · 英文 · GPL-3.0</sub><br><sub>💡 需自备 OpenAI API 与 Discord 机器人令牌</sub>
+
 - **[WhisperQuest](https://github.com/maxcurrent420/WhisperQuest)** · ★ 6<br>语音选择冒险：Whisper 识别玩家口述的选择，LLM 按惊悚等预设或自定义题材逐回合讲故事，配场景图和多种 TTS、声音克隆朗读<br><sub>方法：共创</sub><br><sub>更新于 2025-05-07 💤 · 🧩 应用 · 英文</sub><br><sub>💡 支持本地 LLM 和 Groq；许可证是改版 CC BY-NC-SA，营收超 10 万美元需购买授权</sub>
 
 - **[AaaliceTavern](https://github.com/WalkingMeatAxolotl/AaaliceTavern)** · ★ 5<br>规则引擎先结算行动条件、结果分支和 NPC 自主决策，再把结果、角色状态和世界书条目拼进提示词让 LLM 写旁白；内容按 addon 包组织<br><sub>方法：设定 · 记忆 · 模拟</sub><br><sub>更新于 2026-03-28 💤 · 🧩 应用 · 多语言 · AGPL-3.0</sub><br><sub>💡 自带可视化编辑器和创建实体的 AI 助手；AGPL-3.0</sub>
 
 - **[ai-dungeon-game](https://github.com/prgrmcode/ai-dungeon-game)** · ★ 5<br>Gradio 文字地牢冒险：Llama 3.2 按玩家进度程序化生成多链任务并叙述回应，代码跟踪背包与世界状态，LLaMA Guard 逐条审核输出<br><sub>方法：规划 · 记忆 · 共创</sub><br><sub>更新于 2025-12-15 💤 · 🧩 应用 · 英文</sub><br><sub>💡 本地跑 Llama-3.2-3B（8-bit 量化），需 Hugging Face Token</sub>
 
-- **[AI-Dungeon-Master](https://github.com/ell-hosse/AI-Dungeon-Master)** · ★ 5<br>LLM 地下城主网页游戏：先生成冒险前提和主线/支线任务，按玩家行动更新背包、属性和任务状态，任务全部完成即通关<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2024-10-20 💤 · 🧩 应用 · 英文</sub><br><sub>💡 需要 OpenRouter API</sub>
-
 - **[ai-gamestudio](https://github.com/ackness/ai-gamestudio)** · ★ 5<br>双模型 RPG 引擎：Markdown 写世界观，主模型负责叙事，插件 agent 按统一规范管状态、事件、战斗、关系和记忆压缩，状态全部落库<br><sub>方法：设定 · 记忆 · 多智能体</sub><br><sub>更新于 2026-03-24 📦 · 🧩 应用 · 多语言</sub><br><sub>💡 已停止维护（仓库已归档）；LiteLLM 兼容模型；带剧情配图插件</sub>
 
 - **[Corvus-Story-Core](https://github.com/JustLateNightAI/Corvus-Story-Core)** · ★ 5<br>本地文字 RPG 主持引擎：每回合叙述后由隐藏 GM 抽取数值/物品/NPC 态度增量写盘，NPC 卡自带记忆，旧对话自动压成章节摘要<br><sub>方法：人物 · 记忆 · 共创</sub><br><sub>更新于 2026-06-18 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 任意 OpenAI 兼容端点；可选 ComfyUI 生图、Chatterbox TTS；设置里有全局越狱提示词选项</sub>
+
+- **[ell-hosse/AI-Dungeon-Master](https://github.com/ell-hosse/AI-Dungeon-Master)** · ★ 5<br>LLM 地下城主网页游戏：先生成冒险前提和主线/支线任务，按玩家行动更新背包、属性和任务状态，任务全部完成即通关<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2024-10-20 💤 · 🧩 应用 · 英文</sub><br><sub>💡 需要 OpenRouter API</sub>
 
 - **[Evermind](https://github.com/Phobetore/Evermind)** · ★ 5<br>自托管 AI 角色扮演：边玩边把承诺、旧伤、信任变化等剧情事实写进可编辑、可置顶的长期记忆并每轮注入，角色不讨好用户，附六个原创世界<br><sub>方法：人物 · 记忆 · 共创</sub><br><sub>更新于 2026-10-03 · 🧩 应用 · 英文 · AGPL-3.0</sub><br><sub>💡 自带模型（本地或 OpenRouter 等）；无内容过滤，可生成成人内容；Docker 部署</sub>
 
@@ -1751,6 +1883,8 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 - **[gestaloka](https://github.com/KingYoSun/gestaloka)** · ★ 5<br>多人共享世界文字 MMO：世界包定义设定，玩家和 NPC 行动进入同一世界事件流，投影成图谱并向量检索记忆，AI GM 每回合给出局面和可选行动<br><sub>方法：设定 · 记忆 · 模拟</sub><br><sub>更新于 2026-06-25 · 🧩 应用 · 日文 · MIT</sub><br><sub>💡 README 英文，GM 规则和设计文档为日文；部署栈较重（Postgres、NebulaGraph、Keycloak、Langfuse）</sub>
 
 - **[gpt-text-adventure](https://github.com/somacdivad/gpt-text-adventure)** · ★ 5<br>主题→标题与背景→6 个带目标和地点的剧情点，之后每回合把剧情点、玩家血量/体力/进度和上一选择以 JSON 交给模型生成叙述和选项<br><sub>方法：规划 · 共创</sub><br><sub>更新于 2023-04-11 💤 · 🧩 应用 · 英文</sub><br><sub>💡 作者自述多数故事走不完</sub>
+
+- **[HHHHCHYK/StoryLoom](https://github.com/HHHHCHYK/StoryLoom)** · ★ 5<br>先填世界观、主角、势力、物品、场景，再逐步输入情节指令让 AI 续写；按行动/对白/思考模式生成，旧内容自动压缩为摘要，正文与摘要/建议用不同模型<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-05-08 · 🧩 应用 · 中文</sub><br><sub>💡 Windows 桌面（.NET 10 + Blazor Hybrid）；默认 DeepSeek；仓库混入编译产物 exe/dll</sub>
 
 - **[InkRealm](https://github.com/xinxin2021110/InkRealm)** · ★ 5<br>网文 IP 角色共创：检索角色语录做沉浸对谈，或用 6 步向导建自定义角色后生成大纲和章节，章末给选项影响走向，仿 MetaGPT 的角色/动作/记忆抽象<br><sub>方法：人物 · 记忆 · 多智能体 · 共创</sub><br><sub>更新于 2026-05-29 · 🧩 应用 · 中文</sub><br><sub>💡 附带《武动乾坤》《斗破苍穹》等网文角色语料 JSONL，可上传其他作品；课程项目性质，README 含作者本机路径；仓库无许可证</sub>
 
@@ -1764,9 +1898,7 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[RePoG](https://github.com/tritonsan/RePoG)** · ★ 5<br>在 agent 工作区里跑单人跑团 GM 或 AI 伴侣：Markdown 记录战役连续性，限定角色已知信息，本地脚本管骰子与资源回滚，另产信件报纸等世界文书<br><sub>方法：设定 · 记忆 · 模拟</sub><br><sub>更新于 2026-10-07 · ⚙️ 框架 · 英文 · Apache-2.0</sub><br><sub>💡 不内置模型调用，直接用所在 agent 的模型；含 AI 伴侣模式</sub>
 
-- **[StoryLoom](https://github.com/HHHHCHYK/StoryLoom)** · ★ 5<br>先填世界观、主角、势力、物品、场景，再逐步输入情节指令让 AI 续写；按行动/对白/思考模式生成，旧内容自动压缩为摘要，正文与摘要/建议用不同模型<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-05-08 · 🧩 应用 · 中文</sub><br><sub>💡 Windows 桌面（.NET 10 + Blazor Hybrid）；默认 DeepSeek；仓库混入编译产物 exe/dll</sub>
-
-- **[Storyloom](https://github.com/SiriLee/Storyloom)** · ★ 5<br>实时视觉小说引擎：LLM 流式输出 XML 逐行解析，模型只提议状态写入、引擎类型校验后才落地并回馈拒绝；场景内选项与大纲级路线分叉两层分支，自动配立绘和背景<br><sub>方法：规划 · 记忆 · 共创</sub><br><sub>更新于 2026-08-21 · 🧩 应用 · 多语言 · MIT</sub><br><sub>💡 需 OpenAI 兼容 API；有 PyPI 包与独立二进制，立绘/背景素材包首次启动另行下载</sub>
+- **[SiriLee/Storyloom](https://github.com/SiriLee/Storyloom)** · ★ 5<br>实时视觉小说引擎：LLM 流式输出 XML 逐行解析，模型只提议状态写入、引擎类型校验后才落地并回馈拒绝；场景内选项与大纲级路线分叉两层分支，自动配立绘和背景<br><sub>方法：规划 · 记忆 · 共创</sub><br><sub>更新于 2026-08-21 · 🧩 应用 · 多语言 · MIT</sub><br><sub>💡 需 OpenAI 兼容 API；有 PyPI 包与独立二进制，立绘/背景素材包首次启动另行下载</sub>
 
 - **[trinity](https://github.com/jorjiiie/trinity)** · ★ 5<br>HackMIT VR 原型：仿生成式智能体做小镇真人秀，角色按预设人格用 GPT 对话并摘要记忆，情感分析加概率分布决定反应，观众捐赠可推动恋爱、冲突剧情<br><sub>方法：人物 · 模拟</sub><br><sub>更新于 2023-09-17 💤 · 🧩 应用 · 英文</sub><br><sub>💡 2023 年黑客松原型，README 是作品介绍、没有安装说明；Unity VR 前端 + LangChain，语音用 ElevenLabs</sub>
 
@@ -1774,9 +1906,25 @@ AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、�
 
 - **[yinghui](https://github.com/Mrpora/yinghui)** · ★ 5<br>多 agent 世界演化沙盒：导演 agent 分回合调度角色自主行动与冲突，关键节点给分支供用户选择，演化记录再由写作+审查 agent 转成章节小说<br><sub>方法：记忆 · 多智能体 · 模拟 · 共创</sub><br><sub>更新于 2026-07-21 · 🧩 应用 · 中文 · AGPL-3.0</sub><br><sub>💡 作者自称 Demo 项目；AGPL-3.0 + 商业许可双授权；另含带长期记忆的角色对话线</sub>
 
+- **[Ai-Role-Play](https://github.com/GWSuryaYT/Ai-Role-Play)** · ★ 4<br>持久记忆 RPG 角色扮演框架：图书管理员 agent 按实体检索相关设定，后台睡眠周期从对话里抽新设定、关系和事件，持续更新世界状态 JSON 与关系三元组<br><sub>方法：设定 · 记忆 · 多智能体</sub><br><sub>更新于 2026-05-30 · 🧩 应用 · 英文</sub><br><sub>💡 配合 Ollama 本地模型；作者另在 Hugging Face 发布了微调叙述模型 chronicle-narrator 和 RPG 数据集</sub>
+
 - **[DungeonGPT](https://github.com/EdwardAThomson/DungeonGPT)** · ★ 4<br>先建角色（属性/职业/种族）并组队，设定难度与叙事风格，再由 GPT-4o 扮演地下城主按会话历史推进冒险，可存读档<br><sub>方法：人物 · 共创</sub><br><sub>更新于 2026-02-18 💤 · 🧩 应用 · 英文</sub><br><sub>💡 需 OpenAI API Key；无许可证</sub>
 
+- **[Nufahi/storyforge](https://github.com/Nufahi/storyforge)** · ★ 3<br>SillyTavern 叙事扩展：一键注入情节反转、新 NPC、随机事件、场景切换；导演模式按强度掷 d100 自动排事件并设冷却，提醒夹每 N 轮复注设定<br><sub>方法：理论 · 记忆 · 共创</sub><br><sub>更新于 2026-07-05 · ⚙️ 框架 · 英文</sub><br><sub>💡 SillyTavern 扩展</sub>
+
+- **[relife](https://github.com/Conn-Ho/relife)** · ★ 3<br>用 CAMEL 多智能体从用户记忆推演「另一种人生」：每回合给 2–3 个分支（按意外、蝴蝶效应、理想结局设定概率），跨会话保存记忆锚点，并配图配乐<br><sub>方法：记忆 · 多智能体 · 共创</sub><br><sub>更新于 2026-03-24 💤 · 🧩 应用 · 英文</sub><br><sub>💡 可选 Emotiv 脑电头环把情绪接入配乐；需 OpenAI、火山引擎、Google API</sub>
+
+- **[AIGC-Game](https://github.com/anakinju/AIGC-Game)** · ★ 1<br>LangGraph 用 Router 调度多个 NPC 智能体，NPC 带情感和记忆，按场景任务对话推进剧情，退场时由 WorldState 结算任务、更新世界<br><sub>方法：记忆 · 多智能体 · 模拟</sub><br><sub>更新于 2026-03-18 💤 · ⚙️ 框架 · 中文</sub><br><sub>💡 需 OpenAI 兼容 API；Unity 前端不在仓库里，场景和 NPC 设定改 data/ 下的 JSON</sub>
+
+- **[MyLifeStory](https://github.com/code-lawyer/MyLifeStory)** · ★ 1<br>世界模拟式互动叙事：建世界和分级 NPC（含隐藏特质），事件确认后触发关系与状态漂移、场景解锁，事件超阈值压缩成摘要，按预算裁剪上下文<br><sub>方法：设定 · 人物 · 记忆 · 模拟</sub><br><sub>更新于 2026-04-14 💤 · 🧩 应用 · 中文 · AGPL-3.0</sub><br><sub>💡 从目录结构看基于 SillyTavern 代码库改造，新增 world-simulation 模块</sub>
+
 - **[OpenCOCKeeper](https://github.com/pineoncellar/OpenCOCKeeper)** · ★ 1<br>CoC 7 版 AI 守秘人：BM25 检索用户导入的模组原文和规则库，mem0/Qdrant 语义记忆，d100 检定与理智规则由纯函数经工具调用执行<br><sub>方法：记忆 · 共创</sub><br><sub>更新于 2026-09-26 · 🧩 应用 · 中文 · Apache-2.0</sub><br><sub>💡 开发中；不含规则书和模组，需自备；架构参考 Concordia 与 ChatRPG v2</sub>
+
+- **[ripple](https://github.com/nylaimanii/ripple)** · ★ 1<br>输入任一历史时刻，玩家以当事决策者身份面对真实抉择，模型生成选项和后果并在地球仪上展示涟漪，最后对照真实历史给出评述<br><sub>方法：模拟 · 共创</sub><br><sub>更新于 2026-04-02 💤 · 🧩 应用 · 英文</sub><br><sub>💡 黑客松项目；需 K2 Think、Groq、Gemini 等多个 API</sub>
+
+- **[spark-world](https://github.com/yanivgal/spark-world)** · ★ 1<br>回合制叙事模拟：生成有个性的 agent，靠结盟获得生命能量，也可掠夺或向神秘角色乞求；Storyteller agent 把每回合事件写成叙事<br><sub>方法：人物 · 多智能体 · 模拟</sub><br><sub>更新于 2025-08-06 💤 · 🧩 应用 · 英文</sub><br><sub>💡 需要 OpenAI API；基于 DSPy，Streamlit 界面</sub>
+
+- **[Veins-of-Erid-n](https://github.com/JPClow3/Veins-of-Erid-n)** · ★ 1<br>Gemini 按世界圣经当叙事者实时生成文字冒险，每轮回传日志、阵营声望、NPC 名录和背包作为记忆，玩家选择改变后续剧情，配 Imagen 插图和 TTS<br><sub>方法：设定 · 记忆 · 共创</sub><br><sub>更新于 2026-10-11 📦 · 🧩 应用 · 英文</sub><br><sub>💡 已停止维护（仓库已归档）；固定原创世界观 Eridûn；需 Google Gemini API</sub>
 
 - **[VySol](https://github.com/Vyce101/VySol)** · ★ 1<br>把按顺序排列的 TXT/EPUB 原著分块建向量库，在该世界的 Chronicle 会话里检索原著上下文进行角色扮演，目标是 GraphRAG 与实体消解<br><sub>方法：记忆</sub><br><sub>更新于 2026-09-29 · 🧩 应用 · 英文</sub><br><sub>💡 开发中：main 是新版基础，知识图谱/GraphRAG 尚未完成，早期原型在其他分支；Windows 启动</sub>
 
@@ -1815,10 +1963,14 @@ npx skills add mlkgrnt/Cyber-Eros.skill
 npx skills add din1919/interactive-novel
 # speckit-preset-game-narrative-writing
 npx skills add adaumann/speckit-preset-game-narrative-writing
+# tragedy-narrative-guard
+npx skills add zhlmi/tragedy-narrative-guard
 # DeekSeek-V4-text-adventure-prompt-builder
 npx skills add EdenBush/DeekSeek-V4-text-adventure-prompt-builder
 # novel-rpg
 npx skills add kiki123124/novel-rpg
+# gamebook
+npx skills add alanl1234/gamebook
 ```
 
 </details>
@@ -1828,9 +1980,11 @@ npx skills add kiki123124/novel-rpg
 
 学一部作品或一位作者的写法再创作：拆书仿写、文风蒸馏、同人、续写。
 
-#### skill · 提示词（11）
+#### skill · 提示词（22）
 
 - 🌟 **[longzu.skillls](https://github.com/zuoyou12/longzu.skillls)** · ★ 11<br>江南、烽火戏诸侯文风蒸馏 skill：全文统计 1465 万字语料加等距精读，得出共享叙事骨架和可替换语言皮肤，支持风格杂交，附审计脚本和盲测<br><sub>方法：修订 · 风格</sub><br><sub>更新于 2026-07-28 · 中文 · 3 个 skill</sub><br><sub>💡 同人/仿写性质，仓库只有风格笔记、不含原文；盲测方法改造自 alchaincyf/nuwa-skill</sub>
+
+- **[jiangnan.skill](https://github.com/dmlin7777777/jiangnan.skill)** · ★ 101<br>用 Nuwa 蒸馏出的江南 9 个心智模型，先引导式提问提取用户的结局构想，再按彩蛋式或最终章式写《龙族》结局，最后走 5 步江南化润色<br><sub>方法：理论 · 修订 · 风格 · 共创</sub><br><sub>更新于 2026-07-16 · 中文</sub><br><sub>💡 聚焦《龙族》同人结局；基于 alchaincyf/nuwa-skill 蒸馏；公开版不含原文素材</sub>
 
 - **[xin-skills](https://github.com/oscar-wang-xin/xin-skills)** · ★ 28<br>122 个文风锁定 skill：从番茄热门书和金庸、古龙等指定小说萃取十维风格规范，只仿文笔不抄剧情<br><sub>方法：风格</sub><br><sub>更新于 2026-09-25 · 中文 · 122 个 skill</sub><br><sub>💡 每个技能附对应原作的段落摘录作风格样本</sub>
 
@@ -1838,9 +1992,11 @@ npx skills add kiki123124/novel-rpg
 
 - **[wenfeng-skill](https://github.com/XTmingyue/wenfeng-skill)** · ★ 21<br>给一部小说文本，提炼叙事模型、语言指纹、母题、人物与情节技法，生成可直接调用的仿写 SKILL.md<br><sub>方法：理论 · 人物 · 风格</sub><br><sub>更新于 2026-05-26 · 中文 · MIT</sub><br><sub>💡 仓库不含原作文本，需自备有权处理的小说文本</sub>
 
+- **[novel-deconstruct](https://github.com/QQ-L-XX/novel-deconstruct)** · ★ 15<br>输入番茄小说链接或正文，按麦基《故事》、许荣哲《小说课》等框架做定量扫描、逐场景拆解和价值变化追踪，输出 18 章拆书报告供仿写参考<br><sub>方法：理论 · 风格</sub><br><sub>更新于 2026-06-09 · 中文 · MIT</sub><br><sub>💡 本身只产出拆书报告，README 建议把技法规律注入 awesome-novel-skill 用于写作；含番茄字体解码与章节抓取脚本</sub>
+
 - **[stephen-chow-skill](https://github.com/chnjames/stephen-chow-skill)** · ★ 14<br>无厘头喜剧 skill：先定人物欲望、喜剧规则与地位关系，从 8 类喜剧机制选 2-3 个搭升级链再写台词，最后做原创性检查与可拍性评分迭代<br><sub>方法：理论 · 修订 · 风格</sub><br><sub>更新于 2026-06-15 · 中文 · MIT</sub><br><sub>💡 非周星驰官方；只抽象喜剧机制，不收录台词，内置近似文本检查</sub>
 
-- **[AI-DaLiu](https://github.com/Wanludrame/AI-DaLiu)** · ★ 7<br>精读刘慈欣 26 部作品提炼构思与叙事方法来写科幻，三体同人遵守原作设定，并仿 Generative Agents 每天生成「大刘日记」积累生活质感<br><sub>方法：人物 · 模拟 · 风格</sub><br><sub>更新于 2026-09-09 · 中文 · 5 个 skill</sub><br><sub>💡 风格和同人技能绑定刘慈欣/三体；仓库含大量生成的作品与日记文本；另有短片制作技能</sub>
+- **[AI-DaLiu](https://github.com/Wanludrame/AI-DaLiu)** · ★ 7<br>精读刘慈欣 26 部作品提炼构思与叙事方法来写科幻，三体同人遵守原作设定，并仿 Generative Agents 每天生成「大刘日记」积累生活质感<br><sub>方法：人物 · 风格</sub><br><sub>更新于 2026-09-09 · 中文 · 5 个 skill</sub><br><sub>💡 风格和同人技能绑定刘慈欣/三体；仓库含大量生成的作品与日记文本；另有短片制作技能</sub>
 
 - **[novel-style-skills](https://github.com/xianzl/novel-style-skills)** · ★ 7<br>从小说样本蒸馏作者文风为 style.json，按声音/句法/对白分层融合多位作者，写前检查欲望-阻力-选择-代价故事引擎，写后评测风格漂移与 AI 味<br><sub>方法：修订 · 风格 · 去 AI 味</sub><br><sub>更新于 2026-05-08 · 多语言 · 5 个 skill · MIT</sub><br><sub>💡 受 YIKUAIBANZI/forge-skill（人物蒸馏）启发，非其 fork；样本需用户自备</sub>
 
@@ -1851,6 +2007,24 @@ npx skills add kiki123124/novel-rpg
 - **[xin-novel-style-builder](https://github.com/oscar-wang-xin/xin-novel-style-builder)** · ★ 6<br>文风 skill 生成器：清洗小说前 20 章正文，从视角、句式、对话、节奏、钩子等十个维度萃取文风，生成可安装的文风锁定 SKILL.md 供 AI 仿写<br><sub>方法：风格</sub><br><sub>更新于 2026-08-22 · 中文 · MIT</sub><br><sub>💡 只仿文笔不抄剧情；仓库附自身 skill 的 zip 打包，与目录内容一致</sub>
 
 - **[character-card-fiction-workflow-skill](https://github.com/shigehaomingzi1/character-card-fiction-workflow-skill)** · ★ 5<br>从草稿、聊天记录或小说提炼带原文证据的角色设定；续写前先定六项风格参数、规划事件与优先级，再出正文和一致性清单，也能导出 SillyTavern 角色卡<br><sub>方法：规划 · 人物 · 风格</sub><br><sub>更新于 2026-06-18 · 中文 · GPL-3.0</sub>
+
+- **[justin-sun-narrative](https://github.com/william19307/justin-sun-narrative)** · ★ 4<br>孙宇晨《我的女友景甜》冷叙事体 skill：写中文第一人称长文，用物理换算开场，精确数字当人物，把奢侈写成后勤和浪费，收在空处不讲道理<br><sub>方法：理论 · 风格</sub><br><sub>更新于 2026-08-27 · 中文</sub><br><sub>💡 只抽写法，不转载原文；CC0</sub>
+
+- **[justin-sun-skill](https://github.com/Leon-Drq/justin-sun-skill)** · ★ 3<br>从一篇虚构长文抽取白描、深场景、数字反差、物件三次回环、劳动侧写等机制，先做事实审计再选锚点场景写中文叙事，附失败门槛和 24 分评分表<br><sub>方法：理论 · 修订 · 风格 · 事实</sub><br><sub>更新于 2026-08-28 · 中文</sub><br><sub>💡 仓库附带参考原文（已标注为虚构）；与 CosmicRing/sunwen-simulator-skill 源自同一篇文章</sub>
+
+- **[jiangnan-writer](https://github.com/tianyayu6/jiangnan-writer)** · ★ 2<br>先判断题材（校园、幻想、史诗、武侠、科幻、散文），再组合 9 个从江南作品统计提炼的叙事引擎写原创故事，长篇维护关系债务与伏线台账，附文本审计脚本<br><sub>方法：理论 · 记忆 · 修订 · 风格</sub><br><sub>更新于 2026-06-13 · 中文 · MIT</sub><br><sub>💡 构建方法参考 alchaincyf/nuwa-skill；仓库不含原文，同人请求会转成原创设定</sub>
+
+- **[sunwen-simulator-skill](https://github.com/CosmicRing/sunwen-simulator-skill)** · ★ 2<br>拆解孙宇晨《我的女友景甜》的叙事骨架（量化冷开场、账本抒情、首次拒绝、物件回收），迁移到任意题材写第一人称长文，附 100 分评分表<br><sub>方法：理论 · 修订 · 风格</sub><br><sub>更新于 2026-08-27 · 中文 · MIT</sub><br><sub>💡 真实人物题材只用用户提供或可核实的事实；与 Leon-Drq/justin-sun-skill 蒸馏自同一篇文章，两者各自独立</sub>
+
+- **[cuizouzhao-novelist](https://github.com/7dm4sj7nt2-coder/cuizouzhao-novelist)** · ★ 1<br>蒸馏崔走召三部曲的民俗志怪写法：SKILL.md 定说书人腔和「日常→渗人」节奏，references 分世界观、结构、人物和样本库，可原创、续写、改写、诊断<br><sub>方法：理论 · 设定 · 风格</sub><br><sub>更新于 2026-08-26 · 中文</sub><br><sub>💡 只提炼写法，不含原文；附 Kelivo / RikkaHub 可导入世界书 JSON；已并入作者旧仓库 cuizouzhao-skill</sub>
+
+- **[didi-style-short-film-distiller](https://github.com/Seven-hub-fanfan/didi-style-short-film-distiller)** · ★ 1<br>蒸馏 B 站 DiDi_OK 的 14 部 AI 短片：「日常名词授予宇宙级权限」选题公式加六项自检，六拍叙事结构，三型结尾反转，伪纪录片视觉语法和出片工具选型<br><sub>方法：规划 · 理论 · 风格</sub><br><sub>更新于 2026-09-22 · 中文</sub><br><sub>💡 第三方研究总结，与 DiDi_OK 无关联；纯方法文档，出片要另接 VEO / Sora / Runway 等</sub>
+
+- **[shizut0y0-skill](https://github.com/Kira-Calc/shizut0y0-skill)** · ★ 1<br>模仿 @shizut0y0 的 kigurumi 体感叙事：把约 420 条推文归纳成六种范式（体感、拘束、短句、日记、连载、恶作剧），按五感和渐进堕落节奏写<br><sub>方法：风格</sub><br><sub>更新于 2026-04-12 💤 · 中文</sub><br><sub>💡 成人内容（乳胶、拘束、调教向）</sub>
+
+- **[sun-yuchen-writing-skill](https://github.com/Bbbtt04/sun-yuchen-writing-skill)** · ★ 1<br>提炼「亿万富翁冷账叙事」写虚构短篇：微小数字→巨额数字，执念→奢华满足→第一次迟疑，人物离场后流程照走、旧物回环，用数字和服务劳动细节代替直接抒情<br><sub>方法：理论 · 风格</sub><br><sub>更新于 2026-08-28 · 中文 · MIT</sub><br><sub>💡 风格来自网上流传的一篇虚构文章，与 LucienLL/writing-like-sun 同源；非本人授权</sub>
+
+- **[writing-like-sun](https://github.com/LucienLL/writing-like-sun)** · ★ 1<br>从样文提炼标题、开头、节奏、物件回调等机制，按分析→故事圣经→重写→审稿流程换人物、换事件写新故事，还能转成短剧剧本<br><sub>方法：规划 · 修订 · 风格</sub><br><sub>更新于 2026-08-28 · 中文 · MIT</sub><br><sub>💡 灵感来自同一篇 X 爆款文章，与 Bbbtt04/sun-yuchen-writing-skill 同源；默认只用虚构人物</sub>
 
 #### 框架 · 应用（4）
 
@@ -1869,12 +2043,16 @@ npx skills add kiki123124/novel-rpg
 # 默认命令基于 skills CLI，未逐个验证，以各仓库 README 为准
 # longzu.skillls
 npx skills add zuoyou12/longzu.skillls
+# jiangnan.skill
+npx skills add dmlin7777777/jiangnan.skill
 # xin-skills
 npx skills add oscar-wang-xin/xin-skills
 # Skills-for-Long-Online-Novel-Authors
 npx skills add shuipingbai6/Skills-for-Long-Online-Novel-Authors
 # wenfeng-skill
 npx skills add XTmingyue/wenfeng-skill
+# novel-deconstruct
+npx skills add QQ-L-XX/novel-deconstruct
 # stephen-chow-skill
 npx skills add chnjames/stephen-chow-skill
 # AI-DaLiu
@@ -1889,6 +2067,274 @@ npx skills add alexsowake/author-style-extractor
 npx skills add oscar-wang-xin/xin-novel-style-builder
 # character-card-fiction-workflow-skill
 npx skills add shigehaomingzi1/character-card-fiction-workflow-skill
+# justin-sun-narrative
+npx skills add william19307/justin-sun-narrative
+# justin-sun-skill
+npx skills add Leon-Drq/justin-sun-skill
+# jiangnan-writer
+npx skills add tianyayu6/jiangnan-writer
+# sunwen-simulator-skill
+npx skills add CosmicRing/sunwen-simulator-skill
+# cuizouzhao-novelist
+npx skills add 7dm4sj7nt2-coder/cuizouzhao-novelist
+# didi-style-short-film-distiller
+npx skills add Seven-hub-fanfan/didi-style-short-film-distiller
+# shizut0y0-skill
+npx skills add Kira-Calc/shizut0y0-skill
+# sun-yuchen-writing-skill
+npx skills add Bbbtt04/sun-yuchen-writing-skill
+# writing-like-sun
+npx skills add LucienLL/writing-like-sun
+```
+
+</details>
+
+<a id="group-nonfiction"></a>
+### 非虚构叙事
+
+把真实的新闻、事件、科学知识和历史人物写成好看的故事：特稿、事件复盘、科普、传记、口播和解说文案、品牌故事。故事要好看，事实不能编。
+
+#### skill · 提示词（50）
+
+- 🌟 **[director](https://github.com/s1dashu/director)** · ★ 805<br>动画解说模式先定中心问题，按钩子、背景、矛盾、概念、误读、回答组织讲稿，区分事实与解读、不编造动机和对白，再做人物、分镜和视频生成<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-08-10 · 中文 · MIT</sub><br><sub>💡 另有个人经历故事动画、剧情影像两种模式；媒体生成依赖 LibTV CLI 或即梦 CLI</sub>
+
+- 🌟 **[data2story-skill](https://github.com/QinghongLin/data2story-skill)** · ★ 156<br>数据新闻 agent：侦探查背景、分析师跑代码出发现、编辑定故事主线与钩子–证据–转折结构，再出图写 HTML，每句话标注并校验到数据或出处<br><sub>方法：规划 · 多智能体 · 修订 · 事实</sub><br><sub>更新于 2026-07-05 · 英文 · 27 个 skill · MIT</sub><br><sub>💡 论文配套（arXiv，CAIS workshop Spotlight）；多媒体生成需 OpenRouter API；另有 14 角色扩展版 data2story-pro</sub>
+
+- 🌟 **[good-story](https://github.com/Rimagination/good-story)** · ★ 136<br>科研叙事 skill：从结果、图表和草稿里找出张力和主线，按证据链重排图序，输出故事卡和证据地图，按领域校准证据强度，查因果和普遍性有没有说过头，模拟审稿人<br><sub>方法：理论 · 修订 · 事实</sub><br><sub>更新于 2026-06-28 · 多语言 · MIT</sub>
+
+- 🌟 **[aletheia](https://github.com/mycyg/aletheia)** · ★ 7<br>文章、论文转纪录片：先建证据账本把主张和引文绑定出处，提 2–3 个叙事方向，按「张力→证据→解释→后果」因果链写旁白与逐镜分镜，确认后才生成素材<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-08-23 · 多语言 · MIT</sub><br><sub>💡 旁白确定性须与证据账本一致、直接引语逐条核验；后续含批量生图、本地 TTS/ASR、Three.js 渲染等完整成片流程</sub>
+
+- **[simon-skills](https://github.com/trustfuture/simon-skills)** · ★ 428<br>调查长片 skill：先定账目/代价/规则等六类核心问题并轮换，开场 5 秒用有事实支撑的冲突立起问题，结论有来源台账和事实核查；另含白板讲解视频<br><sub>方法：理论 · 事实</sub><br><sub>更新于 2026-10-13 · 中文 · 3 个 skill · MIT</sub><br><sub>💡 大部分篇幅是 Remotion 合成、火山 TTS、封面和发布文案，需要对应 API；叙事规则在 references/narrative-modes.md</sub>
+
+- **[image-story-video-wizard](https://github.com/aaronyi97/image-story-video-wizard)** · ★ 357<br>讲书、历史故事类图片联播视频向导：对标学习后组写作包，素材分可核事件、推断与传闻，交写作模型出稿后定点审稿核事实，再进配音、分镜和成片<br><sub>方法：修订 · 风格 · 事实</sub><br><sub>更新于 2026-09-15 · 中文 · MIT</sub><br><sub>💡 完整 16 阶段视频流水线，文案只是其中一段；默认用 Kimi 写长文案、豆包 TTS 配音</sub>
+
+- **[wedding-video-guided-wizard](https://github.com/aaronyi97/wedding-video-guided-wizard)** · ★ 340<br>14 步引导：五幕问卷采集新人真实故事并编号事实条目，写作包按主事件、细节、情绪安排段落与呼应，每句文案和分镜须回溯故事卡，再接配音、生图与剪辑<br><sub>方法：规划 · 修订 · 共创 · 事实</sub><br><sub>更新于 2026-09-10 · 多语言 · MIT</sub><br><sub>💡 叙事在前 3 步，后续是配音、生图、视频、混音；推荐 Kimi K3 写文案、豆包 TTS，生图需在外部 GPT 手动完成</sub>
+
+- **[content-skills](https://github.com/artemnovitckii/content-skills)** · ★ 104<br>storytelling skill：先定独特视角、先写结尾，中段用 but/therefore 交替制造冲突，按句长变化写口播；规定只用真实素材、不编造经历<br><sub>方法：理论 · 去 AI 味 · 事实</sub><br><sub>更新于 2026-06-20 · 英文 · 4 个 skill · MIT</sub><br><sub>💡 5 个写作 skill，其中 storytelling 和叙事直接相关；其余是通俗化改写、钩子审查、去 AI 味和个人语气</sub>
+
+- **[case-study-storytelling](https://github.com/mengxuebi-mush/case-study-storytelling)** · ★ 75<br>把产品设计作品集案例讲成面试故事：/plan 梳理论点、因果弧线与证据缺口，/script 写逐页讲稿和情绪推进，/follow-up 预演追问，不编造数据<br><sub>方法：规划 · 修订 · 事实</sub><br><sub>更新于 2026-08-31 · 英文 · MIT</sub><br><sub>💡 规划结果输出为中英可切换的 HTML 审阅文件</sub>
+
+- **[autopunk-media-skills](https://github.com/ur-grue/autopunk-media-skills)** · ★ 35<br>400 多个媒体 skill 加 9 个多步 agent，叙事部分覆盖纪录片开发和解说、杂志特稿、调查报道、播客、编剧，配事实核查和法律风险检查<br><sub>方法：理论 · 事实</sub><br><sub>更新于 2026-08-31 · 英文 · 412 个 skill · MIT</sub><br><sub>💡 大部分 skill 和叙事无关（版权、发行、PR、翻译等），叙事相关的集中在 tv-documentary、magazine-journalism、podcast、screenwriting 目录</sub>
+
+- **[ai-director-video-commentary](https://github.com/fqyy360t/ai-director-video-commentary)** · ★ 28<br>影视剧解说：先做剧情调研出导演简报，把 ASR 和视觉分析融合成语义图，按因果链、情绪曲线和「故事五问」写解说，对时间戳校验，推断部分标低置信待审<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-07-06 · 多语言</sub><br><sub>💡 素材是用户提供的剧集视频；需 FFmpeg、faster-whisper 和 DashScope Qwen-VL；成片可导入剪映配音</sub>
+
+- **[portfolio-case-study-generator](https://github.com/SonwaneyY/portfolio-case-study-generator)** · ★ 27<br>把零散项目笔记写成设计作品集案例：默认概述—挑战—过程—方案—影响—反思六段弧线，可换 STAR、英雄之旅、Pixar 体等 9 种故事结构，保留原事实与数据<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-06-25 · 英文 · MIT</sub>
+
+- **[sunxue](https://github.com/bayshier/sunxue)** · ★ 24<br>孙学白描写作 skill：从《我的女友景甜》拆出十条技法，先向用户取证收集时间线、物件和数字，再选天平开篇、押韵物件和旁观者证词成文并自检<br><sub>方法：理论 · 风格 · 事实</sub><br><sub>更新于 2026-08-30 · 中文 · 2 个 skill</sub><br><sub>💡 面向第一人称回忆录、人物特写、纪实散文；红线禁止编造数字和场景；另含镜像的「颖学」skill；结构参考 KKKKhazix/sun-style-writing，技法拆解独立；摘引原文片段</sub>
+
+- **[daily-bookcast](https://github.com/GODGOD126/daily-bookcast)** · ★ 12<br>书名→并行检索建事实底稿和高风险主张卡→按小说/思想/历史传记轨道定结构，每部分落一个已核验的场景或案例→分三块写约 7000 字听书稿，脚本计数<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-07-19 · 中文 · MIT</sub><br><sub>💡 按 8 分钟硬时限设计，需要 Python 3 和联网检索</sub>
+
+- **[xigua-msvideo-skill](https://github.com/124zhe/xigua-msvideo-skill)** · ★ 12<br>先查一手资料写资料备注，区分事实、推断、模型与想象；每段须带来新发现，开头用具体处境引出问题，结尾回答标题；出英文口播和中文审稿，另含分镜配音合成<br><sub>方法：理论 · 修订 · 事实</sub><br><sub>更新于 2026-10-06 · 多语言 · 3 个 skill · MIT</sub><br><sub>💡 三个 skill 里 youtube-curiosity-stories 负责叙事写稿，可单独用；配图和合成要靠宿主生图能力、FFmpeg 和 edge-tts</sub>
+
+- **[doodle-explainer-video](https://github.com/sadekxD/doodle-explainer-video)** · ★ 10<br>简笔画解说视频 skill：先用三问检验选题「悖论」，查证并保留具名来源（不编引用），按九步叙事弧写口播，再按 beat 配图并合成竖屏视频<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-07-28 · 英文</sub><br><sub>💡 生图和配音依赖付费的 Unsora MCP</sub>
+
+- **[jingtian-style](https://github.com/anhao/jingtian-style)** · ★ 9<br>从《我的女友景甜》标本反推十六种手法与乐章结构，把任意文稿改写成记账式第一人称叙事；带量化自检表和反例，输出附「事实边界」，不补原文没有的事实<br><sub>方法：理论 · 修订 · 风格 · 事实</sub><br><sub>更新于 2026-08-27 · 中文 · MIT</sub><br><sub>💡 方法提炼自孙宇晨《我的女友景甜》，标本句已删去真人隐私</sub>
+
+- **[cinematic-confessional-writing](https://github.com/5ysy/cinematic-confessional-writing)** · ★ 8<br>先把材料理成时间线、人物关系、核心冲突与关键物件，再用场景、动作、短对白和首尾呼应写成克制的第一人称叙事；真实事件区分事实、陈述与未核实信息<br><sub>方法：理论 · 风格 · 事实</sub><br><sub>更新于 2026-08-30 · 中文</sub><br><sub>💡 技法拆自孙宇晨与景甜相关的流传文本，不对事件作事实认定；也可用于虚构</sub>
+
+- **[storytelling-frameworks](https://github.com/advisorita/storytelling-frameworks)** · ★ 7<br>个人品牌短视频故事 skill：按故事类型选六种叙事框架（英雄之旅、坑中人等），先访谈问出真实细节，再按节拍逐段写口播稿<br><sub>方法：理论 · 共创 · 事实</sub><br><sub>更新于 2026-07-17 · 多语言</sub><br><sub>💡 框架取自 @personalbrandlaunch 的爆款视频拆解；规则要求不编造细节，缺什么问用户；附中文版框架</sub>
+
+- **[concept-fable](https://github.com/hawkongz/concept-fable)** · ★ 6<br>8 步写寓言讲抽象概念：按概念性质选故事类型与基调，动笔前校验比喻与概念因果链逐环对应，三幕结构控制揭示时机，文末附解释并做 7 项自检<br><sub>方法：规划 · 理论 · 修订</sub><br><sub>更新于 2026-06-05 · 多语言 · 2 个 skill · MIT</sub><br><sub>💡 思路来自 Amanda Askell 的「用寓言讲概念、不点名」技巧</sub>
+
+- **[AutoYY](https://github.com/DaBaoAgent/AutoYY)** · ★ 5<br>纪录片二创 skill：以原片字幕为骨架写第三人称中文口播（钩子、逐步揭示、收尾），去 AI 味后核查：引语须逐字匹配 SRT、数字须有据，审校过闸才定稿<br><sub>方法：修订 · 去 AI 味 · 事实</sub><br><sub>更新于 2026-10-06 · 多语言 · 3 个 skill · MIT</sub><br><sub>💡 SKILL.md 为英文、产出中文；搬运 YouTube 素材二创，注意版权和平台规则；主要支持 Windows；内置 blader-humanizer</sub>
+
+- **[diaolong-skill](https://github.com/lj22503/diaolong-skill)** · ★ 5<br>26 个非虚构场景叙事技能（品牌、创始人、公益、患者故事等），先要求填真实素材，按场景故事结构成稿，再过八刀评估、去 AI 味和伦理审查<br><sub>方法：理论 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-07-31 · 中文 · 26 个 skill · MIT</sub><br><sub>💡 部分场景偏营销文案（朋友圈、销售话术）；另含小说、剧本用的 narrative-creative 技能和在线网页版</sub>
+
+- **[muse-podcast-pipeline](https://github.com/zjk1984/muse-podcast-pipeline)** · ★ 5<br>多主持人新闻播客流水线：多版块调研后按脱口秀写法成稿（热梗、节奏、callback 钩子），配人设圣经模板，再经文本质检、TTS 预扫和混音发布<br><sub>方法：理论 · 人物 · 修订</sub><br><sub>更新于 2026-10-13 · 中文</sub><br><sub>💡 完整流水线依赖 Meta 内部工具，外部可复用的是写作指南、人设圣经模板和质检 / 混音脚本；README 含 Muse 邀请码</sub>
+
+- **[biblical-content-engine](https://github.com/bethel-mark/biblical-content-engine)** · ★ 4<br>把圣经人物和故事映射到现代职场痛点，按热点、见证弧（之前→打断→相遇→恩典）等固定叙事框架写短视频与图文，经文经 API.Bible 核验并附主张清单<br><sub>方法：理论 · 事实</sub><br><sub>更新于 2026-08-01 · 中文 · MIT</sub><br><sub>💡 基督教灵修与传播内容；含标题公式、排期等运营模块；经文核验需 API.Bible key</sub>
+
+- **[hcds-expression-refactor](https://github.com/JinghaoHCDS/hcds-expression-refactor)** · ★ 4<br>把口述经历整理成口播稿：先清理卡壳和重复，按主题分篇，再从七种结构（结果复盘、挑战记录、日常小事等）里选一种重排材料、改开头和衔接，保留原来的语气，不补编事实<br><sub>方法：理论 · 事实</sub><br><sub>更新于 2026-09-23 · 中文 · MIT</sub>
+
+- **[latepost-writer](https://github.com/sammyteng/latepost-writer)** · ★ 4<br>仿晚点写商业深度报道：先对齐核心命题，从五类叙事骨架中选一，检索百余信源找增量信息，用细节代替形容、以个人处境映照战略，最后做风格自评<br><sub>方法：规划 · 理论 · 风格 · 事实</sub><br><sub>更新于 2026-06-24 · 中文 · MIT</sub>
+
+- **[voice-film](https://github.com/artkruglov/voice-film)** · ★ 4<br>把研究或报告做成配音讲解片：先写 STORY 块（主角、代价、转折、不得声称项），按片型选叙事弧，脚本 lint 限制钩子和口播数字，数字取自数据并标实测或估算<br><sub>方法：理论 · 修订 · 事实</sub><br><sub>更新于 2026-09-29 · 英文</sub><br><sub>💡 配音、音乐和审帧需要 OpenRouter key；用 Remotion 渲染，公司使用需看授权；镜头组件来自 Rieranthony/product-film-skill</sub>
+
+- **[Daily-Philosophy](https://github.com/shiyoiri/Daily-Philosophy)** · ★ 3<br>哲学寓言 skill：选一个概念写原创寓言，故事里不点题、最后 10% 才显露，再注明出处、列隐喻对照表；另一个把寓言做成海龟汤让读者猜概念<br><sub>方法：理论 · 共创</sub><br><sub>更新于 2026-06-28 · 中文 · 2 个 skill</sub><br><sub>💡 概念出处靠模型自身知识，没有检索核查</sub>
+
+- **[XinZhongZhiCheng-skills](https://github.com/startuo/XinZhongZhiCheng-skills)** · ★ 3<br>蒸馏「心中之城」影视解说法：从正片和字幕建六层事实表，找裂缝选题，两证一反加替代解释，排命题链和片段功能表，写带证据标签的口播，再用脚本审事实与原创度<br><sub>方法：理论 · 修订 · 风格 · 事实</sub><br><sub>更新于 2026-07-31 · 中文</sub><br><sub>💡 与心中之城本人无关，默认原创模式、不模仿本人；用女娲 Skill 提炼；没有原片或字幕时不伪造时间码和台词；方法可迁移到真实人物故事</sub>
+
+- **[faceless-youtube-video-creation](https://github.com/roeea2/faceless-youtube-video-creation)** · ★ 2<br>仿 Zenn、RealLifeLore 式视频随笔：从日常反常识问题切入，用三根带具名研究和年份的证据支柱展开，首尾用同一画面呼应，先调研再写口播稿<br><sub>方法：理论 · 风格 · 事实</sub><br><sub>更新于 2026-06-26 · 英文 · MIT</sub><br><sub>💡 写稿阶段免费；配音、生图、上传分别需 ElevenLabs、Higgsfield、YouTube OAuth</sub>
+
+- **[finance-video-copywriting](https://github.com/SSRYLJRSS/finance-video-copywriting)** · ★ 2<br>泛财经新闻口播七步流水线：先拆参考爆款的骨架，强制搜索并交叉核实每个数字的来源，对齐「谁的什么被谁搞没了」这条打脸主线，再写大纲和正文，最后从用户改稿里学习<br><sub>方法：规划 · 修订 · 风格 · 事实</sub><br><sub>更新于 2026-08-13 · 中文 · MIT</sub><br><sub>💡 主打情绪化的「爽文打脸」叙事</sub>
+
+- **[lawyer-short-video-skill](https://github.com/axing0916/lawyer-short-video-skill)** · ★ 2<br>把脱敏的真实案例或法律材料做成律师口播稿：锁定来源、抽取事实、建主张台账，按角度矩阵拆选题，案例按背景→目标→证据→结果来讲，标注缺口，没有真实结果就不造逆转<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-09-02 · 中文 · MIT</sub><br><sub>💡 示例都是标明虚构的教学样例；法律结论需要律师终审</sub>
+
+- **[nba-weibo-writer](https://github.com/tianyayu6/nba-weibo-writer)** · ★ 2<br>NBA 微博 skill：先建事实卡并搜索核验，提炼一个可辩护判断，从关键回合或动作细节切入，按现象→战术数据→球员处境→命运线递进，不编采访<br><sub>方法：理论 · 风格 · 事实</sub><br><sub>更新于 2026-06-15 · 中文 · MIT</sub><br><sub>💡 表达机制提炼自陈深、段冉、张佳玮的公开文章；含评论类短文，叙事集中在人物长文和复盘</sub>
+
+- **[slide-story-architect](https://github.com/linxumoney/slide-story-architect)** · ★ 2<br>先定观众和要做的决定，再排开场、张力、证据、方案、行动的演示叙事线，逐页写结论式标题、证据、视觉形式和讲者过渡，没有证据的结论要标为假设<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-10-07 · 中文 · MIT</sub><br><sub>💡 只出演示大纲和讲者备注，不直接生成 PPTX；个人和非商业免费，商业使用要联系作者授权</sub>
+
+- **[agent-saga](https://github.com/bbismm/agent-saga)** · ★ 1<br>把 git 历史、日志、日记和对话记录写成连载纪实小说：先出 20–30 章大纲，由真实在岗的 AI agent 当叙述者，每章以悬念收尾，禁止虚构事件<br><sub>方法：规划 · 理论 · 风格 · 事实</sub><br><sub>更新于 2026-05-08 · 英文 · MIT</sub><br><sub>💡 正文语言可配置；每章页脚默认带项目署名行，可关闭</sub>
+
+- **[biqibao-ecno-video](https://github.com/suixng/biqibao-ecno-video)** · ★ 1<br>把财经概念讲成角色故事动画：从角色的具体冲突和选择切入，先演行为和后果再点名概念、映射现实，区分事实、假设案例与推论，再拆逐句分镜做成片<br><sub>方法：理论 · 人物 · 事实</sub><br><sub>更新于 2026-09-18 · 中文 · MIT</sub><br><sub>💡 默认用比奇堡（海绵宝宝）角色，可换原创角色；做完整视频需生图、TTS 与 Remotion 环境，只写文案分镜不需要</sub>
+
+- **[cn-script-skills](https://github.com/Tsinglung-Tseng/cn-script-skills)** · ★ 1<br>中文科普口播 skill：联网研究后按机制拆解、论文速报等模板写稿（悬念钩子、节拍过渡、反转、金句收尾），再由多个受众人设子代理打分，不达标自动重写<br><sub>方法：理论 · 多智能体 · 修订</sub><br><sub>更新于 2026-04-13 💤 · 中文 · 4 个 skill</sub><br><sub>💡 CC BY-NC 4.0 禁止商用；联网研究依赖 Perplexity MCP，可选豆包评审需 ARK_API_KEY；合集里还有大健康营销脚本</sub>
+
+- **[deepwrite](https://github.com/willyzengg-pixel/deepwrite)** · ★ 1<br>深度文章五种模式（产业史故事、事件纵深、市场心理复盘等）各配叙事骨架，先抛具体事实再解释；完稿后审核员核每个数字和来源，研究员核逻辑<br><sub>方法：理论 · 修订 · 事实</sub><br><sub>更新于 2026-08-08 · 中文 · MIT</sub>
+
+- **[fable-skill](https://github.com/cookiesheep/fable-skill)** · ★ 1<br>把概念讲成寓言：提炼单一原理→找结构同构的情境→角色与冲突→结局和寓意，附「寓意↔概念」映射表并做可替换性测试；另有零件对应真实组件的模型式寓言<br><sub>方法：理论 · 修订</sub><br><sub>更新于 2026-06-24 · 多语言 · MIT</sub><br><sub>💡 用虚构外壳讲真实知识；factual 指寓意与概念逐项映射加保真测试，没有外部检索</sub>
+
+- **[financial-report-viral-script](https://github.com/dapao29/financial-report-viral-script)** · ★ 1<br>研报转财经口播：先抽出核心问题、因果链和 2–4 类参与者的利益与行动，再安排数据；默认只用研报材料，区分事实、推断和机构观点，复核数字口径<br><sub>方法：理论 · 事实</sub><br><sub>更新于 2026-09-05 · 中文</sub><br><sub>💡 叙事性中等，主要靠「谁想要什么、因此做了什么」组织讲解</sub>
+
+- **[lifetrace](https://github.com/wudixiaoshuaibi/lifetrace)** · ★ 1<br>传记 skill：陪聊式访谈，候选记忆经本人确认措辞、时间、来源后才写入 JSON 档案，据此生成动态大纲和传记草稿，引用条目 ID，推断不得变事实<br><sub>方法：规划 · 记忆 · 共创 · 事实</sub><br><sub>更新于 2026-10-13 · 中文 · MIT</sub>
+
+- **[persona-story-skill](https://github.com/Dragocytus/persona-story-skill)** · ★ 1<br>员工视角讲老板的人设口播：只问一个真实故事素材，按钩子、冲突、翻转、弧光、接杠、成本账、产品收口七段写，按行业匹配范例，禁止编造核心冲突<br><sub>方法：理论 · 修订 · 事实</sub><br><sub>更新于 2026-04-09 💤 · 中文</sub><br><sub>💡 面向实体老板获客的营销向短视频文案；只禁止编造核心冲突，允许补行业常识细节</sub>
+
+- **[skw-video-editor-ai-skills](https://github.com/SKWVideo/skw-video-editor-ai-skills)** · ★ 1<br>用真实素材剪案例片：先写战略前提，按案例骨架（张力→执行→转变→证据）做节拍图，选一种故事引擎，给每个镜头定叙事职责，不编造效果、不描述没看过的素材<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-07-30 · 英文 · MIT</sub><br><sub>💡 面向 Palmier Pro 等剪辑软件，产出是剪辑叙事方案（节拍图、镜头计划、剪辑图），不是成文故事</sub>
+
+- **[story-ops](https://github.com/shiva-hack/story-ops)** · ★ 1<br>个人与品牌叙事工作台：从访谈稿挖故事素材，按 STAR、英雄之旅、SCQA 等结构起草，用语料声纹 linter 校文风，再派多个受众人设子代理并行评审<br><sub>方法：理论 · 多智能体 · 修订 · 风格</sub><br><sub>更新于 2026-04-23 · 英文 · MIT</sub><br><sub>💡 目录架构仿照 santifer/career-ops；附品牌指南 PDF 生成</sub>
+
+- **[story-to-content](https://github.com/ardalanea/story-to-content)** · ★ 1<br>把事实或个人经历写成故事化内容：选角度和五类钩子，套 ABT/开放循环等结构并场景先行，另出纸拼贴动画节拍表和口播，最后逐项核对数字人名<br><sub>方法：理论 · 去 AI 味 · 事实</sub><br><sub>更新于 2026-09-23 · 多语言 · MIT</sub><br><sub>💡 产出以社媒帖子为主（Telegram/Instagram/LinkedIn，英/波斯/土耳其语），附图像与 Veo/Kling 视频提示词；缺的事实标 [CONFIRM]，不许编</sub>
+
+- **[sunge-narrative-writing](https://github.com/pgaicoding/sunge-narrative-writing)** · ★ 1<br>先定真实/虚构模式和阅读契约，再用冲突公式、双尺度钩子、场景证据、物象回环、重复与破例等十种机制写；非虚构有事实边界规则和伏笔回收台账<br><sub>方法：规划 · 理论 · 修订 · 事实</sub><br><sub>更新于 2026-08-29 · 中文 · MIT</sub><br><sub>💡 也能写原创虚构；方法提炼自公开文本《我的女友景甜》的叙事分析，不复制原文</sub>
+
+- **[sunology-writing-skill](https://github.com/Leon-KTlan/sunology-writing-skill)** · ★ 1<br>孙学体冷叙事 skill：先从素材找命题、数字、物件、空处，再选冷叙事/财富宣言/人物神话模式，用动作链代替情绪词；只在素材内重组，缺事实先补料<br><sub>方法：理论 · 风格 · 事实</sub><br><sub>更新于 2026-08-28 · 中文</sub><br><sub>💡 文风提炼自孙宇晨公开文本；明确禁止冒充本人或编造真实经历</sub>
+
+- **[teaching-case-writer](https://github.com/RayonLee/teaching-case-writer)** · ★ 1<br>商学院教学案例：先审计素材结构并联网核查、建来源档案，以决策主线重写正文（决策场景开场、开放结尾），配套五题递进教学笔记，最后三层核验<br><sub>方法：规划 · 理论 · 修订 · 事实</sub><br><sub>更新于 2026-09-27 · 中文 · MIT</sub><br><sub>💡 按中国人民大学 / 管理案例共享中心投稿格式交付 docx，需 python-docx</sub>
+
+- **[yang-jiang-restrained-narrative-skill](https://github.com/constantin2088/yang-jiang-restrained-narrative-skill)** · ★ 1<br>回忆与个人叙事的克制改写 skill：先写清观察位置，把亲见、转述、推测分开标注，用动作和物件代替情绪判词，删无证因果，交付克制版和修改说明<br><sub>方法：修订 · 风格 · 事实</sub><br><sub>更新于 2026-10-11 · 中文 · MIT</sub><br><sub>💡 Chinese Thinkers as Skills 系列（约百个同模板 skill）之一；受杨绛启发，不扮演本人；附修改检查脚本</sub>
+
+- **[yingxue-writing](https://github.com/Jujie-YANG/yingxue-writing)** · ★ 1<br>把真实经历写成生活反讽：正经语体撞破事、俗物参与因果、语义回收、现实收尾；分来源约束、个人回忆、明示虚构三种事实模式，附脚本查假口语和强行成长<br><sub>方法：修订 · 风格 · 事实</sub><br><sub>更新于 2026-08-29 · 中文 · MIT</sub><br><sub>💡 受曾颖公开文本与「颖学」讨论启发，与本人无关；也支持明确标注的虚构讽刺</sub>
+
+#### 框架 · 应用（13）
+
+- 🌟 **[Writingbook-AgenticWorkflow](https://github.com/idoforgod/Writingbook-AgenticWorkflow)** · ★ 29<br>AI 自传流水线：McAdams/Kvale 式 12 轮访谈→故事圣经（情感弧+起承转合）→逐章写并混合作家文风→对抗审稿+CoVe 事实核查→跨章一致性审计<br><sub>方法：多智能体 · 风格 · 共创 · 事实</sub><br><sub>更新于 2026-03-18 💤 · ⚙️ 框架 · 多语言 · 13 个 skill</sub><br><sub>💡 文档为韩文，产出英/韩双语 PDF/EPUB；基于作者的 AgenticWorkflow 框架，8 个 agent 多用 Opus；三个人工审批点可切自动</sub>
+
+- **[vision-reel-playbook](https://github.com/hyperchat99999/vision-reel-playbook)** · ★ 8<br>产品/想法短片方法：苏格拉底式访谈找出唯一值得拍的点，从三种叙事格式选一种，写 beat sheet 和旁白，每个主张配可见证据，再用 React 渲染<br><sub>方法：规划 · 理论 · 共创 · 事实</sub><br><sub>更新于 2026-09-01 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 偏产品/品牌概念片，渲染工程占比大</sub>
+
+- **[yizhi-oral-history](https://github.com/Tongering/yizhi-oral-history)** · ★ 7<br>老人口述史平台：AI 根据上一段回答生成下一问做访谈，原音与照片存入家庭私有档案，后台异步整理人物、事件、事实与章节，汇成「人生之书」<br><sub>方法：规划 · 记忆 · 共创</sub><br><sub>更新于 2026-09-13 · 🧩 应用 · 中文</sub><br><sub>💡 依赖腾讯云实时 ASR、COS 和 DeepSeek，Docker 自托管</sub>
+
+- **[life-chronicle-agent](https://github.com/dungnotnull/life-chronicle-agent)** · ★ 4<br>日记转人生短片：30 天日记做情绪分类和弧线检测找出转折点，按经典叙事弧写 1500–2000 字以你为主角的短篇，再拆 6 个分镜配图配音合成视频<br><sub>方法：规划 · 理论</sub><br><sub>更新于 2026-06-10 · ⚙️ 框架 · 英文</sub><br><sub>💡 故事用 Claude/GPT-4o/Ollama 写；情绪分类、配图、配音用本地 HF 模型；日记 AES-256 加密，调外部 API 需用户授权</sub>
+
+- **[memoir-product](https://github.com/VelVet8418/memoir-product)** · ★ 3<br>AI 采访者陪老人口述人生，只做去赘词、顺语序、断句三层轻整理成回忆录；AI 补充内容须标「[AI补充]」，多版本说法并存不合并，逐句交本人确认<br><sub>方法：共创 · 事实</sub><br><sub>更新于 2026-09-10 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 MVP 演示项目，默认演示模式；AI 模式接 SiliconFlow，作者说明尚未真机联调</sub>
+
+- **[startup-llm-content-pipeline](https://github.com/biswajyoti-nath/startup-llm-content-pipeline)** · ★ 3<br>检索结果或访谈稿先由 Gemini 抽成结构化事实，再由 Claude 按背景、历程、问题与方案、洞见写创业故事，只用原文，缺失写 Not mentioned<br><sub>方法：规划 · 事实</sub><br><sub>更新于 2026-03-17 💤 · ⚙️ 框架 · 英文</sub><br><sub>💡 需 Anthropic、Gemini、Tavily 三家 API key；叙事结构偏人物特稿模板</sub>
+
+- **[HAJIGAN-doro/StoryForge](https://github.com/HAJIGAN-doro/StoryForge)** · ★ 2<br>人生故事记录：AI 用开放式问题引导用户回忆和讲述，结束后把访谈整理成第一人称、有开头经过结尾的故事，可编辑导出，支持云端 API 和本地模型<br><sub>方法：共创</sub><br><sub>更新于 2026-04-06 💤 · 🧩 应用 · 中文</sub><br><sub>💡 方法较简单：一段访谈提示词加一段成文提示词</sub>
+
+- **[Tongkehui-Multi-Agent](https://github.com/ysyzynx/Tongkehui-Multi-Agent)** · ★ 2<br>儿童科普绘本多智能体流水线：故事生成→文学审核→科学审核（RAG 知识库、知识图谱、DeepSearch 迭代查证）→模拟读者反馈微调→插画生成与审核→排版导出<br><sub>方法：多智能体 · 修订 · 事实</sub><br><sub>更新于 2026-05-09 · 🧩 应用 · 中文</sub><br><sub>💡 需自配通义、火山、DeepSeek 等模型和文生图 API</sub>
+
+- **[cf_ai_autobiography_omkar](https://github.com/CoolGuy2982/cf_ai_autobiography_omkar)** · ★ 1<br>AI 自传写作：先根据出生地、迁居时间线和上传的简历、日记 PDF 生成目录大纲，再逐章边访谈边写，每章结束后可以调整后续大纲，写好的章节只追加不回改<br><sub>方法：规划 · 共创</sub><br><sub>更新于 2026-01-25 💤 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 Cloudflare 实习申请项目，用 Gemini；Workers + Durable Objects</sub>
+
+- **[deepcuts](https://github.com/ibraude/deepcuts)** · ★ 1<br>音乐收听纪录片：先联网调研并内联引用来源，再按「之前→转折→之后」弧线列场景级节拍，生成多主持人旁白与歌曲交替的脚本，只用真实曲目并逐首解析<br><sub>方法：规划 · 理论 · 事实</sub><br><sub>更新于 2026-07-25 · 🧩 应用 · 英文 · MIT</sub><br><sub>💡 仅 macOS，需 Spotify 桌面端；生成用 Gemini，配音可选 ElevenLabs</sub>
+
+- **[indonesian-folklore-terminal-rpg](https://github.com/joy-arz/indonesian-folklore-terminal-rpg)** · ★ 1<br>印尼历史民俗终端 RPG：AI 叙事者在 10 个历史王国背景里按玩家选择推进剧情，穿插真实年代、人物、地名、服饰和民间生物，内置王国史料设定，边玩边学历史<br><sub>方法：设定 · 共创</sub><br><sub>更新于 2026-03-09 💤 · 🧩 应用 · 英文</sub><br><sub>💡 需要 Cerebras API；史实依据是项目内置设定，没看到检索或核查步骤</sub>
+
+- **[Memory-Storyteller](https://github.com/Dprof-in-tech/Memory-Storyteller)** · ★ 1<br>用结构化表单记一段回忆（起因、关键瞬间、情绪变化、感官细节、意义），让 Claude/GPT 写成第一人称、有始有终的短篇情书故事并定时发送<br><sub>方法：共创</sub><br><sub>更新于 2025-03-17 💤 · 🧩 应用 · 英文</sub><br><sub>💡 方法较轻：一张回忆表单加单个提示词</sub>
+
+- **[youtube-documentary-automation](https://github.com/Cesium1377/youtube-documentary-automation)** · ★ 1<br>n8n 工作流：SearXNG 检索→大纲 agent 规划 15+ 章叙事递进→分章写作→总稿合并并纠正史实（不编引语、区分史实与传说）→出配图提示词<br><sub>方法：规划 · 多智能体 · 事实</sub><br><sub>更新于 2026-09-23 · ⚙️ 框架 · 英文</sub><br><sub>💡 需要自建 n8n、SearXNG 和 Gemini API；定位睡前历史纪录片口播</sub>
+
+#### 研究代码（2）
+
+- **[SS-GEN](https://github.com/MIMIFY/SS-GEN)** · ★ 13<br>为自闭症儿童生成社交故事（Social Stories™）：STARSOW 层级生成，章节主题→故事标题→按结构与叙事约束写全文，再人工过滤质量与安全<br><sub>方法：规划 · 理论 · 修订</sub><br><sub>更新于 2025-07-23 💤 · 🎓 研究 · 英文</sub><br><sub>💡 AAAI 2025 Oral 论文代码；附 SS-GEN 数据集，并用它微调轻量开源模型；需 OpenAI API</sub>
+
+- **[DDA4080-Industry-Project-Tencent-x-CUHK-Shenzhen-](https://github.com/YongxiFengC/DDA4080-Industry-Project-Tencent-x-CUHK-Shenzhen-)** · ★ 1<br>老照片口述史回忆录：视觉模型先读照片，再按回答质量和情绪动态追问，把访谈写成第一人称回忆体、名家文学体或传记体故事，多张照片串成人生叙事并打分评测<br><sub>方法：风格 · 共创</sub><br><sub>更新于 2026-05-31 · 🎓 研究 · 中文</sub><br><sub>💡 腾讯 × 港中深课程项目，默认用腾讯混元；附模拟数据和评测基准</sub>
+
+
+<details><summary>安装命令</summary>
+
+```bash
+# 默认命令基于 skills CLI，未逐个验证，以各仓库 README 为准
+# director
+npx skills add s1dashu/director
+# data2story-skill
+npx skills add QinghongLin/data2story-skill
+# good-story
+npx skills add Rimagination/good-story
+# aletheia
+npx skills add mycyg/aletheia
+# simon-skills
+npx skills add trustfuture/simon-skills
+# image-story-video-wizard
+npx skills add aaronyi97/image-story-video-wizard
+# wedding-video-guided-wizard
+npx skills add aaronyi97/wedding-video-guided-wizard
+# content-skills
+npx skills add artemnovitckii/content-skills
+# case-study-storytelling
+npx skills add mengxuebi-mush/case-study-storytelling
+# autopunk-media-skills
+npx skills add ur-grue/autopunk-media-skills
+# ai-director-video-commentary
+npx skills add fqyy360t/ai-director-video-commentary
+# portfolio-case-study-generator
+npx skills add SonwaneyY/portfolio-case-study-generator
+# sunxue
+npx skills add bayshier/sunxue
+# daily-bookcast
+npx skills add GODGOD126/daily-bookcast
+# xigua-msvideo-skill
+npx skills add 124zhe/xigua-msvideo-skill
+# doodle-explainer-video
+npx skills add sadekxD/doodle-explainer-video
+# jingtian-style
+npx skills add anhao/jingtian-style
+# cinematic-confessional-writing
+npx skills add 5ysy/cinematic-confessional-writing
+# storytelling-frameworks
+npx skills add advisorita/storytelling-frameworks
+# concept-fable
+npx skills add hawkongz/concept-fable
+# AutoYY
+npx skills add DaBaoAgent/AutoYY
+# diaolong-skill
+npx skills add lj22503/diaolong-skill
+# muse-podcast-pipeline
+npx skills add zjk1984/muse-podcast-pipeline
+# biblical-content-engine
+npx skills add bethel-mark/biblical-content-engine
+# hcds-expression-refactor
+npx skills add JinghaoHCDS/hcds-expression-refactor
+# latepost-writer
+npx skills add sammyteng/latepost-writer
+# voice-film
+npx skills add artkruglov/voice-film
+# Daily-Philosophy
+npx skills add shiyoiri/Daily-Philosophy
+# XinZhongZhiCheng-skills
+npx skills add startuo/XinZhongZhiCheng-skills
+# faceless-youtube-video-creation
+npx skills add roeea2/faceless-youtube-video-creation
+# finance-video-copywriting
+npx skills add SSRYLJRSS/finance-video-copywriting
+# lawyer-short-video-skill
+npx skills add axing0916/lawyer-short-video-skill
+# nba-weibo-writer
+npx skills add tianyayu6/nba-weibo-writer
+# slide-story-architect
+npx skills add linxumoney/slide-story-architect
+# agent-saga
+npx skills add bbismm/agent-saga
+# biqibao-ecno-video
+npx skills add suixng/biqibao-ecno-video
+# cn-script-skills
+npx skills add Tsinglung-Tseng/cn-script-skills
+# deepwrite
+npx skills add willyzengg-pixel/deepwrite
+# fable-skill
+npx skills add cookiesheep/fable-skill
+# financial-report-viral-script
+npx skills add dapao29/financial-report-viral-script
+# lifetrace
+npx skills add wudixiaoshuaibi/lifetrace
+# persona-story-skill
+npx skills add Dragocytus/persona-story-skill
+# skw-video-editor-ai-skills
+npx skills add SKWVideo/skw-video-editor-ai-skills
+# story-ops
+npx skills add shiva-hack/story-ops
+# story-to-content
+npx skills add ardalanea/story-to-content
+# sunge-narrative-writing
+npx skills add pgaicoding/sunge-narrative-writing
+# sunology-writing-skill
+npx skills add Leon-KTlan/sunology-writing-skill
+# teaching-case-writer
+npx skills add RayonLee/teaching-case-writer
+# yang-jiang-restrained-narrative-skill
+npx skills add constantin2088/yang-jiang-restrained-narrative-skill
+# yingxue-writing
+npx skills add Jujie-YANG/yingxue-writing
 ```
 
 </details>
@@ -1898,11 +2344,11 @@ npx skills add shigehaomingzi1/character-card-fiction-workflow-skill
 
 不限体裁的故事方法和原则：结构理论、人物、对白、视角，以及专门针对小说的去 AI 味。
 
-#### skill · 提示词（24）
+#### skill · 提示词（28）
 
 - 🌟 **[sepia](https://github.com/Nanako0129/sepia)** · ★ 3.2k<br>按 StoryScope 论文测出的 AI 小说结构特征分三遍修：先改叙事架构（不点题、松因果链、后置揭示），再改段落流和表层措辞<br><sub>方法：理论 · 修订 · 去 AI 味</sub><br><sub>更新于 2026-10-15 · 英文 · 6 个 skill · MIT</sub>
 
-- 🌟 **[creative-writing-skills](https://github.com/haowjy/creative-writing-skills)** · ★ 512<br>muse 主代理调度头脑风暴、角色模拟、大纲、写手、批评、编辑和读者模拟等子代理，从已有文字提炼文风文件，写后批评修订并同步知识库<br><sub>方法：记忆 · 多智能体 · 模拟 · 修订</sub><br><sub>更新于 2026-10-15 · 英文 · 24 个 skill · Apache-2.0</sub>
+- 🌟 **[creative-writing-skills](https://github.com/haowjy/creative-writing-skills)** · ★ 512<br>muse 主代理调度头脑风暴、角色模拟、大纲、写手、批评、编辑和读者模拟等子代理，从已有文字提炼文风文件，写后批评修订并同步知识库<br><sub>方法：记忆 · 多智能体 · 模拟 · 修订 · 风格</sub><br><sub>更新于 2026-10-15 · 英文 · 24 个 skill · Apache-2.0</sub>
 
 - **[agent-skills](https://github.com/jwynia/agent-skills)** · ★ 172<br>叙事技能大全：故事教练、合写、大纲、人物弧光、对白、结局、反套路、闪小说，大量世界观构建体系<br><sub>方法：规划 · 理论 · 设定 · 人物</sub><br><sub>更新于 2026-02-24 💤 · 英文 · 119 个 skill</sub><br><sub>💡 也含营销等非虚构 skill，按需挑选安装</sub>
 
@@ -1914,7 +2360,7 @@ npx skills add shigehaomingzi1/character-card-fiction-workflow-skill
 
 - **[storywriting.skill](https://github.com/changlizhi569/storywriting.skill)** · ★ 25<br>把《查理编剧课》整理成 skill：用八要素检查人物与冲突，按类型片十类定型、十序列/四幕式排节拍，再设计场景起承转合、对白潜台词和悬念反转<br><sub>方法：规划 · 理论 · 人物</sub><br><sub>更新于 2026-08-02 · 中文</sub><br><sub>💡 基于查理编剧课笔记；适用小说/剧本/电视剧；SKILL.md 引用的 references/ 路径与实际文件位置（根目录）不符</sub>
 
-- **[novel-humanize](https://github.com/qi531416/novel-humanize)** · ★ 20<br>中文小说去 AI 味 skill：对话改「」、破折号清零、调整标点节奏、打散骨架逐句细改，保剧情不 OOC 注入人味，配 L1–L4 分层自检<br><sub>方法：去 AI 味</sub><br><sub>更新于 2026-08-06 · 中文</sub><br><sub>💡 主打过朱雀检测；整合 laoguo2025/huoren-write 与 KKKKhazix/human-writing 的规则（后两者细则需去原仓库查看）</sub>
+- **[novel-humanize](https://github.com/qi531416/novel-humanize)** · ★ 20<br>中文小说去 AI 味 skill：对话改「」、破折号清零、调整标点节奏、打散骨架逐句细改，保剧情不 OOC 注入人味，配 L1–L4 分层自检<br><sub>方法：去 AI 味</sub><br><sub>更新于 2026-08-06 · 中文</sub><br><sub>💡 README 已改名 novel-live-writing（活人感写作总装）；主打过朱雀检测；整合 laoguo2025/huoren-write 与 KKKKhazix/human-writing 的规则（后两者细则需去原仓库查看）</sub>
 
 - **[mckee-story](https://github.com/song776/mckee-story)** · ★ 19<br>把麦基《故事》做成 Claude Code 知识库 skill：核心框架速览、术语表、可复用故事模式和分章原文，按话题或章节加载供写作时调用<br><sub>方法：理论</sub><br><sub>更新于 2026-08-11 · 中文</sub><br><sub>💡 内容是原书的提炼与摘录；README 带作者自媒体账号推广</sub>
 
@@ -1946,9 +2392,17 @@ npx skills add shigehaomingzi1/character-card-fiction-workflow-skill
 
 - **[reliquery](https://github.com/the-essential/reliquery)** · ★ 5<br>Claude 插件：把手稿/跑团日志拆成按角色、地点、势力存放的 relic 文件，建本地语义索引和时间知识图谱，共写时按问题检索所需设定<br><sub>方法：设定 · 记忆</sub><br><sub>更新于 2026-05-21 · 英文 · 6 个 skill · MIT</sub><br><sub>💡 依赖 MemPalace 本地语义检索；.plugin / .claude-plugin 格式；架构也可用于非虚构项目</sub>
 
+- **[addictive-writing](https://github.com/MarcoWorms/addictive-writing)** · ★ 3<br>用利害、因果推进、悬问、挣来的转折、回报与再钩子来起草、改写和审读散文与脚本，禁止标题党和歪曲事实，附 24 题盲评对照语料<br><sub>方法：理论 · 修订</sub><br><sub>更新于 2026-07-13 · 英文 · Apache-2.0</sub><br><sub>💡 适用范围也包括广告、邮件、落地页等非故事文体</sub>
+
+- **[storygen-skill](https://github.com/kashyab12/storygen-skill)** · ★ 3<br>按编码 agent 的流程写故事：先定故事脊梁和弧线做计划，story bible 记状态，初稿交 6 个 Braintrust 评审子代理并行审读，再收敛修订<br><sub>方法：规划 · 理论 · 多智能体 · 修订</sub><br><sub>更新于 2026-07-10 · 英文 · MIT</sub><br><sub>💡 方法提炼自 Karina Nguyen 在 Lux Summit 的讲故事演讲；无子代理环境时顺序跑六个评审视角</sub>
+
+- **[justin-sun-narrative-skill](https://github.com/junjiezhou1122/justin-sun-narrative-skill)** · ★ 1<br>「可观察痕迹」叙事法：先私下建模利害、替代物、证据、不变量、压力、破裂与余韵，再挑高推断值细节写作，附修订评分表，虚构与非虚构都适用<br><sub>方法：理论 · 修订 · 风格</sub><br><sub>更新于 2026-08-27 · 英文 · MIT</sub><br><sub>💡 非官方，方法抽象自孙宇晨《我的女友景甜》；附原文全文（README 称已获授权）</sub>
+
+- **[narrative-production-skills](https://github.com/sb-dev/narrative-production-skills)** · ★ 1<br>开发、写作、连续性、评估、修订五个 skill：先低分辨率探索多个构思，区分「选中」与「批准」，批准的决定成为下游约束，改稿只重开受影响部分<br><sub>方法：规划 · 人物 · 记忆 · 修订</sub><br><sub>更新于 2026-08-29 · 英文 · 28 个 skill · MIT</sub><br><sub>💡 适用短篇、长篇和剧本；.claude/skills 下是开发用 skill，和叙事无关；README 安装命令还是 <org>/<repo> 占位</sub>
+
 - **[novel-to-webnovel](https://github.com/aimerfeng/novel-to-webnovel)** · ★ 1<br>把日轻译稿、机翻稿的翻译腔改成中文网文口感：分三档程度，格式清理、风格定调、样例确认、分块并行改写、QA 脚本<br><sub>方法：修订 · 风格</sub><br><sub>更新于 2026-07-03 · 中文 · MIT</sub><br><sub>💡 需要 perl。默认另存新文件；重度档会把人名和背景改成中国本土</sub>
 
-#### 框架 · 应用（8）
+#### 框架 · 应用（9）
 
 - **[arrows](https://github.com/p-e-w/arrows)** · ★ 172<br>补全式写作前端：每次按段落生成两个续写候选，用方向键选取、重生成或撤回，无任何界面元素，靠作者逐段挑选推进正文<br><sub>方法：共创</sub><br><sub>更新于 2024-07-15 💤 · 🧩 应用 · 英文 · AGPL-3.0</sub><br><sub>💡 需 OpenAI 兼容的 text completion 接口（推荐 llama.cpp server 并行生成）；2024-07 后未更新</sub>
 
@@ -1965,6 +2419,8 @@ npx skills add shigehaomingzi1/character-card-fiction-workflow-skill
 - **[worldbuilder](https://github.com/gofastercloud/worldbuilder)** · ★ 7<br>文件化世界观与写书系统：11 类实体用 Markdown+YAML 互引，图校验关系与时间线一致性，CLI 向导出提示词交 Claude Code 写设定与正文<br><sub>方法：规划 · 设定 · 记忆</sub><br><sub>更新于 2026-06-23 · ⚙️ 框架 · 英文 · Apache-2.0</sub><br><sub>💡 插画与角色配音生成需 Apple Silicon</sub>
 
 - **[ai_writers_workshop](https://github.com/angrysky56/ai_writers_workshop)** · ★ 6<br>MCP 服务器：给 AI 助手提供原型人物、英雄之旅等叙事模式和情节线库，按项目管理人物、场景、大纲与象征，知识图谱存实体关系后汇编成稿<br><sub>方法：规划 · 理论 · 人物 · 记忆</sub><br><sub>更新于 2025-05-15 💤 · ⚙️ 框架 · 英文 · MIT</sub><br><sub>💡 附 Ollama modelfile（qwen3）</sub>
+
+- **[Logos](https://github.com/Athas-Ed/Logos)** · ★ 1<br>游戏叙事写作助手：作者的 Markdown 设定库是唯一事实源，元数据+向量+全文三路检索加知识图谱，按技能向导做大纲规划、设定撰写、草稿审阅和设定校验<br><sub>方法：规划 · 设定 · 记忆</sub><br><sub>更新于 2026-08-14 · 🧩 应用 · 中文 · MIT</sub><br><sub>💡 Electron 桌面应用，需 OpenAI 兼容接口；内置《西游记》示例设定库；作者的技术求职作品</sub>
 
 #### 研究代码（8）
 
@@ -2027,6 +2483,14 @@ npx skills add sinfiny/AutoWriter
 npx skills add xbraindance/Creative-writing-skill
 # reliquery
 npx skills add the-essential/reliquery
+# addictive-writing
+npx skills add MarcoWorms/addictive-writing
+# storygen-skill
+npx skills add kashyab12/storygen-skill
+# justin-sun-narrative-skill
+npx skills add junjiezhou1122/justin-sun-narrative-skill
+# narrative-production-skills
+npx skills add sb-dev/narrative-production-skills
 # novel-to-webnovel
 npx skills add aimerfeng/novel-to-webnovel
 ```
@@ -2036,19 +2500,20 @@ npx skills add aimerfeng/novel-to-webnovel
 <a id="by-method"></a>
 ## 按创作方法查找
 
-同一种方法在不同项目里怎么落地，完整索引见 [METHODS.md](METHODS.md)：
+每种方法解决什么问题、大家怎么做、有哪些坑，见[方法指南](METHODS.md)；指南里每个方法后面附有用到它的全部项目：
 
-- [规划先行：层级大纲、分解写作](METHODS.md#method-planning)（425）
-- [叙事理论注入：结构模型、类型套路、写作原则](METHODS.md#method-theory)（137）
-- [设定 · 世界观构建](METHODS.md#method-worldbuilding)（138）
-- [人物塑造 · 角色档案](METHODS.md#method-character)（168）
-- [长篇记忆 · 一致性：状态库、设定库、检索](METHODS.md#method-memory)（423）
-- [多智能体分工：作者、编辑、审稿、读者](METHODS.md#method-multiagent)（134）
-- [角色模拟 · 世界推演：让角色演出情节](METHODS.md#method-simulation)（71）
-- [审稿 · 自我批评 · 迭代修订](METHODS.md#method-revision)（341）
-- [风格学习 · 仿写：范文、文风蒸馏、拆书](METHODS.md#method-style)（112）
-- [去 AI 味 · 文笔打磨](METHODS.md#method-deai)（87）
-- [交互共创：读者选择、人机协作](METHODS.md#method-interactive)（176）
+- [规划先行：层级大纲、分解写作](METHODS.md#method-planning)（480）
+- [叙事理论注入：结构模型、类型套路、写作原则](METHODS.md#method-theory)（206）
+- [设定 · 世界观构建](METHODS.md#method-worldbuilding)（148）
+- [人物塑造 · 角色档案](METHODS.md#method-character)（189）
+- [长篇记忆 · 一致性：状态库、设定库、检索](METHODS.md#method-memory)（452）
+- [多智能体分工：作者、编辑、审稿、读者](METHODS.md#method-multiagent)（151）
+- [角色模拟 · 世界推演：让角色演出情节](METHODS.md#method-simulation)（74）
+- [审稿 · 自我批评 · 迭代修订](METHODS.md#method-revision)（392）
+- [风格学习 · 仿写：范文、文风蒸馏、拆书](METHODS.md#method-style)（142）
+- [去 AI 味 · 文笔打磨](METHODS.md#method-deai)（94）
+- [交互共创：读者选择、人机协作](METHODS.md#method-interactive)（199）
+- [事实约束：素材驱动、证据核对、不编造](METHODS.md#method-factual)（52）
 
 <a id="resources"></a>
 ## 相关资源

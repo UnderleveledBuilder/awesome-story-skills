@@ -27,7 +27,7 @@ fork 和改名换皮的不收。在原版基础上加了新的方法、模块或
 
    ```bash
    python3 scripts/refresh.py --only owner/repo   # 抓取星数、许可证等元数据
-   python3 scripts/build.py                       # 重新生成 README.md
+   python3 scripts/build.py                       # 重新生成中英文 README、METHODS 和 catalog.json
    ```
 
    跳过这一步也可以，合并后 GitHub Actions 会自动刷新并生成。
@@ -39,15 +39,17 @@ fork 和改名换皮的不收。在原版基础上加了新的方法、模块或
 [[skills]]
 repo    = "owner/repo"                 # 必填，GitHub 仓库
 desc    = "一句话说清做什么、怎么做"        # 必填，≤ 80 字，写具体方法，少用形容词
+desc_en = "One sentence in English"        # 可选，英文版 README 用，≤ 260 字符；不写就显示中文
 group   = "novel"                      # 必填，故事类型，取值见 data/taxonomy.toml [groups]
 methods = ["planning", "memory"]       # 必填，用到的创作方法，见 [methods]
 format  = "skill"                      # 必填，skill / prompts / harness / app / research
-lang    = "zh"                         # 必填，zh / en / ja / multi（项目正文的语言）
+lang    = "zh"                         # 必填，zh / en / ja / ko / multi（项目正文的语言）
 agents  = ["claude-code"]              # 可选，仓库明确说明支持的 agent，见 [agents]
 install = "npx skills add ..."         # 可选，skill 默认生成 npx skills add owner/repo
 name    = "显示名"                      # 可选，默认取仓库名
 tier    = "featured"                   # 可选，精选；默认 listed
 note    = "需要注意的地方"                # 可选，显示在简介下方
+note_en = "Caveat in English"              # 可选，note 的英文版
 checked = 2026-10-15                   # 可选，人工核对日期（TOML 日期，不加引号）
 ```
 
@@ -66,7 +68,9 @@ checked = 2026-10-15                   # 可选，人工核对日期（TOML 日�
 | 脚本 | 作用 |
 |---|---|
 | `scripts/refresh.py` | 刷新元数据，报告改名、失效、归档、久未更新的仓库 |
-| `scripts/build.py` | 生成 README.md；`--check` 检查是否最新，`--validate` 只校验数据 |
+| `scripts/build.py` | 生成中英文 README、METHODS（方法指南）和 catalog.json；`--check` 检查是否最新，`--validate` 只校验数据 |
 | `scripts/discover.py` | 按 taxonomy.toml 里的关键词搜候选项目，输出待审清单 |
+
+方法指南的正文在 `templates/methods/<方法>.md`（英文版 `<方法>.en.md`），每个方法下的项目名单由脚本生成。
 
 GitHub Actions 每周一自动刷新元数据、重新生成 README，并把新候选开成 issue。

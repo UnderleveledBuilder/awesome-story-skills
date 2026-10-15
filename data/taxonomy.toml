@@ -5,79 +5,117 @@
 [groups.novel]
 label = "长篇小说 · 网文"
 intro = "长篇连载的写作系统：开书、大纲、分章写作、长篇记忆、审稿。"
+label_en = "Novels · Web Novels"
+intro_en = "Writing systems for long-form serials: book setup, outlines, chapter-by-chapter drafting, long-term memory, review."
 
 [groups.short]
 label = "短篇 · 故事"
 intro = "短篇小说、短故事、微小说、儿童故事和睡前故事。"
+label_en = "Short Stories"
+intro_en = "Short stories, flash fiction, children's stories and bedtime stories."
 
 [groups.script]
 label = "剧本 · 短剧 · 影视"
 intro = "影视剧本、短剧和漫剧的剧情写作。只做分镜和视频生成的不收，见 [awesome-short-drama-skills](https://github.com/UnderleveledBuilder/awesome-short-drama-skills)。"
+label_en = "Scripts · Short Dramas · Film"
+intro_en = "Screenplays and the story side of short dramas and comic dramas. Projects that only do storyboards or video generation are in [awesome-short-drama-skills](https://github.com/UnderleveledBuilder/awesome-short-drama-skills)."
 
 [groups.interactive]
 label = "互动叙事 · 游戏 · 角色扮演"
 intro = "AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、文字冒险、跑团、视觉小说、角色扮演。"
+label_en = "Interactive Narrative · Games · Roleplay"
+intro_en = "The AI is the narrator or game master and the story unfolds with the player's choices: interactive fiction, text adventures, tabletop RPGs, visual novels, roleplay."
 
 [groups.imitation]
 label = "仿写 · 同人 · 风格迁移"
 intro = "学一部作品或一位作者的写法再创作：拆书仿写、文风蒸馏、同人、续写。"
+label_en = "Imitation · Fan Fiction · Style Transfer"
+intro_en = "Learn how a work or an author writes, then write that way: book teardowns, style distillation, fan fiction, continuation."
 
 [groups.nonfiction]
 label = "非虚构叙事"
 intro = "把真实的新闻、事件、科学知识和历史人物写成好看的故事：特稿、事件复盘、科普、传记、口播和解说文案、品牌故事。故事要好看，事实不能编。"
+label_en = "Narrative Nonfiction"
+intro_en = "Turn real news, events, science and historical figures into stories people want to read: features, event retrospectives, popular science, biographies, voiceover and explainer scripts, brand stories. The story should grip; the facts must not be invented."
 
 [groups.general]
 label = "通用叙事方法"
 intro = "不限体裁的故事方法和原则：结构理论、人物、对白、视角，以及专门针对小说的去 AI 味。"
+label_en = "General Story Methods"
+intro_en = "Story methods and principles not tied to one form: structure theory, character, dialogue, point of view, and de-AI techniques aimed at fiction."
 
 # 创作方法：一个项目可以用多种
 [methods.planning]
 label = "规划先行：层级大纲、分解写作"
 short = "规划"
+label_en = "Plan first: hierarchical outlines, decomposed drafting"
+short_en = "planning"
 
 [methods.theory]
 label = "叙事理论注入：结构模型、类型套路、写作原则"
 short = "理论"
+label_en = "Narrative theory: structure models, genre tropes, craft principles"
+short_en = "theory"
 
 [methods.worldbuilding]
 label = "设定 · 世界观构建"
 short = "设定"
+label_en = "Setting · worldbuilding"
+short_en = "worldbuilding"
 
 [methods.character]
 label = "人物塑造 · 角色档案"
 short = "人物"
+label_en = "Character design · character profiles"
+short_en = "character"
 
 [methods.memory]
 label = "长篇记忆 · 一致性：状态库、设定库、检索"
 short = "记忆"
+label_en = "Long-form memory · continuity: state stores, setting bibles, retrieval"
+short_en = "memory"
 
 [methods.multiagent]
 label = "多智能体分工：作者、编辑、审稿、读者"
 short = "多智能体"
+label_en = "Multi-agent roles: writer, editor, reviewer, reader"
+short_en = "multi-agent"
 
 [methods.simulation]
 label = "角色模拟 · 世界推演：让角色演出情节"
 short = "模拟"
+label_en = "Character and world simulation: let characters act out the plot"
+short_en = "simulation"
 
 [methods.revision]
 label = "审稿 · 自我批评 · 迭代修订"
 short = "修订"
+label_en = "Review · self-critique · iterative revision"
+short_en = "revision"
 
 [methods.style]
 label = "风格学习 · 仿写：范文、文风蒸馏、拆书"
 short = "风格"
+label_en = "Style learning · imitation: exemplars, style distillation, book teardowns"
+short_en = "style"
 
 [methods.deai]
 label = "去 AI 味 · 文笔打磨"
 short = "去 AI 味"
+label_en = "De-AI · prose polishing"
+short_en = "de-AI"
 
 [methods.interactive]
 label = "交互共创：读者选择、人机协作"
 short = "共创"
+label_en = "Interactive co-creation: reader choices, human-AI collaboration"
+short_en = "co-creation"
 
 [methods.factual]
 label = "事实约束：素材驱动、证据核对、不编造"
 short = "事实"
+label_en = "Fact constraints: source-driven, evidence checks, no fabrication"
+short_en = "facts"
 
 [formats]
 skill    = "标准 SKILL.md 或 agent 插件"
