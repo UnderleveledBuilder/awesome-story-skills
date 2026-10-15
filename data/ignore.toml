@@ -1,0 +1,4315 @@
+# 看过但不收录的仓库。discover.py 会跳过这里的项目，避免重复审核。
+
+[[ignored]]
+repo   = "0alfred00/storyai"
+reason = "无说明：README 只写是 Le Wagon 训练营两周作业和网址，看不出做法"
+
+[[ignored]]
+repo   = "0xAdafang/PersonAi"
+reason = "陪伴聊天，不是叙事：角色聊天桌面应用，只存聊天记录，无叙事机制；2025-08 后未更新"
+
+[[ignored]]
+repo   = "0xJaeg3r/backdoorsandbreaches-socinvader"
+reason = "不是虚构叙事：安全应急响应训练卡牌游戏，AI 只按骰点给调查线索；且 2025-12 后未更新"
+
+[[ignored]]
+repo   = "0xsline/StoryGen-Atelier"
+reason = "周边工具：Gemini 出分镜文字和帧，Veo 生成插帧片段后用 ffmpeg 拼成视频"
+
+[[ignored]]
+repo   = "123Mr-king/waoowaoo"
+reason = "复制版：非 fork 的 saturndec/waoowaoo 搬运，README 链接全指向原仓库；且重心是小说转视频"
+
+[[ignored]]
+repo   = "124zhe/xigua-msvideo-skill"
+reason = "非虚构：YouTube 科普/历史好奇心视频流程，查证选题→英文口播→MS Paint 分镜→配音合成"
+
+[[ignored]]
+repo   = "15673312611/AnimaHub"
+reason = "周边工具：导入小说后拆分镜、出图、合成视频的漫剧平台，不创作剧情"
+
+[[ignored]]
+repo   = "27182812/Paddle_Story_Generation"
+reason = "非大模型：paddlenlp 小 GPT 微信续写机器人，与 Tju-LMc/Paddle_Story_Generation 内容相同"
+
+[[ignored]]
+repo   = "503496348-ops/fission-creative"
+reason = "改名换皮：基于 lingfengQAQ/webnovel-writer 移植到 Hermes Agent，7 个 webnovel-* 命令、六维审查、防幻觉三定律都和原版一致"
+
+[[ignored]]
+repo   = "62656456/ai-film-knowledge-base"
+reason = "周边工具：AI 影视知识库（电影理论、分镜、提示词、审核笔记），供人阅读，不是让 AI 写故事的方法"
+
+[[ignored]]
+repo   = "A-cat-with-carrots/OnlyShot"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "aarushkx/storycraft-ai"
+reason = "周边工具：故事转配音+字幕+背景图视频；且 2025-08 后未更新"
+
+[[ignored]]
+repo   = "abclevel/NovelReel"
+reason = "周边工具：小说转漫剧视频，剧本拆解只为角色图、分镜、配音和视频合成服务；2026-03 后也没有更新"
+
+[[ignored]]
+repo   = "abelxiaoxing/ai-novel-web"
+reason = "基于 YILING0013/AI_NovelGenerator 换成 Vue + FastAPI 网页界面（模块文件名和 README 结构都一致），没看到新方法"
+
+[[ignored]]
+repo   = "abisee/story-generation-eval"
+reason = "评测/数据集/列表：CoNLL 2019 论文代码，用自动指标比较 GPT-2 与 Fusion 模型生成的故事"
+
+[[ignored]]
+repo   = "actionow-ai/actionow"
+reason = "周边工具：影视生产 SaaS 平台（多租户、计费、分镜/素材/成片），README 没有展示剧本生成方法"
+
+[[ignored]]
+repo   = "Adarshagupta/Trybookai"
+reason = "非虚构：按主题、语言、字数一次生成通用书籍并导出 PDF，未声明支持小说，也没有创作方法；仓库还提交了 .venv"
+
+[[ignored]]
+repo   = "ADGEfficiency/creative-writing-with-gpt2"
+reason = "非大模型：用喜爱作家文本微调 GPT-2 的个人练习"
+
+[[ignored]]
+repo   = "AdieLaine/Lnu-AI-Storyteller"
+reason = "套壳，无方法：输入一个英文单词，结合米克马克语词库让 GPT 写一则故事，目的是语言保护，看不出叙事方法"
+
+[[ignored]]
+repo   = "adithya-s-k/Storyblocks"
+reason = "周边工具：文本转故事视频（SD 出图+配音+头像播报）；且 2023-12 后未更新"
+
+[[ignored]]
+repo   = "Admin6016/qidian_novel_optimization"
+reason = "周边工具：起点阅读增强油猴脚本（书源、VIP 解锁、净化），AI 续写只是附带的一键调用；2024-06 后未更新"
+
+[[ignored]]
+repo   = "AharaOoO/acheng-director-skill"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "aherriot/story-generator"
+reason = "非大模型：2012 年用 BNF 生成文法做 NLG 随机故事"
+
+[[ignored]]
+repo   = "aidenaistar/local-gpt-author"
+reason = "复制版：mshumer/gpt-author 的本地化小改（换成 ollama + A1111），2024-05 后未更新"
+
+[[ignored]]
+repo   = "aiskyhub/novel_to_comic"
+reason = "周边工具：把小说忠实改编成漫画，明令禁止新增情节，LLM 只做分镜、整页提示词和出图验收"
+
+[[ignored]]
+repo   = "AIStoryBuilders/AIStoryBuildersOnline"
+reason = "同作者 AIStoryBuilders 桌面版的在线移植，README 几乎为空、文档指向原版 wiki；收原版 AIStoryBuilders/AIStoryBuilders"
+
+[[ignored]]
+repo   = "aitippro/tipai-cinema-skills"
+reason = "周边工具：剧本→分镜→逐镜头十维视频提示词→FACS 表情注入，只做视频画面，不写剧情"
+
+[[ignored]]
+repo   = "akarshkashyap4-ui/NovelWriter"
+reason = "AI 不生成故事：写作编辑器加分析面板，AI 给场景建议、做情节/节奏诊断和读者反应模拟，明确不接管正文"
+
+[[ignored]]
+repo   = "Akearee/QianLing"
+reason = "无源码：仓库只有 README 和截图，千灵写作是官网下载的闭源产品；且 2026-04-02 后未更新"
+
+[[ignored]]
+repo   = "alecm20/story-flicks"
+reason = "周边工具：主题一键生成故事短视频，故事文本一次生成、没有方法，重心在配图、配音与合成"
+
+[[ignored]]
+repo   = "alessianigretti/emergent_storytelling_tool"
+reason = "非大模型：UE5 中按 CSV 规则（动作需求/效果）推演的涌现叙事工具"
+
+[[ignored]]
+repo   = "alexa-samples/skill-sample-nodejs-adventure-game"
+reason = "非大模型：让 Alexa 播放 Twine 预写分支故事的模板，已归档"
+
+[[ignored]]
+repo   = "alexeygrigorev/ai-book-generator"
+reason = "非虚构：用 Gemini 规划章节生成科普类电子书（烟花、机械、金属等），再做 TTS 和 KDP 排版"
+
+[[ignored]]
+repo   = "AlexSafatli/Saber"
+reason = "非大模型：Go 写的随机表跑团元素生成器，不用 LLM；2024-02 后未更新"
+
+[[ignored]]
+repo   = "alibaba/lumenx"
+reason = "周边工具：把现成小说文本转成漫剧视频（剧本分析、分镜、资产、配音、合成），不生成故事"
+
+[[ignored]]
+repo   = "Anarcadia/chuanban-chaishu-skills"
+reason = "只分析不创作：网文拆书报告（章节概括、人物关系、事件线、爽点），未用于指导仿写；且 2026-03 后未更新"
+
+[[ignored]]
+repo   = "AnirudhMukherjee/story-generation"
+reason = "非大模型：char-rnn LSTM 在柯南·道尔文集上训练续写；README 与更早的 kevalnagda/StoryGeneration 一字不差，是复制版"
+
+[[ignored]]
+repo   = "anis-marrouchi/ai-children-story-generator"
+reason = "套壳，无方法：2023 年的教程项目，一条 system prompt 生成儿童故事再配图配音"
+
+[[ignored]]
+repo   = "Anning01/novelvids"
+reason = "周边工具：小说转短剧视频的生产平台，做实体提取、设定图、分镜提示词和视频生成，不写剧情"
+
+[[ignored]]
+repo   = "Anshler/graphify-novel"
+reason = "AI 不生成故事：用知识图谱维护设定库，审阅并更新作者写好的章节，没有生成正文的命令"
+
+[[ignored]]
+repo   = "AnyMarvel/ManPinAPP"
+reason = "周边工具：Android 小说阅读器加本地爬虫书源，不用大模型写故事"
+
+[[ignored]]
+repo   = "aqualite2370/AgentVN-Editor"
+reason = "周边工具：零代码视觉小说引擎和编辑器，Agent 主要把已有小说拆章、规划成 VN 场景工程，不是让 AI 创作故事"
+
+[[ignored]]
+repo   = "ArcReel/ArcReel"
+reason = "周边工具：把小说/成品剧本改编为分集脚本、分镜和视频的生产工作台，重点不在剧情创作"
+
+[[ignored]]
+repo   = "aronjanosch/chronicle-keeper"
+reason = "周边工具：跑团录音转写、会话摘要与设定 wiki 维护，故事由真人跑团产生，AI 只整理笔记和补设定"
+
+[[ignored]]
+repo   = "AthenicAI/Once-Upon-AI-Time"
+reason = "套壳，无方法：GPT-3 + Stable Diffusion 的短故事 Streamlit 演示，README 只有运行步骤，已归档"
+
+[[ignored]]
+repo   = "atisharma/chasm_client"
+reason = "已归档的旧版客户端（需连接 chasm 服务器），作者已重写为 atisharma/chasm，收新版"
+
+[[ignored]]
+repo   = "AusertDream/ACGN-character-skill"
+reason = "陪伴聊天，不是叙事：从原作素材把二次元角色蒸馏成对话人设 skill，用途是和角色聊天"
+
+[[ignored]]
+repo   = "avayyyyyyy/GenAI-Main"
+reason = "无说明：README 只是 Next.js 模板说明，看不出睡前故事怎么生成"
+
+[[ignored]]
+repo   = "Azure-Samples/aspire-semantic-kernel-creative-writer"
+reason = "非虚构：多 Agent 撰写产品/营销文章的 Azure 示例，已归档"
+
+[[ignored]]
+repo   = "baiyu-yu/story-sealdicejs-editor"
+reason = "周边工具：海豹骰剧情插件的拖拽节点编辑器，剧情由人手写，不调用大模型"
+
+[[ignored]]
+repo   = "banisterious/obsidian-draft-bench"
+reason = "周边工具：纯编辑器（Obsidian 场景/草稿版本与手稿编译，无 AI 生成）"
+
+[[ignored]]
+repo   = "BB31420/AI-Auto-Video-Generator"
+reason = "周边工具：故事视频合成（DALL-E 配图、ElevenLabs 配音），故事部分只是单次 GPT-3 提示，2024 年后未更新"
+
+[[ignored]]
+repo   = "BboTTM/heartflow-skill"
+reason = "陪伴聊天，不是叙事：按 MBTI/星座或真人聊天记录复刻恋爱对象，用来练习推进关系和复盘策略"
+
+[[ignored]]
+repo   = "bbroot/novel-bug-checker"
+reason = "只分析不创作：检查小说逻辑漏洞、OOC 和节奏，输出分级报告和修复建议，不生成正文（是 novel-master 套装里的质检环节）"
+
+[[ignored]]
+repo   = "Been012/df-storyteller"
+reason = "周边工具：矮人要塞传说浏览器与要塞日志，AI 写编年史/传记只是可选功能；且 2026-04-06 后未更新"
+
+[[ignored]]
+repo   = "beiyege-01/wenfeng-TGKZ-studio"
+reason = "无源码：仓库只有 README、文档截图和 Releases 里的 exe，文风蒸馏器本体未开源"
+
+[[ignored]]
+repo   = "bennyschmidt/ragdoll-studio"
+reason = "陪伴聊天，不是叙事：Story Mode 是给角色挂知识库问答，其余为生图"
+
+[[ignored]]
+repo   = "billpar/ai-cinematic-pipeline"
+reason = "周边工具：AI 短片制作流程（剧本拆解→资产→镜头提示词→视频→音频），不生成剧本"
+
+[[ignored]]
+repo   = "BlinkDL/AI-Writer"
+reason = "非大模型：作者自训练的小型 RWKV（类 GPT-2）网文续写模型，逐字续写没有创作流程，作者自述已过时"
+
+[[ignored]]
+repo   = "bracesproul/dramatron-template"
+reason = "复刻 google-deepmind/dramatron 的简化 TS 实现，无新方法，且 2024-03 后未更新"
+
+[[ignored]]
+repo   = "bradleyboy/bedtime-ai"
+reason = "套壳，无方法：一句提示调 OpenAI 生成睡前故事并配图、朗读（已归档）"
+
+[[ignored]]
+repo   = "brandonmarkgaia-hub/Acacia-Garden-AI-Worldbuilding-Codex"
+reason = "绑定单一作品：作者个人的 Acacia Garden 神话世界观语料库，目的是给爬虫/RAG 收录，不是可复用的 AI 写故事方法"
+
+[[ignored]]
+repo   = "bs779517/story-skills"
+reason = "可疑：README 是诱导下载「安装包」的模板，链接指向仓库内 zip，描述的桌面应用与仓库内容对不上（证据见末尾注释）"
+
+[[ignored]]
+repo   = "bupticybee/AiDungeonChatGPT"
+reason = "套壳，无方法：直接用 ChatGPT API 当 AI Dungeon 叙述者；且 2023-03 后未更新"
+
+[[ignored]]
+repo   = "bupticybee/ChineseAiDungeon"
+reason = "非大模型：基于清源 CPM（GPT-2 结构）微调的中文 AI 地牢，2022 年后未更新，作者已另出 ChatGPT 版"
+
+[[ignored]]
+repo   = "buwanyuanshen/ChatGPT-NovelWrite"
+reason = "套壳，无方法：单条提示「按用户给的大纲写第 N 章」循环调 gpt-3.5；另附 exe 和免费 ChatGPT/机场推广链接"
+
+[[ignored]]
+repo   = "caiwansan/kunlunjing-1.0"
+reason = "周边工具：粘贴剧本/广告文案后出拍摄脚本、定妆图和视频，不写故事"
+
+[[ignored]]
+repo   = "calclavia/story-generation"
+reason = "非大模型：EMNLP 2019 论文代码，在 GPT-2 小模型上加常识推理辅助训练目标，是训练方法，不是创作流程"
+
+[[ignored]]
+repo   = "callbacked/psvita-llm"
+reason = "非大模型：把 llama2.c 移植到 PS Vita 跑 TinyStories 260K/15M 小模型，无创作方法"
+
+[[ignored]]
+repo   = "Calliope-Editor/writing-skills"
+reason = "AI 不生成故事：13 个 skill 只评不写，README 明确从不代写正文"
+
+[[ignored]]
+repo   = "Cao-R/novel-rag-agent"
+reason = "只分析不创作：基于 LangGraph CRAG 的小说问答 RAG 助手，不生成故事"
+
+[[ignored]]
+repo   = "Carasibana/NarrativeNode"
+reason = "周边工具：节点式情节规划器，人工维护场景状态，AI 只是可选聊天助手"
+
+[[ignored]]
+repo   = "casperkwok/toonany"
+reason = "主要做分镜/视频，剧本环节看不到编剧方法，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "catiseyeqaq/ai-manju-shengcheng-xitong"
+reason = "周边工具：ComfyUI + MiniMax-H3 写实短剧出图/出视频部署工程，LLM 只做提示词润色"
+
+[[ignored]]
+repo   = "cha1latte/marinara-engine-expert-skill"
+reason = "周边工具：Marinara Engine 角色扮演前端的配置和代码贡献顾问 skill，不写故事，且已归档"
+
+[[ignored]]
+repo   = "Charles-T-T/ChatRolePlay"
+reason = "陪伴聊天，不是叙事：课程大作业，仿 ChatHaruhi 从小说抽台词做 RAG 角色对话；且 2025-02 后未更新"
+
+[[ignored]]
+repo   = "charnamel/ai-wuxia-novel-rpg"
+reason = "绑定单一作品：金庸世界武侠 RPG，NPC、武功、地图和主线都按原著写死"
+
+[[ignored]]
+repo   = "chatfire-AI/huobao-drama"
+reason = "周边工具：短剧视频生产平台，LLM 只把已有小说格式化成剧本（script-rewriter 明确不扩写、不改主线），重心在角色场景提取、分镜、图生视频和合成"
+
+[[ignored]]
+repo   = "chatfire-AI/huobao-novel"
+reason = "高度重合：Vue 网页版移植 YILING0013/AI_NovelGenerator 的雪花法流水线（核心种子→角色动力学→世界观→情节架构→章节蓝图），仓库 systemPrompt.md 写明参考该项目，没有新方法"
+
+[[ignored]]
+repo   = "CHATS-lab/verbalized-sampling"
+reason = "通用方法：缓解模式坍缩的口述概率采样提示法，覆盖创意写作、合成数据、对话模拟，不专门针对虚构叙事"
+
+[[ignored]]
+repo   = "ChatTeach/Creative-Writing-Assistant"
+reason = "套壳，无方法：GPT4Free + Gradio 通用聊天框，仅 3 个文件，2024-03 后未更新"
+
+[[ignored]]
+repo   = "chengbenchao/storyboard-prompt"
+reason = "周边工具：短剧剧本→分镜表、场景/人设/道具表和 Seedance 提示词，只做分镜"
+
+[[ignored]]
+repo   = "ChicagoDave/sharpee-csharp"
+reason = "AI 不生成故事：C# 解析器式 IF 引擎，LLM 只用来辅助开发；且 2024-09 后未更新"
+
+[[ignored]]
+repo   = "ChinaYellowDuck/ShortDram-Studio"
+reason = "README 宣称的分镜、配音、视频合成等智能体多未实现（代码只有编剧、制片人等骨架 agent），定位视频生产，暂不收"
+
+[[ignored]]
+repo   = "ciel-oliver/analyze-hit-novel"
+reason = "只分析不创作：拆文输出报告和人物关系图，没有接 AI 仿写的写作环节"
+
+[[ignored]]
+repo   = "ClawCap/Mimic"
+reason = "陪伴聊天，不是叙事：采集真实人物社交媒体发言，统计口头禅和句式生成扮演人设 SOUL.md"
+
+[[ignored]]
+repo   = "Cliff007007/kakafu-novel"
+reason = "高度重合：核心种子→角色体系→角色状态→世界观→情节架构→章节蓝图（悬念密度、伏笔操作、认知颠覆）沿用 YILING0013/AI_NovelGenerator，只改成 CLI 并加男女频和英文提示词"
+
+[[ignored]]
+repo   = "cloudstreet-dev/Soft-Skills-the-Hard-Way"
+reason = "只是 Claude Code 写成的职场寓言小说成品，没有可复用的创作方法"
+
+[[ignored]]
+repo   = "cn-vhql/StoryCraft"
+reason = "套壳，无方法：一条提示词让模型按场景数写每页 1–2 句的绘本 JSON，工作量在配图一致性和 PDF 导出"
+
+[[ignored]]
+repo   = "coderblog-winson/Novel_Generator_By_AI"
+reason = "基于 YILING0013/AI_NovelGenerator 的小改版（多语言界面、扩写叠加），2025-03 后没有更新"
+
+[[ignored]]
+repo   = "ComputerKWasTaken/BetterRepository"
+reason = "评测/数据集/列表：AI Dungeon 社区资源站（AI 指令、剧情组件、故事卡、脚本合集）"
+
+[[ignored]]
+repo   = "Correr-Zhou/IdentityStory"
+reason = "周边工具：AAAI 2026 论文代码，做多图故事里的人物面部一致性图像生成，不涉及文本叙事"
+
+[[ignored]]
+repo   = "CPritch/PipeDream"
+reason = "周边工具：截获终端文字冒险输出实时配图，不生成故事"
+
+[[ignored]]
+repo   = "CQCumbers/dungeon_bot"
+reason = "非大模型：基于 GPT-2 的 AI Dungeon 2 Discord 机器人，2022 年后未更新"
+
+[[ignored]]
+repo   = "Crossme0809/gpt-story-genius"
+reason = "改名换皮：README 自述基于 mshumer/gpt-author，流程和成本说明照搬，只加了 Gradio 界面"
+
+[[ignored]]
+repo   = "cuiyucheng0104-afk/Toonflow"
+reason = "换皮：Toonflow-app/Toonflow-web 是 HBAI-Ltd Toonflow 的前后端（README 未注明出处），一次性上传并加 @山音 的编剧/分镜 skills，重心在分镜与视频提示词"
+
+[[ignored]]
+repo   = "cxy2000111-art/theseus-brain"
+reason = "AI 不生成故事：给 AI 玩的 MCP roguelike，场景文本是作者手写、一字不改照念，AI 只当玩家做选择"
+
+[[ignored]]
+repo   = "CY-CHENYUE/video-screenplay-cy"
+reason = "周边工具：把已有字幕/文稿（教程、Vlog、访谈等）转成拍摄剧本和分镜表，不是虚构故事创作"
+
+[[ignored]]
+repo   = "CyrilPeng/Novel-Auto-Generator"
+reason = "周边工具：SillyTavern 插件，挂机反复发送「继续」自动续写、提取标签后导出，外加 TXT 转世界书；本身不含创作方法，叙事全靠酒馆预设"
+
+[[ignored]]
+repo   = "daguaid341-cpu/write-30-second-storyboards"
+reason = "周边工具：主交付 30 秒分镜提示词与角色三视图，剧本环节只整理用户给的剧情/小说且明确不补写；新版核心为闭源本地引擎，本仓库只留旧版"
+
+[[ignored]]
+repo   = "Daheer/story-story-ai"
+reason = "非虚构：把非洲历史人物生平写成强调真实的儿童读物；且 2025-04 后未更新"
+
+[[ignored]]
+repo   = "Dapeng960208/AI-Comic-Generator"
+reason = "周边工具：以漫画分镜和画面生成为主（Gemini 绘图、角色一致性），且 2026-01 后未更新"
+
+[[ignored]]
+repo   = "dayu-project/recall"
+reason = "AI 不生成故事：把用户自己的情侣照片和真实回忆套进固定五段小游戏模板，不是大模型写虚构故事"
+
+[[ignored]]
+repo   = "deepfates/npc"
+reason = "AI 不生成故事：LangChain agent 去玩现成的 Zork，只给出指令建议；2023 年已归档"
+
+[[ignored]]
+repo   = "deepseekcoder2/vid2bedtimestory"
+reason = "周边工具：把已有儿童剧集视频转成绘本 PDF，故事内容来自原片，重点在视频分析、选帧和排版"
+
+[[ignored]]
+repo   = "Deng-m1/MaliangAINovalWriter"
+reason = "无源码：源码 2025-11 后已撤下，仓库只剩 README 给商业官网 maliangwriter.com 引流"
+
+[[ignored]]
+repo   = "dengpao6/Elaina-skill"
+reason = "绑定单一作品：只服务《魔女之旅》伊蕾娜角色扮演（附原著文本）"
+
+[[ignored]]
+repo   = "djyy1031/ai-comic-drama-director-skills"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "dmc12-xyz/ai-writer"
+reason = "套壳，无方法：buildspace 模板，一句提示词调 text-davinci-003 出短故事；2023 后未更新"
+
+[[ignored]]
+repo   = "dojoteef/storium-gpt2"
+reason = "非大模型：EMNLP 2020 STORIUM 论文的 GPT-2 微调基线"
+
+[[ignored]]
+repo   = "DoktorDaveJoos/manuscript"
+reason = "周边工具：人写为主的小说编辑、排版、出版桌面应用，AI 续写改写只是可选附加，且试用后需付费许可"
+
+[[ignored]]
+repo   = "dongbeixiaohuo/writing-agent"
+reason = "非虚构：多 agent 共创公众号文章、观点分析、随笔，含事实核查，不针对虚构故事"
+
+[[ignored]]
+repo   = "donmb1/ai-story-generator"
+reason = "套壳，无方法：重点是越狱 Kindle 的 E-Ink 睡前故事阅读客户端，故事由配置项拼成提示后一次 claude -p 生成"
+
+[[ignored]]
+repo   = "Doriandarko/gemini-writer"
+reason = "复制版：同作者 Doriandarko/kimi-writer 换成 Gemini 3 Flash，README 目录树仍写 kimi-writer/"
+
+[[ignored]]
+repo   = "DroicheadNua/MirrorShard_2"
+reason = "周边工具：通用 AI 大纲和写作编辑器（想法图转 Markdown、文生图），不以 AI 生成故事为核心"
+
+[[ignored]]
+repo   = "DROP-TABLE-Participants/StorySwap"
+reason = "AI 不生成故事：玩家轮流写故事，AI 只把文字生成配图（2023 黑客松项目，2024-05 后未更新）"
+
+[[ignored]]
+repo   = "duhca/elysia.skill"
+reason = "绑定单一作品：只扮演《崩坏3》爱莉希雅的角色 skill"
+
+[[ignored]]
+repo   = "duhca/kiana.skill"
+reason = "绑定单一作品：《崩坏3》琪亚娜单角色扮演数据包（台词库、语气蒸馏），属角色陪伴聊天"
+
+[[ignored]]
+repo   = "dungnotnull/game-roleplay-scenario-design-agent-skill"
+reason = "套壳，无方法：作者 660 个仓库之一（SKILL.md 自标 Skill 205），通用「需求→证据→分析→建议」咨询模板换上 RP 题材"
+
+[[ignored]]
+repo   = "dungnotnull/plot-screenplay-structure-analyzer-agent-skill"
+reason = "只分析不创作：按救猫咪、英雄之旅等框架给已有故事打分并出改进路线图"
+
+[[ignored]]
+repo   = "duoyang666/ai_novel"
+reason = "无源码：主程序「多样智能」以网盘 / Release zip 分发（AOT 编译），仓库只有拆书、AI 群聊的零散代码、open-webui 副本和提示词资料"
+
+[[ignored]]
+repo   = "easyeye163/vimax-agnes"
+reason = "换皮：把 HKUDS/ViMax 的 Gemini/Veo 换成 Agnes API 的改版，重心是视频生成，另有大量个人跑批脚本"
+
+[[ignored]]
+repo   = "eeshsaxena/ai-dungeon-master"
+reason = "绑定单一作品：只能玩哈利波特世界观的 RPG（知识图谱、RAG 设定检索）"
+
+[[ignored]]
+repo   = "effuone/focus-feed"
+reason = "非虚构：把书、文章、播客转成短视频学习摘要"
+
+[[ignored]]
+repo   = "Eigenbahn/ai-dungeon-cli"
+reason = "周边工具：play.aidungeon.io 的终端客户端，2020 年后未更新，作者说明已失效"
+
+[[ignored]]
+repo   = "ekagrashukla/GRANNY-GPT2-Based-Multiple_Genre-Story-Generator-Web-Application"
+reason = "非大模型：2021 年 GPT-2 按类型微调的故事生成网页"
+
+[[ignored]]
+repo   = "eleniums/mud-ai"
+reason = "套壳，无方法：手工搭建的 Evennia MUD，只加了一个 pray 指令调本地模型回话，README 是 Evennia 模板"
+
+[[ignored]]
+repo   = "ElGaba/Lorecraft-Studio"
+reason = "周边工具：视觉小说/互动叙事的编辑、预览、导出工作台，只给 agent 一份 JSON schema 和简短的场景节奏建议，本身不调用大模型"
+
+[[ignored]]
+repo   = "Elowwwen/Fanfic-background-assistant"
+reason = "AI 不生成故事：只做同人背景资料研究与事实核查，明确不碰剧情"
+
+[[ignored]]
+repo   = "enoobis/AI-eBook-Generator"
+reason = "非虚构：通用电子书生成（示例为《AI 的未来》），Cohere 一次生成后转 PDF，没有小说方法"
+
+[[ignored]]
+repo   = "erick-tcsder/duns-n-dracs"
+reason = "故事不是主体：地牢闯关游戏，Cohere 只给每场战斗写开场和结局两小段"
+
+[[ignored]]
+repo   = "escapistmost/Storyboard-Anchored-Generation"
+reason = "周边工具：CVPR 2026 多镜头视频生成研究，产出分镜首尾帧，不涉及故事文本"
+
+[[ignored]]
+repo   = "ethan-w-roland/ai-interactive-fiction"
+reason = "AI 不生成故事：让 GPT-4 当玩家去玩现成的 Infocom 游戏（Zork 等），剧情是原作；2023 后未更新"
+
+[[ignored]]
+repo   = "EuclidStellar/LexicraftAI"
+reason = "AI 不生成故事：改写、语法、语气和情节结构分析等写作辅助，正文由作者写"
+
+[[ignored]]
+repo   = "EventideMiles/eventide-quill"
+reason = "AI 不生成故事：自我定位为反馈优先的编辑而非生成器，作者主写，AI 以审稿、lint、连续性检查为主，协作续写只是辅助"
+
+[[ignored]]
+repo   = "F-S-Neal/substrate-method"
+reason = "AI 不生成故事：Obsidian 库里 AI 只把作者的灵感卡片整理成设定页和场景速查表，正文由作者自己写"
+
+[[ignored]]
+repo   = "f5alcon/The-Novelists-Atelier"
+reason = "AI 不生成故事：提示词以发展编辑、行文/校对、张力审计、beta 读者等审稿分析为主，服务作者自己写的稿子"
+
+[[ignored]]
+repo   = "FA-T-T/codex-noval-2-manga"
+reason = "周边工具：小说改黑白漫画页，重点在页面脚本→视觉设计→Image 2 逐页渲染，输入是已有小说"
+
+[[ignored]]
+repo   = "fahmitech/mistral-raid"
+reason = "不是叙事：地牢动作游戏，AI 只按战斗数据生成 Boss 嘲讽台词和招式"
+
+[[ignored]]
+repo   = "fangleai/Outline2Story"
+reason = "非大模型：2021 年基于 GPT-2 微调的级联事件大纲→故事可控生成研究"
+
+[[ignored]]
+repo   = "fangleai/TransformerCVAE"
+reason = "非大模型：2021 年 GPT-2 时代的 Transformer-CVAE 可控故事生成训练代码，不是大模型创作方法"
+
+[[ignored]]
+repo   = "fanyangwuye/IP-skills-Example-package"
+reason = "周边工具：IP 短片的角色图、分镜、音乐、图生视频和连续性技能包，文案部分只做内容规划校验；且默认保留全部权利"
+
+[[ignored]]
+repo   = "fedefreak92/dungeon-master-ai-project"
+reason = "非大模型：纯规则 RPG 后端（状态机、战斗、地图），GPT 地下城主还在路线图里没实现；2025-04 后未更新"
+
+[[ignored]]
+repo   = "femnn/RecurrentGPT-zh"
+reason = "复制版：aiwaves-cn/RecurrentGPT 的中文化搬运，2023-06 后未更新"
+
+[[ignored]]
+repo   = "fen0s/OLDungeon"
+reason = "非大模型：thadunge2 版 AI Dungeon 的 GPT-2 分支，2020 年后未更新"
+
+[[ignored]]
+repo   = "fernandospr/kmp-storyteller"
+reason = "套壳，无方法：选个动物角色就让 Gemini 写睡前故事；且 2025-07 后未更新"
+
+[[ignored]]
+repo   = "Finara-flos/GM-Copilot-Trial-Edition"
+reason = "周边工具：DND 备团工具，导入清洗现成模组、去翻译腔、扩写场景、整理 NPC 档案，AI 不主持也不创作故事"
+
+[[ignored]]
+repo   = "finetunej/gpt-neo_dungeon"
+reason = "非大模型：2021 年个人微调 GPT-Neo 2.7B 的 AI Dungeon 仿制 Colab"
+
+[[ignored]]
+repo   = "FlickeringLamp/ai-novelist"
+reason = "无方法：通用 AI 写作 agent 编辑器（类 Cursor：工具调用、RAG、MCP、skills），刻意不预设创作流程，看不到小说专属方法"
+
+[[ignored]]
+repo   = "flyboyer/AI_novel_generator"
+reason = "套壳，无方法：输入主题直接让本地 Ollama 生成小说；且 2024-09 后未更新"
+
+[[ignored]]
+repo   = "flyhunterl/flymd"
+reason = "主体是 Markdown 笔记编辑器；AI 小说引擎插件只是前端 UI，源码注明生成与计费逻辑在作者闭源付费后端"
+
+[[ignored]]
+repo   = "frankxai/arcanea"
+reason = "绑定单一作品：围绕作者自有 Arcanea 世界观（Ten Gates、Guardians 等 canon）的平台与 skills"
+
+[[ignored]]
+repo   = "freestylefly/director_ai"
+reason = "周边工具：漫剧 App，一键剧本→分镜→合成视频，重点在视频产出；README 只是 Vite 模板说明"
+
+[[ignored]]
+repo   = "gaboolic/novel-gpt"
+reason = "未实现：README 只是「主控写大纲、AI 人物生成对白」的构想，标注开发中；仓库只有 Vue/Express 脚手架、一份 prompt 和 langchain 测试"
+
+[[ignored]]
+repo   = "galaxykate/tracery"
+reason = "非大模型：模板文本扩展语法库，不涉及 LLM"
+
+[[ignored]]
+repo   = "GaoPeng97/transformer-xl-chinese"
+reason = "非大模型：自训 Transformer-XL 续写斗破苍穹/古诗的个人练习，2022 年后未更新"
+
+[[ignored]]
+repo   = "gddickinson/llm_RPG"
+reason = "LLM 只是可选的 NPC 对话层：世界由离线启发式系统驱动，冒险是手写的，故事主体不由大模型生成"
+
+[[ignored]]
+repo   = "geallenboy/ai-story-wizard"
+reason = "套壳，无方法：儿童故事 SaaS，按主题和年龄一次生成故事加配图"
+
+[[ignored]]
+repo   = "geegl/directorskills"
+reason = "周边工具：影视教材蒸馏的 98 个 skill，绝大多数是镜头、灯光、调色、声音，剧本结构只有《救猫咪》8 个"
+
+[[ignored]]
+repo   = "gimzani/ai-dungeon-worldbuilder"
+reason = "周边工具：AI Dungeon World Info 离线编辑器，已归档，2021 年后未更新"
+
+[[ignored]]
+repo   = "GitXarmoron/BigBanana-AI-Director"
+reason = "复制版：非 fork 搬运 shuyu-labs/BigBanana-AI-Director 旧版源码；本身也是短剧视频生产的周边工具"
+
+[[ignored]]
+repo   = "google-deepmind/concordia"
+reason = "通用生成式社会模拟库，README 定位社会科学、AI 安全、经济学等研究，没有面向故事生成的说明"
+
+[[ignored]]
+repo   = "GPT-Laboratory/multiagent-story-generation"
+reason = "非虚构：生成软件需求 user story 并由多 agent 讨论排优先级"
+
+[[ignored]]
+repo   = "grandgaming9321-prog/reality-engine"
+reason = "可疑：自称 Chronos Engine 时序模拟引擎却无任何源码，只有 README、index.html 和下载按钮 SVG，新号刷星"
+
+[[ignored]]
+repo   = "greatgodme/Story-Generator"
+reason = "非大模型：用 markovify 马尔可夫链拼文本"
+
+[[ignored]]
+repo   = "guaner-334/civ-atlas"
+reason = "非大模型：星球地形与历史由程序化模拟推演，LLM 只是可选的史书改写与命名辅助"
+
+[[ignored]]
+repo   = "guchendesigndog/GC-Writer-Assistant"
+reason = "套壳，无方法：网文码字编辑器，AI 只按当前正文续写 200–500 字或润色"
+
+[[ignored]]
+repo   = "Gutek8134/AID-dice-rolling"
+reason = "周边工具：AI Dungeon 的骰子/数值/物品命令脚本，是规则逻辑而非叙事方法；2024-04 后未更新"
+
+[[ignored]]
+repo   = "H1N2/AI_NovelGenerator_ex"
+reason = "复制版：原版是 YILING0013/AI_NovelGenerator（README 仍写 clone 原仓库），只声称加了扩写，且 2025-10 后停更"
+
+[[ignored]]
+repo   = "H4pplness/storyboard-skill"
+reason = "周边工具：短视频（美食、产品展示等）分镜海报和视频提示词"
+
+[[ignored]]
+repo   = "haesleinhuepf/story-writer"
+reason = "套壳，无方法：一句提示交给 ChatGPT 写故事加 DALL-E 配图出 PDF；且 2024-02 后未更新"
+
+[[ignored]]
+repo   = "haihungle253-boop/travel-raven"
+reason = "无源码：仓库只有 README，所说的 SKILL 文件不在仓库里；且 2026-03 后未更新"
+
+[[ignored]]
+repo   = "HamnaCh456/Historical_Figure_Storyteller"
+reason = "非虚构：先搜索历史人物传记再写讲述稿，然后配音、生图合成视频"
+
+[[ignored]]
+repo   = "handypolitic/NovelAI-Desktop---NovelAI-Story-Writer-2026"
+reason = "可疑：只有 README 无源码，标签含 novelai-crack，引导下载带密码的压缩包并以管理员身份运行安装器"
+
+[[ignored]]
+repo   = "Hariswar8018/Chatting"
+reason = "套壳，无方法：Gemini 生成故事后以聊天形式展示的 Flutter 应用"
+
+[[ignored]]
+repo   = "HatanoChihiro/obsidian-webnovel-assistant"
+reason = "周边工具：纯编辑器（字数统计、伏笔/时间线/设定看板、本地校对，无 AI 生成）"
+
+[[ignored]]
+repo   = "HBAI-Ltd/Toonflow-app"
+reason = "主要做分镜/视频，剧本环节看不到编剧方法，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "hbbert-dev/yiyi-skill"
+reason = "AI 不生成故事：网文写作导师人设（蒸馏网文作者言论），只给框架、套路与点评，README 写明文笔要用户自己练"
+
+[[ignored]]
+repo   = "HeartEase1/cyrene.skill"
+reason = "绑定单一作品：只还原《崩坏：星穹铁道》昔涟一个角色的对话扮演 skill"
+
+[[ignored]]
+repo   = "HelloRuru/claude-zhenhuan"
+reason = "陪伴聊天，不是叙事：写代码时让 Claude 用《甄嬛传》角色口吻说话的趣味人设 skill，不生成故事"
+
+[[ignored]]
+repo   = "herooutput/Toonflow-app"
+reason = "复制版：非 fork 的 HBAI-Ltd/Toonflow-app 旧版搬运，README 下载链接仍指向原仓库"
+
+[[ignored]]
+repo   = "hiveforge-sh/hivemind"
+reason = "周边工具：Obsidian 设定库插件加 MCP 服务器，给 AI 提供 canon 查询、时间线和关系图，本身没有故事生成流程"
+
+[[ignored]]
+repo   = "HKUST-AASG/StorytellingAgent"
+reason = "绑定单一作品：课程项目，只能玩《Sharp School》时间循环剧本；2024-11 后未更新，仓库混有大量日志和 pyc"
+
+[[ignored]]
+repo   = "Hooolee/novel-splitter"
+reason = "周边工具：番茄/起点爬虫加 AI 拆书分析（题材、金手指、看点）报告，产物不用于指导 AI 仿写"
+
+[[ignored]]
+repo   = "hrabanazviking/WYRD-Protocol-World-Yielding-Real-time-Data-AI-world-model"
+reason = "说明不足：面向 AI 角色/RPG/VR 的通用 ECS 世界状态中间件，README 架构部分写着「Coming soon」，看不出叙事生成方法"
+
+[[ignored]]
+repo   = "hshenwl/ai-novel-generator-genwenniu"
+reason = "与同作者的 hshenwl/ai-novel-studio-lingshumiaobi 高度重合：都来自原 ai-novel-studio，同一套七步 agent 引擎，同日创建，已收后者"
+
+[[ignored]]
+repo   = "huaniao007/AI-Shortfilm-Toolkit"
+reason = "套壳，无方法：只有 Ollama + Open WebUI 安装脚本和一份提示词"
+
+[[ignored]]
+repo   = "hulutech-web/novel-video-workflow"
+reason = "周边工具：小说转视频（章节拆分、TTS、配图、字幕、剪映工程），不生成故事"
+
+[[ignored]]
+repo   = "Hunter-DDM/sentimental-story-ending"
+reason = "非大模型：ACL 2019 的 Seq2Seq 情感可控故事结局生成"
+
+[[ignored]]
+repo   = "Huxiaoyou97/ManvoTV"
+reason = "无源码：闭源漫剧平台的产品展示仓库，只有 README 和截图"
+
+[[ignored]]
+repo   = "ianb/intra-game"
+reason = "绑定单一作品：Text Adventure Hack 的单部 LLM 文字冒险《Intra》，世界和谜题写死，引擎没抽成可复用框架"
+
+[[ignored]]
+repo   = "iankelk/llm-text-adventure"
+reason = "套壳，无方法：Clarifai + Streamlit 聊天演示，只靠一段隐藏提示词变成文字冒险，README 是无关的聊天模块说明"
+
+[[ignored]]
+repo   = "ilkaydemiralay/vision_art_creator"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "IllgamhoDuck/ko_novel_generator"
+reason = "非大模型：2019 年字符级 GRU 生成韩文小说"
+
+[[ignored]]
+repo   = "imerzzhu/ai-novel-writing-skills"
+reason = "改名换皮：7 个核心 skill 与 xindoo/sumeru 同文（.sumeru 改成 .webnovel），只多了热梗、女频素材两个参考 skill，未注明来源"
+
+[[ignored]]
+repo   = "indentlabs/notebook"
+reason = "AI 不生成故事：Notebook.ai 是人工填写世界观/角色/情节的设定库（Rails 应用），没有大模型写故事的流程"
+
+[[ignored]]
+repo   = "inliver233/Ai-Novel-Editor"
+reason = "周边工具：PyQt 写作编辑器，AI 只做 Tab 补全，看不到创作流程方法；2026-02 后未更新"
+
+[[ignored]]
+repo   = "ironman5366/ai-murder-mystery-hackathon"
+reason = "绑定单一作品：写死在 characters.json 里的一个谋杀案，AI 只扮演嫌疑人接受审问（带批评-修订提示）"
+
+[[ignored]]
+repo   = "ivangro/MexicaStoryteller"
+reason = "非大模型：Engagement-Reflection 创造力模型的 Java 规则系统，2019 年后未更新"
+
+[[ignored]]
+repo   = "jackaduma/Recurrent-LLM"
+reason = "复制版：方法与原版 aiwaves-cn/RecurrentGPT 相同，只加了 Vicuna/ChatGLM 等开源模型后端；2023-09 后未更新"
+
+[[ignored]]
+repo   = "jackiechou1/web-novel-structre-"
+reason = "只分析不创作：网文结构拆解、人物诊断与设定附录归档，产物没有接到 AI 仿写"
+
+[[ignored]]
+repo   = "jackpopup/ai-writers-room"
+reason = "非虚构：韩文博客写作和课程制作的多 agent skill"
+
+[[ignored]]
+repo   = "JadynHax/aideclib"
+reason = "周边工具：AI Dungeon 自定义命令开发库，2021 年后未更新"
+
+[[ignored]]
+repo   = "jaketae/storyteller"
+reason = "非大模型：默认用 GPT-2 续写开头一句（50 token），重点是 Stable Diffusion 逐句配图加 TTS 合成视频，叙事侧无方法"
+
+[[ignored]]
+repo   = "jammaru/jev-lab"
+reason = "不生成故事：Jev 决策模型的演示（百人小镇模拟、将棋），LLM 只给 NPC 选下一步动作，不写叙事文本"
+
+[[ignored]]
+repo   = "jbilcke-hf/ai-bedtime-story"
+reason = "无说明：README 只有「(To be continued)」，看不出做什么、怎么做"
+
+[[ignored]]
+repo   = "Jblast94/nsfw-novel-generator"
+reason = "套壳，无方法：表单选题材/长度后丢给 NSFW-3B 小模型，默认 mock 模式返回预设故事"
+
+[[ignored]]
+repo   = "jcreek/PokemonAdventureChatGPTPlugin"
+reason = "绑定单一作品：只能玩宝可梦冒险的 ChatGPT 插件，2023 年后未更新"
+
+[[ignored]]
+repo   = "JD-D3V/beyonder"
+reason = "周边工具：网文中译英翻译与问答，用术语表 RAG 保证仙侠术语一致"
+
+[[ignored]]
+repo   = "je09/AIDungeonRPG"
+reason = "无说明：README 只说大量基于 Atampy26 的 pastebin 脚本，没写做什么"
+
+[[ignored]]
+repo   = "jenna-russell/storyscope"
+reason = "评测/数据集/列表：研究 AI 小说与人类小说的叙事特征差异（304 个特征、AI 文本检测），附 6 万篇故事平行语料，只分析不创作"
+
+[[ignored]]
+repo   = "jesse-engineer/qijing-ai-guide"
+reason = "无源码：闭源 SaaS 奇境 AI 的官方使用指南与营销文档，模板是人工填写的检查表"
+
+[[ignored]]
+repo   = "jff/TeLLer"
+reason = "非大模型：2013-2015 年用线性逻辑证明器研究互动叙事因果的 Haskell 工具"
+
+[[ignored]]
+repo   = "jiangjiechen/EDUCAT"
+reason = "非大模型：基于 GPT-2/RoBERTa 的 MCMC 无监督反事实故事改写（AAAI 2022 论文代码）"
+
+[[ignored]]
+repo   = "JianGuanTHU/CommonsenseStoryGen"
+reason = "与 thu-coai/CommonsenseStoryGen 是同一篇 TACL 论文代码的重复仓库；且为 GPT-2 small 微调，非大模型"
+
+[[ignored]]
+repo   = "JiaqiLi404/IAmDirector-Text2Video-NextJS-Client"
+reason = "无源码：只开源 Next.js 前端，GPT 剧本生成的后端没开源，且 2024-03 后无更新"
+
+[[ignored]]
+repo   = "jiqi136/Ai-Assistant"
+reason = "套壳，无方法：Windows 上的通用多模型聊天客户端，没有小说创作流程"
+
+[[ignored]]
+repo   = "jlam00-dev/hardcore-director"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "JoelLewis/skill-library"
+reason = "通用 skill 合集（战略、领导力、谈判为主），虚构写作只有 4 个 skill；且 2026-03 后未更新"
+
+[[ignored]]
+repo   = "JohnKeating1997/spark-video"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "johnson7788/WriterAgent"
+reason = "非虚构：论文综述/教案写作 agent（大纲+检索+多 agent 撰写），小说只是描述里顺带一提，且 2026-01 后未更新"
+
+[[ignored]]
+repo   = "joyousfridg/AIDungeon-Desktop---AI-Dungeon-Unlimited-2026"
+reason = "可疑：无源码，只有 README，以破解版 AI Dungeon 为名引导下载带密码的压缩包并以管理员身份运行"
+
+[[ignored]]
+repo   = "JunnYu/Paddle-AI-Writer"
+reason = "非大模型：BlinkDL/AI-Writer 的 Paddle 移植，1.4 亿参数魔改 GPT 续写网文"
+
+[[ignored]]
+repo   = "jxshow/jingju-skills"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "Karmacoke/chargen"
+reason = "周边工具：角色人设生成器，产出人设档案、NPC 系统提示词与绘图提示词，不写故事"
+
+[[ignored]]
+repo   = "Kasneci-Lab/AI-assisted-writing"
+reason = "非虚构：TUM 的 PEER 学生作文反馈工具"
+
+[[ignored]]
+repo   = "KeloYuan/Niki-AI"
+reason = "套壳，无方法：把 Claude Code 嵌进 Obsidian 侧边栏的通用笔记/写作助手，不针对故事创作"
+
+[[ignored]]
+repo   = "kerenoded/linions"
+reason = "绑定单一作品：所有分支动画剧集都围绕作者自有角色 Linai（知识库是为其手写的约 50 份设定），重心在 SVG 绘图与动画"
+
+[[ignored]]
+repo   = "kevalnagda/StoryGeneration"
+reason = "非大模型：char-rnn LSTM 按主题情感 token 分段续写"
+
+[[ignored]]
+repo   = "kevinchin12/storyboard-director"
+reason = "周边工具：分镜脚本→多 agent 逐镜线稿→合并视频提示词的分镜 skill"
+
+[[ignored]]
+repo   = "kiki-lgtm-dot/yunscene-director-workbench"
+reason = "周边工具：AI 导演分镜工作台，核心是剧本确认后的分镜、关系素描和提示词编译（也做 TVC 广告），剧本生成只是前置环节，没写具体创作方法"
+
+[[ignored]]
+repo   = "kiki3231/word2gal"
+reason = "周边工具：把已有文章尽量按原文转成网页视觉小说，重点在立绘、BGM 与打包"
+
+[[ignored]]
+repo   = "KittenCN/get_words"
+reason = "周边工具：从网页提取小说，用 GPT/Gemini 洗稿，给推文视频软件导入"
+
+[[ignored]]
+repo   = "knexer/ai-storyteller"
+reason = "无说明：没有 README（代码里有构思→筛选→大纲→起草流程，但没有任何文档）"
+
+[[ignored]]
+repo   = "kr3t3n/smolagents-video-script-generator"
+reason = "非虚构：调研话题后写社媒知识类视频脚本"
+
+[[ignored]]
+repo   = "krishnaadithya/AIChildrensBookGen"
+reason = "绑定单一作品：只生成 Curious George 绘本，基于 SEED-Story 多模态模型，且 2024-09 后未更新"
+
+[[ignored]]
+repo   = "kunhai-88/hongguo-shortdrama-screenwriting-course"
+reason = "AI 不生成故事：红果《短剧编剧第一课》01-10 期的 Markdown/PDF 整理，是给人读的编剧教材，没有 AI 工作流"
+
+[[ignored]]
+repo   = "kvintessents/aid-world-builder"
+reason = "周边工具：AI Dungeon 世界信息的在线编辑器，2021 年后未更新"
+
+[[ignored]]
+repo   = "kxz18/Stylized-Story-Generation-with-Style-Guided-Planning"
+reason = "非大模型：2021 年基于 BART/GPT-2 的风格化故事生成论文代码（关键词风格规划），属前大模型时代"
+
+[[ignored]]
+repo   = "l-io-n/AI-Resources"
+reason = "评测/数据集/列表：AI Dungeon 与 NovelAI 的场景、脚本资源合集（含 zip），2022 后未更新"
+
+[[ignored]]
+repo   = "lancopku/Skeleton-Based-Generation-Model"
+reason = "非大模型：EMNLP 2018 的 TensorFlow 骨架式 seq2seq 故事生成"
+
+[[ignored]]
+repo   = "lanlan0811/toonflow-2.0"
+reason = "周边工具：基于 HBAI-Ltd Toonflow 二开，新增的是分镜表导入、商品视觉工厂、无限画布等画面生产功能，叙事部分沿用原版"
+
+[[ignored]]
+repo   = "lanseqingling/lantern"
+reason = "周边工具：漫画页面与画格编排工作台，且仓库没有 README"
+
+[[ignored]]
+repo   = "lara-martin/ASTER"
+reason = "非大模型：AAAI 2018 的事件表示 seq2seq 故事生成代码"
+
+[[ignored]]
+repo   = "Laszlobeer/-Dungeo_ai-otudated-"
+reason = "重复：作者自标的过时旧版，README 安装步骤就指向新版 Laszlobeer/Dungeo_ai，应收新版而不是这份副本"
+
+[[ignored]]
+repo   = "lee0166/nanshanai-animata"
+reason = "周边工具：小说转影视流水线，LLM 只做剧本解析和拆分镜，主体是角色、场景图和视频生成"
+
+[[ignored]]
+repo   = "LewdLeah/Localized-Languages"
+reason = "周边工具：AI Dungeon 多语言本地化/翻译脚本"
+
+[[ignored]]
+repo   = "LewdLeah/Multiple-Choice-Assistant"
+reason = "周边工具：AI Dungeon 场景编辑器的 Chrome 扩展，2026-02 后也未更新"
+
+[[ignored]]
+repo   = "leynos/visual-storytelling-skills"
+reason = "周边工具：把已有剧本/散文拆成连续性清单、参考图、镜头规格和视频提示词，不写故事"
+
+[[ignored]]
+repo   = "lhfer/codex-novel-to-comic-studio"
+reason = "周边工具：EPUB/TXT 小说改编漫画，用 image2 出整页并导出 PDF/CBZ，故事来自已有原作"
+
+[[ignored]]
+repo   = "liangdabiao/claudesdk-seedance-chat"
+reason = "周边工具：Seedance 2.0 视频分镜提示词生成 Web 应用，剧本只是 15 秒镜头脚本，服务于视频生成"
+
+[[ignored]]
+repo   = "liangdabiao/lego-cinematic-remix"
+reason = "主要做分镜/视频，剧本环节看不到编剧方法，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "liangdabiao/Seedance2-Storyboard-Generator"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（四幕剧本之后主要产出素材清单和 Seedance 时间轴提示词）"
+
+[[ignored]]
+repo   = "liangdabiao/smy-seedance-storyboard"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "Liao-Ke/everyday"
+reason = "套壳，无方法：每日一句喂给多个模型各写一篇放上网站，重心在工程编排，创作侧只有作家风格提示"
+
+[[ignored]]
+repo   = "liaojingwu20041031/naruto-author-skill"
+reason = "绑定单一作品：只服务《火影忍者》同人，火影资料库和势力响应写死"
+
+[[ignored]]
+repo   = "LingGuoAI/LingGuo-Drama"
+reason = "主要做分镜/视频，剧本环节看不到编剧方法，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "LingYuYue1/KaiTuoYiShi"
+reason = "绑定单一作品：只服务《崩坏：星穹铁道》的同人跑团应用；世界书、变量结算、三层记忆做得较完整，但开局、智库和剧情轨道都写死在该 IP"
+
+[[ignored]]
+repo   = "LingYuYue1/st-compatible-independent-rp-app-builder"
+reason = "周边工具：指导 Codex 开发兼容 ST 的独立 RP 前端（运行时、存档、UI 工程），本身不生成故事"
+
+[[ignored]]
+repo   = "liobububu/Daimaru-Manga-Studio"
+reason = "周边工具：短视频/漫剧素材生产工作台，剧本只是模板批量生成，重点在分镜、图像视频、配音和剪辑"
+
+[[ignored]]
+repo   = "literature95/NovelFlow"
+reason = "套壳，无方法：通用 AI 写作平台（编辑器、用户系统、管理后台），AI 只做内容生成和灵感建议，没有可见的规划、记忆或审稿流程"
+
+[[ignored]]
+repo   = "LittleOrange-i/Youzi-Write"
+reason = "周边工具：小说编辑器（基于 51mazi 二次开发），主打地图、关系图谱、时间线等手工工具，AI 只有一句「支持辅助创作，请自行尝试」"
+
+[[ignored]]
+repo   = "liupengfeiCk/coc-ai-agent"
+reason = "换皮：Ocisly14/CoC-AI-agent 的汉化版（提交历史就是原仓库的），没有新增方法"
+
+[[ignored]]
+repo   = "liuxiao20051106-prog/ai-manga-drama"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（八步出片，剧本与任务卡只占一步）"
+
+[[ignored]]
+repo   = "lixiaoxiao9888-create/manju-laoli-skill"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "liyue-aigc/seedance-2-5-video-director"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "liyupi/niulai-video-generator"
+reason = "绑定单一作品：只生成《牛来》风格动画，主体是 Three.js 程序化渲染+TTS+FFmpeg 视频管线，剧本环节只是把用户小故事改写成牛来台词"
+
+[[ignored]]
+repo   = "lj22503/diaolong-skill"
+reason = "非虚构：品牌、营销、融资、危机公关等场景叙事 skill，虚构创作只占 26 个里的 1 个"
+
+[[ignored]]
+repo   = "lkw2731938298/Jumeng-Canvas-Local-Client"
+reason = "周边工具：本地图、视频、文本节点画布，面向漫剧、带货视频、宣传片出片，没有叙事方法；仓库里带更新器 exe"
+
+[[ignored]]
+repo   = "lkw2731938298/jumeng-canvas-saas-sanitized"
+reason = "周边工具：同一聚梦画布的 SaaS 版（节点工作流、算力账本、管理后台），内置 skill 多为带货、宣传片、爆款复刻视频"
+
+[[ignored]]
+repo   = "lnblfkj-del/Dralo-Studio"
+reason = "周边工具：以无限画布、分镜、图像/视频生成和多轨剪辑为主的短剧制作台，剧本环节只是智能体给候选，看不出写作方法"
+
+[[ignored]]
+repo   = "LoserFox/dsh-gal"
+reason = "陪伴聊天，不是叙事：vibe coding 时的 galgame 外壳，固定人设「小菁」即兴演小剧场陪用户写代码"
+
+[[ignored]]
+repo   = "LostRuins/koboldcpp"
+reason = "模型推理引擎（llama.cpp 的 fork），故事/冒险模式、记忆和世界信息来自捆绑的 KoboldAI Lite，本体定位是本地运行 GGUF 模型"
+
+[[ignored]]
+repo   = "lsg1103275794/novel-writer-style-cn-webui"
+reason = "同作者 novel-writer-style-cn 的 WebUI 衍生版，方法相同只加界面且仍在开发；原版 lsg1103275794/novel-writer-style-cn（其本身基于 wordflowlab/novel-writer）"
+
+[[ignored]]
+repo   = "lssuzie/Short-Drama-Concept-Creator"
+reason = "AI 不生成故事：只产出短剧/故事创意概念和提示词，明确不替用户写剧本"
+
+[[ignored]]
+repo   = "Lu-Jiejie/fuck-or-not"
+reason = "套壳，无方法：上传图片加自定义提示词一次生成分析或小说，没有可见的创作流程"
+
+[[ignored]]
+repo   = "LudoNarrative/StoryAssembler"
+reason = "非大模型：HTN 规划器加状态规划拼接人写片段的互动叙事引擎"
+
+[[ignored]]
+repo   = "lulupig12138/SceneDecorator"
+reason = "周边工具：故事图像生成（场景规划与多帧画面一致性），不生成文字故事"
+
+[[ignored]]
+repo   = "LuoJiangYong/muse-video-skill"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（视频策划到模型调用指令，案例库以商业广告为主）"
+
+[[ignored]]
+repo   = "lvlc233/Novel_Assistant"
+reason = "README 几乎为空（只有一句毕设说明和截图占位），看不出怎么用；2026-03 后也没有更新"
+
+[[ignored]]
+repo   = "M1r0er/moshen"
+reason = "AI 不生成故事：定位为编辑，只核对设定、追踪伏笔、诊断文风，明确不代写正文"
+
+[[ignored]]
+repo   = "machina-exm/film-studio-skills"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（剧本到锁定镜头提示词的制作流水线）"
+
+[[ignored]]
+repo   = "madhav-datt/textgen"
+reason = "非大模型：2016 年 LSTM-RNN 仿写福尔摩斯的课程项目"
+
+[[ignored]]
+repo   = "magicoflolis/aidungeon.js"
+reason = "周边工具：在本地编辑 AI Dungeon 场景并通过 GraphQL 上传的 npm 包"
+
+[[ignored]]
+repo   = "maikeliu86-coder/story-vista"
+reason = "只分析不创作：把小说的人物、关系、地点整理成防剧透可视化图鉴，辅助阅读"
+
+[[ignored]]
+repo   = "malikmalikayesha/visual-tales-generator"
+reason = "周边工具：把一句话扩成三句后生成 Flux 分镜图，重心是图像生成"
+
+[[ignored]]
+repo   = "manjunathshiva/esp32-tinyllm"
+reason = "非大模型：在 ESP32 上跑 TinyStories 训练的 28.9M 小模型续写故事，重点是嵌入式部署"
+
+[[ignored]]
+repo   = "Manto/llm-if-wrapper"
+reason = "周边工具：给现成 Z-machine 文字冒险修复玩家指令、按语气改写原文，故事来自原游戏；改自 UlfarErl/lampgpt"
+
+[[ignored]]
+repo   = "maomao-1937/GG_Bond_skills"
+reason = "非虚构：恋爱关系建议、公众号排版等技能合集，README 只有一句话"
+
+[[ignored]]
+repo   = "MarcoDroll/creativewriter-public"
+reason = "无源码：只是 CreativeWriter 的社区议题仓库，源码在 MarcoDroll/creativewriter-selfhosted（source-available）"
+
+[[ignored]]
+repo   = "MarcoDroll/creativewriter-selfhosted"
+reason = "无源码：只是 CreativeWriter 的 Docker 自托管部署文件和后端函数，应用本体是不允许再分发的闭源镜像"
+
+[[ignored]]
+repo   = "marky1flag/AstraLife"
+reason = "不是叙事创作：AI 村民生活模拟，输出资源、关系和行为日志，没有故事文本"
+
+[[ignored]]
+repo   = "masonweb3/handdrawn-story-studio"
+reason = "周边工具：用一两句素材做竖版手绘故事短片的产线，重心在 TTS、分镜 SPEC、Codex 出片和发布检查；旁白多由用户亲历素材扩写，没有虚构叙事方法"
+
+[[ignored]]
+repo   = "Mathis-14/Hackathon-Mistral-Distral"
+reason = "绑定单一作品：剧情固定的黑客松游戏（玩家扮演困在公司系统里的 AI，NPC 人设写死）"
+
+[[ignored]]
+repo   = "mblanc/storycraft"
+reason = "周边工具：用 Imagen/Veo 生成视频故事板并在时间线上剪辑"
+
+[[ignored]]
+repo   = "mcp-tool-shop-org/ai-rpg-engine"
+reason = "非大模型叙事：确定性 RPG 模拟引擎，自述不是故事生成器，剧情由机制涌现，LLM 只做可选的设计辅助"
+
+[[ignored]]
+repo   = "melonlireal/godot-galframe---auto-visual-novel-generator"
+reason = "周边工具：Godot 视觉小说制作框架，根据人写的脚本和美术素材生成游戏，不含大模型"
+
+[[ignored]]
+repo   = "mengrru/Spherse"
+reason = "通用个人 Agent 运行时，互动叙事只是可选用途之一，没有专门的叙事方法"
+
+[[ignored]]
+repo   = "mfskys/FirstEdit"
+reason = "周边工具：真人短剧成片生产（分镜、文生图/视频、TTS），剧情来自用户输入的小说或剧本；已归档停更"
+
+[[ignored]]
+repo   = "MIKA6941/Comfy-H3-Director"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（MiniMax H3 分镜与全集提示词包、尾帧接力）"
+
+[[ignored]]
+repo   = "miladrezanezhad/story-toolkit"
+reason = "非大模型：角色、情节骨架和对白靠模板与规则生成，LLM 只是可选插件（示例默认 Mock）"
+
+[[ignored]]
+repo   = "MilkyBoat/BotC-AI"
+reason = "不是虚构叙事：血染钟楼社交推理游戏的 AI 说书人，负责发角色、推进昼夜规则和维护状态，属桌游主持"
+
+[[ignored]]
+repo   = "mime-r/Dungeon.py"
+reason = "故事不由大模型写：程序生成的 roguelike 地牢游戏，LLM 只做文本点缀"
+
+[[ignored]]
+repo   = "MIMIFY/skill_everyone"
+reason = "陪伴聊天，不是叙事：把小说/动漫角色或原创人设做成可对话的人设 skill"
+
+[[ignored]]
+repo   = "MIMIFY/SS-GEN"
+reason = "非虚构：为自闭症儿童生成社交故事（Social Stories™ 是描述日常社交情境的干预教材）"
+
+[[ignored]]
+repo   = "mind-protocol/terminal-velocity"
+reason = "绑定单一作品：10 个 AI 智能体写成的长篇《Terminal Velocity》成品与工作文件，编排框架不在仓库里，scripts 只有文本拼接小工具"
+
+[[ignored]]
+repo   = "mini-yifan/open-source-video-gen-skill"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "mkremins/blaseball-sifter"
+reason = "非大模型：基于语法模板的 Blaseball 赛事解说生成，2020 年后未更新"
+
+[[ignored]]
+repo   = "mkremins/felt"
+reason = "非大模型：Datalog 故事筛选（story sifting）与社会模拟引擎（2019 论文），不用 LLM 生成"
+
+[[ignored]]
+repo   = "mkremins/praxish"
+reason = "非大模型：Versu Praxis 逻辑语言的社会实践模拟重建，用规划/意愿规则驱动角色"
+
+[[ignored]]
+repo   = "mkremins/winnow"
+reason = "非大模型：2021 年 AIIDE 论文的增量 story sifting 查询语言"
+
+[[ignored]]
+repo   = "mmstudio-games/armillae"
+reason = "暂无叙事方法：目前只实现了通用 LLM 调用和 Tool 层，叙事运行时仍在设计"
+
+[[ignored]]
+repo   = "MousAIDungeon/script-pack-1"
+reason = "周边工具：AI Dungeon 剧本作者用的脚本开关框架，README 只讲安装，各模块功能在 wiki，看不出叙事方法"
+
+[[ignored]]
+repo   = "murongg/openframe"
+reason = "周边工具：漫剧分镜/视频生产工作台，剧本环节只有补全、改编按钮，无可见叙事方法"
+
+[[ignored]]
+repo   = "MushroomFleet/UNO-MCP"
+reason = "非大模型：用规则和启发式把已有文本扩写到 200%，enhancer 代码不调用大模型，也不生成故事"
+
+[[ignored]]
+repo   = "muxia0396/novel-to-ai-short-drama-skill"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "myyimu/ai-novel-diagnosis"
+reason = "只分析不创作：网文诊断台，输出阅读风险诊断和改稿 Prompt，自述不是写小说工具"
+
+[[ignored]]
+repo   = "mzsjlx/MangaZap"
+reason = "周边工具：漫剧视频生成，剧本只靠 8 问向导一次生成，重心在关键帧、配音和视频合成"
+
+[[ignored]]
+repo   = "namra9876/AI_NovelGenerator"
+reason = "可疑：照搬 YILING0013/AI_NovelGenerator 的文件结构，README 全部下载链接指向仓库内 zip 安装包"
+
+[[ignored]]
+repo   = "NanJingSRD/arc-drama"
+reason = "周边工具：小说/剧本→角色资产→分镜→视频→剪映草稿的漫剧生产平台，剧本仅 AI 辅助扩写"
+
+[[ignored]]
+repo   = "nariahlamb/st_book"
+reason = "周边工具：从小说文本抽取生成 ST 角色卡和世界书；且 2025-07 后未更新"
+
+[[ignored]]
+repo   = "nathands72/animation"
+reason = "周边工具：儿童道德故事动画视频流水线，重心在出图、配音和音画合成，故事生成只是六步之一"
+
+[[ignored]]
+repo   = "nathanwang000/genAI_storyteller"
+reason = "周边工具：主要是 Stable Diffusion 插画和视频动画脚本，故事文本一句话直接调 ChatGPT"
+
+[[ignored]]
+repo   = "NeoFoxxo/plottwist"
+reason = "套壳，无方法：Supabase 黑客松的选择冒险故事站，AI 出故事和选项，重点在社区、点评与 remix"
+
+[[ignored]]
+repo   = "neopen/story-shot-agent"
+reason = "周边工具：把已有剧本拆成镜头并生成 Sora/Veo 视频提示词，只做分镜，不写故事"
+
+[[ignored]]
+repo   = "neosun100/MuMuAINovel"
+reason = "复制版：原版是 xiamuceer-j/MuMuAINovel，只加了 MCP 和批量脚本，2026-01 后未更新"
+
+[[ignored]]
+repo   = "nhanhxxm2can9351-glitch/script-to-storyboard"
+reason = "周边工具：只把现成剧本转成 AI 视频分镜提示词并导出 Word，不写故事"
+
+[[ignored]]
+repo   = "nicekate/AI-ContentCraft"
+reason = "套壳，无方法：按主题一次生成短故事或播客稿，再配 TTS 和图片，重点在多媒体"
+
+[[ignored]]
+repo   = "nicekate/Al-StoryLab"
+reason = "套壳且久未更新：按主题一键调 DeepSeek 出故事，重点在配音、音效和绘图提示词；2025-01 后无更新"
+
+[[ignored]]
+repo   = "nickwalton/AI-DungeonMaster"
+reason = "非大模型：2019 年用 GPT-2 117M 做的文字冒险原型（AI Dungeon 前身）"
+
+[[ignored]]
+repo   = "nkmohit/FableForgeAI-StoryEngine"
+reason = "套壳，无方法：Gemini 聊天/写故事/漫画视频合集，2025-06 后未更新"
+
+[[ignored]]
+repo   = "nlr-ai/infinite-storyteller"
+reason = "无说明：README 是一个无关的文件列表脚本说明，仓库混入整个 venv（含 exe），2024-08 后无更新"
+
+[[ignored]]
+repo   = "noorcs39/Novel_Writer_LLM"
+reason = "非大模型：在 sacred-texts 语料上微调 TinyLlama 的个人练习，README 列的写作功能代码里没有；2025-08 后没有更新"
+
+[[ignored]]
+repo   = "northern-lights-province/calypso-aiide-artifact"
+reason = "AI 不生成故事：论文配套的 D&D 主持人助手 Discord bot，帮真人 DM 理解怪物、头脑风暴遭遇，叙事由 DM 完成"
+
+[[ignored]]
+repo   = "nostalgebraist/crammed-poetics"
+reason = "评测/数据集/列表：博客文章配套的 LLM 创作小说样本与目录，无可复用工具或方法"
+
+[[ignored]]
+repo   = "notnotype/llmlint"
+reason = "通用去 AI 味：面向任意中文 LLM 输出的规则 lint 与修复，不专门针对小说"
+
+[[ignored]]
+repo   = "nuglifeleoji/Creative-Writing-Assistant"
+reason = "只分析不创作：GraphRAG 书籍问答、跨书分析，外加对回答的润色/点评"
+
+[[ignored]]
+repo   = "Nurburgring-Zhang/ComfyUI-DirectorMaster"
+reason = "周边工具：ComfyUI 视频提示词节点包，剧本/分镜主要走确定性模板，LLM 只是可选润色，产出给 Seedance/Wan 等视频模型"
+
+[[ignored]]
+repo   = "oiuv/ai-short-drama"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（六步出片的本地应用，剧本只是第一步，其余为角色/场景/道具图、Seedance 分镜和剪辑）"
+
+[[ignored]]
+repo   = "okeylanders/prose-minion-vscode"
+reason = "AI 不生成故事：VS Code 侧栏做稿件统计、词频与模式分析，AI 只给上下文建议和小说词典"
+
+[[ignored]]
+repo   = "Openapps-free/novel-studio"
+reason = "周边工具：以人写为主的 Tauri 写作编辑器，AI 只对选中文本做续写/扩写等辅助"
+
+[[ignored]]
+repo   = "OpenChara/OpenCharaAgent"
+reason = "陪伴聊天，不是叙事：角色作为常驻 agent 陪用户做网站、代码、音乐，写小说只是工具之一"
+
+[[ignored]]
+repo   = "OpenCoven/open-fable"
+reason = "非大模型：未训练、无权重的循环深度 Transformer 架构原型（fork 自 OpenMythos），不能直接写故事"
+
+[[ignored]]
+repo   = "Or-Priesender/storyteller"
+reason = "套壳，无方法：Go+Vue 调 OpenAI 生成带图儿童故事，README 只有部署步骤，2024-01 后未更新"
+
+[[ignored]]
+repo   = "OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL"
+reason = "通用去 AI 味：面向评论、科普、翻译等各类中文，小说只是 SKILL.md 里的一条叙事检查分支"
+
+[[ignored]]
+repo   = "oztrkoguz/ComfyUI_StoryCreator"
+reason = "套壳，无方法：用微调 Phi-3 一次生成短故事再配图的 ComfyUI 节点；2025-04 后未更新"
+
+[[ignored]]
+repo   = "PapainTea/ink-skill"
+reason = "高度重合：把 Narcooo/inkos 的 7 个真相文件、粒子账本、章节审计、题材表和长度归一整套搬成 SKILL.md，未注明来源；README 只有一句开发目录说明"
+
+[[ignored]]
+repo   = "pasteurmonga/The-Crucible-Writing-System-For-Claude"
+reason = "可疑：照搬 forsonny/The-Crucible-Writing-System-For-Claude，README 改成下载仓库内 zip 并安装 exe/dmg，标签堆满 metasploit/远控等"
+
+[[ignored]]
+repo   = "pathomasco-beep/World-builder-roleplay"
+reason = "无源码：仓库只有 README，.skill 文件只放在 Releases；且 2026-03 后未更新"
+
+[[ignored]]
+repo   = "peterwangze/claude-writing-workflow"
+reason = "AI 不生成故事：定位人类原创为主，正文阶段 AI 只给草稿参考、素材和修改建议，明确不代写"
+
+[[ignored]]
+repo   = "phaethix/inkstone"
+reason = "周边工具：读 txt 小说抽角色和场景后生成漫画页（Agnes 图像 API，跨格人物一致性），只做画面"
+
+[[ignored]]
+repo   = "PlagueHO/game-master-copilot"
+reason = "套壳，无方法：README 只讲 Azure 多租户架构和部署，看不出给 DM 生成内容的叙事方法"
+
+[[ignored]]
+repo   = "priyansh-narang2308/KiddieGPT"
+reason = "套壳，无方法：选主题、年龄段、画风后一次生成儿童绘本故事，带积分付费；且 2025-09 后无更新"
+
+[[ignored]]
+repo   = "priyanshum17/storybooth"
+reason = "空壳：只有聊天、灯光控制的占位模块，没有叙事功能"
+
+[[ignored]]
+repo   = "promptadvisers/early-ai-dopters"
+reason = "非虚构：制作教学用 3D 互动课件的套件，worldbuilding 指搭学习场景"
+
+[[ignored]]
+repo   = "prosecconetwork/TraceElements"
+reason = "非大模型：Tracery 语法规则集合，给 Twitter 机器人用的模板生成"
+
+[[ignored]]
+repo   = "pynooblin/ai-script-reviewer"
+reason = "只分析不创作：按广电规定审查漫剧剧本的合规风险，不写剧本"
+
+[[ignored]]
+repo   = "Pythonimous/ficbot"
+reason = "非大模型：MobileNet+LSTM 从图片生成角色名，DistilGPT2 生成角色简介，不写故事"
+
+[[ignored]]
+repo   = "q8625332/ljq-MuMuAINovel"
+reason = "复制版：xiamuceer-j/MuMuAINovel 的 HF Space 部署副本，README 没有说明，2025-11 后未更新"
+
+[[ignored]]
+repo   = "qhvssonic/mommy-story-on-device"
+reason = "套壳，无方法：端侧小模型按主题直接出睡前故事，亮点在声音克隆 TTS 和端侧推理"
+
+[[ignored]]
+repo   = "qkaren/Counterfactual-StoryRW"
+reason = "评测/数据集/列表：EMNLP 2019 TimeTravel 反事实故事改写数据集，配套 GPT-2 基线（非大模型）"
+
+[[ignored]]
+repo   = "qq1171910065/manong-novel"
+reason = "改名换皮：基于 t59688/arboris-novel 的 Electron 桌面版，灵感→蓝图→写作台流程沿用原版，还要登录作者平台账号"
+
+[[ignored]]
+repo   = "qualsenWeb/fight-video-create-skill"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "QuantumHope/DigitalDungeonMaster"
+reason = "说明不全：Semantic Kernel 单人 D&D 主持原型，安装文档未完成且依赖未说明的 Azure 表存储，README 看不出叙事方法"
+
+[[ignored]]
+repo   = "quasar-pankaj/plot_generator"
+reason = "非大模型：Flutter 实现的 Plotto 规则式情节骨架生成器"
+
+[[ignored]]
+repo   = "QuitoTactico/DnD-AI-2.0"
+reason = "无说明：没有 README，只有 Go 迁移版代码和模板"
+
+[[ignored]]
+repo   = "rachelos/cdrama"
+reason = "周边工具：短剧视频生产平台（剧本解析→角色图→分镜→视频合成）；且 2026-02 后未更新"
+
+[[ignored]]
+repo   = "raed-houimli/EpicLLM"
+reason = "无说明：没有 README，看不出方法；2025-12 后未更新"
+
+[[ignored]]
+repo   = "Rain-31/novelbox"
+reason = "周边工具：以手写为主的小说编辑器，AI 只提供续写、扩写/缩写、改写和书名简介按钮，没有生成方法"
+
+[[ignored]]
+repo   = "rajammanabrolu/WorldGeneration"
+reason = "非大模型：2020 年论文代码，用 AskBERT 问答+GPT-2 从已有故事情节抽取知识图谱生成可玩文字冒险世界，不生成故事本身"
+
+[[ignored]]
+repo   = "raphydaphy/clocktower-ai"
+reason = "不是故事生成：每个 LLM 扮演《血染钟楼》玩家做推理博弈，说书人由真人担任；且 2025-03 后未更新"
+
+[[ignored]]
+repo   = "reluctantfuturist/loyal-wingman"
+reason = "AI 不生成故事：明确由作者落笔，AI 只做资料、头脑风暴和编辑反馈；且 2026-01 后未更新"
+
+[[ignored]]
+repo   = "renjunxiang/Text_Generate"
+reason = "非大模型：2018 年 Keras/TensorFlow 双层 LSTM 写唐诗和《射雕》风小说"
+
+[[ignored]]
+repo   = "riceshowerX/arknights-operator-skill"
+reason = "绑定单一作品：明日方舟角色人格蒸馏 skill，用于角色扮演而非叙事创作"
+
+[[ignored]]
+repo   = "Rimagination/good-story"
+reason = "非虚构：科研论文的叙事和证据链组织 skill"
+
+[[ignored]]
+repo   = "RinKokawa/StoryEngine"
+reason = "AI 不生成故事：小说编辑器，AI 只在侧栏聊天给创作建议；且 2025-12 后未更新"
+
+[[ignored]]
+repo   = "RobinaMirbahar/Comic-Studio-Ai"
+reason = "周边工具：提示词→1–6 格漫画的黑客松项目，重点在画面与对白气泡；且 2026-03 后未更新"
+
+[[ignored]]
+repo   = "robiteame/easy_comic_agent"
+reason = "周边工具：漫剧视频生产（剧本拆分镜→出图→配音→视频→剪辑），剧本只是输入"
+
+[[ignored]]
+repo   = "rochajario/DungeonMasterAi"
+reason = "无说明：README 只有安装步骤；代码只是一段 D&D 主持规则提示词加角色卡"
+
+[[ignored]]
+repo   = "ronaldstoner/LLMLabyrinth"
+reason = "故事不是主体：玩法和胜利条件写死在代码里，本地 GPT4All 只生成房间描述"
+
+[[ignored]]
+repo   = "RowanUnderwood/Synesthesia-AI-Video-Director"
+reason = "周边工具：音乐 MV 生成，按人声切镜头时间轴，LLM 只写视频提示词和剧情摘要"
+
+[[ignored]]
+repo   = "rudra496/worldsim-ai"
+reason = "非虚构：数字孪生/智慧城市仿真平台（智能体建模、LSTM 预测、强化学习），与故事创作无关"
+
+[[ignored]]
+repo   = "RUIYUN-ML/SafeLLMPlayground"
+reason = "绑定单一作品：提示词注入安全科普闯关游戏《星辉剑传》，剧情由作者预写，LLM 只扮关卡 NPC 和裁判"
+
+[[ignored]]
+repo   = "ryanbbrown/kindle-storyteller"
+reason = "周边工具：把 Kindle 当前阅读位置的原文转成有声书片段（TTS 加进度同步），不生成故事"
+
+[[ignored]]
+repo   = "Rylee313/Rylee-screenplay-triple-review"
+reason = "AI 不生成故事：从导演/观众/编剧三视角诊断剧本并给修订路线，不写剧本正文"
+
+[[ignored]]
+repo   = "sadekxD/cardstock-diorama-myth"
+reason = "周边工具：神话短片视频生成 skill，故事取现成神话，重点在剪纸风画面、配音与 ffmpeg 合成（依赖 Unsora MCP）"
+
+[[ignored]]
+repo   = "Saemer2023/webnovel-writer-opencode"
+reason = "移植版：lingfengQAQ/webnovel-writer 的 OpenCode 移植（已有 lujih/webnovel-writer-opencode），只多了番茄发布这类周边功能"
+
+[[ignored]]
+repo   = "Sagesheep/NarrativeEngine-M"
+reason = "同作者 NarrativeEngine-P 的安卓移植，功能与桌面版相同且移动端已暂停开发；收原版 Sagesheep/NarrativeEngine-P"
+
+[[ignored]]
+repo   = "sanjaysah101/RetroAI-Quest"
+reason = "套壳，无方法：把历史和玩家指令直接交给 Gemini 续写并给 2–3 个选项"
+
+[[ignored]]
+repo   = "Sargon01/Feuillets"
+reason = "周边工具：Obsidian 长篇写作插件（大纲、看板、导出），README 未提 AI 生成正文"
+
+[[ignored]]
+repo   = "sasha00123/ai-dungeon-bot"
+reason = "周边工具：AI Dungeon 服务的 Telegram/VK 客户端，2021 年后未更新"
+
+[[ignored]]
+repo   = "sayyedrabeeh/taletailor"
+reason = "套壳，无方法：选情绪/题材/长度/反转等参数拼 prompt 生成故事，重心是社交和协作功能；2026-01 后未更新，仓库还提交了 node_modules"
+
+[[ignored]]
+repo   = "senmanx/novel-to-manju"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "seraphinatarrant/plan-write-revise"
+reason = "非大模型：2019 年 Plan-and-Write 神经网络（非 LLM）交互故事生成演示"
+
+[[ignored]]
+repo   = "seven-ocean/zhenling-drama"
+reason = "周边工具：用户给剧本描述，AI 只做分镜拆分和生图、生视频、TTS、FFmpeg 合成，没有剧本创作环节"
+
+[[ignored]]
+repo   = "Shanyin-ai/Story-to-game"
+reason = "skill 只有打包好的 .skill 文件，仓库里看不到源码"
+
+[[ignored]]
+repo   = "ShiJbey/minerva"
+reason = "非大模型：基于效用评分的王朝模拟器（涌现叙事研究），不调用 LLM，已归档"
+
+[[ignored]]
+repo   = "shiqiang4521/film-production-assistant"
+reason = "周边工具：剧本拆解、场景提示词、道具清单、分镜脚本的制片 skill，不写剧情"
+
+[[ignored]]
+repo   = "shuyu-labs/BigBanana-AI-Director"
+reason = "周边工具：短剧/漫剧视频生产工作台，剧本阶段只拆场次分镜，重点在定妆、关键帧与视频；当前仓库只剩文档和 docker-compose，无源码"
+
+[[ignored]]
+repo   = "Shybert-AI/openshortvideo"
+reason = "周边工具：短视频/广告视频生成平台（后端源自 HKUDS/ViMax），且 2026-03 后未更新"
+
+[[ignored]]
+repo   = "shyman159/seedance-prompts-skill"
+reason = "周边工具：把小说/文章转成 Seedance 2.0 视频分镜与资产提示词，重心在镜头和画面提示词"
+
+[[ignored]]
+repo   = "shystab/NovelCat"
+reason = "周边工具：以人写为主的本地写作编辑器，AI 对话辅助续写和分析，除分层上下文/RAG 外看不到规划、记忆更新或审稿流程"
+
+[[ignored]]
+repo   = "sidhantabarik37/StrawVerse-Orbit"
+reason = "可疑：自称互动小说引擎，README 却是农业元宇宙/区块链，标签是动漫下载器，只有引向 github.io 的下载按钮"
+
+[[ignored]]
+repo   = "siftystudio/viv"
+reason = "非大模型：涌现叙事引擎，故事由角色行动模拟与 story sifting 产生，LLM 插件只辅助写 DSL"
+
+[[ignored]]
+repo   = "silver-kite-wu/ArtVerse"
+reason = "周边工具：漫画工作台，重点是分镜生成和出图"
+
+[[ignored]]
+repo   = "simonerlic/rpgsim"
+reason = "套壳，无方法：一段 StoryPrompt.txt 场景笔记加对话历史驱动的无限文字冒险"
+
+[[ignored]]
+repo   = "smith-and-web/kindling"
+reason = "AI 不生成故事：明确写着「No AI」的大纲加写作桌面软件（Scrivener/Plottr 替代品）"
+
+[[ignored]]
+repo   = "sorker/ai-shotlive"
+reason = "周边工具：短剧/漫剧视频生产平台，重点在分镜、资产、关键帧和剪辑，剧本只是章节改编一步；自述参考 BigBanana-AI-Director 等项目修改"
+
+[[ignored]]
+repo   = "sreedevik29/choose-your-story"
+reason = "非大模型：2017 年手写剧情文件的选择冒险小游戏，没有 AI 生成"
+
+[[ignored]]
+repo   = "Sri01729/template-ai-storyboard-consistent-character"
+reason = "周边工具：Mastra 多 agent 分镜模板，重点是角色外观一致的配图和 PDF 导出；2025-08 后未更新"
+
+[[ignored]]
+repo   = "stevendong/ai-novel-assistant"
+reason = "AI 不生成故事：定位是 AI 给建议、做一致性检查，明确不替代作者写作"
+
+[[ignored]]
+repo   = "stickystyle/ZorkGPT"
+reason = "不生成故事：LLM 当玩家玩 Zork 的智能体研究（行动生成、评审、地图与跨局学习），叙事由原游戏提供"
+
+[[ignored]]
+repo   = "storybro/storybro"
+reason = "非大模型：AI Dungeon 2（AIDungeon/AIDungeon）的社区维护版，用 GPT-2 微调模型，2020 年后停更"
+
+[[ignored]]
+repo   = "storybuilder-org/StoryCAD"
+reason = "周边工具：小说大纲编辑器，作者自己写；AI 协作模块 Collaborator 闭源"
+
+[[ignored]]
+repo   = "StoryThread-Dean/StorythreadStudio"
+reason = "AI 不生成故事：自述“作者起草、AI 只当审稿/编辑/头脑风暴伙伴，绝不代笔”，Draft 模式只是附属小功能"
+
+[[ignored]]
+repo   = "suihe1/short-drama-production"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "summerstay/Infinite-Adventure"
+reason = "非大模型：基于 GPT-2 的 AI Dungeon 式探索游戏，2020 年后无更新"
+
+[[ignored]]
+repo   = "superzhang21/ghostwriter"
+reason = "不是故事创作：名人/角色口吻人格库（鲁迅、林黛玉等），示例是文案、时评、陪聊，没有叙事方法"
+
+[[ignored]]
+repo   = "SusamMinami/tygg-ai-film-studio"
+reason = "周边工具：方法重心是 Blender 结构预演与 Seedance 视频提示词交付，剧本只是共创访谈后的前置产物"
+
+[[ignored]]
+repo   = "susirial/zopia-ai-skills"
+reason = "无源码：只是 Zopia 商业平台 REST API 的调用说明 skill，剧本写作等能力都在闭源平台里；2026-03 后也没更新"
+
+[[ignored]]
+repo   = "suvivarshney/SnapStory-An-image-to-text-story-generator-using-GPT3"
+reason = "套壳，无方法：2022 课程作业，图片描述后交 GPT-3 写故事，仓库还提交了整个 venv"
+
+[[ignored]]
+repo   = "SverreNystad/gpt-dungeon-master"
+reason = "说明不足：README 只列计划功能，用法写「开发中」，看不出已实现的叙事方法"
+
+[[ignored]]
+repo   = "SwotAtmk/infinite-creation"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "SYLJ-zyx/FJ-skills"
+reason = "周边工具：把现成剧本和场景图转成即梦视频分镜提示词，台词原样保留，不创作剧情"
+
+[[ignored]]
+repo   = "sympodius/org-novelist"
+reason = "周边工具：纯编辑器（Emacs Org mode 小说文件组织与导出，无 AI）"
+
+[[ignored]]
+repo   = "T-X-1013/StoneStory-skill"
+reason = "绑定单一作品：只服务《红楼梦》人物对话"
+
+[[ignored]]
+repo   = "Taiko3615/Danse-Macabre"
+reason = "绑定单一作品：调查腓特烈二世之死的单一 Ren'Py 视觉小说，ChatGPT 驱动 NPC 对话；2025-06 后未更新"
+
+[[ignored]]
+repo   = "tangg555/story-generation-demo"
+reason = "非大模型：在 ROCStories 上微调 BART-base 的练习 demo"
+
+[[ignored]]
+repo   = "TarunSingh2002/Tell-tale"
+reason = "套壳，无方法：安卓睡前故事 App，选题材/长度/语言/年龄后直接调 ChatGPT，2024-02 后未更新"
+
+[[ignored]]
+repo   = "TavernAI/TavernAI"
+reason = "无源码：TavernAI 2 仓库只有文档、截图和语言包，程序以打包好的 zip/tar.gz 及 curl 安装脚本发布"
+
+[[ignored]]
+repo   = "TaylliSun/worldcraft-codex"
+reason = "周边工具：以作者手写为主的世界观 Wiki/地图/任务线桌面工程，AI 写作默认关闭，只是附加功能"
+
+[[ignored]]
+repo   = "tejassunny/chinese-novelist-skill"
+reason = "可疑：README 是诱导下载模板，指向仓库内 zip 并声称有 exe/dmg 安装包，topics 与内容无关，SKILL.md 疑似照搬他人 chinese-novelist skill"
+
+[[ignored]]
+repo   = "telboy007/donjon_to_homebrewery"
+reason = "周边工具：把 donjon 随机地牢 JSON 转成 Homebrewery 排版文档，AI 只润色房间描述、补 Boss 和冒险钩子"
+
+[[ignored]]
+repo   = "Tencent/workrally"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（WorkRally CLI：生图、生视频、画布与媒资管理，没有编剧方法）"
+
+[[ignored]]
+repo   = "thaalesalves/ai-games-research"
+reason = "个人杂项合集：AI Dungeon 角色卡/背包脚本、上古卷轴世界书、KoboldAI 部署笔记本和数据集混放，README 只列目录，无成体系方法"
+
+[[ignored]]
+repo   = "The-LoomStudio/LS_The_World"
+reason = "周边组件：LoomStudio 宿主的世界状态扩展（地点/时间/天气数据合同、读写工具和调试面板），本身不是叙事工具；宿主见 The-LoomStudio/LoomStudio"
+
+[[ignored]]
+repo   = "TheAwaken1/StoryCraft-AI"
+reason = "周边工具：有声故事（Coqui TTS 配音），故事生成只是一句提示的套壳；且 2026-01 后未更新"
+
+[[ignored]]
+repo   = "theubie/complex_memory"
+reason = "周边工具：oobabooga 通用聊天 WebUI 的关键词触发记忆注入插件，README 不面向叙事；2024-10 后未更新"
+
+[[ignored]]
+repo   = "thu-coai/CommonsenseStoryGen"
+reason = "非大模型：GPT-2 small(124M) 用常识知识库后训练加真假故事判别多任务微调，生成 ROCStories 五句故事"
+
+[[ignored]]
+repo   = "thu-coai/ConPer"
+reason = "非大模型：NAACL 2022 主角人设引导规划，骨干是微调的 GPT-2"
+
+[[ignored]]
+repo   = "ThunderRonin/allcodex-aio"
+reason = "周边工具：世界观设定库（Trilium fork + RAG 整理设定、查一致性），不生成故事"
+
+[[ignored]]
+repo   = "tigerabrodi/beru"
+reason = "套壳，无方法：生成睡前故事再用 HumeAI TTS 朗读，看不到创作方法"
+
+[[ignored]]
+repo   = "Tju-LMc/Paddle_Story_Generation"
+reason = "非大模型：2021 年 paddlenlp gpt-cpm-small 蒸馏小模型 + wechaty 的对话续写演示"
+
+[[ignored]]
+repo   = "tomaarsen/TwitchAIDungeon"
+reason = "周边工具：把 Twitch 聊天转发给 AI Dungeon 的机器人，作者声明已失效"
+
+[[ignored]]
+repo   = "tomatoparkdao/omniailab-ai-director"
+reason = "周边工具：只做分镜/视频——接收定稿剧本做剧本解析、机位布光、提示词到成片，故事不由它写，末段绑定 OmniAiLab 画布"
+
+[[ignored]]
+repo   = "toshNaik/TaleCraft"
+reason = "说明不足：README 只列三个 AutoGen agent 角色，没有用法，作者自述新角色会跑题，属未完成练习"
+
+[[ignored]]
+repo   = "TuguiDragos/n8n-automated-storytelling"
+reason = "周边工具：一句话转成片的 n8n 视频流水线，故事只是单次 LLM 生成加分场"
+
+[[ignored]]
+repo   = "UllrAI/CineGen-ShortDrama"
+reason = "周边工具：漫剧/短剧视频生产，剧本步骤只是把用户大纲拆成分镜镜头，主体是关键帧和 Veo 视频生成"
+
+[[ignored]]
+repo   = "UltronTheAI/eBook-Generator-AI-Agent"
+reason = "非虚构：通用电子书生成器，以生产力/技术/自助类为主，小说只顺带一提；2025-05 后未更新"
+
+[[ignored]]
+repo   = "UncleWang2088/short-drama-director"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（9 个 skill 里 7 个做分镜/出图/视频提示词，编剧两步改造自 0xsline/short-drama 与 Vi7QY/screenwriter-skill）"
+
+[[ignored]]
+repo   = "vadim-chiriac/worldkeep"
+reason = "AI 不生成故事：把用户口述的世界观整理成经校验的 Markdown/YAML 设定库并画关系图，作者写、agent 只提议结构，不写正文"
+
+[[ignored]]
+repo   = "VanGong1999/skills"
+reason = "评测/数据集/列表：短剧剧本 docx/pdf 与拉片资料库，没有 skill 或创作方法"
+
+[[ignored]]
+repo   = "VBPXKSMI/Open-CYOAI-Project"
+reason = "非大模型：2020 年 AI Dungeon 2（GPT-2）魔改版的 Colab 启动器与 wiki"
+
+[[ignored]]
+repo   = "Verdancalm/-"
+reason = "可疑：核心后端 runtime_backend.marshalled 是不透明的 marshal 字节码，另附 tools/pylingual.zip、打包 exe 并含授权逻辑，可见源码看不出方法"
+
+[[ignored]]
+repo   = "Vi7QY/screenwriter-skill"
+reason = "AI 不生成故事：只按 37 条规则审短剧剧本，README 明确不写剧本（另 2026-04-12 后未更新、77★）"
+
+[[ignored]]
+repo   = "vicalloy/Sequoia"
+reason = "无说明：README 只有一句「探索 AI Agent 开发的实验项目」和一个 data/novel 链接"
+
+[[ignored]]
+repo   = "victorup/CHAE"
+reason = "非大模型：COLING 2022 角色/动作/情感可控故事生成，基于 GPT-2/BART 级模型微调"
+
+[[ignored]]
+repo   = "visresearch/WordAgent"
+reason = "非虚构：通用 Word/WPS 写作 Agent 加载项，不针对故事"
+
+[[ignored]]
+repo   = "Vitorlindo201/Themata-Claude-Scribe"
+reason = "可疑：6 个文件、无代码，README 编造“七层叙事引擎”等功能，只有引向 github.io 的下载按钮，标签堆 claude-design-download 等"
+
+[[ignored]]
+repo   = "vvlife/FreeVideoSkill"
+reason = "周边工具：短剧/广告视频全流程 skill，剧本只是入口，重点在分镜、关键帧和视频生成（绑定 Agnes AI API）"
+
+[[ignored]]
+repo   = "vwprompt/vwp"
+reason = "评测/数据集/列表：TACL 2023 视觉写作提示数据集，附 GPT-2 CharGrid 基线"
+
+[[ignored]]
+repo   = "Vyce101/VySol-Prototype-V1"
+reason = "已归档的 V1 原型快照，现行版本在 Vyce101/VySol；本体是通用 GraphRAG 聊天，叙事机制有限"
+
+[[ignored]]
+repo   = "w93139/ai-jubensha-fusion"
+reason = "由 JianWang97/jubensha-ai 与 Zewang0217/ai-jubensha 融合改造而来，仍在 M1 原型阶段（自述 runtime_ready=false），README 大半是开发日志，说不清做什么"
+
+[[ignored]]
+repo   = "w93139/juben-workbench"
+reason = "AI 不生成故事：剧本杀改写策划台，只做材料拆解、创作蓝图和策划交接包，README 明确不再执行正文改写"
+
+[[ignored]]
+repo   = "wandiao/baby"
+reason = "套壳，无方法：睡前故事只是照片配文/四格漫画/视频平台里按关键词生成的一个功能"
+
+[[ignored]]
+repo   = "wandouduoduo/SunRnn"
+reason = "非大模型：2018 年 TensorFlow Char-RNN，写诗、歌词、小说只是字符级采样"
+
+[[ignored]]
+repo   = "wanghaisheng/shezhangbujianle"
+reason = "绑定单一作品：为一个自编剧本杀本子写死的角色 few-shot 语料（浪潮源1.0），2022 年后未更新"
+
+[[ignored]]
+repo   = "wanshuiyin/ARIS-Movie-Director"
+reason = "周边工具：模糊故事→图像电影/漫画，方法核心是画面跨模型审计和事实一致性"
+
+[[ignored]]
+repo   = "WarmBuns/GramPy"
+reason = "非大模型：上下文无关文法文本生成器（2018，已归档）"
+
+[[ignored]]
+repo   = "waylon256yhw/novel-analysis-skill"
+reason = "只分析不创作：多 agent 并行精读长篇，输出文学批评报告和角色档案，不用于续写或仿写"
+
+[[ignored]]
+repo   = "wddxh/ShortVideoDirector"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "wesleyscholl/book-generator"
+reason = "非虚构：KDP 电子书流水线，genre 默认 non-fiction，已出版样书均为非虚构，未声明支持小说"
+
+[[ignored]]
+repo   = "whoashish115/kitsune-tales-qwen"
+reason = "模型微调练习：Gemma 4 E4B 的 LoRA（SFT+DPO）按题材标签直出轻小说短篇，贡献在训练数据与评测，没有规划、记忆等创作流程"
+
+[[ignored]]
+repo   = "william970/WritingGod"
+reason = "非大模型：2020 年 Keras 自训模型（.h5），README 只有「还在施工中」和博客链接"
+
+[[ignored]]
+repo   = "WindXRan/fanqie-radar"
+reason = "周边工具：番茄榜单扫榜、题材热度与仿写选书评分，不写故事"
+
+[[ignored]]
+repo   = "winkxiaoxing/WinkNovel"
+reason = "无源码：README 写了 MIT 和克隆运行步骤，仓库里却只有 README 与 3 张截图，安装包走夸克网盘"
+
+[[ignored]]
+repo   = "woodongk/story-blender"
+reason = "非大模型：2018 年毕业设计，用 Seq2Seq 把图片描述改写成故事句"
+
+[[ignored]]
+repo   = "WoodyXu/history-story-video"
+reason = "周边工具：把历史故事拆成主体设定、首尾帧和分镜提示词、解说词的短视频素材包，核心是画面生产"
+
+[[ignored]]
+repo   = "wuxie888/sunxue-skill"
+reason = "围绕具体真人的梗 skill，绑定单一人物，还带事实模式"
+
+[[ignored]]
+repo   = "wyuzhi/qisi-video-remix"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "XBastille/AIComicX"
+reason = "周边工具：故事转漫画，作者已声明项目未完成并停止开发"
+
+[[ignored]]
+repo   = "xeronsh/openOii"
+reason = "周边工具：故事想法→角色/分镜→视频合成的 LangGraph 漫剧演示，重心在画面与视频，剧情环节无可见方法"
+
+[[ignored]]
+repo   = "xiajinqing29-byte/ai-curio-cabinet-journey"
+reason = "绑定单一作品：自制的《珍奇柜》文字游戏，事件和收藏是预写数据，AI 只是调用脚本主持"
+
+[[ignored]]
+repo   = "XiakeMan777/xiakeman-ai-short-drama"
+reason = "周边工具：短剧视频工作台（角色/分镜/生图/Seedance 视频/合成），剧本环节是粘贴剧本或导入小说后由模型整理改编，文档里没有剧本创作方法"
+
+[[ignored]]
+repo   = "xiang186/ai-manga-video-workflow"
+reason = "周边工具：漫剧视频流水线，剧本只是 Dify 里一个 LLM 节点直接输出分镜 JSON，重点在 ComfyUI 出图、TTS 和视频合成"
+
+[[ignored]]
+repo   = "XiaoCai-dev/kino"
+reason = "周边工具：通用 AI 视频 Agent（广告、宣传片等），剧本只是出片流水线里的一步，没有叙事方法"
+
+[[ignored]]
+repo   = "xiaohei7529/ai-drama-generator"
+reason = "套壳，无方法：剧本只靠一条提示词按主题一次生成分集大纲和第一集剧本，其余是分镜、配音、视频合成"
+
+[[ignored]]
+repo   = "XiaoJiuAI/lingshu"
+reason = "无源码：仓库只有 README 和 LICENSE，只分发 Windows zip/exe；疑点见末尾注释"
+
+[[ignored]]
+repo   = "xiaoshengxianjun/51mazi"
+reason = "周边工具：以人工码字为主的桌面写作编辑器（地图、关系图、时间线），AI 只做续写、润色和生图，没有生成方法"
+
+[[ignored]]
+repo   = "xiaoyaya191/ai_epoch"
+reason = "套壳，无方法：一个系统提示词加聊天界面的角色扮演，没有记忆、世界书或叙事机制"
+
+[[ignored]]
+repo   = "xiashao/KaiyanTool"
+reason = "周边工具：剧本编辑器加分镜、图像、视频平台，AI 做剧本解析和分镜生成而不是写剧情，且 2026-03 后无更新"
+
+[[ignored]]
+repo   = "xindoo/ai-novel-lab"
+reason = "绑定单一作品：仓库主体是 AI 写成的《大厂重生》100 章和它专用的 AGENTS.md / 大纲，没有抽成可复用流程；2026-03 后未更新"
+
+[[ignored]]
+repo   = "Xintong-cloud/ScriptWorld"
+reason = "AI 不生成故事：剧本杀的案件、角色、线索、真相都由人预写，AI 只做大厅接待、流程主持和 NPC 对话"
+
+[[ignored]]
+repo   = "xipq/AI-Wuxia-Writer"
+reason = "非大模型：用金庸小说微调 T5-PEGASUS 做续写的练习项目（2022）"
+
+[[ignored]]
+repo   = "xixihhhh/ai-short-drama-skill"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "xlisp/novelist-agent"
+reason = "没有说明且久未更新：README 只有两行环境安装，2024-11 后没有更新"
+
+[[ignored]]
+repo   = "XTmingyue/StoryAgent"
+reason = "只分析不创作：网文拆书 CLI，产出章纲、节奏表和爽点循环，README 定位为研究和参考，没有接 AI 仿写"
+
+[[ignored]]
+repo   = "xuanyustudio/LocalMiniDrama"
+reason = "主要做分镜/视频，剧本环节看不到编剧方法，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "xxx-888/super_gen"
+reason = "周边工具：短剧视频生产平台（分镜、多模型视频生成、在线剪辑、积分计费），LLM 只做剧本解析拆镜，不写剧情"
+
+[[ignored]]
+repo   = "xzx-123-xzx/DocToShortVideo"
+reason = "周边工具：文档（主要是科普/文案）一键转竖屏 HTML 动画短视频，剧本只是中间产物"
+
+[[ignored]]
+repo   = "yakovlef/storycraft"
+reason = "无说明：仓库没有 README"
+
+[[ignored]]
+repo   = "yantianqi1/write-agent"
+reason = "未完成且久未更新：只实现了分层记忆和素材收集，大纲、章节、正文生成均为 0%，2026-02 后无更新"
+
+[[ignored]]
+repo   = "YIKUAIBANZI/forge-skill"
+reason = "陪伴聊天，不是叙事：蒸馏自己或亲友的人格档案，用于自我反思和以 ta 的口吻对话"
+
+[[ignored]]
+repo   = "ying-A/SandC"
+reason = "非大模型：AAAI 2021 反事实故事改写，训练 sketch/customize 两个小型预训练模型，README 只有命令"
+
+[[ignored]]
+repo   = "yinyue116/NovelWriter"
+reason = "没有 README，2025-04 一次性提交后没有更新"
+
+[[ignored]]
+repo   = "YipingNUS/scratchplot-story-generation"
+reason = "非大模型：INLG 2022，用 DINO/GPT-2 时代预训练模型先出内容计划再写 ROCStories 短故事"
+
+[[ignored]]
+repo   = "YLKC269/MR-Next"
+reason = "周边工具：ComfyUI 短剧出片节点，从现成剧本拆分镜出图出视频，题材 skill 只是画面风格提示"
+
+[[ignored]]
+repo   = "youyouhe/StoryFlow"
+reason = "周边工具：剧本排版编辑器，正在转向 AI 视频制作，AI 只做单段续写/改写，没有成体系的写作方法"
+
+[[ignored]]
+repo   = "yuanhongchen56-web/short-drama-ai-filmmaking"
+reason = "周边工具：小说改剧本只是视频管线第一步，主体是角色/场景绘图、分镜与 AI 视频提示词"
+
+[[ignored]]
+repo   = "yukinaga/ai_novel"
+reason = "非大模型：GPT-2 日语文本生成与微调的教学课程"
+
+[[ignored]]
+repo   = "yuzukumo/narratium-webui"
+reason = "派生版：从 Narratium.ai 旧 fork 的本地备份重建（原上游已删），新增的是 Go 后端、多用户和计费，叙事机制仍是通用角色卡加世界书聊天"
+
+[[ignored]]
+repo   = "YvonneMovingon/short-drama-skills"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "zedarvates/StoryCore-Engine"
+reason = "周边工具：剧本→分镜→ComfyUI 出图/视频的多媒体生产管线，重心在画面一致性"
+
+[[ignored]]
+repo   = "zhaihao118/Micro-Drama-Skills"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills"
+
+[[ignored]]
+repo   = "zhaimaoNB/novel-agent-pro"
+reason = "无源码：仓库只有一个 README，通过 Release 分发 Windows exe 压缩包，源码写着「待优化后上传」"
+
+[[ignored]]
+repo   = "zhangke-0504/StoryGrid_Studio"
+reason = "无源码：仓库只有一行 README，且做的是剧本转故事网格与多镜头视频"
+
+[[ignored]]
+repo   = "zhlmi/narrative-to-screen-reader"
+reason = "只分析不创作：先诊断再出编剧/演员/导演/制片读本，SKILL.md 自述不直接改写剧本"
+
+[[ignored]]
+repo   = "zhlmi/screenplay-review-checklist"
+reason = "AI 不生成故事：只拿 37 条判据给用户的剧本/故事找茬，不写剧本"
+
+[[ignored]]
+repo   = "zhougsoft/dungeon-ai"
+reason = "套壳，无方法：用 ChatGPT 会话令牌做的命令行地下城主，2022 年后未更新"
+
+[[ignored]]
+repo   = "zhouwei713/chinese-epic-scene-director"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（宏大场景成对图片/视频提示词，故事只是镜头的底稿）"
+
+[[ignored]]
+repo   = "zhurui0523/XiaoLuo-AI-Drama-Skill"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（多为角色三视图、服装表情、场景布局与分镜提示词；README 只是 AI Studio 模板）"
+
+[[ignored]]
+repo   = "zlbigger/story-video-director"
+reason = "周边工具：故事→角色四视图、分镜、视听提示词到视频成片的制作 skill，重心在视频生产"
+
+[[ignored]]
+repo   = "zpeng1989/RNN_learning_text_code"
+reason = "非大模型：2018 年 TensorFlow Char-RNN 文本生成"
+
+[[ignored]]
+repo   = "zxerai/novelix"
+reason = "改名换皮：原版 Narcooo/inkos（10 Agent、7 个真相文件、33 维审计全同，不署原作）"
+
+[[ignored]]
+repo   = "zyglovepp/ai-game-project"
+reason = "绑定单一作品：只能玩写死的「迷雾小镇」剧本（固定人物和场景）"
+
+[[ignored]]
+repo   = "zzdrill/InspoVanna"
+reason = "周边工具：火山方舟/Seedance 出图出视频的工作台，剧本部分只是对话生成后拆成剧集→场景→镜头，没有可见的剧情方法"
+
+[[ignored]]
+repo   = "zzy7517/novel2video"
+reason = "周边工具：小说推文，LLM 只从原文提取场景生成画面提示词，再出图、配音、合成视频"
+
+# ───── 以下按名称、简介和话题初筛排除，没有逐个细看 ─────
+
+[[ignored]]
+repo   = "201206030/novel"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "204313508/2048AI-Mastermind"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "5afagy/BashBard"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "62656456/ai-storyboard-director-v5.2"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "869413421/ai-moive-studio"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "AAAAAAAJ/sun-yuchen-writing"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "aaronyi97/image-story-video-wizard"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "aaronyi97/wedding-video-guided-wizard"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "AAzizkhani/ParsGuard"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "AbdulWasay0212/precision-arena"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Abhijeet-cypher/Promhance"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Abhinav-kanduri/ai-systems-foundations"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "abhinavshrivastava950/Montara"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Aboudjem/humanizer-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "addyosmani/clarity"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Adkid-Zephyr/anti-defensive-writing-Skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "advisorita/storytelling-frameworks"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "AetherDevSecOps/aid_adventure_vulnerability_report"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ahmetbersoz/chatgpt-prompts-for-academic-writing"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "aicontentskills/ai-video-storyboard-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "AID-Bundler/aid-bundler"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "AILab-CVC/Animate-A-Story"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "AimesSoft/SakiEngine"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "aiworkskills/wechat-article-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "akdeb/OpenToys"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "alfonso0512/research-writing-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "alifaguslerian/Editorial-Academy"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Alpha-Park/character-ai-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Alpha-Park/janitor-ai-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "alphaparkinc/character-ai-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "alphaparkinc/genpark-ai-sales-roleplay-objection-handling-coach-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "alphaparkinc/janitor-ai-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "alvarojob20/IBM-Data-Analyst-Capstone-Project"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "amandabee/CUNY-data-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "amlalabs/fictionet-sdk"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "amm10090/fanqie-publisher-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Anarcadia/chuanban-jp-novel-translator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "anasselbasra/hierarchical-topic-modeling-with-llm-annotation-v2"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Anbeeld/WRITING.md"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "AnonKryptiQuz/XSSGAI"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "anyhui/video-storyboard-gen-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ApoiaMaisTech/ApoiaMaisBackEnd"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "appolloqin/gen-txt-to-image"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Apprenticew/academic-writing"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Aqibahmed12/Chess-Master"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Arch-Dog/video-prompt-engineer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "architrathi/Atlabs"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "artemnovitckii/content-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Aryia-Behroziuan/References"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ashbuilds/payload-ai"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "asukawa-reina/-ZZZCharasLoreDatabase"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "augustineuzokwe/rtia"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Autfy/StoryBoard-AI"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "aws-samples/llm-apps-workshop"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Azgaar/deorum"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "BaeriShapira/repo-story"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "baranskyi/interrogation-partner"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "basiclab/CPCStoryVisualization-Pytorch"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "basnetsoyuj/AlphaBaghChal"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "beilusaiying/always-accompany"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "bestaidrama/awesome-ai-drama-generators"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "betterjally-oss/xiaohongshu-ai-terminology"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "bhanusdet/CaseVector-AI-effortless-test-case-generation"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "BigCatNotFat/PacificOceanAI"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "blacktwist/social-media-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "blader/humanizer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "bluicezhen/txt-to-epub"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "bobchao/pm-skills-rfp-to-stories"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "bookforge-ai/bookforge-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "bovard/raid"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "bozhouDev/video-skills-toolkit"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "breaker505/resumify"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "brsloan/warewoolf"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "buluo533/CNKI-MCP-Verifier"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "bushrabeg/turkce-humanizer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "byliutao/1Prompt1Story"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "c4phesua/DQN_tictactoe"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "cabbage2000-lab/data-analysis-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Cam3L1/ghost-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "carbon-tools/carbon"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "CaSkade-Automation/CaSkade-MES"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "catseye/Samovar"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Ceelog/DictionaryByGPT4"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Chamanrajragu/purffle-shorts"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "charlie947/voiceprint"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "chatman-media/timeline-studio"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "CheehooLabs/SpureeSkills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ChenXiangYpily1234/paper-storycraft-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "chenxiVFX/A-customizable-audiobook-generator-based-on-GPT-SoVITS-for-personalized-voice-tones."
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "chenyu896235554-boop/lapian-storyboard"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "chillhammer/Birdman-the-Renegade"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "chinapxe/sketchshot"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "chnjames/echo-suno-writer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Chocolate1999/hexo-blog-lionkk"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "cirosantilli/china-dictatorship"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "cirosantilli/china-dictatroship-7"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "cirosantilli/cirosantilli"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "cirosantilli/x86-bare-metal-examples"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "cnfeat/CardPackStudio"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "CoderOneHQ/dungeons-and-data-structures"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "CodingFeng101/CanvasAnvil"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "coinsspor/story"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ComputerKWasTaken/BetterDungeon"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "conorbronsdon/avoid-ai-writing"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "CoreForgeLab/AetherDB-OmniS-erch-"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "creatify-ai/ai-avatar-video"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "crJulie-PM/Book-Translator-Skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "CuriousNekomimi/AIDCAT"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "cxm947/xige_screen"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "CY-CHENYUE/film-storyboard-expand-cy"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "CyberJ0605/cinematic-video-prompt-engineer-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "dafenq/DirectorFrame-AI"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "daisyu0608/script-up"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "daje0601/The-Smol-Training-Playbook-The-Secrets-to-Building-World-Class-LLMs"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "danderfer/Comp_Sci_Sem_2"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "daveRendon/openai-for-devs"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "DavidDinkevich/Story2Board"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "dawidgrobert/AimGL"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "DCP-arca/NAI-Auto-Generator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ddxfish/sapphire"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "dennisonbertram/ux-toolkit"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "devinambron/PyThoughtChain"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "devswha/patina"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "DiceZone/Dice-Next"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "DickDumBR1/Aim"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "dilidin2/tic"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "djulTrb/content-creation-automations"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "dmhagar/candy-dungeon-music-forge"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "dobzha/dobzha-storybook-ds-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Don-Jimmy/kongshoudao-fangdai"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "drewautomates/solo-builder-playbook-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "dtdannen/dcss-ai-wrapper"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Dujltqzv/Some-Many-Books"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "eduardconstantin/storybook-gpt"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Edward690Z/mcd-receipt-persona"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "egeromin/mastermind"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ehmo/slopkit"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "eisneim/cytron_tts_gui"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "elliotwoo98-dotcom/handmade-story-visuals"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "elwachira/Portfolio_"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "EmmanuelLwele/Interview-Coding-Challenge-Data-Science"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "eppser/elite-0day-researcher"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Ergosign/storybook-addon-pseudo-states"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "esthersjw/book-dissection-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "EthanO-O/system-paper-polisher"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "EverythingOpenSource/open-source-sprints"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "EVZheng-Lab/ad-asset-bible"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "EVZheng-Lab/color-script"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "eye9444/Dusk-Translate"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ezozu/ArtificialMasterpieceGenerator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "fastred/StoryboardDependencyInjectionTemplates"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "FB208/OpenBidKit_Yibiao"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "federicodeponte/opendraft"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "FeedHive/ai-slop-detector"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "felicien-brochu/selflessheroes"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "fictionco/fiction"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "fighting41love/funNLP"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "finxter/awesome-ai-book-writing"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "FireRedTeam/FireRed-OpenStoryline"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "FireRedTeam/StoryMaker"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "firgk/textsToVideo"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "flight505/storybook-assistant"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "fondoger/qidian2mobi"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "fuzhengwei/chatbot-api"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "gainubi/storyboard-video-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "GaoDalie/LangGraph-Long-Term-Memory-RAG-Web-Scraper-Powerful-Agentic-Memory"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "gasparschott/obsidian-continuous-mode"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "geekjourneyx/feishu-md2wechat"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "geekjourneyx/md2wechat-lite"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "geekjourneyx/md2wechat-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "gege-circle/.github"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "georgezoto/Virtual-Reality-Nanodegree"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "gianpaj/sexyvoice"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "glebis/claude-cognitive-toolkit"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "gnipbao/knowledge-cat-ppt-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "gnipbao/story-to-handdrawn-video"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "gonta223/humanizer-ja"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "gowtham996/AI-Poetry-Squad"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "gunnerwang/Novel-Surgical-Skill-Assessment"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Hack23/blacktrigram"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "hamza01055/hotpulse"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Hana19951208/DailyWallpaperHub"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "hany-liu/comfy-director"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "hassancs91/claude-image-generation"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "hawkongz/concept-fable"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Hazrat-Ali9/Deutschland-Story"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "HectorPulido/Procedural-Dungeon-Generation-Algorithm-Unity"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "helloianneo/ian-xiaohei-scenes"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "helloworld8661/awesome-ai-book-writing"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "HenryZ838978/Seedance2.0-Storyboard-Planner"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "henyjone/apsal-open"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "hermes-pro/storytold-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Heybinshao/book-distiller"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "hi-nikola/hand-drawn-explainer-video-nikola"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "hichipli/vetting-python"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "HimangshuCyber/Math-Quiz"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "hiraimran-theanalyst/covid_19_powerbi_dashboard"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "hjq5846653/CineScriptAI-V2.00"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "HKUSTDial/DataMagic"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "holk-h/MoneyProducer_txt2video"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "hooosberg/WitNote"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "hugohung/jd-ai-short-drama-libtv"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "hysunny/NovelDrawing"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "iciiwhite/sandy-auto"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ig-vikas/Smart-Library"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ilien-dev/quiron"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ilusrdbb/lightnovel-pydownloader"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "imagist13/Melodia"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "imfinefku/orderfood"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "IndexFziQ/Analysis-of-Story-Cloze-Test-and-ROCStories"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "individual-developer/A-RPG-Dungeon-"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "iniwap/AIWriteX"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "inmis/Aoms"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "itxnargis/chess-backend"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "itxnargis/chess-frontend"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ivankadric02-alt/wyrd-ecs-core"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ivelasq/rplot-alt-text-generator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "izdyr/Python"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jace-xu/CS2-Auto-Aim-based-on-yolov5"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jalaalrd/anti-ai-slop-writing"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jangviktor-web/novel2voice"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Jay-Chen79/novel-cinematic-reading"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jaychouchannel/PlotCraft"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jconorgrogan/Ai-lateral-thinking-research-generator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jd-opensource/JoyAI-Echo"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jd7h/narrative-gen-nanogenmo18"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "JeffersonQin/lightnovel_epub"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jettbrains/-L-"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jiacai2050/shellgpt"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "JIAOJIEXIAN/Privacy"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jin-s13/ai-research-writing-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Jingyi-Wu-Richael/replicate-video-ad"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jinhanbuilds/bushiershi"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "joeseesun/qiaomu-learning"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jomonylw/persona-studio"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jon-chun/multisentimentarcs"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jp-fosterson/pandoc-novel"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "jpcastel88/Script-Breakdown-Skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Juanhacker051/FOTOSPLOIT-"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "junjiehe96/AnyStory"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "kagura-chen/kagura-story"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "keelhauler95/phosphorite"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "keijiro/DungeonMatchHeroes"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "kenantang/cjk-idioms-gpt"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "khanishti/AimGL-Reflex-Forge"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "khenidev787-cmyk/das-zen-tetris-coach"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Khohara-NRK/Video_Generator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "kinganupamdutta27/Voice-Assistant-using-Python"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Kirby980/auto-fanqie"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Kirilbt/bike-demo-threejs"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "kishormorol/promptlean"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "kmwallio/ThiefMD"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "koaeraser/ARMS-Biostat"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "koishijs/novelai-bot"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "krystalan/AwesomeSEG"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "krystalan/chatgpt_as_nlg_evaluator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "kuangdd2024/auto-video-generateor"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "LahiruHarshana/MyPortfolio"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "landonasato/Function"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "laure1102/lpanda"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ldmsapp76-max/seedance-storyboard-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "le600-lun/fang-yuan-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "LearnPrompt/3Dworkshop"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "lechmazur/writing"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "lechmazur/writing_styles"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "leeguandong/ComfyUI_1Prompt1Story"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "leemjnnkdzuy/auto-voice-over-tool"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "LewdLeah/Illustrated-Story-Cards"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "lgwanai/media-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "liamwong-1987/ecommerce-video-director-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "liang88127/-VPN"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "liangdabiao/story-handdrawn-remotion"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "liangdabiao/story-handdrawn-video"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "liangdabiao/xhs-business-validator-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "LifelongLazyLearner/qu-ai-wei"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Lifestylerr/DAWD"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "lijigang/ljg-skill-xray-book"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "LingyiChen-AI/JadeAI"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "LinHao-city/StoryMind"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "lischenko/interactive-fiction-alexa-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "lokicik/novel-idea-hunter"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Loqor/AIT1.16"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "lpalbou/llm-basic-benchmark"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "LucianaiB2004/life-trace-amap"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "LucianaiB2004/novel-fan-graph"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "luckybajaj22031996/pm-ba-claude-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "lukeckprobierts/Hemmingway-1"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "LuoJiangYong/real-estate-ai-skills-pack"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "LUORANCHENG/novel2video"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "luxiaoming/Kyhelper"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "lxiaonan/AI-Insight-Intelligent-Analytics"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "lxiaonan/AI-Insight-Intelligent-AnalyticsFrontend"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "lynote-ai/humanize-text"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "LZ0211/Wedge"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "lza6/AIWriteX-Skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "m-taqii/crawlix"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "mabelcalim/SpecDiag"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "MADEVAL/AngleCraft"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "MahdisSep/Unity-3Room-Dungeon-Slayer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "MalibuTechTeam/mbt_minigames"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "manavmishra/ZeroSlop"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "maqingwen2/GameDocGenSkill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "MarkipTheMudkip/in-class-project-2"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "markrahq/markra"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "marmbiz/humanizer-de"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "marostcs/konzole"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "MasuRii/wtr-lab-novel-image-generator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "mengke-wang/zh-humanizer-literary"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "mengxuebi-mush/case-study-storytelling"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "mgsweet/Azul-MCTS-AI"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Mharis-code/videoanalyzer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "minicoursegenerator/skills-for-course-creators"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "mizzlelover/cida"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "mkualquiera/AIDungeonAPI"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "mnky9800n/zork-bench"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "moboutrig/instagram-claude-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Moeary/CosyVoiceDesktop"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "MohamedAbdallah-14/unslop"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "monkey-hjy/python-spider"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "morettt/Chatbot-Trainer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "mRFWq7LwNPZjaVv5v6eo/cihna-dictattorshrip-8"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "MrGeDiao/shuorenhua"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "mrlegowatch/RolePlayingCore"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "mrsrina/dungeon-of-chess"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "muhammadsami987123/100DaysOfAI-Agents"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "muzammil7866/Data-Analysis-Projects"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "muzishen/RCDMs"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "mwddmmde12-del/storyboard-artist"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "na57/chinese-copyright-application-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "nanaism/yomiyasu"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "nancyalaswad90/Become-a-Sales-Representative"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "nanshaws/LibgdxTutorial"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Narylr350/book-source-creator-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "nateherkai/herk-edit-kit"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "nateherkai/human-speak"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "NBchitu/cinematic-storyboard-generator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "neavo/KeywordGacha"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "neavo/LinguaGacha"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "NEKOparapa/AiNiee"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "nikhiltomar2712/privproject"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "niobium617/prompt-reverse-engineer-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "niuhuan/wild"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "nkeranova/Databases"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "nlpdupe/Text-Generation-Paper-List"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "noeigenstate/AI-Writing-without-AI-feel"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "nolangz/CueRecord"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "NotShrirang/tinygpt"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "NotYuSheng/TracePcap"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "NulightJens/humanizer-stack"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "nutllwhy/whiteboard-book-video-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "OfficeAIWork/WordGPT"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "oguzhantopgul/skill-security-reviewer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Olalall/AI-The-Storyteller-of-the-Blood-Stained-Clock-Tower"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "oldeucryptoboi/Carnival9"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "OnClick9927/ActionEditor"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "op7418/guizang-sports-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "oprogramadorreal/UltimateYouTubeMaster"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "orangeai158/storyboard-video-prompt-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "otter1101/blogger-distiller"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ovo066/MoRead"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "OYYH-Apple/video-storyboard-generator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "p-svacha/PathToAnywhere"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "palexu/send2kindle"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "panbinibn/OpenPacketFix_"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "pankajtales/gen-ai-beginner-projects"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "pawel-kieliszczyk/snake-reinforcement-learning"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "pendakwahteknologi/fb-ai-agents"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "PenguinMiaou/ClawTalk"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "peter88213/novelibre"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Phant0Meow/femo-plugin"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "phileiny/h3-storyboard-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "phucnt-bazone-vietnam/ba-zone-user-story-ac-writer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "phuryn/work-humanizer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Picrew/awesome-llm-story-generation"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "pinkpixel-dev/skills-collection-1"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "pnp/prompt-master"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "prajwalchapke055/Accenture-Data-Analytics-and-Visualization-Forage"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "primaryobjects/wumpus"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "prosecconetwork/The-NOC-List"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "pxvr-official/1"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "QianYan-Art/SafetyRAISE-OS"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "qianyouliang/AI-MapBook"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "qianyouliang/LLM-MapBook"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "QinghongLin/data2story-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "qingyabailu-git/SketchNarrator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "qinkio/prepare-interview-pack"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "qixuanHou/Mapping-My-Break"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Quanwei1992/KindleHelper"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "qzw881130/AI-NovelFlow"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "rahulanand1103/youtube-script-writer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "RainLib/AI-Storyboard"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "raphaotten/claude-interview-coach"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Ravenstine/skillex"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Raymondhou0917/kangyongcai-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Raymondhou0917/speak-human-tw"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "RhythmicWave/AICreation"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "riha112/PocketDungeon_Unity3D_2D_game"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "RimiChen/2025_NarrativeScene"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "RishabSA/TruthGuard"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "rohanmistry231/Tech-World-Roadmaps"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "rozx/Tsukuyomi"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "RUCAIBox/MVP"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "rudra-xi/rudra-geek-nook"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "runparse/agent-script"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ruodou233/ruodou233"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "s-shemmee/Python-Project-Ideas"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "S4ltster/Beemovie"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "sailorworks/video-content-agent"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "samzong/blueprint"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "santifiorino/dino-reinforcement-learning"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "sanusanth/c-basic-programs"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ScottishFold007/Story2Board_Qwen_image"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "sdsds222/Unitale"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "senmanx/s-level-comic-character"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "shahidcodes/10-fullstack-projects"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "shaozheng0503/aimv-studio"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "shengchina1125/spring-boot-base"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "shroffsagar/agile-weave"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Shun1989/book-video-maker"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "SilenceX9/novel-dehydrator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "sinamhd/autonomous"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Sinryou/ImagesToPDF"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "sjh00/minimax-h3-storyboard-prompt-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Skattermuffin/hey-game-pepople-i-know-you-r-ment-to-like-make-these-long-but-come-on-its-fun-but-arrow-game-lol"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Skattermuffin/this-ones-for-you-my-retalyation.-also-haha-arrow-game-lolol"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "sky-flux/skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "small-bears/script"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "smixs/humanizer-ru"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "smthemex/ComfyUI_JoyAI_Echo"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "snowlixue/wanfangPaperSystem"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "snssv/jiapu"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "solanabr/skill-bounty"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Somi-Project/Somi"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "SonwaneyY/portfolio-case-study-generator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "SoptikHa2/aidungeon2-cli"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "SotoAlt/monad-game-engine"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "soumik12345/diffusion-story-illustration"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "spacesdrive/ferion"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "squerne/open-career-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ssnangua/ColorTxt"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "stephenleo/bmad-autonomous-development"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "stephenturner/skill-research-question-validator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "steve21985031/Siray-IdeaValidator-Skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "strategist922/aisixiang"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "strongeron/storybook-workbench"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "sunkencity999/promptcraftdungeon"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Superwaterbro/-2"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "suzuka61/RuanZhu"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "SvenPfiffner/PlotLLM"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "takuma-ru/auto-story-generator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "tanbryan/ai-mv-generator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "tangcr/Redis-"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "taxueseek/say-it-human"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "tbhb/vale-ai-tells"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "techempower-org/candela"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "techinAI/DeepLearning.AI"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "TencentARC/AudioStory"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "themrzmaster/augurms"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "TheOnlyWayUp/WattpadDownloader"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "thephoeron/quantum-python-game-engine"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "thetobysiu/Deepstory"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Thinnies/bibliomaniacs.js"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Thinnies/seasoning-books"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "thu-coai/UNION"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Time-Machine-Lab/Mosaic"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "tinygeeker/aiChatPreset"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "tjusenchen/StoryDroid"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "tobs-code/SoftPrompt-IR"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "TohmaN233/YN-translation-workshop"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "tomdale/inside-mac"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "truptibhalekarr/insightiq"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "tttg2010/tj-short"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "TypeTale/TypeTale"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ubc-vision/Make-A-Story"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "udaysharmadev/Not-Ai"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "udityamerit/Udityamerit"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "unit-mesh/devti"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "unit-mesh/unit-minions"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Updesh012/living-activity-9015"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ur-grue/autopunk-media-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "vaan89/aivideo"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "VachanVY/gpt.jax"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "valahraban/AID-World-Info-research-sheet"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "vedraut/slidesage"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "VeyDlin/NektoTranslate"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "vi-ctorivanov/Cartographer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "VincentOld/stop-slop-zh"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "viosca/AID-QoL-Tool"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ViStoryBench/vistorybench"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "VISUS-Li/awesome-ai-creator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Vivixiao980/vivi-songwriting"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "vnve/vnve"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Waiyakorn1879/for-the-plot"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "wang1212/storytelling-web"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "wassermanproductions/scriptbreak"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "wb-hwang/AINovelLab"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Wechat-ggGitHub/chinese-ai-humanizer"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Weikezi-AI/create-whiteboard-video"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Wenjli974/SmartBA"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Wenmoux/checkbox"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Wenmoux/novel2epub"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "WolfChen1996/NovelAI-tag-generator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "wooly99/geng-academic-fraud-detector"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "WorkInTheDark/FairytaleQA_QAG_System"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "WorldObservationLog/wenku8-opds-readme"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "woyin2024/lengyi-seedance2.5-prompt"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "writerslogic/scrivener-mcp"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "wumajiehechuan-lab/hermes-tvc-pipeline"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "xcLee001/SonicVale"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "XCreeperPa/HSRChat"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "Xiaoyao-Li/Ag2Manip"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "xiexie-qiuligao/counselor.skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "xiongmiaozai/evo-all-ult-v2.0-3d-space-scheduler"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "xuanji86/ainiee-translate-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "xuboboo/xiaohongshu-viral-note-agent-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "XueweiW-21/socratic-questioning-story-structure"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "XY-Showing/pageclaw"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yan-stone-computer/awesome-chenhansheng-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yancy22737-sudo/RimChat"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yanliudesign/behavior-question-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yanliudesign/offer-toolkit-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yanshangcha01/libtv-shortdrama-storyboard"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yanzhao77/pavo-ai-agent"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yao62995/Renju-AI"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yassinehentati-dev/Story-Based-Programming-Contest"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yaxeen/storytelling-skills"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yayashuxue/solo-founder-playbook"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yfismine/AlphaZeroGomoku"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yingpengma/Awesome-Story-Generation"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yourconscience/llm_quest_benchmark"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "youseai/openai-swarm-node"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ypwang61/StoryEval"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yudong-94/storytelling-viz-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yuebuluo168/--demo"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "YuLin-Coder/AllProjectCatalog"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yunmegnze/fanqie-novel-downloader-skill"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "yxuansu/MAGIC"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "zaohmeing/21-"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "zcx960/seedance-storyboard"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ZCZHAO-1999/shakespeare-writing-studio"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "zeronezer/bidcraft"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ZeroTang05/easytts"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "zhanghubo/storyboard-pro-ai"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "zhaohmng-outlook-com/21-"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "zhlmi/moodboard-alignment"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "zhousanfu/story-vision"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "zhouwei713/storyboard-prompt-generator"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "zpc1314521/PCL2"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "zsith/launcher.user.js"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "ZulutionAI/RaCig"
+reason = "初筛：与 AI 写虚构故事无关"
+
+[[ignored]]
+repo   = "zyz254009-crypto/script-to-shootable-storyboard"
+reason = "初筛：与 AI 写虚构故事无关"

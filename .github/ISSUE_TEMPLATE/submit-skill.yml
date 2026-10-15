@@ -1,0 +1,56 @@
+name: 推荐项目
+description: 推荐一个用大模型讲故事的 skill、框架、应用或研究代码（虚构和非虚构叙事都收）
+title: "[推荐] owner/repo"
+labels: ["submission"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: 仓库地址
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: group
+    attributes:
+      label: 故事类型
+      options:
+        - 长篇小说 · 网文
+        - 短篇 · 故事
+        - 剧本 · 短剧 · 影视
+        - 互动叙事 · 游戏 · 角色扮演
+        - 仿写 · 同人 · 风格迁移
+        - 非虚构叙事
+        - 通用叙事方法
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: 形态
+      options:
+        - skill / agent 插件
+        - 提示词 / 方法文档
+        - agent 框架 / 命令行工具
+        - 应用
+        - 论文配套代码
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes:
+      label: 它怎么写故事
+      description: 一两句话，写清楚用了什么方法（先规划再写、多 agent 审稿、记忆库、角色模拟、非虚构的事实核对……）
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 推荐理由
+      description: 用过的话说说效果；和已收录的同类项目比有什么不同
+  - type: checkboxes
+    id: relation
+    attributes:
+      label: 关系
+      options:
+        - label: 我是这个项目的作者或维护者

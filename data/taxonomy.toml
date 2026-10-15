@@ -1,0 +1,114 @@
+# 分类体系：skills.toml 里的 group / methods / format / lang / agents 只能取这里定义的值。
+# 展示顺序 = 这里的书写顺序。
+
+# 故事类型：每个条目只属于一个类型
+[groups.novel]
+label = "长篇小说 · 网文"
+intro = "长篇连载的写作系统：开书、大纲、分章写作、长篇记忆、审稿。"
+
+[groups.short]
+label = "短篇 · 故事"
+intro = "短篇小说、短故事、微小说、儿童故事和睡前故事。"
+
+[groups.script]
+label = "剧本 · 短剧 · 影视"
+intro = "影视剧本、短剧和漫剧的剧情写作。只做分镜和视频生成的不收，见 [awesome-short-drama-skills](https://github.com/UnderleveledBuilder/awesome-short-drama-skills)。"
+
+[groups.interactive]
+label = "互动叙事 · 游戏 · 角色扮演"
+intro = "AI 当叙事者或主持人，故事随玩家的选择展开：互动小说、文字冒险、跑团、视觉小说、角色扮演。"
+
+[groups.imitation]
+label = "仿写 · 同人 · 风格迁移"
+intro = "学一部作品或一位作者的写法再创作：拆书仿写、文风蒸馏、同人、续写。"
+
+[groups.nonfiction]
+label = "非虚构叙事"
+intro = "把真实的新闻、事件、科学知识和历史人物写成好看的故事：特稿、事件复盘、科普、传记、口播和解说文案、品牌故事。故事要好看，事实不能编。"
+
+[groups.general]
+label = "通用叙事方法"
+intro = "不限体裁的故事方法和原则：结构理论、人物、对白、视角，以及专门针对小说的去 AI 味。"
+
+# 创作方法：一个项目可以用多种
+[methods.planning]
+label = "规划先行：层级大纲、分解写作"
+short = "规划"
+
+[methods.theory]
+label = "叙事理论注入：结构模型、类型套路、写作原则"
+short = "理论"
+
+[methods.worldbuilding]
+label = "设定 · 世界观构建"
+short = "设定"
+
+[methods.character]
+label = "人物塑造 · 角色档案"
+short = "人物"
+
+[methods.memory]
+label = "长篇记忆 · 一致性：状态库、设定库、检索"
+short = "记忆"
+
+[methods.multiagent]
+label = "多智能体分工：作者、编辑、审稿、读者"
+short = "多智能体"
+
+[methods.simulation]
+label = "角色模拟 · 世界推演：让角色演出情节"
+short = "模拟"
+
+[methods.revision]
+label = "审稿 · 自我批评 · 迭代修订"
+short = "修订"
+
+[methods.style]
+label = "风格学习 · 仿写：范文、文风蒸馏、拆书"
+short = "风格"
+
+[methods.deai]
+label = "去 AI 味 · 文笔打磨"
+short = "去 AI 味"
+
+[methods.interactive]
+label = "交互共创：读者选择、人机协作"
+short = "共创"
+
+[methods.factual]
+label = "事实约束：素材驱动、证据核对、不编造"
+short = "事实"
+
+[formats]
+skill    = "标准 SKILL.md 或 agent 插件"
+prompts  = "提示词 / 方法文档，需手动使用"
+harness  = "agent 框架、编排系统或命令行工具"
+app      = "完整应用：桌面、网页、移动端"
+research = "论文配套的研究代码"
+
+[langs]
+zh    = "中文"
+en    = "英文"
+ja    = "日文"
+ko    = "韩文"
+multi = "多语言"
+
+[agents]
+claude-code = "Claude Code"
+codex       = "Codex"
+cursor      = "Cursor"
+opencode    = "OpenCode"
+openclaw    = "OpenClaw"
+gemini-cli  = "Gemini CLI"
+workbuddy   = "WorkBuddy"
+
+[discover]
+# scripts/discover.py 用这些关键词在 GitHub 搜候选项目
+queries = [
+  "小说 skill", "网文 skill", "故事 skill", "剧本 skill", "仿写 skill", "同人 skill", "互动小说 skill",
+  "AI 写小说", "小说生成", "故事生成", "AI 编剧",
+  "story skill", "novel skill", "fiction skill", "storytelling skill", "screenwriting skill",
+  "AI novel generator", "story generation LLM", "novel writing agent", "interactive fiction LLM", "AI dungeon",
+  "非虚构 写作 skill", "故事化 文案 skill", "口播 叙事 skill", "科普 故事 AI",
+  "narrative nonfiction LLM", "storytelling copywriting skill", "science storytelling LLM", "journalism storytelling AI",
+]
