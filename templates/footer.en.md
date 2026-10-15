@@ -4,8 +4,8 @@
 - [yingpengma/Awesome-Story-Generation](https://github.com/yingpengma/Awesome-Story-Generation), [Picrew/awesome-llm-story-generation](https://github.com/Picrew/awesome-llm-story-generation): paper lists on story generation, for research without released code
 - Evaluation: [lechmazur/writing](https://github.com/lechmazur/writing) (short stories that must include 10 required elements, compared across models), [EQ-bench/creative-writing-bench](https://github.com/EQ-bench/creative-writing-bench) (creative writing benchmark), [jenna-russell/storyscope](https://github.com/jenna-russell/storyscope) (measures narrative-structure traits of AI fiction; [sepia](https://github.com/Nanako0129/sepia)'s de-AI method builds on it)
 - [CHATS-lab/verbalized-sampling](https://github.com/CHATS-lab/verbalized-sampling): asks the model for several candidates with probabilities to reduce sameness; not fiction-specific, but often used for story ideas and openings
-- [awesome-novel-skills](https://github.com/UnderleveledBuilder/awesome-novel-skills): toolbox for web-novel writers (Chinese), including downloaders, book sources, translation and publishing
-- [awesome-short-drama-skills](https://github.com/UnderleveledBuilder/awesome-short-drama-skills): AI short-drama and comic-drama skills (Chinese), including storyboards and video prompts
+- [awesome-novel-skills](https://github.com/UnderleveledBuilder/awesome-novel-skills/blob/main/README.en.md): toolbox for web-novel writers, including downloaders, book sources, translation and publishing
+- [awesome-short-drama-skills](https://github.com/UnderleveledBuilder/awesome-short-drama-skills/blob/main/README.en.md): AI short-drama and manju skills, including storyboards and video prompts
 - [anthropics/skills](https://github.com/anthropics/skills): the official Agent Skills repo, a good starting point for writing your own skill
 
 ## Contributing
