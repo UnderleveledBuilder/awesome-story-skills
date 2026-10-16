@@ -9809,6 +9809,19 @@
       "stars": 27,
       "status": "ok"
     },
+    "zhenliu1486/restrained-narrative": {
+      "archived": false,
+      "description": "克制叙事写作 Skill",
+      "first_seen": "2026-10-15",
+      "forks": 0,
+      "full_name": "zhenliu1486/restrained-narrative",
+      "license": null,
+      "pushed_at": "2026-08-28",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 0,
+      "status": "ok"
+    },
     "zhiliyouxian/claude-novel-writer": {
       "archived": false,
       "description": "Novel Writing Studio - A comprehensive Claude Code plugin for novel creation with extensible knowledge packs",

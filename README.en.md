@@ -14,7 +14,7 @@ Every project is sorted by story type and tagged with the methods it uses. The [
 
 Many projects come from the Chinese web-novel and short-drama scene, so a good share of them are documented in Chinese. Descriptions below are translated.
 
-818 projects: 334 skills and prompt sets, 462 harnesses and apps, 22 research codebases · metadata updated 2026-10-16
+819 projects: 335 skills and prompt sets, 462 harnesses and apps, 22 research codebases · metadata updated 2026-10-16
 
 **Legend**: 🌟 featured · 📝 prompts · ⚙️ harness · 🧩 app · 🎓 research code · 💤 no updates for 180+ days · 📦 archived · ⚠️ repo unavailable
 
@@ -23,14 +23,14 @@ Many projects come from the Chinese web-novel and short-drama scene, so a good s
 
 ## Contents
 
-- [New this week](#new) (126)
+- [New this week](#new) (127)
 - [Featured: start here](#featured) (26)
 - [By story type](#by-group)
   - [Novels · Web Novels](#group-novel) (357)
   - [Short Stories](#group-short) (41)
   - [Scripts · Short Dramas · Film](#group-script) (84)
   - [Interactive Narrative · Games · Roleplay](#group-interactive) (199)
-  - [Imitation · Fan Fiction · Style Transfer](#group-imitation) (27)
+  - [Imitation · Fan Fiction · Style Transfer](#group-imitation) (28)
   - [Narrative Nonfiction](#group-nonfiction) (65)
   - [General Story Methods](#group-general) (45)
 - [By method](#by-method)
@@ -40,7 +40,7 @@ Many projects come from the Chinese web-novel and short-drama scene, so a good s
 <a id="new"></a>
 ## New this week
 
-126 added in the last 7 days:
+127 added in the last 7 days:
 
 - [director](https://github.com/s1dashu/director) ★807: Animated-explainer mode sets a central question, script as hook, background, contradiction, concept, misreading, answer; separates fact from interpretation, invents no motives or dialogue; then characters, storyboard and video generation
 - [simon-skills](https://github.com/trustfuture/simon-skills) ★431: Investigative long-form skill: one of six core question types (ledger / cost / rules, etc.), rotated; opens in 5 seconds with a fact-backed conflict, source ledger and fact-check for conclusions; also whiteboard explainer videos
@@ -62,7 +62,7 @@ Many projects come from the Chinese web-novel and short-drama scene, so a good s
 - [sunxue](https://github.com/bayshier/sunxue) ★24: Sun-Xue plain-description skill: ten techniques from "My Girlfriend Jing Tian"; first collects timeline, objects, numbers from the user as evidence, then writes with a scale opening, rhyming objects and bystander testimony, and self-checks
 - [RPGBox](https://github.com/sleepydeer666/RPGBox) ★23: Galgame-style AI RPG client: narration and multi-NPC dialogue shown in layers, each passage advanced by choices; characters can have multiple sprites, and plot memory and character experiences are summarized automatically
 - [tj-short](https://github.com/tttg2010/tj-short) ★18: Short-drama product skill: product analysis → brief → product-proof bible → character/scene/prop/evidence libraries and 12-shot list; conflict and relationship pressure first, product later as evidence; then first-frame/video prompts
-- …and 106 more, listed under their story types below.
+- …and 107 more, listed under their story types below.
 
 <a id="featured"></a>
 ## Featured: start here
@@ -1980,7 +1980,7 @@ npx skills add alanl1234/gamebook
 
 Learn how a work or an author writes, then write that way: book teardowns, style distillation, fan fiction, continuation.
 
-#### Skills · prompts (23)
+#### Skills · prompts (24)
 
 - 🌟 **[longzu.skillls](https://github.com/zuoyou12/longzu.skillls)** · ★ 11<br>Style distillation skill for Jiang Nan and Fenghuo Xi Zhuhou: statistics over a 14.65M-character corpus plus close reading give a narrative skeleton and swappable language skins, style crossbreeding, blind tests<br><sub>Methods: revision · style</sub><br><sub>updated 2026-07-28 · Chinese · 3 skills</sub><br><sub>💡 Fan/imitation work; repo contains only style notes, no original text; blind-test method adapted from alchaincyf/nuwa-skill</sub>
 
@@ -2027,6 +2027,8 @@ Learn how a work or an author writes, then write that way: book teardowns, style
 - **[sun-yuchen-writing-skill](https://github.com/Bbbtt04/sun-yuchen-writing-skill)** · ★ 1<br>Extracts the "billionaire cold-ledger" narrative for fictional stories: tiny number → huge number, obsession → lavish satisfaction → first hesitation, process goes on after the character leaves, objects loop back; numbers replace emotion<br><sub>Methods: theory · style</sub><br><sub>updated 2026-08-28 · Chinese · MIT</sub><br><sub>💡 The style comes from a widely circulated fictional article online, same source as LucienLL/writing-like-sun; not authorized by the person involved</sub>
 
 - **[writing-like-sun](https://github.com/LucienLL/writing-like-sun)** · ★ 1<br>Extracts mechanisms (title, opening, rhythm, object callbacks) from a sample text, then analysis → story bible → rewrite → review, swapping characters and events to write a new story; can also convert it into a short-drama script<br><sub>Methods: planning · revision · style</sub><br><sub>updated 2026-08-28 · Chinese · MIT</sub><br><sub>💡 Inspired by the same viral X article as Bbbtt04/sun-yuchen-writing-skill; defaults to fictional characters only</sub>
+
+- **[restrained-narrative](https://github.com/zhenliu1486/restrained-narrative)** · ★ 0<br>Restrained-narrative skill: fix the core emotion, a recurring object, a repeated line and a number skeleton, then write only actions and facts and cut a third of the draft; banned-phrase list and 14-item self-check; for nonfiction, memoir and short fiction<br><sub>Methods: planning · revision · style</sub><br><sub>updated 2026-08-28 · Chinese</sub><br><sub>💡 Techniques taken from Justin Sun's essay "My Girlfriend Jing Tian"; the reference file quotes passages from it; no README or license; from the same article as AAAAAAAJ/sun-yuchen-writing and others</sub>
 
 #### Harnesses · apps (4)
 
@@ -2089,6 +2091,8 @@ npx skills add Kira-Calc/shizut0y0-skill
 npx skills add Bbbtt04/sun-yuchen-writing-skill
 # writing-like-sun
 npx skills add LucienLL/writing-like-sun
+# restrained-narrative
+npx skills add zhenliu1486/restrained-narrative
 ```
 
 </details>
@@ -2506,15 +2510,15 @@ npx skills add aimerfeng/novel-to-webnovel
 
 What each method solves, how projects implement it and where it goes wrong: see the [method guide](METHODS.en.md). Each method there is followed by every project that uses it:
 
-- [Plan first: hierarchical outlines, decomposed drafting](METHODS.en.md#method-planning) (481)
+- [Plan first: hierarchical outlines, decomposed drafting](METHODS.en.md#method-planning) (482)
 - [Narrative theory: structure models, genre tropes, craft principles](METHODS.en.md#method-theory) (206)
 - [Setting · worldbuilding](METHODS.en.md#method-worldbuilding) (148)
 - [Character design · character profiles](METHODS.en.md#method-character) (189)
 - [Long-form memory · continuity: state stores, setting bibles, retrieval](METHODS.en.md#method-memory) (452)
 - [Multi-agent roles: writer, editor, reviewer, reader](METHODS.en.md#method-multiagent) (151)
 - [Character and world simulation: let characters act out the plot](METHODS.en.md#method-simulation) (74)
-- [Review · self-critique · iterative revision](METHODS.en.md#method-revision) (393)
-- [Style learning · imitation: exemplars, style distillation, book teardowns](METHODS.en.md#method-style) (143)
+- [Review · self-critique · iterative revision](METHODS.en.md#method-revision) (394)
+- [Style learning · imitation: exemplars, style distillation, book teardowns](METHODS.en.md#method-style) (144)
 - [De-AI · prose polishing](METHODS.en.md#method-deai) (94)
 - [Interactive co-creation: reader choices, human-AI collaboration](METHODS.en.md#method-interactive) (199)
 - [Fact constraints: source-driven, evidence checks, no fabrication](METHODS.en.md#method-factual) (52)

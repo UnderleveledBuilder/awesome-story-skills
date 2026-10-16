@@ -8278,6 +8278,19 @@ note_en = "Technique distilled from Justin Sun's essay \"My Girlfriend Jing Tian
 checked = 2026-10-15
 
 [[skills]]
+repo    = "zhenliu1486/restrained-narrative"
+desc    = "克制叙事 skill：先定核心情感、贯穿物件、重复句和数字骨架，再只写动作与事实，初稿删去三分之一；附禁用语清单和 14 项自检，用于非虚构、回忆录和短篇"
+desc_en = "Restrained-narrative skill: fix the core emotion, a recurring object, a repeated line and a number skeleton, then write only actions and facts and cut a third of the draft; banned-phrase list and 14-item self-check; for nonfiction, memoir and short fiction"
+group   = "imitation"
+methods = ["style", "planning", "revision"]
+format  = "skill"
+lang    = "zh"
+agents  = ["claude-code"]
+note    = "技法拆自孙宇晨《我的女友景甜》，参考文件摘录原文段落；没有 README 和许可证；与 AAAAAAAJ/sun-yuchen-writing 等源自同一篇文章"
+note_en = "Techniques taken from Justin Sun's essay \"My Girlfriend Jing Tian\"; the reference file quotes passages from it; no README or license; from the same article as AAAAAAAJ/sun-yuchen-writing and others"
+checked = 2026-10-15
+
+[[skills]]
 repo    = "7dm4sj7nt2-coder/cuizouzhao-novelist"
 desc    = "蒸馏崔走召三部曲的民俗志怪写法：SKILL.md 定说书人腔和「日常→渗人」节奏，references 分世界观、结构、人物和样本库，可原创、续写、改写、诊断"
 desc_en = "Distills Cui Zouzhao's folk strange-tale trilogy: SKILL.md fixes a storyteller voice and \"everyday → creepy\" rhythm; references cover worldbuilding, structure, characters, samples; original, continuation, rewrite, diagnosis"

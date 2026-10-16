@@ -14,7 +14,7 @@
 
 **让 agent 帮你挑**：`npx skills add UnderleveledBuilder/awesome-story-skills` 装上 storytelling-methods skill，然后直接说「我要写 300 章修仙，帮我挑方法」。机器可读的完整索引在 [catalog.json](catalog.json)。
 
-收录 818 个项目：334 个 skill 和提示词、462 个框架和应用、22 个研究代码 · 元数据更新于 2026-10-16
+收录 819 个项目：335 个 skill 和提示词、462 个框架和应用、22 个研究代码 · 元数据更新于 2026-10-16
 
 **图例**：🌟 精选 · 📝 提示词 · ⚙️ 框架 · 🧩 应用 · 🎓 研究代码 · 💤 超过 180 天未更新 · 📦 已归档 · ⚠️ 仓库失效
 
@@ -23,14 +23,14 @@
 
 ## 目录
 
-- [本周新增](#new)（126）
+- [本周新增](#new)（127）
 - [精选：从这里开始](#featured)（26）
 - [按故事类型](#by-group)
   - [长篇小说 · 网文](#group-novel)（357）
   - [短篇 · 故事](#group-short)（41）
   - [剧本 · 短剧 · 影视](#group-script)（84）
   - [互动叙事 · 游戏 · 角色扮演](#group-interactive)（199）
-  - [仿写 · 同人 · 风格迁移](#group-imitation)（27）
+  - [仿写 · 同人 · 风格迁移](#group-imitation)（28）
   - [非虚构叙事](#group-nonfiction)（65）
   - [通用叙事方法](#group-general)（45）
 - [按创作方法查找](#by-method)
@@ -40,7 +40,7 @@
 <a id="new"></a>
 ## 本周新增
 
-近 7 天新收录 126 个：
+近 7 天新收录 127 个：
 
 - [director](https://github.com/s1dashu/director) ★807：动画解说模式先定中心问题，按钩子、背景、矛盾、概念、误读、回答组织讲稿，区分事实与解读、不编造动机和对白，再做人物、分镜和视频生成
 - [simon-skills](https://github.com/trustfuture/simon-skills) ★431：调查长片 skill：先定账目/代价/规则等六类核心问题并轮换，开场 5 秒用有事实支撑的冲突立起问题，结论有来源台账和事实核查；另含白板讲解视频
@@ -62,7 +62,7 @@
 - [sunxue](https://github.com/bayshier/sunxue) ★24：孙学白描写作 skill：从《我的女友景甜》拆出十条技法，先向用户取证收集时间线、物件和数字，再选天平开篇、押韵物件和旁观者证词成文并自检
 - [RPGBox](https://github.com/sleepydeer666/RPGBox) ★23：Galgame 式 AI RPG 客户端：旁白与多 NPC 对话分层显示，每段用选项推进剧情；角色可配多立绘，自动总结剧情记忆和人物经历
 - [tj-short](https://github.com/tttg2010/tj-short) ★18：短剧带货 skill：产品分析→brief→产品证明圣经→角色/场景/道具/证据四库与 12 镜头表；先立冲突和关系压力，产品后置为证据，再出首帧和视频提示词
-- ……另有 106 个，见下方各类型。
+- ……另有 107 个，见下方各类型。
 
 <a id="featured"></a>
 ## 精选：从这里开始
@@ -1980,7 +1980,7 @@ npx skills add alanl1234/gamebook
 
 学一部作品或一位作者的写法再创作：拆书仿写、文风蒸馏、同人、续写。
 
-#### skill · 提示词（23）
+#### skill · 提示词（24）
 
 - 🌟 **[longzu.skillls](https://github.com/zuoyou12/longzu.skillls)** · ★ 11<br>江南、烽火戏诸侯文风蒸馏 skill：全文统计 1465 万字语料加等距精读，得出共享叙事骨架和可替换语言皮肤，支持风格杂交，附审计脚本和盲测<br><sub>方法：修订 · 风格</sub><br><sub>更新于 2026-07-28 · 中文 · 3 个 skill</sub><br><sub>💡 同人/仿写性质，仓库只有风格笔记、不含原文；盲测方法改造自 alchaincyf/nuwa-skill</sub>
 
@@ -2027,6 +2027,8 @@ npx skills add alanl1234/gamebook
 - **[sun-yuchen-writing-skill](https://github.com/Bbbtt04/sun-yuchen-writing-skill)** · ★ 1<br>提炼「亿万富翁冷账叙事」写虚构短篇：微小数字→巨额数字，执念→奢华满足→第一次迟疑，人物离场后流程照走、旧物回环，用数字和服务劳动细节代替直接抒情<br><sub>方法：理论 · 风格</sub><br><sub>更新于 2026-08-28 · 中文 · MIT</sub><br><sub>💡 风格来自网上流传的一篇虚构文章，与 LucienLL/writing-like-sun 同源；非本人授权</sub>
 
 - **[writing-like-sun](https://github.com/LucienLL/writing-like-sun)** · ★ 1<br>从样文提炼标题、开头、节奏、物件回调等机制，按分析→故事圣经→重写→审稿流程换人物、换事件写新故事，还能转成短剧剧本<br><sub>方法：规划 · 修订 · 风格</sub><br><sub>更新于 2026-08-28 · 中文 · MIT</sub><br><sub>💡 灵感来自同一篇 X 爆款文章，与 Bbbtt04/sun-yuchen-writing-skill 同源；默认只用虚构人物</sub>
+
+- **[restrained-narrative](https://github.com/zhenliu1486/restrained-narrative)** · ★ 0<br>克制叙事 skill：先定核心情感、贯穿物件、重复句和数字骨架，再只写动作与事实，初稿删去三分之一；附禁用语清单和 14 项自检，用于非虚构、回忆录和短篇<br><sub>方法：规划 · 修订 · 风格</sub><br><sub>更新于 2026-08-28 · 中文</sub><br><sub>💡 技法拆自孙宇晨《我的女友景甜》，参考文件摘录原文段落；没有 README 和许可证；与 AAAAAAAJ/sun-yuchen-writing 等源自同一篇文章</sub>
 
 #### 框架 · 应用（4）
 
@@ -2089,6 +2091,8 @@ npx skills add Kira-Calc/shizut0y0-skill
 npx skills add Bbbtt04/sun-yuchen-writing-skill
 # writing-like-sun
 npx skills add LucienLL/writing-like-sun
+# restrained-narrative
+npx skills add zhenliu1486/restrained-narrative
 ```
 
 </details>
@@ -2506,15 +2510,15 @@ npx skills add aimerfeng/novel-to-webnovel
 
 每种方法解决什么问题、大家怎么做、有哪些坑，见[方法指南](METHODS.md)；指南里每个方法后面附有用到它的全部项目：
 
-- [规划先行：层级大纲、分解写作](METHODS.md#method-planning)（481）
+- [规划先行：层级大纲、分解写作](METHODS.md#method-planning)（482）
 - [叙事理论注入：结构模型、类型套路、写作原则](METHODS.md#method-theory)（206）
 - [设定 · 世界观构建](METHODS.md#method-worldbuilding)（148）
 - [人物塑造 · 角色档案](METHODS.md#method-character)（189）
 - [长篇记忆 · 一致性：状态库、设定库、检索](METHODS.md#method-memory)（452）
 - [多智能体分工：作者、编辑、审稿、读者](METHODS.md#method-multiagent)（151）
 - [角色模拟 · 世界推演：让角色演出情节](METHODS.md#method-simulation)（74）
-- [审稿 · 自我批评 · 迭代修订](METHODS.md#method-revision)（393）
-- [风格学习 · 仿写：范文、文风蒸馏、拆书](METHODS.md#method-style)（143）
+- [审稿 · 自我批评 · 迭代修订](METHODS.md#method-revision)（394）
+- [风格学习 · 仿写：范文、文风蒸馏、拆书](METHODS.md#method-style)（144）
 - [去 AI 味 · 文笔打磨](METHODS.md#method-deai)（94）
 - [交互共创：读者选择、人机协作](METHODS.md#method-interactive)（199）
 - [事实约束：素材驱动、证据核对、不编造](METHODS.md#method-factual)（52）
