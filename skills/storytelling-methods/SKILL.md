@@ -1,18 +1,18 @@
 ---
 name: storytelling-methods
-description: Find open-source methods, agent skills, harnesses and apps for getting LLMs to write stories, from the awesome-llm-storytelling index of 700+ projects. Covers novels and web novels, short stories, scripts and short dramas, interactive fiction, tabletop RPG and roleplay, fan fiction and style imitation, and narrative nonfiction (news features, popular science, biography, voiceover scripts). Use when the user wants to write a story with AI and asks which skill, tool or workflow to use, how other projects solve a storytelling problem (outlines, long-form memory and continuity, de-AI prose, multi-agent review, character simulation, fact-grounded nonfiction), or wants a pipeline assembled from existing projects. 适用于：AI 写小说、网文、短篇、剧本、短剧、跑团、同人仿写、去 AI 味、非虚构口播和科普故事，想知道用哪个 skill 或工具、别人怎么做。
+description: Find open-source methods, agent skills, harnesses and apps for getting LLMs to write stories, from the awesome-story-skills index of 800+ projects. Covers novels and web novels, short stories, scripts and short dramas, interactive fiction, tabletop RPG and roleplay, fan fiction and style imitation, and narrative nonfiction (news features, popular science, biography, voiceover scripts). Use when the user wants to write a story with AI and asks which skill, tool or workflow to use, how other projects solve a storytelling problem (outlines, long-form memory and continuity, de-AI prose, multi-agent review, character simulation, fact-grounded nonfiction), or wants a pipeline assembled from existing projects. 适用于：AI 写小说、网文、短篇、剧本、短剧、跑团、同人仿写、去 AI 味、非虚构口播和科普故事，想知道用哪个 skill 或工具、别人怎么做。
 ---
 
 # Storytelling methods
 
-Help the user pick methods and projects for LLM storytelling from the awesome-llm-storytelling index. The index tags every project with a story type (group), the methods it uses, its form (skill / prompts / harness / app / research) and language. The method guide explains each method: the problem, common designs, pitfalls, where to start.
+Help the user pick methods and projects for LLM storytelling from the awesome-story-skills index. The index tags every project with a story type (group), the methods it uses, its form (skill / prompts / harness / app / research) and language. The method guide explains each method: the problem, common designs, pitfalls, where to start.
 
 ## 1. Get the index
 
 Use a local copy if this repo is checked out (`catalog.json` at the repo root). Otherwise fetch the latest:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/UnderleveledBuilder/awesome-llm-storytelling/main/catalog.json -o "${TMPDIR:-/tmp}/llm-storytelling-catalog.json"
+curl -fsSL https://raw.githubusercontent.com/UnderleveledBuilder/awesome-story-skills/main/catalog.json -o "${TMPDIR:-/tmp}/story-skills-catalog.json"
 ```
 
 The file is large (700+ entries, one JSON object per line under `entries`). Do not read it whole into context. Filter it with `jq` or `python3`, for example:
@@ -40,11 +40,11 @@ Work out, asking only if it is unclear:
 
 For each relevant method, read its section of the guide rather than relying only on one-line descriptions. Sections start with `<a id="method-KEY"></a>` and end before the next such anchor.
 
-- Chinese: https://raw.githubusercontent.com/UnderleveledBuilder/awesome-llm-storytelling/main/METHODS.md
-- English: https://raw.githubusercontent.com/UnderleveledBuilder/awesome-llm-storytelling/main/METHODS.en.md
+- Chinese: https://raw.githubusercontent.com/UnderleveledBuilder/awesome-story-skills/main/METHODS.md
+- English: https://raw.githubusercontent.com/UnderleveledBuilder/awesome-story-skills/main/METHODS.en.md
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/UnderleveledBuilder/awesome-llm-storytelling/main/METHODS.en.md \
+curl -fsSL https://raw.githubusercontent.com/UnderleveledBuilder/awesome-story-skills/main/METHODS.en.md \
   | awk '/<a id="method-memory">/{p=1} p && /<a id="method-/ && !/method-memory/{exit} p' | sed -n '1,60p'
 ```
 

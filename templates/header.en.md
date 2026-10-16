@@ -1,4 +1,4 @@
-# Awesome LLM Storytelling
+# Awesome Story Skills
 
 [中文](README.md) · **English**
 
@@ -8,7 +8,7 @@ This list collects one kind of project: the story is mostly written by an LLM, a
 
 Every project is sorted by story type and tagged with the methods it uses. The [method guide](METHODS.en.md) explains each method: the problem it solves, common designs, trade-offs and pitfalls, and where to start.
 
-**Let your agent pick**: run `npx skills add UnderleveledBuilder/awesome-llm-storytelling` to install the storytelling-methods skill, then ask something like "I want to write a 300-chapter cultivation web novel, which methods should I use?". The full machine-readable index is [catalog.json](catalog.json).
+**Let your agent pick**: run `npx skills add UnderleveledBuilder/awesome-story-skills` to install the storytelling-methods skill, then ask something like "I want to write a 300-chapter cultivation web novel, which methods should I use?". The full machine-readable index is [catalog.json](catalog.json).
 
 Many projects come from the Chinese web-novel and short-drama scene, so a good share of them are documented in Chinese. Descriptions below are translated.
 

@@ -17,7 +17,7 @@ from lib import ROOT, load_meta, load_valid
 
 TEMPLATES = ROOT / "templates"
 CATALOG = ROOT / "catalog.json"
-REPO_URL = "https://github.com/UnderleveledBuilder/awesome-llm-storytelling"
+REPO_URL = "https://github.com/UnderleveledBuilder/awesome-story-skills"
 STALE_DAYS = 180
 NEW_DAYS = 7        # 「本周新增」：first_seen 在 fetched_at 前 NEW_DAYS 天以内
 NEW_SHOWN = 20      # 「本周新增」最多列出的条数，其余只给个数
@@ -361,7 +361,7 @@ def render_catalog(taxonomy: dict, skills: list[dict], meta_all: dict) -> str:
         return {k: {"label": v["label"], "label_en": v.get("label_en", "")} for k, v in section.items()}
 
     head = {
-        "name": "awesome-llm-storytelling",
+        "name": "awesome-story-skills",
         "url": REPO_URL,
         "updated": meta_all.get("fetched_at"),
         "groups": labels(groups),

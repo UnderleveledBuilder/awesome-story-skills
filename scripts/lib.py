@@ -152,7 +152,7 @@ def gh_get(path: str) -> dict:
     url = path if path.startswith("https://") else f"https://api.github.com/{path.lstrip('/')}"
     req = urllib.request.Request(url, headers={
         "Accept": "application/vnd.github+json",
-        "User-Agent": "awesome-llm-storytelling",
+        "User-Agent": "awesome-story-skills",
         **({"Authorization": f"Bearer {_TOKEN}"} if _TOKEN else {}),
     })
     for attempt in range(3):

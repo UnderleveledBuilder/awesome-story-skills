@@ -1,4 +1,4 @@
-# Awesome LLM Storytelling · 让大模型讲好故事
+# Awesome Story Skills · 让大模型讲好故事
 
 **中文** · [English](README.en.md)
 
@@ -10,7 +10,7 @@
 
 每个项目都按故事类型归类，并标出它用了哪些方法。[方法指南](METHODS.md)把这些方法逐一讲清楚：解决什么问题、常见做法、取舍和坑、从哪里开始。
 
-**让 agent 帮你挑**：`npx skills add UnderleveledBuilder/awesome-llm-storytelling` 装上 storytelling-methods skill，然后直接说「我要写 300 章修仙，帮我挑方法」。机器可读的完整索引在 [catalog.json](catalog.json)。
+**让 agent 帮你挑**：`npx skills add UnderleveledBuilder/awesome-story-skills` 装上 storytelling-methods skill，然后直接说「我要写 300 章修仙，帮我挑方法」。机器可读的完整索引在 [catalog.json](catalog.json)。
 
 收录 {{count}} 个项目：{{skills}} 个 skill 和提示词、{{tools}} 个框架和应用、{{research}} 个研究代码 · 元数据更新于 {{updated}}
 

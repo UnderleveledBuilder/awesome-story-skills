@@ -17,10 +17,10 @@
 
 项目已被收录的作者，可以在自己的 README 里加上这个徽章：
 
-[![收录于 Awesome LLM Storytelling](https://img.shields.io/badge/%E6%94%B6%E5%BD%95%E4%BA%8E-Awesome_LLM_Storytelling-1f6feb)](https://github.com/UnderleveledBuilder/awesome-llm-storytelling)
+[![收录于 Awesome Story Skills](https://img.shields.io/badge/%E6%94%B6%E5%BD%95%E4%BA%8E-Awesome_Story_Skills-1f6feb)](https://github.com/UnderleveledBuilder/awesome-story-skills)
 
 ```markdown
-[![收录于 Awesome LLM Storytelling](https://img.shields.io/badge/%E6%94%B6%E5%BD%95%E4%BA%8E-Awesome_LLM_Storytelling-1f6feb)](https://github.com/UnderleveledBuilder/awesome-llm-storytelling)
+[![收录于 Awesome Story Skills](https://img.shields.io/badge/%E6%94%B6%E5%BD%95%E4%BA%8E-Awesome_Story_Skills-1f6feb)](https://github.com/UnderleveledBuilder/awesome-story-skills)
 ```
 
 ## 许可

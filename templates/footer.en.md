@@ -17,10 +17,10 @@ Suggest a project by [opening an issue](../../issues/new?template=submit-skill.y
 
 If your project is listed, you can add this badge to its README:
 
-[![Listed in Awesome LLM Storytelling](https://img.shields.io/badge/Listed_in-Awesome_LLM_Storytelling-1f6feb)](https://github.com/UnderleveledBuilder/awesome-llm-storytelling)
+[![Listed in Awesome Story Skills](https://img.shields.io/badge/Listed_in-Awesome_Story_Skills-1f6feb)](https://github.com/UnderleveledBuilder/awesome-story-skills)
 
 ```markdown
-[![Listed in Awesome LLM Storytelling](https://img.shields.io/badge/Listed_in-Awesome_LLM_Storytelling-1f6feb)](https://github.com/UnderleveledBuilder/awesome-llm-storytelling)
+[![Listed in Awesome Story Skills](https://img.shields.io/badge/Listed_in-Awesome_Story_Skills-1f6feb)](https://github.com/UnderleveledBuilder/awesome-story-skills)
 ```
 
 ## License
