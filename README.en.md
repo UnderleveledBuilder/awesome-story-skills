@@ -2531,6 +2531,7 @@ What each method solves, how projects implement it and where it goes wrong: see 
 - [CHATS-lab/verbalized-sampling](https://github.com/CHATS-lab/verbalized-sampling): asks the model for several candidates with probabilities to reduce sameness; not fiction-specific, but often used for story ideas and openings
 - [awesome-novel-skills](https://github.com/UnderleveledBuilder/awesome-novel-skills/blob/main/README.en.md): toolbox for web-novel writers, including downloaders, book sources, translation and publishing
 - [awesome-short-drama-skills](https://github.com/UnderleveledBuilder/awesome-short-drama-skills/blob/main/README.en.md): AI short-drama and manju skills, including storyboards and video prompts
+- [awesome-social-media-skills](https://github.com/UnderleveledBuilder/awesome-social-media-skills/blob/main/README.en.md): social media skills for turning story-driven posts and scripts into published content, with covers, scheduling and analytics
 - [anthropics/skills](https://github.com/anthropics/skills): the official Agent Skills repo, a good starting point for writing your own skill
 
 ## Contributing

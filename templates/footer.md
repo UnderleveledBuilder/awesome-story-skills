@@ -6,6 +6,7 @@
 - [CHATS-lab/verbalized-sampling](https://github.com/CHATS-lab/verbalized-sampling)：让模型一次给出多个带概率的候选来缓解千篇一律，不限于小说，但常被用在故事点子和开头上
 - [awesome-novel-skills](https://github.com/UnderleveledBuilder/awesome-novel-skills)：网文作者的工具箱，除了写作还收下载、书源、翻译、发布
 - [awesome-short-drama-skills](https://github.com/UnderleveledBuilder/awesome-short-drama-skills)：AI 短剧 · 漫剧 skill，包括分镜和视频提示词
+- [awesome-social-media-skills](https://github.com/UnderleveledBuilder/awesome-social-media-skills)：自媒体运营 skill 精选，故事化文案和口播稿写好后，配图、发布和看数据看这里
 - [anthropics/skills](https://github.com/anthropics/skills)：官方 Agent Skills 仓库，想自己写 skill 可以从这里看起
 
 ## 参与贡献
