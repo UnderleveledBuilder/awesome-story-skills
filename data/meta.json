@@ -4,13 +4,13 @@
     "0xsline/short-drama": {
       "archived": false,
       "description": "专业的短剧剧本创作skill,从选题立项到分集撰写、质量自检、合规审核、海外出海，覆盖短剧剧本生产全流程。",
-      "forks": 246,
+      "forks": 247,
       "full_name": "0xsline/short-drama",
       "license": "MIT",
       "pushed_at": "2026-04-17",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 1436,
+      "stars": 1439,
       "status": "ok"
     },
     "1195214305/StoryWeaver-AI": {
@@ -35,7 +35,7 @@
       "pushed_at": "2026-10-06",
       "skill_count": 3,
       "skill_count_truncated": false,
-      "stars": 14,
+      "stars": 15,
       "status": "ok"
     },
     "15673312611/AI_NovelCraft-": {
@@ -205,7 +205,7 @@
       "pushed_at": "2026-10-18",
       "skill_count": 21,
       "skill_count_truncated": false,
-      "stars": 77,
+      "stars": 78,
       "status": "ok"
     },
     "63435212cwu-ops/nest-drama": {
@@ -279,7 +279,7 @@
       "pushed_at": "2026-10-19",
       "skill_count": 37,
       "skill_count_truncated": false,
-      "stars": 77,
+      "stars": 78,
       "status": "ok"
     },
     "AAAAAAAJ/sun-yuchen-writing": {
@@ -449,7 +449,7 @@
       "pushed_at": "2025-04-19",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 78,
+      "stars": 79,
       "status": "ok"
     },
     "Alexsun1one/autow": {
@@ -534,7 +534,7 @@
       "pushed_at": "2026-10-19",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 213,
+      "stars": 215,
       "status": "ok"
     },
     "Bbbtt04/sun-yuchen-writing-skill": {
@@ -553,13 +553,13 @@
     "BiranSama/ReNovel-AI": {
       "archived": false,
       "description": "本地化 AI 小说精修工作台🚀。内置 RAG 长时记忆🧠、三模态协作（作家/主编/助手）🖋️、卡片流式编辑器⚡。支持酒馆卡导入、全书自动化精修与扩写🎭。AI小说加料 小说精修 AI文本修改 小说扩写 小说总结",
-      "forks": 31,
+      "forks": 33,
       "full_name": "BiranSama/ReNovel-AI",
       "license": "GPL-3.0",
       "pushed_at": "2026-10-14",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 243,
+      "stars": 246,
       "status": "ok"
     },
     "CassiopeiaCode/TenCyclesofFate": {
@@ -969,13 +969,13 @@
     "EthanYoQ/AI-Novel-Writer": {
       "archived": false,
       "description": "书童 Pagekin（原名 AI 小说作家）：开源免费的 AI 长篇小说写作桌面软件，从设定、蓝图到正文、审稿、定稿；支持拆解仿写、续写、改写，可导入写作 Skill（如去 AI 味）。模型需自行配置，作品在本地。Pagekin (formerly AI Novel Writer): free, open-source AI novel writing app for long novels and web fiction. Imitate, continue, rewrite; import writing skills. Local-first, no model bundled. Windows & macOS.",
-      "forks": 188,
+      "forks": 191,
       "full_name": "EthanYoQ/AI-Novel-Writer",
       "license": "GPL-3.0",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 1626,
+      "stars": 1646,
       "status": "ok"
     },
     "ExplosiveCoderflome/AI-Novel-Writing-Assistant": {
@@ -987,7 +987,7 @@
       "pushed_at": "2026-10-19",
       "skill_count": 2,
       "skill_count_truncated": false,
-      "stars": 3232,
+      "stars": 3238,
       "status": "ok"
     },
     "ExplosiveCoderflome/ani-book-skill": {
@@ -999,7 +999,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 103,
+      "stars": 104,
       "status": "ok"
     },
     "FURUYAN1234/story-maker": {
@@ -1071,7 +1071,7 @@
       "pushed_at": "2026-09-12",
       "skill_count": 14,
       "skill_count_truncated": false,
-      "stars": 7,
+      "stars": 8,
       "status": "ok"
     },
     "FerryCorleone/pingshu-skill": {
@@ -1191,7 +1191,7 @@
       "pushed_at": "2025-11-12",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 164,
+      "stars": 165,
       "status": "ok"
     },
     "GODGOD126/daily-bookcast": {
@@ -1461,7 +1461,7 @@
       "pushed_at": "2026-06-29",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 14,
+      "stars": 15,
       "status": "ok"
     },
     "JPClow3/Veins-of-Erid-n": {
@@ -1534,7 +1534,7 @@
       "pushed_at": "2026-08-09",
       "skill_count": 28,
       "skill_count_truncated": false,
-      "stars": 10,
+      "stars": 11,
       "status": "ok"
     },
     "JianWang97/jubensha-ai": {
@@ -1558,7 +1558,7 @@
       "pushed_at": "2026-04-22",
       "skill_count": 17,
       "skill_count_truncated": false,
-      "stars": 116,
+      "stars": 117,
       "status": "ok"
     },
     "JinghaoHCDS/hcds-expression-refactor": {
@@ -1620,7 +1620,7 @@
       "pushed_at": "2026-09-09",
       "skill_count": 4,
       "skill_count_truncated": false,
-      "stars": 35,
+      "stars": 36,
       "status": "ok"
     },
     "KKenny0/script-weaver": {
@@ -1656,7 +1656,7 @@
       "pushed_at": "2026-10-09",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 153,
+      "stars": 154,
       "status": "ok"
     },
     "Kelin-wu/picturebook-story-illustrations": {
@@ -1778,7 +1778,7 @@
       "pushed_at": "2026-05-31",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 259,
+      "stars": 260,
       "status": "ok"
     },
     "LYGSYJ/Novel2Script_AI": {
@@ -1814,7 +1814,7 @@
       "pushed_at": "2026-09-18",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 202,
+      "stars": 204,
       "status": "ok"
     },
     "Laszlobeer/Dungeo-ai-new": {
@@ -1850,7 +1850,7 @@
       "pushed_at": "2026-10-19",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 47,
+      "stars": 48,
       "status": "ok"
     },
     "Leehow/AiChatTrpg": {
@@ -1945,10 +1945,10 @@
       "forks": 129,
       "full_name": "LiPu-jpg/Openwrite",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 25,
       "skill_count_truncated": false,
-      "stars": 844,
+      "stars": 845,
       "status": "ok"
     },
     "LiZh132707/novel-workspace-mcp": {
@@ -2029,7 +2029,7 @@
       "forks": 102,
       "full_name": "LostRuins/lite.koboldai.net",
       "license": "AGPL-3.0",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 202,
@@ -2288,7 +2288,7 @@
       "pushed_at": "2026-10-13",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 364,
+      "stars": 367,
       "status": "ok"
     },
     "NINKCH/opencode-storyclaw": {
@@ -2319,25 +2319,25 @@
     "Nanako0129/sepia": {
       "archived": false,
       "description": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
-      "forks": 211,
+      "forks": 212,
       "full_name": "Nanako0129/sepia",
       "license": "MIT",
       "pushed_at": "2026-10-15",
       "skill_count": 6,
       "skill_count_truncated": false,
-      "stars": 3236,
+      "stars": 3248,
       "status": "ok"
     },
     "Narcooo/inkos": {
       "archived": false,
       "description": "Story Creation AI Agent for novel, scripts, translation, interactive games, and IP content",
-      "forks": 1917,
+      "forks": 1916,
       "full_name": "Narcooo/inkos",
       "license": "AGPL-3.0",
       "pushed_at": "2026-10-18",
       "skill_count": 21,
       "skill_count_truncated": false,
-      "stars": 10383,
+      "stars": 10391,
       "status": "ok"
     },
     "Nigh/show-me-the-story": {
@@ -2349,7 +2349,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 629,
+      "stars": 630,
       "status": "ok"
     },
     "Nobeta-Work/faramita-worlds": {
@@ -2422,7 +2422,7 @@
       "pushed_at": "2026-10-13",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 28,
+      "stars": 29,
       "status": "ok"
     },
     "OranDuanStudy/InteractiveFilm-CharacterDailyAgent": {
@@ -2443,10 +2443,10 @@
       "forks": 206,
       "full_name": "Pasta-Devs/Marinara-Engine",
       "license": "AGPL-3.0",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 720,
+      "stars": 721,
       "status": "ok"
     },
     "PatzEdi/InfinityWorlds": {
@@ -2464,13 +2464,13 @@
     "PenglongHuang/chinese-novelist-skill": {
       "archived": false,
       "description": "🎭 AI 写小说：从零生成 10-50 章完整中文小说，三层问答 · 创作记忆 · 悬念钩子 · 自动校验，长篇网文连载皆宜｜开源免费，适配主流 coding agent｜🤝 Infistar.cc 赞助 · 注册送 $5｜AI novel writing skill",
-      "forks": 571,
+      "forks": 574,
       "full_name": "PenglongHuang/chinese-novelist-skill",
       "license": "MIT",
       "pushed_at": "2026-10-18",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 3942,
+      "stars": 3974,
       "status": "ok"
     },
     "Phobetore/Evermind": {
@@ -2616,7 +2616,7 @@
       "pushed_at": "2026-02-20",
       "skill_count": 23,
       "skill_count_truncated": false,
-      "stars": 15,
+      "stars": 16,
       "status": "ok"
     },
     "RayonLee/teaching-case-writer": {
@@ -2647,13 +2647,13 @@
     "RhythmicWave/NovelForge": {
       "archived": false,
       "description": "AI辅助长篇小说创作，卡片式创作，支持基于 JSON Schema的结构化 AI 生成与上下文引用，可扩展性强。",
-      "forks": 226,
+      "forks": 225,
       "full_name": "RhythmicWave/NovelForge",
       "license": "AGPL-3.0",
       "pushed_at": "2026-09-23",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 1248,
+      "stars": 1250,
       "status": "ok"
     },
     "Rimagination/good-story": {
@@ -2691,7 +2691,7 @@
       "pushed_at": "2026-08-14",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 8,
+      "stars": 9,
       "status": "ok"
     },
     "SSRYLJRSS/finance-video-copywriting": {
@@ -2710,7 +2710,7 @@
     "Sagesheep/NarrativeEngine-P": {
       "archived": false,
       "description": "Self-hosted AI Dungeon Master - run extended TTRPG campaigns with smart memory, living NPCs, and any OpenAI-compatible LLM",
-      "forks": 30,
+      "forks": 31,
       "full_name": "Sagesheep/NarrativeEngine-P",
       "license": "MIT",
       "pushed_at": "2026-10-16",
@@ -2777,7 +2777,7 @@
       "pushed_at": "2026-04-01",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 1351,
+      "stars": 1353,
       "status": "ok"
     },
     "Shaun520/Narr-Light": {
@@ -2831,13 +2831,13 @@
     "SillyTavern/SillyTavern": {
       "archived": false,
       "description": "LLM Frontend for Power Users.",
-      "forks": 6497,
+      "forks": 6511,
       "full_name": "SillyTavern/SillyTavern",
       "license": "AGPL-3.0",
       "pushed_at": "2026-10-02",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 34661,
+      "stars": 34690,
       "status": "ok"
     },
     "SimonWaldherr/AI-Book-Generator": {
@@ -2885,7 +2885,7 @@
       "pushed_at": "2026-08-29",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 26,
+      "stars": 27,
       "status": "ok"
     },
     "Somnius/shadowrealms-ai": {
@@ -2934,7 +2934,7 @@
       "pushed_at": "2026-06-08",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 5,
+      "stars": 6,
       "status": "ok"
     },
     "SteenLuo/MbhStoryboardScriptAssistant": {
@@ -3078,7 +3078,7 @@
       "pushed_at": "2026-10-14",
       "skill_count": 6,
       "skill_count_truncated": false,
-      "stars": 103,
+      "stars": 105,
       "status": "ok"
     },
     "Thatgfsj-easyRep/wangwenwrite-skill": {
@@ -3186,7 +3186,7 @@
       "pushed_at": "2026-08-28",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 893,
+      "stars": 896,
       "status": "ok"
     },
     "Tongering/yizhi-oral-history": {
@@ -3289,12 +3289,12 @@
     },
     "VanGong1999/juben": {
       "archived": false,
-      "description": "未完成｜AI影视创作策划评估工作流|剧本创作 Agent 平台是一个基于 AI 的专业影视创作辅助系统，整合了 20+ 个专业 Agents，覆盖从策划、创作到评估的全流程。短剧创作|策划|评估Agent,故事大纲生成｜详细情节点｜剧本｜故事质量ip评估｜已播剧情分析｜故事五元素分析｜情节点工作流｜人物小传｜人物关系｜思维导图｜",
+      "description": "Production-ready multi-agent platform for short-drama planning, writing & evaluation — 40+ specialized AI agents, streaming UX, dual-layer memory, knowledge graph, and end-to-end creative workflows.|AI影视多智能体创作平台：40+ 专业 AI Agent，覆盖策划、创作、评估全流程；多智能体协作编排批量生成剧本提示词｜完整影视工作流｜短长剧本策划写作评估｜人物小传｜故事大纲｜飞书集成｜",
       "forks": 52,
       "full_name": "VanGong1999/juben",
       "license": "MIT",
-      "pushed_at": "2026-04-03",
-      "skill_count": 0,
+      "pushed_at": "2026-10-19",
+      "skill_count": 8,
       "skill_count_truncated": false,
       "stars": 163,
       "status": "ok"
@@ -3308,7 +3308,7 @@
       "pushed_at": "2026-10-12",
       "skill_count": 31,
       "skill_count_truncated": false,
-      "stars": 463,
+      "stars": 465,
       "status": "ok"
     },
     "Vaxue/ApiSaverWriter": {
@@ -3363,7 +3363,7 @@
     "WadeZhao23/loom-novel": {
       "archived": false,
       "description": "把一队分工 Agent 织成一条写小说的流水线,做成桌面客户端;写作指纹让它越写越像你(BYO DeepSeek key,纯本地)。",
-      "forks": 20,
+      "forks": 19,
       "full_name": "WadeZhao23/loom-novel",
       "license": "MIT",
       "pushed_at": "2026-08-27",
@@ -3441,7 +3441,7 @@
       "pushed_at": "2026-08-23",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 191,
+      "stars": 193,
       "status": "ok"
     },
     "XTmingyue/wenfeng-skill": {
@@ -3474,7 +3474,7 @@
       "forks": 0,
       "full_name": "XZZKANY/StoryForge",
       "license": "MIT",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 19,
@@ -3486,7 +3486,7 @@
       "forks": 13,
       "full_name": "Xcy8010/Chevoink",
       "license": null,
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 52,
@@ -3513,7 +3513,7 @@
       "pushed_at": "2026-09-23",
       "skill_count": 20,
       "skill_count_truncated": false,
-      "stars": 141,
+      "stars": 143,
       "status": "ok"
     },
     "XiongJL/Cloud-Dream-Novel-Agent": {
@@ -3522,7 +3522,7 @@
       "forks": 2,
       "full_name": "XiongJL/Cloud-Dream-Novel-Agent",
       "license": "AGPL-3.0",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 5,
@@ -3543,13 +3543,13 @@
     "YILING0013/AI_NovelGenerator": {
       "archived": false,
       "description": "使用ai生成多章节的长篇小说，自动衔接上下文、伏笔",
-      "forks": 1085,
+      "forks": 1087,
       "full_name": "YILING0013/AI_NovelGenerator",
       "license": "AGPL-3.0",
       "pushed_at": "2026-10-16",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 6292,
+      "stars": 6297,
       "status": "ok"
     },
     "YanKaFei/kitten-punch-screenwriting": {
@@ -3630,7 +3630,7 @@
       "forks": 1,
       "full_name": "YoRengzh/Novel-factory",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 8,
@@ -3682,7 +3682,7 @@
       "pushed_at": "2026-08-19",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 432,
+      "stars": 433,
       "status": "ok"
     },
     "Zewang0217/ai-jubensha": {
@@ -3801,10 +3801,10 @@
       "forks": 16,
       "full_name": "a86582751/dsh-nexttavern",
       "license": "GPL-3.0",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 4,
       "skill_count_truncated": false,
-      "stars": 183,
+      "stars": 185,
       "status": "ok"
     },
     "aaronyi97/image-story-video-wizard": {
@@ -3817,20 +3817,20 @@
       "pushed_at": "2026-09-15",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 359,
+      "stars": 360,
       "status": "ok"
     },
     "aaronyi97/wedding-video-guided-wizard": {
       "archived": false,
       "description": "真实故事婚礼视频的 14 步引导式 Skill：故事采集、Kimi 写作包、配音、外部 GPT 生图、视频打包、音乐与字幕剪辑。",
       "first_seen": "2026-10-15",
-      "forks": 77,
+      "forks": 78,
       "full_name": "aaronyi97/wedding-video-guided-wizard",
       "license": "MIT",
       "pushed_at": "2026-09-10",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 355,
+      "stars": 358,
       "status": "ok"
     },
     "abligail/narralume": {
@@ -3887,10 +3887,10 @@
       "forks": 20,
       "full_name": "ackness/covel",
       "license": "MIT",
-      "pushed_at": "2026-10-17",
+      "pushed_at": "2026-10-19",
       "skill_count": 4,
       "skill_count_truncated": false,
-      "stars": 59,
+      "stars": 60,
       "status": "ok"
     },
     "adaumann/speckit-preset-fiction-book-writing": {
@@ -3999,7 +3999,7 @@
       "pushed_at": "2026-10-06",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 96,
+      "stars": 97,
       "status": "ok"
     },
     "alanl1234/gamebook": {
@@ -4045,10 +4045,10 @@
       "forks": 146,
       "full_name": "alfredxw/denova",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 8,
       "skill_count_truncated": false,
-      "stars": 948,
+      "stars": 951,
       "status": "ok"
     },
     "aliang2052/aliang-skills": {
@@ -4097,7 +4097,7 @@
       "pushed_at": "2026-07-17",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 6,
+      "stars": 7,
       "status": "ok"
     },
     "angrysky56/ai_writers_workshop": {
@@ -4134,7 +4134,7 @@
       "pushed_at": "2026-10-18",
       "skill_count": 40,
       "skill_count_truncated": false,
-      "stars": 11,
+      "stars": 12,
       "status": "ok"
     },
     "ardalanea/story-to-content": {
@@ -4159,7 +4159,7 @@
       "pushed_at": "2026-03-24",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 8,
+      "stars": 9,
       "status": "ok"
     },
     "artemnovitckii/content-skills": {
@@ -4209,7 +4209,7 @@
       "pushed_at": "2026-08-16",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 39,
+      "stars": 40,
       "status": "ok"
     },
     "atisharma/chasm": {
@@ -4800,13 +4800,13 @@
     "danjdewhurst/story-skills": {
       "archived": false,
       "description": "Agent Skills for end-to-end story writing in markdown, packaged as Codex and Claude Code plugins.",
-      "forks": 52,
+      "forks": 53,
       "full_name": "danjdewhurst/story-skills",
       "license": "MIT",
       "pushed_at": "2026-10-14",
       "skill_count": 24,
       "skill_count_truncated": false,
-      "stars": 328,
+      "stars": 332,
       "status": "ok"
     },
     "danydenis560-beep/storyforge-ai": {
@@ -4850,7 +4850,7 @@
     "datacrystals/AIStoryWriter": {
       "archived": false,
       "description": "LLM story writer with a focus on high-quality long output based on a user provided prompt.",
-      "forks": 73,
+      "forks": 75,
       "full_name": "datacrystals/AIStoryWriter",
       "license": "AGPL-3.0",
       "pushed_at": "2025-11-24",
@@ -4953,7 +4953,7 @@
       "pushed_at": "2026-10-19",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 127,
+      "stars": 129,
       "status": "ok"
     },
     "din1919/interactive-novel": {
@@ -5087,7 +5087,7 @@
       "pushed_at": "2026-08-15",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 116,
+      "stars": 117,
       "status": "ok"
     },
     "e06084/claude-screenwriting": {
@@ -5159,7 +5159,7 @@
       "pushed_at": "2026-10-17",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 134,
+      "stars": 138,
       "status": "ok"
     },
     "eric20170524/nova-story": {
@@ -5190,13 +5190,13 @@
     "eternityspring/shuohao-skills": {
       "archived": false,
       "description": "AI 短剧制作的 skill 集合：拆角色、排大纲、出场景与道具设定、写剧本、切分镜 | Agent skills for AI short-drama production — character bibles, adaptation outlines, art bibles, screenplays, storyboards. Runs in Claude Code & codex.",
-      "forks": 660,
+      "forks": 665,
       "full_name": "eternityspring/shuohao-skills",
       "license": "Apache-2.0",
       "pushed_at": "2026-10-15",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 4780,
+      "stars": 4820,
       "status": "ok"
     },
     "f43a9a/Claude-Code-Novel-Writing": {
@@ -5256,7 +5256,7 @@
       "pushed_at": "2026-10-09",
       "skill_count": 4,
       "skill_count_truncated": false,
-      "stars": 145,
+      "stars": 146,
       "status": "ok"
     },
     "fidelthomet/futuring-machines": {
@@ -5316,7 +5316,7 @@
       "pushed_at": "2025-08-18",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 68,
+      "stars": 69,
       "status": "ok"
     },
     "fqyy360t/ai-director-video-commentary": {
@@ -5365,7 +5365,7 @@
       "pushed_at": "2026-09-22",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 13,
+      "stars": 14,
       "status": "ok"
     },
     "geobond13/fiction-forge": {
@@ -5467,13 +5467,13 @@
     "gzxx-2025/aid-studio": {
       "archived": false,
       "description": " 开源AI漫剧、AI短剧、AI电影与AI漫画创作平台，支持剧本、角色场景、智能分镜、图片与视频生成、配音及成片预览，多模型接入，可自行部署。预：无限画布、导演台。",
-      "forks": 223,
+      "forks": 224,
       "full_name": "gzxx-2025/aid-studio",
       "license": "MIT",
       "pushed_at": "2026-10-15",
       "skill_count": 2,
       "skill_count_truncated": false,
-      "stars": 1019,
+      "stars": 1027,
       "status": "ok"
     },
     "hahagood/MetaNovel-Engine": {
@@ -5510,7 +5510,7 @@
       "pushed_at": "2026-10-18",
       "skill_count": 24,
       "skill_count_truncated": false,
-      "stars": 522,
+      "stars": 526,
       "status": "ok"
     },
     "harsh10tech/cognee-dnd-game": {
@@ -5568,7 +5568,7 @@
       "forks": 152,
       "full_name": "heider-x/vela",
       "license": "GPL-3.0",
-      "pushed_at": "2026-10-10",
+      "pushed_at": "2026-10-19",
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 583,
@@ -5655,7 +5655,7 @@
       "pushed_at": "2026-10-16",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 21,
+      "stars": 24,
       "status": "ok"
     },
     "huanweide/novel-smith": {
@@ -5679,7 +5679,7 @@
       "pushed_at": "2026-09-27",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 59,
+      "stars": 60,
       "status": "ok"
     },
     "huxiuzh-ops/huxiuzhi-novel-agent": {
@@ -5728,7 +5728,7 @@
       "pushed_at": "2026-10-12",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 379,
+      "stars": 380,
       "status": "ok"
     },
     "iamarxs/AnyWorld": {
@@ -5784,13 +5784,13 @@
     "inliver233/Ai-Novel": {
       "archived": false,
       "description": "强大的ai小说创作网站",
-      "forks": 141,
+      "forks": 142,
       "full_name": "inliver233/Ai-Novel",
       "license": null,
       "pushed_at": "2026-07-28",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 790,
+      "stars": 791,
       "status": "ok"
     },
     "intelc/agentic-quest": {
@@ -5838,7 +5838,7 @@
       "pushed_at": "2026-10-01",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 12,
+      "stars": 13,
       "status": "ok"
     },
     "jackterror/writers-room-story-engine": {
@@ -5850,7 +5850,7 @@
       "pushed_at": "2026-07-07",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 42,
+      "stars": 43,
       "status": "ok"
     },
     "jaguarliuu/xunlong": {
@@ -5898,7 +5898,7 @@
       "pushed_at": "2026-10-14",
       "skill_count": 24,
       "skill_count_truncated": false,
-      "stars": 234,
+      "stars": 235,
       "status": "ok"
     },
     "jialanhu0915/silver-novel-skills": {
@@ -5946,7 +5946,7 @@
       "pushed_at": "2026-06-18",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 92,
+      "stars": 93,
       "status": "ok"
     },
     "jingtai123/Novel-Control-Station-Skill": {
@@ -6019,7 +6019,7 @@
       "pushed_at": "2026-07-29",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 71,
+      "stars": 72,
       "status": "ok"
     },
     "jonmartin721/living-story-world": {
@@ -6077,7 +6077,7 @@
       "forks": 4,
       "full_name": "jschm42/taleweaver",
       "license": "MIT",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 4,
       "skill_count_truncated": false,
       "stars": 22,
@@ -6086,13 +6086,13 @@
     "jtydhr88/screenwriting-skills": {
       "archived": false,
       "description": "Professional agent skills for screenwriting, television writing and dramaturgy",
-      "forks": 181,
+      "forks": 183,
       "full_name": "jtydhr88/screenwriting-skills",
       "license": "MIT",
       "pushed_at": "2026-10-03",
       "skill_count": 26,
       "skill_count_truncated": false,
-      "stars": 1708,
+      "stars": 1715,
       "status": "ok"
     },
     "junjiezhou1122/justin-sun-narrative-skill": {
@@ -6202,7 +6202,7 @@
       "pushed_at": "2026-10-18",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 38,
+      "stars": 39,
       "status": "ok"
     },
     "klusai/tinyfabulist": {
@@ -6250,7 +6250,7 @@
       "pushed_at": "2026-10-11",
       "skill_count": 2,
       "skill_count_truncated": false,
-      "stars": 106,
+      "stars": 107,
       "status": "ok"
     },
     "krys64/OpenArcana": {
@@ -6286,7 +6286,7 @@
       "pushed_at": "2026-10-17",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 1736,
+      "stars": 1737,
       "status": "ok"
     },
     "laoguo2025/huoren-write": {
@@ -6322,7 +6322,7 @@
       "pushed_at": "2026-04-13",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 9,
+      "stars": 10,
       "status": "ok"
     },
     "leenbj/novel-creator-skill": {
@@ -6334,7 +6334,7 @@
       "pushed_at": "2026-03-10",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 686,
+      "stars": 687,
       "status": "ok"
     },
     "leistung/StoryClaw": {
@@ -6370,7 +6370,7 @@
       "pushed_at": "2026-10-05",
       "skill_count": 31,
       "skill_count_truncated": false,
-      "stars": 34,
+      "stars": 35,
       "status": "ok"
     },
     "lgz-star/novel-pro": {
@@ -6427,10 +6427,10 @@
       "forks": 1240,
       "full_name": "lingfengQAQ/webnovel-writer",
       "license": "GPL-3.0",
-      "pushed_at": "2026-10-17",
+      "pushed_at": "2026-10-19",
       "skill_count": 8,
       "skill_count_truncated": false,
-      "stars": 7557,
+      "stars": 7564,
       "status": "ok"
     },
     "linux4life1/front-porch-AI": {
@@ -6491,7 +6491,7 @@
       "pushed_at": "2026-10-16",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 402,
+      "stars": 408,
       "status": "ok"
     },
     "liyaonan/LingMo-Engine": {
@@ -6552,13 +6552,13 @@
       "pushed_at": "2026-09-04",
       "skill_count": 350,
       "skill_count_truncated": false,
-      "stars": 236,
+      "stars": 238,
       "status": "ok"
     },
     "lovetimo0421/yumina-oss": {
       "archived": false,
       "description": "AI native world engine for interactive fiction.",
-      "forks": 4,
+      "forks": 5,
       "full_name": "lovetimo0421/yumina-oss",
       "license": "AGPL-3.0",
       "pushed_at": "2026-10-18",
@@ -6585,7 +6585,7 @@
       "forks": 36,
       "full_name": "lujih/webnovel-writer-opencode",
       "license": "GPL-3.0",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 16,
       "skill_count_truncated": false,
       "stars": 221,
@@ -6721,7 +6721,7 @@
       "pushed_at": "2026-07-30",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 94,
+      "stars": 95,
       "status": "ok"
     },
     "mengxiujie/ManjuForge": {
@@ -6880,7 +6880,7 @@
       "pushed_at": "2026-09-25",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 825,
+      "stars": 829,
       "status": "ok"
     },
     "mofeifeifei/Hi-Story": {
@@ -6916,7 +6916,7 @@
       "pushed_at": "2026-08-09",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 52,
+      "stars": 53,
       "status": "ok"
     },
     "msadeqsirjani/dnd_ai_dm": {
@@ -6940,7 +6940,7 @@
       "pushed_at": "2024-04-03",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 2534,
+      "stars": 2535,
       "status": "ok"
     },
     "mudden2380078550-creator/write-chinese-long-screenplay": {
@@ -7038,7 +7038,7 @@
       "pushed_at": "2026-07-06",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 238,
+      "stars": 237,
       "status": "ok"
     },
     "nferraz/gpt-adventures": {
@@ -7074,7 +7074,7 @@
       "pushed_at": "2026-07-18",
       "skill_count": 47,
       "skill_count_truncated": false,
-      "stars": 32,
+      "stars": 33,
       "status": "ok"
     },
     "niyongsheng/clark-typer": {
@@ -7098,7 +7098,7 @@
       "pushed_at": "2026-07-29",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 61,
+      "stars": 62,
       "status": "ok"
     },
     "nonever2109/novel_writer_agent": {
@@ -7122,7 +7122,7 @@
       "pushed_at": "2026-10-14",
       "skill_count": 28,
       "skill_count_truncated": false,
-      "stars": 744,
+      "stars": 746,
       "status": "ok"
     },
     "nshkrdotcom/fount": {
@@ -7328,7 +7328,7 @@
       "pushed_at": "2026-03-22",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 38,
+      "stars": 39,
       "status": "ok"
     },
     "paradroidlabs/NovelizeAI": {
@@ -7545,7 +7545,7 @@
       "pushed_at": "2026-07-31",
       "skill_count": 15,
       "skill_count_truncated": false,
-      "stars": 21,
+      "stars": 22,
       "status": "ok"
     },
     "qinpeizhan77/deepseek-harness-novel-studio": {
@@ -7593,7 +7593,7 @@
       "pushed_at": "2026-10-17",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 21,
+      "stars": 22,
       "status": "ok"
     },
     "qq1375828505/novelIDE": {
@@ -7689,7 +7689,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 87,
       "skill_count_truncated": false,
-      "stars": 73,
+      "stars": 74,
       "status": "ok"
     },
     "renfufei/Story-Creator": {
@@ -7698,7 +7698,7 @@
       "forks": 5,
       "full_name": "renfufei/Story-Creator",
       "license": null,
-      "pushed_at": "2026-10-16",
+      "pushed_at": "2026-10-19",
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 6,
@@ -7873,7 +7873,7 @@
       "pushed_at": "2026-08-10",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 811,
+      "stars": 813,
       "status": "ok"
     },
     "sEwhappend/MyAINovel": {
@@ -8020,7 +8020,7 @@
       "pushed_at": "2026-10-01",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 66,
+      "stars": 67,
       "status": "ok"
     },
     "sfxyn/agent": {
@@ -8152,10 +8152,10 @@
       "forks": 74,
       "full_name": "sigpanic/goink",
       "license": "AGPL-3.0",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 2,
       "skill_count_truncated": false,
-      "stars": 470,
+      "stars": 471,
       "status": "ok"
     },
     "sigpanic/goink-skills": {
@@ -8212,7 +8212,7 @@
       "forks": 0,
       "full_name": "siweina/dsh-novel-writer",
       "license": "MIT",
-      "pushed_at": "2026-10-15",
+      "pushed_at": "2026-10-19",
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 23,
@@ -8408,7 +8408,7 @@
       "forks": 1,
       "full_name": "stellarfeline/delvewright",
       "license": "GPL-3.0",
-      "pushed_at": "2026-10-16",
+      "pushed_at": "2026-10-19",
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 13,
@@ -8436,7 +8436,7 @@
       "pushed_at": "2026-10-18",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 1231,
+      "stars": 1233,
       "status": "ok"
     },
     "t59688/arboris-novel": {
@@ -8448,7 +8448,7 @@
       "pushed_at": "2026-02-25",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 1615,
+      "stars": 1617,
       "status": "ok"
     },
     "t59688/novel-kit": {
@@ -8508,7 +8508,7 @@
       "pushed_at": "2026-06-13",
       "skill_count": 33,
       "skill_count_truncated": false,
-      "stars": 85,
+      "stars": 86,
       "status": "ok"
     },
     "teangtang1122/siming-ai": {
@@ -8544,7 +8544,7 @@
       "pushed_at": "2026-10-17",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 137,
+      "stars": 138,
       "status": "ok"
     },
     "that-one-arab/gpt-interactive-novel": {
@@ -8598,7 +8598,7 @@
     "tianyayu6/fanqie-hit-short-story": {
       "archived": false,
       "description": "番茄小说短篇爆款生成器，用于根据用户提供的核心梗创作番茄风格短篇网文、短篇爽文、番茄爆文、短故事、短篇小说。 触发于用户要求生成番茄爆款大纲、标题导语、12000字以上正文、短篇编辑审稿改稿、去AI味润色、一句一行最终稿，或要求参考番茄百万爆款方法论写小说时。",
-      "forks": 3,
+      "forks": 4,
       "full_name": "tianyayu6/fanqie-hit-short-story",
       "license": "MIT",
       "pushed_at": "2026-06-17",
@@ -8667,7 +8667,7 @@
       "pushed_at": "2026-10-08",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 35,
+      "stars": 36,
       "status": "ok"
     },
     "tjh-aoao/aishiji-director": {
@@ -8688,7 +8688,7 @@
       "forks": 20,
       "full_name": "tobyilee/book-writer",
       "license": "MIT",
-      "pushed_at": "2026-10-11",
+      "pushed_at": "2026-10-19",
       "skill_count": 15,
       "skill_count_truncated": false,
       "stars": 82,
@@ -8728,7 +8728,7 @@
       "pushed_at": "2026-10-13",
       "skill_count": 3,
       "skill_count_truncated": false,
-      "stars": 455,
+      "stars": 458,
       "status": "ok"
     },
     "ttsmallHot/AI4VisualNovel": {
@@ -8916,13 +8916,13 @@
     "voocel/ainovel-cli": {
       "archived": false,
       "description": "✨多agent实现全自动AI小说生成",
-      "forks": 456,
+      "forks": 459,
       "full_name": "voocel/ainovel-cli",
       "license": "Apache-2.0",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 2195,
+      "stars": 2197,
       "status": "ok"
     },
     "wailers9/bragi": {
@@ -8934,7 +8934,7 @@
       "pushed_at": "2026-05-17",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 31,
+      "stars": 32,
       "status": "ok"
     },
     "wanqili857-byte/fictionforge": {
@@ -9054,7 +9054,7 @@
       "pushed_at": "2026-04-18",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 5,
+      "stars": 6,
       "status": "ok"
     },
     "wgwtest/novel-writing": {
@@ -9066,7 +9066,7 @@
       "pushed_at": "2026-09-26",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 50,
+      "stars": 51,
       "status": "ok"
     },
     "whotto/Picture_book_production": {
@@ -9128,7 +9128,7 @@
       "pushed_at": "2025-10-26",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 958,
+      "stars": 959,
       "status": "ok"
     },
     "wordflowlab/novel-writer-skills": {
@@ -9287,7 +9287,7 @@
       "pushed_at": "2026-10-16",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 3206,
+      "stars": 3204,
       "status": "ok"
     },
     "xianzl/novel-style-skills": {
@@ -9323,7 +9323,7 @@
       "pushed_at": "2026-09-12",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 71,
+      "stars": 73,
       "status": "ok"
     },
     "xiaotiewinner/xt-webnovel-writing": {
@@ -9383,7 +9383,7 @@
       "pushed_at": "2026-08-23",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 207,
+      "stars": 208,
       "status": "ok"
     },
     "xinxin2021110/InkRealm": {
@@ -9515,7 +9515,7 @@
       "pushed_at": "2026-04-04",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 243,
+      "stars": 244,
       "status": "ok"
     },
     "yangrunzhi345-blip/LT": {
@@ -9576,7 +9576,7 @@
       "pushed_at": "2026-09-23",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 189,
+      "stars": 190,
       "status": "ok"
     },
     "yefeng2renxing/AIxiezuo": {
@@ -9606,13 +9606,13 @@
     "yilujian/easy-writing": {
       "archived": false,
       "description": "易创：纯本地、开源的 AI 网文写作桌面软件，支持小说创作、AI 辅助写作、BYOK 与自定义提示词。",
-      "forks": 121,
+      "forks": 122,
       "full_name": "yilujian/easy-writing",
       "license": "AGPL-3.0",
-      "pushed_at": "2026-10-09",
-      "skill_count": 0,
+      "pushed_at": "2026-10-19",
+      "skill_count": 20,
       "skill_count_truncated": false,
-      "stars": 726,
+      "stars": 731,
       "status": "ok"
     },
     "yinghan-dev/StoryPipeline": {
@@ -9680,13 +9680,13 @@
     "yuanbw2025/storyforge": {
       "archived": false,
       "description": "故事熔炉 StoryForge — AI 小说创作工作台 / AI novel writing workshop",
-      "forks": 145,
+      "forks": 149,
       "full_name": "yuanbw2025/storyforge",
       "license": "MIT",
       "pushed_at": "2026-10-19",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 894,
+      "stars": 911,
       "status": "ok"
     },
     "zRICGao/ZRIC-AI-TRPG-Engine": {
@@ -9704,13 +9704,13 @@
     "zenstory-ai/drama-skills": {
       "archived": false,
       "description": "开源 AI 短剧/漫剧创作 skill 合集：剧本、角色资产、分镜 storyboard、图片/视频提示词、审查，适配 Claude Code 与 Codex | Open-source AI short drama / micro-drama skills for Claude Code & Codex: script, assets, storyboard, image & video prompts, review. MIT.",
-      "forks": 611,
+      "forks": 612,
       "full_name": "zenstory-ai/drama-skills",
       "license": "MIT",
       "pushed_at": "2026-10-15",
       "skill_count": 12,
       "skill_count_truncated": false,
-      "stars": 3049,
+      "stars": 3072,
       "status": "ok"
     },
     "zenstory-ai/novel-to-game": {
@@ -9719,22 +9719,22 @@
       "forks": 123,
       "full_name": "zenstory-ai/novel-to-game",
       "license": "MIT",
-      "pushed_at": "2026-10-18",
+      "pushed_at": "2026-10-19",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 890,
+      "stars": 896,
       "status": "ok"
     },
     "zenstory-ai/oh-story-claudecode": {
       "archived": false,
       "description": "Claude Code / Codex / OpenCode agent skills for writing Chinese web novels (网文): 扫榜、拆文、写作、去AI味、封面全流程，长篇短篇都支持 | 13 skills for novel writing and long-form fiction with file-based continuity tracking. MIT.",
-      "forks": 1103,
+      "forks": 1104,
       "full_name": "zenstory-ai/oh-story-claudecode",
       "license": "MIT",
       "pushed_at": "2026-10-18",
       "skill_count": 13,
       "skill_count_truncated": false,
-      "stars": 7732,
+      "stars": 7754,
       "status": "ok"
     },
     "zenstory-ai/oh-story-dsh": {
@@ -9743,10 +9743,10 @@
       "forks": 88,
       "full_name": "zenstory-ai/oh-story-dsh",
       "license": "MIT",
-      "pushed_at": "2026-10-16",
+      "pushed_at": "2026-10-19",
       "skill_count": 38,
       "skill_count_truncated": false,
-      "stars": 544,
+      "stars": 552,
       "status": "ok"
     },
     "zenstory-ai/zenstory": {
@@ -9758,7 +9758,7 @@
       "pushed_at": "2026-10-19",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 73,
+      "stars": 74,
       "status": "ok"
     },
     "zestor/Muses": {
@@ -9788,13 +9788,13 @@
     "zhangxiansheng-888/chuanzhang-ai-shortdrama-skills": {
       "archived": false,
       "description": "船长AI视界 AI 短剧制作技能集：大纲、角色、参考图、场景、剧本、分镜",
-      "forks": 8,
+      "forks": 9,
       "full_name": "zhangxiansheng-888/chuanzhang-ai-shortdrama-skills",
       "license": null,
       "pushed_at": "2026-10-10",
       "skill_count": 6,
       "skill_count_truncated": false,
-      "stars": 25,
+      "stars": 28,
       "status": "ok"
     },
     "zhangxunvvv/xiami": {
@@ -9941,7 +9941,7 @@
       "pushed_at": "2026-10-04",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 449,
+      "stars": 450,
       "status": "ok"
     },
     "zy-zmc/tianming-skill": {
@@ -9953,7 +9953,7 @@
       "pushed_at": "2026-06-06",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 155,
+      "stars": 156,
       "status": "ok"
     }
   }
