@@ -2551,3 +2551,7 @@ npx skills add aimerfeng/novel-to-webnovel
 ## 许可
 
 [CC0 1.0](LICENSE)
+
+---
+
+维护者：X [@UnderleveledDev](https://x.com/UnderleveledDev)
