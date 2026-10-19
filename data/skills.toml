@@ -1794,7 +1794,7 @@ note_en = "DeepSeek Harness preset; the skills themselves live in the submodule 
 checked = 2026-10-15
 
 [[skills]]
-repo    = "KurohaneKaoruko/Novel-IDE"
+repo    = "KurohaneKaoruko/Iris-Novel"
 desc    = "Tauri 长篇写作 IDE：AI 续写/改写/规划，Planner 拆任务执行，改稿默认先出审阅建议逐条采纳，自动维护角色状态与伏笔索引并可手工锁定"
 desc_en = "Tauri long-form writing IDE with AI continuation/rewrite/planning; a Planner splits tasks, edits default to suggestions accepted one by one, character state and foreshadowing index lockable"
 group   = "novel"
@@ -4099,7 +4099,7 @@ note_en = "Final drafts also get a narrative-structure fingerprint check; includ
 checked = 2026-10-15
 
 [[skills]]
-repo    = "YonRen-code/Novel-factory"
+repo    = "YoRengzh/Novel-factory"
 desc    = "多智能体+确定性编排：卷→弧→段→章四层规划，角色/物品/势力三账本须附正文引证校验，伏笔排期状态机，异族模型候选盲评，禁泄扫描与 26 项批末体检"
 desc_en = "Multi-agent with deterministic orchestration: four-level planning, character/item/faction ledgers needing text citations, foreshadowing state machine, blind candidate evaluation, spoiler scan, 26-item checkup"
 group   = "novel"
