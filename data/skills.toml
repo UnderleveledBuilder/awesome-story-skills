@@ -1794,7 +1794,7 @@ note_en = "DeepSeek Harness preset; the skills themselves live in the submodule 
 checked = 2026-10-15
 
 [[skills]]
-repo    = "KurohaneKaoruko/Iris-Novel"
+repo    = "KurohaneKaoruko/N.I.C.E."
 desc    = "Tauri 长篇写作 IDE：AI 续写/改写/规划，Planner 拆任务执行，改稿默认先出审阅建议逐条采纳，自动维护角色状态与伏笔索引并可手工锁定"
 desc_en = "Tauri long-form writing IDE with AI continuation/rewrite/planning; a Planner splits tasks, edits default to suggestions accepted one by one, character state and foreshadowing index lockable"
 group   = "novel"
