@@ -1794,7 +1794,7 @@ note_en = "DeepSeek Harness preset; the skills themselves live in the submodule 
 checked = 2026-10-15
 
 [[skills]]
-repo    = "KurohaneKaoruko/N.I.C.E."
+repo    = "KurohaneKaoruko/Iris-I.C.E."
 desc    = "Tauri 长篇写作 IDE：AI 续写/改写/规划，Planner 拆任务执行，改稿默认先出审阅建议逐条采纳，自动维护角色状态与伏笔索引并可手工锁定"
 desc_en = "Tauri long-form writing IDE with AI continuation/rewrite/planning; a Planner splits tasks, edits default to suggestions accepted one by one, character state and foreshadowing index lockable"
 group   = "novel"
@@ -2569,7 +2569,7 @@ note_en = "Windows installer plus full source, Beta; also supports scripts and m
 checked = 2026-10-15
 
 [[skills]]
-repo    = "ocedo-apps/StoryBook-AI"
+repo    = "kaampi/Write"
 desc    = "本地小说写作工具：Story Bible 作为设定事实源，写作模型起草正文、审阅模型复核，作者逐次决定取舍，附 Analyze 分析"
 desc_en = "Local novel tool: a Story Bible is the source of truth, a writing model drafts, a review model double-checks, the author decides what to keep each time, plus Analyze"
 group   = "novel"
@@ -5133,7 +5133,7 @@ note_en = "Companion Colab for the CHI 2023 paper; no built-in model, you must i
 checked = 2026-10-15
 
 [[skills]]
-repo    = "gzxx-2025/aid-studio"
+repo    = "shijue-aid/aid-studio"
 desc    = "漫剧/短剧平台的剧本技能：分创作、续写、改写、规范化、修复五模式，按「行动→结果→下一动作」写场景，凭独立审核报告修硬伤，再接分镜和视频"
 desc_en = "Script skills for a comic-drama platform in five modes (create, continue, rewrite, standardize, repair): scenes as action→result→next action, flaws fixed from an independent review, then storyboard"
 group   = "script"
@@ -6955,7 +6955,7 @@ note_en = "Needs local Ollama, optional AllTalk TTS voice; LAN multiplayer only;
 checked = 2026-10-15
 
 [[skills]]
-repo    = "Lebbitheplow/open-dungeon-master"
+repo    = "Lebbitheplow/open-game-master"
 desc    = "AI 地下城主跑 D&D 5e：模型叙事并扮演 NPC，按隐藏故事主线（前提、赌注、反派）推进并随战役重生成，骰子与数值全由服务端规则引擎结算，支持多人"
 desc_en = "AI dungeon master for D&D 5e: the model narrates and plays NPCs along a hidden story spine (premise, stakes, villain) regenerated with the campaign; a server rules engine handles dice and numbers; multiplayer"
 group   = "interactive"
