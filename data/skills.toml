@@ -918,7 +918,7 @@ note_en = "Needs a Gemini API"
 checked = 2026-10-15
 
 [[skills]]
-repo    = "EthanYoQ/AI-Novel-Writer"
+repo    = "EthanYoQ/Pagekin"
 desc    = "桌面长篇写作软件：前提、角色、世界观、章节蓝图、草稿、审稿、修稿、定稿逐段推进，可按阶段绑定写作 Skill，支持本地与在线模型"
 desc_en = "Desktop long-form app advancing premise, characters, worldbuilding, chapter blueprint, draft, review, revision, finalization; Skills bindable per stage; local or online models"
 group   = "novel"
@@ -1782,7 +1782,7 @@ note_en = "Outputs Japanese by default"
 checked = 2026-10-15
 
 [[skills]]
-repo    = "KurohaneKaoruko/DSH-Novelist"
+repo    = "KurohaneKaoruko/DSH-Creator"
 desc    = "12 个方法论 skill 和 6 个文风 skill 按需加载，写前组装前十章结尾/人物卡/伏笔/时间线简报，写后跑 25 项正文 lint 与名词核对"
 desc_en = "12 methodology skills and 6 style skills load on demand; before writing it assembles a brief of the last ten chapter endings, character cards, foreshadowing and timeline, and after writing it runs 25 text lint checks and noun verification"
 group   = "novel"
@@ -1794,7 +1794,7 @@ note_en = "DeepSeek Harness preset; the skills themselves live in the submodule 
 checked = 2026-10-15
 
 [[skills]]
-repo    = "KurohaneKaoruko/Iris-I.C.E."
+repo    = "KurohaneKaoruko/Iris-Creation"
 desc    = "Tauri 长篇写作 IDE：AI 续写/改写/规划，Planner 拆任务执行，改稿默认先出审阅建议逐条采纳，自动维护角色状态与伏笔索引并可手工锁定"
 desc_en = "Tauri long-form writing IDE with AI continuation/rewrite/planning; a Planner splits tasks, edits default to suggestions accepted one by one, character state and foreshadowing index lockable"
 group   = "novel"
@@ -6101,7 +6101,7 @@ lang    = "en"
 checked = 2026-10-15
 
 [[skills]]
-repo    = "bei666qi-pan/VerseCraft"
+repo    = "bei666qi-pan/404-world"
 desc    = "自由输入行动的互动小说引擎：回合路由先查世界知识与角色认知边界，模型生成叙事候选后经校验提交状态增量，后台世界导演推进 NPC 议程"
 desc_en = "Free-text interactive fiction engine: turn routing checks world knowledge and each character's knowledge boundary, narrative candidates are validated before state deltas commit, a background world director advances NPC agendas"
 group   = "interactive"
