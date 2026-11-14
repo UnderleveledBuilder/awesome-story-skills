@@ -30,7 +30,7 @@ fork 和改名换皮的不收。在原版基础上加了新的方法、模块或
    python3 scripts/build.py                       # 重新生成中英文 README、METHODS 和 catalog.json
    ```
 
-   跳过这一步也可以，合并后 GitHub Actions 会自动刷新并生成。
+   跳过这一步也可以，合并后维护者会刷新并生成。
 3. 提交 PR。CI 会校验数据格式。
 
 ## 字段说明
@@ -73,4 +73,4 @@ checked = 2026-10-15                   # 可选，人工核对日期（TOML 日�
 
 方法指南的正文在 `templates/methods/<方法>.md`（英文版 `<方法>.en.md`），每个方法下的项目名单由脚本生成。
 
-GitHub Actions 每周一自动刷新元数据、重新生成 README，并把新候选开成 issue。
+每周一自动刷新元数据、重新生成 README，并把新候选开成 issue。
