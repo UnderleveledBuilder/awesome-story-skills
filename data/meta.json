@@ -13,6 +13,19 @@
       "stars": 1631,
       "status": "ok"
     },
+    "10291124jcjc-dotcom/ai-anime-series": {
+      "archived": false,
+      "description": "AI 动画单元剧：固定原创角色，一句话出一集。角色设定图 + 宫格故事板 + 即梦 Seedance 一次生成。Claude Skill.",
+      "first_seen": "2026-11-16",
+      "forks": 82,
+      "full_name": "10291124jcjc-dotcom/ai-anime-series",
+      "license": null,
+      "pushed_at": "2026-10-28",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 392,
+      "status": "ok"
+    },
     "1195214305/StoryWeaver-AI": {
       "archived": false,
       "description": "StoryWeaver - 无限流AI互动小说平台 | AI-Powered Interactive Fiction Platform",
@@ -450,6 +463,19 @@
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 79,
+      "status": "ok"
+    },
+    "AlexandrNemashkalo/navi-dnd": {
+      "archived": false,
+      "description": "AI Dungeon Master for D&D 5e (Claude / Codex) · Настольная ролевая игра с ИИ-мастером",
+      "first_seen": "2026-11-16",
+      "forks": 1,
+      "full_name": "AlexandrNemashkalo/navi-dnd",
+      "license": null,
+      "pushed_at": "2026-11-05",
+      "skill_count": 0,
+      "skill_count_truncated": false,
+      "stars": 6,
       "status": "ok"
     },
     "Alexsun1one/autow": {
@@ -2171,6 +2197,19 @@
       "stars": 4,
       "status": "ok"
     },
+    "Mayzmei/anime-series-maker": {
+      "archived": false,
+      "description": "2 character sheets + 1 line of story → a finished AI anime episode. Agent skill for Claude Code / Codex, powered by Renoise MCP.",
+      "first_seen": "2026-11-16",
+      "forks": 16,
+      "full_name": "Mayzmei/anime-series-maker",
+      "license": "MIT",
+      "pushed_at": "2026-10-26",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 140,
+      "status": "ok"
+    },
     "Mikexujunrui/AnySpark": {
       "archived": false,
       "description": "火花 AnySpark — 智能小说创作引擎 | AI-powered novel writing engine",
@@ -2985,6 +3024,19 @@
       "stars": 183,
       "status": "ok"
     },
+    "SyedBahjat/claude-stickman-shorts": {
+      "archived": false,
+      "description": "Claude Code skill that makes stick-figure 'You Decide' story shorts and clones ANY video format (explainers, top-10s, quizzes, stories, long-form) for YouTube Shorts, TikTok & Reels. Script, animation, AI voices, captions, copyright-free SFX. Remotion.",
+      "first_seen": "2026-11-16",
+      "forks": 1,
+      "full_name": "SyedBahjat/claude-stickman-shorts",
+      "license": "MIT",
+      "pushed_at": "2026-11-09",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 5,
+      "status": "ok"
+    },
     "TJurijs/llm-dungeon": {
       "archived": false,
       "description": "LLM powered text adventure",
@@ -3055,6 +3107,19 @@
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 7,
+      "status": "ok"
+    },
+    "Tech-Explorer-AI/ST-CinemaWorld": {
+      "archived": false,
+      "description": "\"在 AI 创造的世界中游乐。\"  CinemaWorld 是一个为 SillyTavern 设计的沉浸式视觉小说 / RPG 世界引擎扩展。  它把聊天 AI 变成一个真正的\"游戏主持人（GM）\"  你不再只是和 AI 对话，  而是在一个由 AI 动态生成、持续演化的世界里探索、战斗、经营、社交。",
+      "first_seen": "2026-11-16",
+      "forks": 3,
+      "full_name": "Tech-Explorer-AI/ST-CinemaWorld",
+      "license": null,
+      "pushed_at": "2026-10-26",
+      "skill_count": 0,
+      "skill_count_truncated": false,
+      "stars": 24,
       "status": "ok"
     },
     "TencentARC/SEED-Story": {
@@ -3396,6 +3461,19 @@
       "stars": 7,
       "status": "ok"
     },
+    "Weeexiao/skills": {
+      "archived": false,
+      "description": "AI 短剧制作 Agent Skills 合集：剧本、分镜、提示词、资产、成片，按分类存放",
+      "first_seen": "2026-11-16",
+      "forks": 1,
+      "full_name": "Weeexiao/skills",
+      "license": null,
+      "pushed_at": "2026-11-13",
+      "skill_count": 11,
+      "skill_count_truncated": false,
+      "stars": 6,
+      "status": "ok"
+    },
     "Wooooooooood/ai-fiction-writer": {
       "archived": false,
       "description": "一套让 AI 小说「能完本」的系统。不是 prompt 堆砌，而是拆书、大纲、角色、世界、逻辑、质检、审稿十大 Skill 工程化工作流。本地化、去 AI 味、防 OOC、防吃书，让 AI 真正帮你把故事写到底。",
@@ -3502,6 +3580,19 @@
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 27,
+      "status": "ok"
+    },
+    "XiaoOu2024/dsh-novel-generator": {
+      "archived": false,
+      "description": "Novel Studio for DeepSeek Harness: write a novel on a draggable timeline — world snapshots, chapter outlines and synopses, chapter import, AI revise, and a dedicated writing agent per work. 小说工坊：在时间线上写小说，世界快照、章节大纲与梗概、章节导入、AI 改写，每部作品一个独立的写作会话。",
+      "first_seen": "2026-11-16",
+      "forks": 0,
+      "full_name": "XiaoOu2024/dsh-novel-generator",
+      "license": "MIT",
+      "pushed_at": "2026-10-31",
+      "skill_count": 0,
+      "skill_count_truncated": false,
+      "stars": 5,
       "status": "ok"
     },
     "Xiaoyangy/novel-studio": {
@@ -4200,6 +4291,19 @@
       "stars": 5,
       "status": "ok"
     },
+    "asass-11/axu-novel": {
+      "archived": false,
+      "description": "阿序AI 长篇小说工作流 4.0：从开书、大纲、逐章写作到完本的 AI Skill。",
+      "first_seen": "2026-11-16",
+      "forks": 4,
+      "full_name": "asass-11/axu-novel",
+      "license": null,
+      "pushed_at": "2026-11-07",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 38,
+      "status": "ok"
+    },
     "asass-11/lengdu": {
       "archived": false,
       "description": "面向中文小说创作与独立冷读的开源 Codex Skill（MIT License）",
@@ -4322,6 +4426,19 @@
       "stars": 6,
       "status": "ok"
     },
+    "bangtutorial/bang-film": {
+      "archived": false,
+      "description": "Agent skill that designs AI live-action video — vertical microdrama series, short films, single scenes — and writes the prompts: concept, cast bible, shot list, character sheets, video prompts for any AI video model.",
+      "first_seen": "2026-11-16",
+      "forks": 1,
+      "full_name": "bangtutorial/bang-film",
+      "license": "MIT",
+      "pushed_at": "2026-11-12",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 10,
+      "status": "ok"
+    },
     "bayshier/sunxue": {
       "archived": false,
       "description": "孙学写作法 Skill：源自孙宇晨《我的女友景甜》的极简白描叙事风格（天平开篇/数字锚定/旁观者证词/虚空收束）",
@@ -4346,6 +4463,19 @@
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 1,
+      "status": "ok"
+    },
+    "bboyfan/ann-storybook": {
+      "archived": false,
+      "description": "AI 兒童睡前互動有聲繪本生成技能 (Skill) — 支援 Gemini Canvas 原生台灣語音與本機 Agent 預錄自然語音內嵌",
+      "first_seen": "2026-11-16",
+      "forks": 1,
+      "full_name": "bboyfan/ann-storybook",
+      "license": null,
+      "pushed_at": "2026-10-29",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 14,
       "status": "ok"
     },
     "bbroot/novel-master": {
@@ -4624,6 +4754,19 @@
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 85,
+      "status": "ok"
+    },
+    "chihumyum/Drifting": {
+      "archived": false,
+      "description": "Drifting is a cross-platform, AI-native novel-writing app. With the ease of a Markdown editor, the scaffolding of a classic writing studio, and an AI agent for the whole book, it's built to help you write your first bestseller. Drifting 是一款跨平台的 AI 原生小说写作应用。兼具 Markdown 编辑器的轻快、经典写作工坊的创作框架，以及贯穿全书的 AI Agent，助你写出人生第一部畅销书。",
+      "first_seen": "2026-11-16",
+      "forks": 2,
+      "full_name": "chihumyum/Drifting",
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-11-16",
+      "skill_count": 0,
+      "skill_count_truncated": false,
+      "stars": 57,
       "status": "ok"
     },
     "chnjames/stephen-chow-skill": {
@@ -4929,6 +5072,32 @@
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 14,
+      "status": "ok"
+    },
+    "deenukhan/stick-figure-shorts": {
+      "archived": false,
+      "description": "Claude Code skill: 20-40 s stick-figure story shorts drawn in code (Remotion) and voiced with ElevenLabs",
+      "first_seen": "2026-11-16",
+      "forks": 6,
+      "full_name": "deenukhan/stick-figure-shorts",
+      "license": null,
+      "pushed_at": "2026-10-29",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 37,
+      "status": "ok"
+    },
+    "deenukhan/story-animator": {
+      "archived": false,
+      "description": "Claude Code skill: turn a one-line idea into a narrated 2D animated story video. Every frame drawn in code (Remotion), voiced with ElevenLabs.",
+      "first_seen": "2026-11-16",
+      "forks": 4,
+      "full_name": "deenukhan/story-animator",
+      "license": "MIT",
+      "pushed_at": "2026-10-28",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 30,
       "status": "ok"
     },
     "deokhwajeong/StoryTailor.ai": {
@@ -5598,6 +5767,19 @@
       "stars": 14,
       "status": "ok"
     },
+    "howznguyen/shorts-kit": {
+      "archived": false,
+      "description": "Make narrated vertical shorts (TikTok, YouTube Shorts, Reels) with a coding agent and Remotion. 9+ agent skills, 20+ story flows, fact ledger, CC0 SFX.",
+      "first_seen": "2026-11-16",
+      "forks": 62,
+      "full_name": "howznguyen/shorts-kit",
+      "license": "MIT",
+      "pushed_at": "2026-11-09",
+      "skill_count": 10,
+      "skill_count_truncated": false,
+      "stars": 174,
+      "status": "ok"
+    },
     "hshenwl/ai-novel-studio-lingshumiaobi": {
       "archived": false,
       "description": "# 灵鼠妙笔 - AI小说生成软件 — 面向网文作者、工作室、小说策划团队的 AI 长篇小说工业化创作平台  ---  ## v0.1.0 (2026-05-12) — 初始发布  这是灵鼠妙笔的首个正式发布版本，包含完整的项目基础架构和核心功能模块搭建。  ---  ### 🎯 产品定位  灵鼠妙笔不是简单的\"AI生成文本工具\"，而是一个面向百万字、千万字级长篇小说生产的 **AI网文工业化创作系统**。支持从市场热榜分析、世界观设定、小说总纲、卷纲拆解、章纲生成、章节正文创作、质量审核、AI去味、Hook追踪、伏笔管理、资产入库到最终导出的完整创作闭环。",
@@ -6241,6 +6423,19 @@
       "stars": 6,
       "status": "ok"
     },
+    "konlu/story-studio": {
+      "archived": false,
+      "description": "从选题到剪映草稿的一站式 AI 短视频内容创作 Agent Skill",
+      "first_seen": "2026-11-16",
+      "forks": 244,
+      "full_name": "konlu/story-studio",
+      "license": null,
+      "pushed_at": "2026-11-13",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 1111,
+      "status": "ok"
+    },
     "koronto11/ludo-npc-ai": {
       "archived": false,
       "description": "A visual workspace for game narratives and NPCs. Build worlds, arrange scenes and characters, edit branching dialogue, review AI drafts, and rehearse stories. Collaborate with your own AI through bilingual Skills.",
@@ -6251,6 +6446,19 @@
       "skill_count": 2,
       "skill_count_truncated": false,
       "stars": 103,
+      "status": "ok"
+    },
+    "krishnagoswami52/stickman-skill": {
+      "archived": false,
+      "description": "Claude skill: cinematic stickman story videos as MP4 from code, with a free built-in AI voiceover (no ElevenLabs)",
+      "first_seen": "2026-11-16",
+      "forks": 1,
+      "full_name": "krishnagoswami52/stickman-skill",
+      "license": "MIT",
+      "pushed_at": "2026-11-10",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 16,
       "status": "ok"
     },
     "krys64/OpenArcana": {
@@ -6603,6 +6811,19 @@
       "stars": 7,
       "status": "ok"
     },
+    "lyra-planet/galforge": {
+      "archived": false,
+      "description": "一句话做出能玩的像素视觉小说：立绘、场景、配乐全是代码现写，零图片素材。An Agent Skill that turns one sentence into a playable pixel-art visual novel.",
+      "first_seen": "2026-11-16",
+      "forks": 1,
+      "full_name": "lyra-planet/galforge",
+      "license": "MIT",
+      "pushed_at": "2026-11-02",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 5,
+      "status": "ok"
+    },
     "lyzxka/writer-skill": {
       "archived": false,
       "description": "一个专为长篇小说创作设计的 Claude Code 技能插件。它将写作流程工程化，通过**三层嵌套循环架构**（章节大纲 → 场景分解 → 质量循环）确保每一章都能高质量产出 ，同时通过**三层记忆系统**（元记忆 / 实体记忆 / 叙事记忆）维护百万字级别长篇小说的设定一致性。",
@@ -6917,6 +7138,19 @@
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 57,
+      "status": "ok"
+    },
+    "mromidev/claude-animated-shorts": {
+      "archived": false,
+      "description": "Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js + Remotion",
+      "first_seen": "2026-11-16",
+      "forks": 781,
+      "full_name": "mromidev/claude-animated-shorts",
+      "license": "MIT",
+      "pushed_at": "2026-11-01",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 3682,
       "status": "ok"
     },
     "msadeqsirjani/dnd_ai_dm": {
@@ -7630,6 +7864,19 @@
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 176,
+      "status": "ok"
+    },
+    "rammcodes/Curious-Kid": {
+      "archived": false,
+      "description": "A Claude skill that explains any technical topic using a simple short story, so even a 5-year-old can understand.",
+      "first_seen": "2026-11-16",
+      "forks": 0,
+      "full_name": "rammcodes/Curious-Kid",
+      "license": "MIT",
+      "pushed_at": "2026-10-26",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 17,
       "status": "ok"
     },
     "real-Elysia886/inkflow": {
@@ -8414,6 +8661,19 @@
       "stars": 13,
       "status": "ok"
     },
+    "suifengwudong/ai-novel-assistant": {
+      "archived": false,
+      "description": "基于智能体的小说创作生成/辅助系统 - 开源版",
+      "first_seen": "2026-11-16",
+      "forks": 0,
+      "full_name": "suifengwudong/ai-novel-assistant",
+      "license": "MIT",
+      "pushed_at": "2026-10-26",
+      "skill_count": 0,
+      "skill_count_truncated": false,
+      "stars": 8,
+      "status": "ok"
+    },
     "suixng/biqibao-ecno-video": {
       "archived": false,
       "description": "比奇堡角色叙事财经短视频的文案、分镜、素材与 Remotion 剪辑 Skill",
@@ -9009,6 +9269,19 @@
       "stars": 54,
       "status": "ok"
     },
+    "weibo-job/guagua-animation-skills": {
+      "archived": false,
+      "description": "9 Codex / Agent Skills for AI animation: character design, visual storytelling, storyboards, image-to-video, sound and editing. 无对白动画创作工作流：角色、编剧、分镜、生成、音效与剪辑。",
+      "first_seen": "2026-11-16",
+      "forks": 2,
+      "full_name": "weibo-job/guagua-animation-skills",
+      "license": "MIT",
+      "pushed_at": "2026-11-04",
+      "skill_count": 9,
+      "skill_count_truncated": false,
+      "stars": 21,
+      "status": "ok"
+    },
     "weike-zhang/ai-novel-studio": {
       "archived": false,
       "description": "AI novel generation with world building, interactive choices, and persistent character state. Next.js + Go. AI 小说创作台。",
@@ -9192,6 +9465,19 @@
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 1,
+      "status": "ok"
+    },
+    "wwaa34682-lab/novel-to-short-drama-skill": {
+      "archived": false,
+      "description": "小说→AI短剧 7步流水线通用技能（改编/验收/压节奏/分镜/资产/分镜图/图生视频） | Novel-to-AI-short-drama 7-step pipeline skill",
+      "first_seen": "2026-11-16",
+      "forks": 0,
+      "full_name": "wwaa34682-lab/novel-to-short-drama-skill",
+      "license": "MIT",
+      "pushed_at": "2026-10-19",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 15,
       "status": "ok"
     },
     "wwxxzz666/Mo-Shen": {
@@ -9640,6 +9926,19 @@
       "stars": 16,
       "status": "ok"
     },
+    "yosrikhiari/Versatile": {
+      "archived": false,
+      "description": "Offline-first fiction writing environment. Import a novel, let a local model read it into a story bible, then ask \"What if...?\": branch the book, rewrite the chapters the change reaches, and check every later scene for contradictions and skipped events. LangGraph multi-agent writing pipeline; Vue 3 + Dexie; Ollama.",
+      "first_seen": "2026-11-16",
+      "forks": 0,
+      "full_name": "yosrikhiari/Versatile",
+      "license": "MIT",
+      "pushed_at": "2026-11-16",
+      "skill_count": 0,
+      "skill_count_truncated": false,
+      "stars": 5,
+      "status": "ok"
+    },
     "youyouxia263/autoNovel": {
       "archived": false,
       "description": "支持一键生成长篇和短篇小说，短篇小说可以直接使用，长篇小说需要再次处理",
@@ -9771,6 +10070,19 @@
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 21,
+      "status": "ok"
+    },
+    "zhanghao123vip/ai-manju-skills": {
+      "archived": false,
+      "description": "21 个题材的 AI 漫剧全流程 Skill：一句点子生成企划案、资产图提示词、分集剧本、分镜与视频提示词。可用于 Claude Code、WorkBuddy、DeepSeek",
+      "first_seen": "2026-11-16",
+      "forks": 153,
+      "full_name": "zhanghao123vip/ai-manju-skills",
+      "license": "MIT",
+      "pushed_at": "2026-11-01",
+      "skill_count": 21,
+      "skill_count_truncated": false,
+      "stars": 847,
       "status": "ok"
     },
     "zhangwen-max/LLMWriter": {

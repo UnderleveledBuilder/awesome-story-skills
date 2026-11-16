@@ -41,8 +41,16 @@ repo   = "220labs/220-film"
 reason = "绑定单一作品：纪录片《220》的剪辑清单和渲染脚本，不是可复用的讲故事方法"
 
 [[ignored]]
+repo   = "2332239652/novelai-assistant"
+reason = "周边工具：NovelAI 生图提示词，把自然语言转成 Danbooru 标签，不写故事"
+
+[[ignored]]
 repo   = "27182812/Paddle_Story_Generation"
 reason = "非大模型：paddlenlp 小 GPT 微信续写机器人，与 Tju-LMc/Paddle_Story_Generation 内容相同"
+
+[[ignored]]
+repo   = "304939905/minimaxH3-ai-video-agent"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（MiniMax H3 视频全流程工作区，剧本只是第一步，重点在分镜、提示词、付费前校验和审片记录）"
 
 [[ignored]]
 repo   = "37jahangir/MeghGPT"
@@ -229,6 +237,10 @@ repo   = "alibaba/lumenx"
 reason = "周边工具：把现成小说文本转成漫剧视频（剧本分析、分镜、资产、配音、合成），不生成故事"
 
 [[ignored]]
+repo   = "aliveriver/Ficframe"
+reason = "周边工具：小说配图工具集，把同人小说、人设和参考图整理成图文生成流程，不写故事"
+
+[[ignored]]
 repo   = "Alpha-Park/character-ai-skill"
 reason = "陪伴聊天，不是叙事：对接 Character.AI 创建角色和群聊，没有叙事方法"
 
@@ -247,6 +259,10 @@ reason = "周边工具：视频流水线（GPT-3 按一句提示写故事，再 
 [[ignored]]
 repo   = "Anarcadia/chuanban-chaishu-skills"
 reason = "只分析不创作：网文拆书报告（章节概括、人物关系、事件线、爽点），未用于指导仿写；且 2026-03 后未更新"
+
+[[ignored]]
+repo   = "Anarcadia/chuanban-jp-novel-tranlate-proma-edition"
+reason = "周边工具：日文小说翻译"
 
 [[ignored]]
 repo   = "Andrew-Wyn/Storytelling_Generation"
@@ -369,6 +385,10 @@ repo   = "Azure-Samples/aspire-semantic-kernel-creative-writer"
 reason = "非虚构：多 Agent 撰写产品/营销文章的 Azure 示例，已归档"
 
 [[ignored]]
+repo   = "babicat4242-svg/wan3-prompt-skills"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（Wan 3.0 视频提示词：把短想法补成镜头、对白和声音）"
+
+[[ignored]]
 repo   = "baiyu-yu/story-sealdicejs-editor"
 reason = "周边工具：海豹骰剧情插件的拖拽节点编辑器，剧情由人手写，不调用大模型"
 
@@ -395,6 +415,10 @@ reason = "陪伴聊天，不是叙事：按 MBTI/星座或真人聊天记录复�
 [[ignored]]
 repo   = "bbroot/novel-bug-checker"
 reason = "只分析不创作：检查小说逻辑漏洞、OOC 和节奏，输出分级报告和修复建议，不生成正文（是 novel-master 套装里的质检环节）"
+
+[[ignored]]
+repo   = "beatra-ai/ai-storyboard-generator-skill"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（把剧本或场景转成分镜）"
 
 [[ignored]]
 repo   = "Been012/df-storyteller"
@@ -733,6 +757,10 @@ repo   = "ddtntt/emotion-narrative-writer"
 reason = "通用写作：情感赛道自媒体观点文（痛点场景→情绪正常化→认知重构→行动建议），非讲故事"
 
 [[ignored]]
+repo   = "dearfad/urdoc"
+reason = "不是叙事创作：医学教育虚拟病例平台，「编写故事」只是给病例加背景，重点在出题、问诊模拟和能力评估"
+
+[[ignored]]
 repo   = "deepfates/npc"
 reason = "AI 不生成故事：LangChain agent 去玩现成的 Zork，只给出指令建议；2023 年已归档"
 
@@ -775,6 +803,10 @@ reason = "主要做分镜/视频，见 awesome-short-drama-skills"
 [[ignored]]
 repo   = "dmc12-xyz/ai-writer"
 reason = "套壳，无方法：buildspace 模板，一句提示词调 text-davinci-003 出短故事；2023 后未更新"
+
+[[ignored]]
+repo   = "Dogwind221/DWcinematic-whitebox"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（剧本转 Blender 白模预演：镜头、走位和运镜）"
 
 [[ignored]]
 repo   = "dojoteef/storium-gpt2"
@@ -901,6 +933,10 @@ repo   = "enoobis/AI-eBook-Generator"
 reason = "非虚构，无叙事方法：按主题和章节数生成通用电子书，排版成 PDF"
 
 [[ignored]]
+repo   = "envymoon/EdgeNovel"
+reason = "周边工具：本地网文阅读器（人物关系、节奏图、语义检索、听书），不写作"
+
+[[ignored]]
 repo   = "Erica-YMT/ai_agent_chitu"
 reason = "陪伴聊天，不是叙事：红色文化数字人 RAG 问答加 TTS，没有讲故事方法"
 
@@ -919,6 +955,10 @@ reason = "周边工具：视频流水线；仓库只有一个 n8n 工作流 JSON
 [[ignored]]
 repo   = "escapistmost/Storyboard-Anchored-Generation"
 reason = "周边工具：CVPR 2026 多镜头视频生成研究，产出分镜首尾帧，不涉及故事文本"
+
+[[ignored]]
+repo   = "EssouliAnas/claude-animated-shorts"
+reason = "复制版：mromidev/claude-animated-shorts 加一键安装脚本，写作方法没有改动"
 
 [[ignored]]
 repo   = "ethan-w-roland/ai-interactive-fiction"
@@ -977,8 +1017,16 @@ repo   = "fanyangwuye/IP-skills-Example-package"
 reason = "周边工具：IP 短片的角色图、分镜、音乐、图生视频和连续性技能包，文案部分只做内容规划校验；且默认保留全部权利"
 
 [[ignored]]
+repo   = "fateking27/wenku8-downloader"
+reason = "周边工具：轻小说文库下载器，收在 awesome-novel-skills"
+
+[[ignored]]
 repo   = "fedefreak92/dungeon-master-ai-project"
 reason = "非大模型：纯规则 RPG 后端（状态机、战斗、地图），GPT 地下城主还在路线图里没实现；2025-04 后未更新"
+
+[[ignored]]
+repo   = "feicaiclub/knowledge-easy"
+reason = "非虚构，无叙事方法：知识解说视频制作 skill，篇幅集中在画面、插画、素材和剪辑，写稿只要求理清中心问题和核实事实"
 
 [[ignored]]
 repo   = "feichanggege/pderr-short-video-skill"
@@ -1055,6 +1103,10 @@ reason = "周边工具：视频流水线，叙事文案由用户提供，重点�
 [[ignored]]
 repo   = "fuhanhao/CinemaCraft"
 reason = "周边工具：视频流水线（剧情生成只是一步，重点在角色图、分镜图和视频合成）"
+
+[[ignored]]
+repo   = "fysh1010/mcp-server-fanqie"
+reason = "周边工具：番茄小说搜书和阅读 MCP，不写作"
 
 [[ignored]]
 repo   = "gaboolic/novel-gpt"
@@ -1241,6 +1293,10 @@ repo   = "Heuresis/YouTube-Agency"
 reason = "非虚构，无叙事方法：YouTube 频道运营全套（选题、标题封面、留存、变现漏斗），脚本只是一环"
 
 [[ignored]]
+repo   = "HeyChengC/bighead-collage"
+reason = "周边工具：视频流水线（大头剪贴人物短片，文案只规定钩子开头的短句，重点在导演表、动作表和音效）"
+
+[[ignored]]
 repo   = "hi-nikola/hand-drawn-explainer-video-nikola"
 reason = "周边工具：视频流水线（手绘逐笔动画渲染，文稿由用户提供或简单改写）"
 
@@ -1347,6 +1403,10 @@ reason = "改名换皮：7 个核心 skill 与 xindoo/sumeru 同文（.sumeru �
 [[ignored]]
 repo   = "imfangli/mediastorm-copywriter"
 reason = "非虚构，无叙事方法：影视飓风风格口播文案模板（钩子、分点、植入、CTA），无素材约束"
+
+[[ignored]]
+repo   = "Incluwin/BotStory"
+reason = "不是叙事创作：基于 Cosmic 的冒险岛 v83 私服，AI 角色当陪玩队友和城镇居民，没有故事创作方法"
 
 [[ignored]]
 repo   = "indentlabs/notebook"
@@ -1729,8 +1789,16 @@ repo   = "lhfer/codex-novel-to-comic-studio"
 reason = "周边工具：EPUB/TXT 小说改编漫画，用 image2 出整页并导出 PDF/CBZ，故事来自已有原作"
 
 [[ignored]]
+repo   = "lhlGitHub/hand-drawn-storybook-animation-skill"
+reason = "周边工具：网页故事动画引擎（分镜运镜、角色表演、配乐配音），剧本让用户另找 GPT 写"
+
+[[ignored]]
 repo   = "liangdabiao/claudesdk-seedance-chat"
 reason = "周边工具：Seedance 2.0 视频分镜提示词生成 Web 应用，剧本只是 15 秒镜头脚本，服务于视频生成"
+
+[[ignored]]
+repo   = "liangdabiao/comic-story-video"
+reason = "非虚构但事实全靠模型发挥：历史/知识类漫画解说视频，有「问题→骨架→格子」的写法，但没有核实史实和来源的要求"
 
 [[ignored]]
 repo   = "liangdabiao/directing-xiaohei-videos"
@@ -1815,6 +1883,10 @@ reason = "换皮：Ocisly14/CoC-AI-agent 的汉化版（提交历史就是原仓
 [[ignored]]
 repo   = "liuxiao20051106-prog/ai-manga-drama"
 reason = "主要做分镜/视频，见 awesome-short-drama-skills（八步出片，剧本与任务卡只占一步）"
+
+[[ignored]]
+repo   = "lixiaoxiao9888-create/forest-laoli-h3"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（MiniMax H3 短剧全流程，剧本只是第一步，重点在分镜、词根清洗和投喂稿）"
 
 [[ignored]]
 repo   = "lixiaoxiao9888-create/manju-laoli-skill"
@@ -1989,6 +2061,10 @@ repo   = "mcp-tool-shop-org/ai-rpg-engine"
 reason = "非大模型叙事：确定性 RPG 模拟引擎，自述不是故事生成器，剧情由机制涌现，LLM 只做可选的设计辅助"
 
 [[ignored]]
+repo   = "Mcz070321/katil-skill"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（AI 影视特效导演系统）"
+
+[[ignored]]
 repo   = "meetpotdar777/AIComicGenerator"
 reason = "周边工具：漫画单格图片生成"
 
@@ -2023,6 +2099,10 @@ reason = "周边工具：真人短剧成片生产（分镜、文生图/视频、
 [[ignored]]
 repo   = "michaelalvear/CLIO"
 reason = "非虚构，无叙事方法：气候水文数据的 RAG 解读问答"
+
+[[ignored]]
+repo   = "mickyyang-1407/diy-audiobook"
+reason = "周边工具：有声书/广播剧制作，故事取自公版书或用户原稿，模型只做翻译改编和分配角色配音"
 
 [[ignored]]
 repo   = "MIKA6941/Comfy-H3-Director"
@@ -2221,6 +2301,10 @@ repo   = "nlr-ai/infinite-storyteller"
 reason = "无说明：README 是一个无关的文件列表脚本说明，仓库混入整个 venv（含 exe），2024-08 后无更新"
 
 [[ignored]]
+repo   = "nocodehack/nocodehack-roblox-engine"
+reason = "周边工具：视频流水线（Blender 驱动的 Roblox 风格动画引擎，写作只是按标题统计挑格式，重点在角色动作、镜头和渲染）"
+
+[[ignored]]
 repo   = "noorcs39/Novel_Writer_LLM"
 reason = "非大模型：在 sacred-texts 语料上微调 TinyLlama 的个人练习，README 列的写作功能代码里没有；2025-08 后没有更新"
 
@@ -2301,8 +2385,16 @@ repo   = "OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL"
 reason = "通用去 AI 味：面向评论、科普、翻译等各类中文，小说只是 SKILL.md 里的一条叙事检查分支"
 
 [[ignored]]
+repo   = "ouxxyy/storyboard-scavenger"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（创意转七要素分镜和可灵/Seedance 提示词）"
+
+[[ignored]]
 repo   = "oztrkoguz/ComfyUI_StoryCreator"
 reason = "套壳，无方法：用微调 Phi-3 一次生成短故事再配图的 ComfyUI 节点；2025-04 后未更新"
+
+[[ignored]]
+repo   = "Panda-995/Soundleaf"
+reason = "周边工具：小说转有声书工作室"
 
 [[ignored]]
 repo   = "PapainTea/ink-skill"
@@ -2487,6 +2579,10 @@ reason = "周边工具：视频流水线，脚本只是钩子加分段加 CTA �
 [[ignored]]
 repo   = "read2017/jianghushuo-oral-skill"
 reason = "绑定单一人物：姜胡说人设 skill（问答+观点型口播稿），不以讲故事为核心"
+
+[[ignored]]
+repo   = "reelbenchai/reelscript"
+reason = "周边工具：目前只公开下载视频资料的 ReelDown skill，还没有剧本写作内容"
 
 [[ignored]]
 repo   = "regenerative-architect/hollywood_hope"
@@ -2805,6 +2901,10 @@ repo   = "SverreNystad/gpt-dungeon-master"
 reason = "说明不足：README 只列计划功能，用法写「开发中」，看不出已实现的叙事方法"
 
 [[ignored]]
+repo   = "Swayingleaves/novanova-studio"
+reason = "周边工具：AI 生图、生视频、无限画布和漫剧/短剧生产平台，小说解析剧本只是其中一项，重心在出图出视频和积分运营"
+
+[[ignored]]
 repo   = "Sweatha1052004/repo2reel"
 reason = "周边工具：视频流水线（把 GitHub 仓库做成讲解视频，不是叙事）"
 
@@ -2909,6 +3009,10 @@ repo   = "thu-coai/ConPer"
 reason = "非大模型：NAACL 2022 主角人设引导规划，骨干是微调的 GPT-2"
 
 [[ignored]]
+repo   = "thuann-vn/claude-3d-animated-shorts"
+reason = "非虚构但事实全靠模型发挥：mromidev/claude-animated-shorts 的真 3D 改版，故事公式仿 RicksClips，3D 版没有查证来源的要求，篇幅主要是角色绑定和布景"
+
+[[ignored]]
 repo   = "ThunderRonin/allcodex-aio"
 reason = "周边工具：世界观设定库（Trilium fork + RAG 整理设定、查一致性），不生成故事"
 
@@ -2953,6 +3057,10 @@ repo   = "turetegeblocfaun-star/peng-chinese-writing-skill"
 reason = "通用写作：中文选题共创和改稿，主体是观点文、长帖、教程，故事只是其中一类"
 
 [[ignored]]
+repo   = "TurkiHassan/nevermind-slides"
+reason = "周边工具：论文转阿拉伯语动效演示文稿，篇幅几乎都在动效引擎、图示和排版，讲故事只是可选的第一步"
+
+[[ignored]]
 repo   = "tushar18-2006/Economic-Story-Telling-AI"
 reason = "仓库只有 README 和截图，没有提示词或代码"
 
@@ -2975,6 +3083,10 @@ reason = "非虚构，无叙事方法：通用电子书生成（带封面和 PDF
 [[ignored]]
 repo   = "UncleWang2088/short-drama-director"
 reason = "主要做分镜/视频，见 awesome-short-drama-skills（9 个 skill 里 7 个做分镜/出图/视频提示词，编剧两步改造自 0xsline/short-drama 与 Vi7QY/screenwriter-skill）"
+
+[[ignored]]
+repo   = "UnhealthyKraken/AIDungeonTweaks"
+reason = "周边工具：AI Dungeon 的界面美化用户脚本（格式、配色、字体）"
 
 [[ignored]]
 repo   = "vadim-chiriac/worldkeep"
@@ -3121,6 +3233,14 @@ repo   = "william970/WritingGod"
 reason = "非大模型：2020 年 Keras 自训模型（.h5），README 只有「还在施工中」和博客链接"
 
 [[ignored]]
+repo   = "Win-Hao/music-mv"
+reason = "周边工具：给歌曲做 MV 的视频流水线，剧本分镜服务于音乐画面"
+
+[[ignored]]
+repo   = "winchao110/auto-drama-video"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（小说/剧本→MiniMax H3 分段提示词→资产图→视频）"
+
+[[ignored]]
 repo   = "WindXRan/fanqie-radar"
 reason = "周边工具：番茄榜单扫榜、题材热度与仿写选书评分，不写故事"
 
@@ -3135,6 +3255,10 @@ reason = "非大模型：2018 年毕业设计，用 Seq2Seq 把图片描述改�
 [[ignored]]
 repo   = "WoodyXu/history-story-video"
 reason = "周边工具：把历史故事拆成主体设定、首尾帧和分镜提示词、解说词的短视频素材包，核心是画面生产"
+
+[[ignored]]
+repo   = "Work-Fisher/fisher-storylens"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（角色与场景提示词、15 秒分镜和机位）"
 
 [[ignored]]
 repo   = "wumajiehechuan-lab/hermes-tvc-pipeline"
@@ -3445,6 +3569,10 @@ repo   = "zxerai/novelix"
 reason = "改名换皮：原版 Narcooo/inkos（10 Agent、7 个真相文件、33 维审计全同，不署原作）"
 
 [[ignored]]
+repo   = "zy-zmc/tianyan-novel-ai-writer"
+reason = "无源码：仓库只有 README 和更新清单，作者说暂时只作下载通道；开源前身 zy-zmc/tianming-novel-ai-writer 已收录"
+
+[[ignored]]
 repo   = "zyglovepp/ai-game-project"
 reason = "绑定单一作品：只能玩写死的「迷雾小镇」剧本（固定人物和场景）"
 
@@ -3715,6 +3843,10 @@ repo   = "ahmetbersoz/chatgpt-prompts-for-academic-writing"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
+repo   = "ai-2070/claude-storytold-skills"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
 repo   = "ai-models-lab/seed-audio-1.0"
 reason = "初筛：与大模型讲故事无关"
 
@@ -3732,6 +3864,10 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "AID-Bundler/aid-bundler"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "aihaipan/ComfyUI-Universal_Prompt_Optimizer"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -3863,11 +3999,19 @@ repo   = "alishafique3/ML_and_DL_Made_Easy"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
+repo   = "Alpha-Park/genpark-agent-prd-spec-synthesizer-skill"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
 repo   = "Alpha-Park/genpark-high-converting-ad-copy-hook-and-cta-synthesizer-skill"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "alphaparkinc/character-ai-skill"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "alphaparkinc/genpark-agent-prd-spec-synthesizer-skill"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -3963,6 +4107,10 @@ repo   = "anbulang/obsidian-wechat-skill"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
+repo   = "Andyyesiyu/lark-tech-storytelling"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
 repo   = "Angelo236/video-copy-extractor"
 reason = "初筛：与大模型讲故事无关"
 
@@ -3988,6 +4136,10 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "AnonKryptiQuz/XSSGAI"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "anthonyli/vi-say"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -4040,6 +4192,10 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "Arijitcodes067/PsiloScope-Psychedelic-Mushroom-Insights"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "artemnovitckii/claude-editing-skills"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -4168,6 +4324,10 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "beatra-ai/ai-podcast-voiceover-skill"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "beatra-ai/ai-video-generator-skill"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -4343,6 +4503,10 @@ repo   = "brandonuttley/direct-response-copywriting-skill"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
+repo   = "brann-dev/dungeondraft-mcp"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
 repo   = "breaker505/resumify"
 reason = "初筛：与大模型讲故事无关"
 
@@ -4507,6 +4671,10 @@ repo   = "chencore/paper-writing-skills-guide"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
+repo   = "chengpeng-cp/FriendBook-AI"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
 repo   = "chenkunhu/TDSKILL"
 reason = "初筛：与大模型讲故事无关"
 
@@ -4648,6 +4816,10 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "content-designer/ux-writing-skill"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "cooperchx/paper-cutout-story"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -4807,6 +4979,10 @@ repo   = "daveRendon/openai-for-devs"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
+repo   = "davidai1024/artist-storybook-character"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
 repo   = "DavidDinkevich/Story2Board"
 reason = "初筛：与大模型讲故事无关"
 
@@ -4860,6 +5036,10 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "DeekeScript/autojs"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "deenukhan/animation-styles"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -4919,6 +5099,10 @@ repo   = "devinambron/PyThoughtChain"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
+repo   = "devsolux/storytold"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
 repo   = "devswha/patina"
 reason = "初筛：与大模型讲故事无关"
 
@@ -4968,6 +5152,10 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "divinewton/writing"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "djcesar/skill-module-report"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -5235,6 +5423,10 @@ repo   = "fakerqwq/social-science-paper-writing-skill"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
+repo   = "fanhuayishiy/ai-demo"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
 repo   = "FantasyLu/senderos"
 reason = "初筛：与大模型讲故事无关"
 
@@ -5272,6 +5464,10 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "felicien-brochu/selflessheroes"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "felipereisdev/user-stories-skill"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -5568,6 +5764,14 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "gregorymm/humanize-text"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "GrenadierGrasp/aion-2-gear-score-calculator"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "grimmerk/memsaga"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -5979,7 +6183,15 @@ repo   = "inmis/Swms"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
+repo   = "intel/dokimi"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
 repo   = "invishantom/nCovMemory"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "Iota-Nine/Aion2-Eclipse"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -6759,6 +6971,10 @@ repo   = "leigegehaha/bilibili-video-script-gen"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
+repo   = "Leipengpeng/madame-bovary-skills"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
 repo   = "lemonhall/asd-ste100-skill-zh"
 reason = "初筛：与大模型讲故事无关"
 
@@ -6976,6 +7192,10 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "lpalbou/llm-basic-benchmark"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "lsall357357/startup-problem-finder"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -7767,6 +7987,10 @@ repo   = "NotYuSheng/TracePcap"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
+repo   = "nschurmann/hola-ai"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
 repo   = "nstung463/kimi-agent-skills"
 reason = "初筛：与大模型讲故事无关"
 
@@ -7856,6 +8080,10 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "OpenEduTech/chatmessage-mbti-analyzer-openclaw-repo"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "openplanr/OpenPlanr"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -8572,6 +8800,10 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "senmanx/s-level-comic-character"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "SepineTam/cnki-mcp"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
@@ -10008,6 +10240,10 @@ reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]
 repo   = "zengweijie666/-DouyinCrawler"
+reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "ZenHG/ComfyUI-MOSS-Storyboard"
 reason = "初筛：与大模型讲故事无关"
 
 [[ignored]]

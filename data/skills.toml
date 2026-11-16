@@ -395,6 +395,17 @@ note_en = "Works for fiction and nonfiction; includes cover specs and KDP export
 checked = 2026-10-15
 
 [[skills]]
+repo    = "asass-11/axu-novel"
+desc    = "长篇网文 skill：开书一步一停（脑洞体检、三方案选一），细纲用九问防平铺，每章按去 AI 味规则自查，人物、伏笔、时间线存本地档案，作者采用才入正文"
+desc_en = "Long web-novel skill: step-by-step setup (idea check, pick one of three pitches), nine questions keep outlines from going flat, chapters self-checked against de-AI rules, characters, foreshadowing and timeline kept in local files; only accepted chapters count"
+group   = "novel"
+methods = ["planning", "memory", "deai", "revision"]
+format  = "skill"
+lang    = "zh"
+agents  = ["claude-code", "codex"]
+checked = 2026-11-16
+
+[[skills]]
 repo    = "ATAIN000/story"
 desc    = "长篇写作台：315 题材与 20 层世界观向导→宏观规划；每章先出决策卡再生成，抽取事件后经七步硬约束验证（含 Z3）自动修正，事件溯源可回滚"
 desc_en = "Long-form writing studio: 315 genres and a 20-layer worldbuilding wizard feed planning; per-chapter decision cards, then events checked by seven hard-constraint steps (incl. Z3), event-sourced with rollback"
@@ -600,6 +611,19 @@ agents  = ["claude-code"]
 note    = "仓库只含 skill；同名安卓语音写作 App 只有 APK（Releases），需向作者要测试 Key"
 note_en = "Repo contains only the skill; the Android voice-writing app of the same name is an APK only (Releases) and needs a test key from the author"
 checked = 2026-10-15
+
+[[skills]]
+repo    = "chihumyum/Drifting"
+desc    = "本地优先的 AI 小说写作应用：章节、大纲、故事线、时间线加人物/地点/设定元素与变更补丁，全书 Agent 能读改整个项目、后台审阅章节，可把新正文归入设定"
+desc_en = "Local-first AI novel-writing app: chapters, outline, storylines and timeline plus elements (characters, places, lore) with change patches; a whole-book agent reads and edits the project, reviews chapters in the background and files new prose into setting"
+group   = "novel"
+methods = ["memory", "planning", "revision"]
+format  = "app"
+lang    = "multi"
+agents  = ["claude-code", "codex"]
+note    = "早期开发版，Mac / Windows；自带 DeepSeek、Anthropic 或 OpenAI 密钥，Codex、Claude Code 可经 MCP 接入；写作本身不强制用 AI"
+note_en = "Early development, Mac / Windows; bring your own DeepSeek, Anthropic or OpenAI key, Codex and Claude Code can connect over MCP; writing does not require AI"
+checked = 2026-11-16
 
 [[skills]]
 repo    = "cjyyx/AI_Gen_Novel"
@@ -3203,6 +3227,18 @@ note_en = "Can mix several genres and tropes; the repo includes some generated s
 checked = 2026-10-15
 
 [[skills]]
+repo    = "suifengwudong/ai-novel-assistant"
+desc    = "百万字超长篇辅助系统：章→卷→全文三级总结加知识图谱记忆，锁定核心设定不让 AI 改，意图理解、生成、逻辑校验、优化迭代四个 agent 分工"
+desc_en = "Assistant for million-word serials: three-level summaries (chapter → volume → book) plus a knowledge graph for memory, core settings locked against AI edits, and four agents for intent parsing, generation, logic checks and iterative improvement"
+group   = "novel"
+methods = ["memory", "multiagent", "revision"]
+format  = "app"
+lang    = "zh"
+note    = "FastAPI + Vue 3，需自配模型 API"
+note_en = "FastAPI + Vue 3; bring your own model API"
+checked = 2026-11-16
+
+[[skills]]
 repo    = "syrizelink/OpenFic"
 desc    = "人机协同的小说写作工具：写作编辑器加可自定义的 Prompt/Agent/工作流，维护设定、角色与伏笔，向量检索百万字项目，支持 Docker/pip/桌面版"
 desc_en = "Human-AI collaborative novel tool: writing editor plus customizable Prompts/Agents/workflows, maintains settings, characters and foreshadowing, vector retrieval over million-character projects; supports Docker, pip and a desktop version"
@@ -3800,6 +3836,18 @@ note_en = "Check scripts need Python 3; the naturalization step embeds Humanizer
 checked = 2026-10-15
 
 [[skills]]
+repo    = "XiaoOu2024/dsh-novel-generator"
+desc    = "小说工坊插件：在可拖动时间线上写小说，按网格结算世界快照（角色、势力、关系、物品），章节梗概可自动推演，能提取行文风格并 AI 改写正文"
+desc_en = "Novel studio plugin: write on a draggable timeline, settle world snapshots (characters, factions, relations, items) at grid points, auto-derive chapter synopses, extract the prose style and revise text with AI"
+group   = "novel"
+methods = ["planning", "memory", "style", "revision"]
+format  = "skill"
+lang    = "zh"
+note    = "DeepSeek Harness 插件，需 DSH 0.2.1-rc.2 及以上的 0.2.x"
+note_en = "DeepSeek Harness plugin; needs DSH 0.2.1-rc.2 or a later 0.2.x"
+checked = 2026-11-16
+
+[[skills]]
 repo    = "xiaoSun1997/xsun_novel_agent"
 desc    = "LangGraph 长篇流水线：Milvus 检索参考作品和写作理论出大纲待确认，逐章写后用 Neo4j 人物关系图谱查一致性，审稿不过重写，每 10 章总结"
 desc_en = "LangGraph long-form pipeline: Milvus retrieves reference works and writing theory for an outline to confirm; Neo4j character graph checks consistency after each chapter, failed reviews rewrite"
@@ -4109,6 +4157,18 @@ lang    = "zh"
 note    = "Java 17 / Spring AI；Qdrant 向量增强可选；ChatGPT 套餐授权通道为实验性功能"
 note_en = "Java 17 / Spring AI; Qdrant vector enhancement optional; ChatGPT subscription authorization channel is experimental"
 checked = 2026-10-15
+
+[[skills]]
+repo    = "yosrikhiari/Versatile"
+desc    = "离线小说写作环境：导入小说由本地模型读成故事圣经，可提「如果……」开分支、改写受影响章节并查后文矛盾；导演、写手、评论、编辑四角色流水线规划起草整书"
+desc_en = "Offline fiction workspace: a local model reads an imported novel into a story bible; ask \"what if\" to branch, rewrite affected chapters and check later scenes for contradictions; a Director/Writer/Critic/Editor LangGraph pipeline plans and drafts books"
+group   = "novel"
+methods = ["multiagent", "memory", "revision", "planning"]
+format  = "app"
+lang    = "en"
+note    = "默认用 Ollama 本地模型；可选 .NET 后端做账号、同步和协作"
+note_en = "Uses local Ollama models by default; optional .NET backend for accounts, sync and collaboration"
+checked = 2026-11-16
 
 [[skills]]
 repo    = "youyouxia263/autoNovel"
@@ -4422,6 +4482,18 @@ note_en = "Built for Xiaomi's MiMo incentive program, depends on three MiMo mode
 checked = 2026-10-15
 
 [[skills]]
+repo    = "bboyfan/ann-storybook"
+desc    = "儿童睡前互动有声绘本：按题材发展分页结构，图文互补不重复描写，用具体动作代替罐头叠字，前中段页尾留翻页动势、结尾放缓，每页 40–65 字便于朗读"
+desc_en = "Interactive bedtime picture books: page structure grown from the theme, text and pictures complement each other, concrete actions instead of stock reduplicated adjectives, page-turn pull early and a slower close, 40–65 characters per page for reading aloud"
+group   = "short"
+methods = ["theory", "deai"]
+format  = "skill"
+lang    = "zh"
+note    = "成品是带插图和台湾国语朗读的手机直式 HTML 绘本，配图配音靠 Gemini Canvas 或本机 agent"
+note_en = "Output is a portrait mobile HTML picture book with illustrations and Taiwanese Mandarin narration, made through Gemini Canvas or a local agent"
+checked = 2026-11-16
+
+[[skills]]
 repo    = "breakstring/Agentic_Story_Book_Workflow"
 desc    = "基于 AutoGen 的儿童绘本多 agent 流程：接待员收集需求，故事、分镜、提示词编辑各配审稿 agent，不通过就打回重写，最后出图并合成视频/PPT"
 desc_en = "AutoGen children's picture book flow: receptionist gathers requirements, story, storyboard and prompt editors each have a reviewer agent that sends failures back for rewrite, then images are generated and composed into video/PPT"
@@ -4457,6 +4529,19 @@ lang    = "en"
 note    = "论文配套代码，同时发布 StoryReasoning 数据集（4,178 个故事）与 QwenStoryteller 模型；需 GPU 运行 7B 视觉语言模型"
 note_en = "Companion code for a paper, also releases the StoryReasoning dataset (4,178 stories) and the QwenStoryteller model; needs a GPU to run a 7B vision-language model"
 checked = 2026-10-15
+
+[[skills]]
+repo    = "deenukhan/story-animator"
+desc    = "一句话写成带旁白的 2D 动画故事：按开场、问题、转折、回报、收尾五段比例写，选一个首尾呼应的小物件，先用三句话立故事主干，再写逐句旁白和画面节拍"
+desc_en = "Turns a one-line idea into a narrated 2D animated story: five proportioned parts (setup, problem, turn, payoff, last line), one small token that returns changed at the end, a three-sentence spine before narration, then line-by-line picture beats"
+group   = "short"
+methods = ["theory", "planning"]
+format  = "skill"
+lang    = "en"
+agents  = ["claude-code"]
+note    = "成片每帧由 Remotion 代码绘制，配音用 ElevenLabs"
+note_en = "Every frame is drawn in code with Remotion; narration uses ElevenLabs"
+checked = 2026-11-16
 
 [[skills]]
 repo    = "deokhwajeong/StoryTailor.ai"
@@ -4604,6 +4689,19 @@ lang    = "en"
 note    = "用于生成 HF 数据集 klusai/ds-tf1-en-3m（300 万篇英文寓言），偏合成训练数据"
 note_en = "Used to generate the HF dataset klusai/ds-tf1-en-3m (3 million English fables); leans toward synthetic training data"
 checked = 2026-10-15
+
+[[skills]]
+repo    = "krishnagoswami52/stickman-skill"
+desc    = "火柴人故事片 skill：分叙述寓言和连续剧两种写法，按时长百分比排结构，给句长、提问数和语速指标，要求开头讲明前提、一条主线、结尾回扣，配音稿可单独出"
+desc_en = "Stickman story-film skill: narrated fable or serial drama, structure laid out by runtime percentages, targets for sentence length, questions and pace, premise stated up front, one storyline and an obvious callback; voiceover scripts can be ordered alone"
+group   = "short"
+methods = ["theory", "planning"]
+format  = "skill"
+lang    = "en"
+agents  = ["claude-code"]
+note    = "成片由代码绘制并渲染 MP4；默认用免费开源 TTS 配音，也可接 ElevenLabs"
+note_en = "Films are drawn in code and rendered to MP4; free open-source TTS by default, ElevenLabs optional"
+checked = 2026-11-16
 
 [[skills]]
 repo    = "LanyXiaosheng/bookflow-skill"
@@ -4860,6 +4958,19 @@ note_en = "13 genre templates, pacing curve and payoff matrix; supports overseas
 checked = 2026-10-15
 
 [[skills]]
+repo    = "10291124jcjc-dotcom/ai-anime-series"
+desc    = "原创角色动画单元剧：每个角色配一个招牌能力，每集按目标出现→追逐→喘息→反转→反击→笑点定格写无台词动作喜剧，一集一地点，先读记录避开用过的桥段"
+desc_en = "Recurring-character animated comedy: each character gets a signature ability; each episode is a wordless action comedy (goal → chase → breather → reversal → counterattack → freeze-frame gag), one location per episode, past episodes checked to avoid repeats"
+group   = "script"
+methods = ["character", "theory"]
+format  = "skill"
+lang    = "zh"
+agents  = ["claude-code"]
+note    = "后半段是角色设定图、宫格故事板和即梦 Seedance 视频提示词"
+note_en = "The second half is character sheets, grid storyboards and Jimeng Seedance video prompts"
+checked = 2026-11-16
+
+[[skills]]
 repo    = "15673312611/MiaoMuse"
 desc    = "短剧剧本工作台：故事设定→角色小传→阶段大纲→分集大纲→分集正文逐级流式生成，另有剧本改写和网文改编入口，可导出 Word"
 desc_en = "Short drama script workbench: setting, character bios, stage outline, episode outlines, episode prose generated level by level with streaming; script rewriting, web novel adaptation, Word export"
@@ -4943,6 +5054,19 @@ lang    = "en"
 note    = "同一套件还覆盖生图、配音、视频生成、剪辑和发行；故事部分见 write-story、write-book、beat-sheet、story-state、revise-screenplay 等技能"
 note_en = "The same suite also covers image generation, voiceover, video generation, editing and distribution; the story skills are write-story, write-book, beat-sheet, story-state, revise-screenplay, etc."
 checked = 2026-10-15
+
+[[skills]]
+repo    = "bangtutorial/bang-film"
+desc    = "真人 AI 微短剧/短片策划：先出 logline、三行前提、分集弧线和 3 个不同公式的钩子，剧本用强钩加集尾悬念或三幕结构，再出演员圣经、镜头表和视频提示词"
+desc_en = "Planning for live-action AI microdramas and short films: logline, three-line premise, episode arcs and three hooks on different formulas; scripts use a hard hook plus cliffhangers or three acts, then cast bible, shot list and video prompts"
+group   = "script"
+methods = ["planning", "character", "theory"]
+format  = "skill"
+lang    = "multi"
+agents  = ["claude-code"]
+note    = "说明为印尼语；不生成媒体，只输出可复制到任意生图、生视频模型的文本"
+note_en = "Written in Indonesian; generates no media, only text to paste into any image or video model"
+checked = 2026-11-16
 
 [[skills]]
 repo    = "bybren-llc/story-systems-template"
@@ -5131,6 +5255,19 @@ tier    = "featured"
 note    = "CHI 2023 论文配套 Colab；不内置模型，需自行实现 LLM 采样接口"
 note_en = "Companion Colab for the CHI 2023 paper; no built-in model, you must implement the LLM sampling interface yourself"
 checked = 2026-10-15
+
+[[skills]]
+repo    = "Mayzmei/anime-series-maker"
+desc    = "2D 动漫连载 skill：先建一次系列圣经，每集给 3 个一句话前提，按实测播放量排名的钩子公式选题，再写逐秒镜头脚本和角色台词，剧集日志防重复"
+desc_en = "2D anime series skill: a one-time series bible, then three one-line premises per episode chosen with hook formulas ranked by real view counts, a per-second shot script with in-character dialogue, and an episode log to avoid repeats"
+group   = "script"
+methods = ["character", "theory", "memory"]
+format  = "skill"
+lang    = "en"
+agents  = ["claude-code", "codex", "openclaw", "workbuddy"]
+note    = "出片走 Renoise MCP（Seedance 类视频模型），后半段是提示词、审片、剪辑和封面"
+note_en = "Clips are generated through Renoise MCP (Seedance-class video models); the second half covers prompts, clip review, editing and covers"
+checked = 2026-11-16
 
 [[skills]]
 repo    = "shijue-aid/aid-studio"
@@ -5750,6 +5887,32 @@ note_en = "This repo is the frozen basic version, the advanced version is releas
 checked = 2026-10-15
 
 [[skills]]
+repo    = "Weeexiao/skills"
+desc    = "AI 短剧 skill 合集，编剧有三种：系列选题五维打分→3 秒钩子与 8 场骨架→带台词和时长的剧本；POV 第一人称短片；「离谱人数」荒诞生活喜剧"
+desc_en = "AI short-drama skill collection with three writing skills: series topics scored on five dimensions → 3-second hook and 8-scene skeleton → timed script with dialogue; first-person POV shorts; absurd 'ridiculous crowd size' life comedies"
+group   = "script"
+methods = ["theory", "planning"]
+format  = "skill"
+lang    = "zh"
+agents  = ["codex", "workbuddy"]
+note    = "11 个 skill 里编剧 3 个，其余是分镜、H3 提示词、场景资产和 MV 制作"
+note_en = "3 of the 11 skills are for writing; the rest cover storyboards, H3 prompts, scene assets and music videos"
+checked = 2026-11-16
+
+[[skills]]
+repo    = "weibo-job/guagua-animation-skills"
+desc    = "无对白双主角动画喜剧连载：编剧 skill 每集写一句话剧情、情绪曲线、三个各有铺垫的笑点和结尾钩子，轮换危险类型并查历史记录避免重复笑点"
+desc_en = "Wordless two-lead animated comedy series: the story-writer skill gives each episode a one-line plot, an emotion curve, three set-up gags and an ending hook, rotating danger types and checking the series log to avoid repeated gags"
+group   = "script"
+methods = ["theory", "character", "memory"]
+format  = "skill"
+lang    = "zh"
+agents  = ["codex"]
+note    = "9 个 skill 里编剧只有 story-writer，其余是角色、分镜、出图、视频、配音和剪辑"
+note_en = "Of the 9 skills only story-writer writes; the rest cover characters, storyboards, images, video, sound and editing"
+checked = 2026-11-16
+
+[[skills]]
 repo    = "wlxb625/ai-native-video-architect"
 desc    = "AI 影视创作 Skill：从想法设计故事、人物与冲突并写成正式剧本，再出视觉圣经、镜头表和逐镜生图/生视频提示词，附连续性与可生成性检查"
 desc_en = "AI film skill: designs story, characters and conflict into a formal script, then visual bible, shot list and per-shot image/video prompts, with continuity and generatability checks"
@@ -5760,6 +5923,19 @@ lang    = "zh"
 note    = "后半程侧重镜头表与生视频提示词包；有 CREATE / TRANSFORM / DIAGNOSE / ADAPT 四种模式；附 Windows 安装脚本和可选的契约校验脚本"
 note_en = "Second half focuses on the shot list and video-prompt pack; has four modes CREATE / TRANSFORM / DIAGNOSE / ADAPT; includes a Windows install script and an optional contract validation script"
 checked = 2026-10-15
+
+[[skills]]
+repo    = "wwaa34682-lab/novel-to-short-drama-skill"
+desc    = "小说改 AI 短剧七步闸门：改编要求情节零增删，另起独立验收官按百分表打分到 95 才放行，再按行动→阻碍→再行动压节奏，后接分镜、资产和图生视频"
+desc_en = "Seven gated steps from novel to AI short drama: adaptation with no plot added or cut, a separate reviewer scores it on a 100-point rubric and passes only at 95+, pacing compressed to action → obstacle → action, then storyboard, assets and image-to-video"
+group   = "script"
+methods = ["revision", "multiagent", "planning"]
+format  = "skill"
+lang    = "zh"
+agents  = ["claude-code", "cursor"]
+note    = "后四步是分镜、资产、关键帧和图生视频提示词；错误台账逐条防重犯"
+note_en = "The last four steps are storyboard, assets, key stills and image-to-video prompts; an error ledger keeps mistakes from repeating"
+checked = 2026-11-16
 
 [[skills]]
 repo    = "XucroYuri/how-to-make-script"
@@ -5823,6 +5999,19 @@ format  = "skill"
 lang    = "zh"
 agents  = ["claude-code", "codex"]
 checked = 2026-10-15
+
+[[skills]]
+repo    = "zhanghao123vip/ai-manju-skills"
+desc    = "21 个题材的 AI 漫剧模板：一句点子出立项卡和企划案，按题材节奏（如重生复仇今生快、前世慢）分批写全季分集剧本，再出资产库、导演手册和发布包"
+desc_en = "AI comic-drama templates for 21 genres: one idea becomes a project card and series plan, season scripts are written in batches with genre pacing (e.g. rebirth revenge: present fast, past life slow), then asset library, director's handbook and release pack"
+group   = "script"
+methods = ["planning", "theory"]
+format  = "skill"
+lang    = "zh"
+agents  = ["claude-code", "workbuddy"]
+note    = "后半段是资产图、分镜和视频提示词；也能粘进聊天窗口分批用"
+note_en = "The second half is asset, storyboard and video prompts; also works pasted into a chat window in batches"
+checked = 2026-11-16
 
 [[skills]]
 repo    = "zhangxiansheng-888/chuanzhang-ai-shortdrama-skills"
@@ -5994,6 +6183,19 @@ agents  = ["claude-code", "codex", "openclaw"]
 note    = "非虚构文档走「知识探索」模式；按 32K/128K/1M 上下文自动调整处理粒度"
 note_en = "Nonfiction documents use a \"knowledge exploration\" mode; processing granularity adjusts automatically for 32K/128K/1M context"
 checked = 2026-10-15
+
+[[skills]]
+repo    = "AlexandrNemashkalo/navi-dnd"
+desc    = "D&D 5e 桌面跑团游戏：Claude Code 或 Codex 当主持人讲故事、扮演 NPC，程序按规则掷骰结算，配战术格子地图、世界地图、冒险日志和角色卡"
+desc_en = "D&D 5e desktop tabletop game: Claude Code or Codex acts as game master, narrating and voicing NPCs, while the program rolls dice by the rules; tactical grid map, world map, adventure journal and character sheet"
+group   = "interactive"
+methods = ["interactive", "worldbuilding"]
+format  = "app"
+lang    = "multi"
+agents  = ["claude-code", "codex"]
+note    = "C# 桌面端（Windows、macOS）；需已登录 Claude Code 或 Codex CLI；界面俄英双语，带离线配音"
+note_en = "C# desktop app (Windows, macOS); needs a signed-in Claude Code or Codex CLI; Russian and English UI with offline voice-over"
+checked = 2026-11-16
 
 [[skills]]
 repo    = "anakinju/AIGC-Game"
@@ -7100,6 +7302,19 @@ note_en = "Originated from a SillyTavern fork, now an independent engine; AGPL-3
 checked = 2026-10-15
 
 [[skills]]
+repo    = "lyra-planet/galforge"
+desc    = "一句话做能玩的像素视觉小说：6 个构思去套路去重→结构→人设→立规范，主 agent 写首章定数值，子 agent 并行写其余章，审读后用结局求解和自动游玩测试"
+desc_en = "One sentence to a playable pixel-art visual novel: six ideas filtered for clichés and repeats → structure → characters → spec; the main agent writes chapter one and tunes stats, sub-agents write the rest in parallel, then review, an ending solver and auto-play"
+group   = "interactive"
+methods = ["planning", "character", "multiagent", "revision"]
+format  = "skill"
+lang    = "zh"
+agents  = ["claude-code", "codex", "cursor", "opencode", "gemini-cli"]
+note    = "画面全部用代码绘制、配乐用 WebAudio 合成，不用生图模型；剧本要求原创或取材公版"
+note_en = "All art is drawn in code and music synthesized with WebAudio, no image models; stories must be original or public domain"
+checked = 2026-11-16
+
+[[skills]]
 repo    = "mattjaybe/SillyTavern-Pathweaver"
 desc    = "ST 剧情导演扩展：读近期对话，按顺势、反转、新角色、类型风格生成最多 6 条走向供发给 AI；Surprise Me 提前埋入隐藏事件"
 desc_en = "ST story-director extension: reads recent chat and generates up to 6 directions (go with it, twist, new character, genre style) to send to the AI; Surprise Me plants hidden events in advance"
@@ -7811,6 +8026,19 @@ note_en = "Output is a vanilla Minecraft Java datapack, not a text novel; needs 
 checked = 2026-10-15
 
 [[skills]]
+repo    = "SyedBahjat/claude-stickman-shorts"
+desc    = "火柴人「你来决定」互动短剧：先给 3 个 logline，开写前定好整季分支，每集按钩子→升级→反转→两难→A/B 提问写，按多数票续集，连续性文件记时间、道具"
+desc_en = "Stick-figure 'You Decide' interactive shorts: three loglines first, the whole branching season written up front, each part runs hook → escalation → twist → dilemma → A/B question, the next follows the majority vote, a continuity file tracks time, place, props"
+group   = "interactive"
+methods = ["interactive", "planning", "memory"]
+format  = "skill"
+lang    = "en"
+agents  = ["claude-code"]
+note    = "篇幅大多是 Remotion 动画、配音和音效；另能照样片复刻任意视频格式"
+note_en = "Most of it is Remotion animation, voices and sound; can also recreate any sample video format"
+checked = 2026-11-16
+
+[[skills]]
 repo    = "TaigaNoeru/Frankkie"
 desc    = "SillyTavern 角色扮演预设：48 个可开关模块，含反套话规则、写前规划与连贯性检查、人物心理深度框架、文风预设、分题材思维链和长团一致性追踪"
 desc_en = "SillyTavern roleplay preset: 48 toggleable modules, including anti-cliche rules, pre-write planning and coherence checks, character psychology framework, style presets, genre-specific chain-of-thought and long-campaign consistency tracking"
@@ -7833,6 +8061,18 @@ lang    = "en"
 note    = "README 自称旧版仓库，新版为 TavernAI/TavernAI；SillyTavern 由其分叉而来"
 note_en = "README calls it the old repo, the new version is TavernAI/TavernAI; SillyTavern was forked from it"
 checked = 2026-10-15
+
+[[skills]]
+repo    = "Tech-Explorer-AI/ST-CinemaWorld"
+desc    = "SillyTavern 视觉小说/RPG 世界引擎：AI 当 GM 生成并演化世界，有主线和地图任务、NPC 主动搭讪、时间规则引擎、队友养成，角色卡几句即可"
+desc_en = "SillyTavern visual-novel/RPG world engine: the AI acts as GM and grows an evolving world, with main and map quests, NPCs who approach you, a time-rule engine, companion growth and building, needing only a short character card"
+group   = "interactive"
+methods = ["worldbuilding", "simulation", "interactive"]
+format  = "harness"
+lang    = "zh"
+note    = "SillyTavern 扩展；另带 3D 地图、即时战斗和本地 TTS"
+note_en = "SillyTavern extension; also adds 3D maps, real-time combat and local TTS"
+checked = 2026-11-16
 
 [[skills]]
 repo    = "tfrere/comic-book-generator"
@@ -8879,6 +9119,19 @@ note_en = "Moderately narrative; mainly organizes the explanation around \"who w
 checked = 2026-10-15
 
 [[skills]]
+repo    = "deenukhan/stick-figure-shorts"
+desc    = "火柴人事实故事短片：第二人称让观众当主角，用填空式前提公式把一个真实发现装进故事，先查原始出处、照实说测到了什么、不编数据，结尾留提问或反转"
+desc_en = "Stick-figure fact-story shorts: second person makes the viewer the hero, fill-in premise formulas wrap one true finding in a story; find the primary source first, say exactly what was measured, never invent numbers, end on a question or a twist"
+group   = "nonfiction"
+methods = ["theory", "factual"]
+format  = "skill"
+lang    = "en"
+agents  = ["claude-code"]
+note    = "成片由 Remotion 代码绘制、ElevenLabs 配音"
+note_en = "Films are drawn in code with Remotion and voiced with ElevenLabs"
+checked = 2026-11-16
+
+[[skills]]
 repo    = "Dprof-in-tech/Memory-Storyteller"
 desc    = "用结构化表单记一段回忆（起因、关键瞬间、情绪变化、感官细节、意义），让 Claude/GPT 写成第一人称、有始有终的短篇情书故事并定时发送"
 desc_en = "Records a memory in a structured form (cause, key moment, emotional change, sensory detail, meaning), has Claude/GPT write it as a first-person short love-letter story with a beginning and end, and sends it on a schedule"
@@ -8966,6 +9219,19 @@ note_en = "Idea comes from Amanda Askell's technique of explaining a concept thr
 checked = 2026-10-15
 
 [[skills]]
+repo    = "howznguyen/shorts-kit"
+desc    = "竖屏解说短视频 skill 组：先一句话定题，从 20 种叙事流程里选讲法，事实账本逐条记来源和核实状态，写完旁白再出画面、配音和 Remotion 渲染"
+desc_en = "Skill set for narrated vertical shorts: state the idea in one sentence, pick one of 20 storytelling flows, record every claim with sources and verification status in a fact ledger, write the narration, then visuals, voice and Remotion render"
+group   = "nonfiction"
+methods = ["factual", "theory", "planning"]
+format  = "skill"
+lang    = "en"
+agents  = ["claude-code", "codex", "opencode"]
+note    = "9 个 skill 里叙事在 sk-brief、sk-facts、sk-narration，其余是画面、渲染和推广片"
+note_en = "Storytelling lives in sk-brief, sk-facts and sk-narration; the other skills cover visuals, rendering and promo films"
+checked = 2026-11-16
+
+[[skills]]
 repo    = "hyperchat99999/vision-reel-playbook"
 desc    = "产品/想法短片方法：苏格拉底式访谈找出唯一值得拍的点，从三种叙事格式选一种，写 beat sheet 和旁白，每个主张配可见证据，再用 React 渲染"
 desc_en = "Product/idea short-film method: a Socratic interview finds the one point worth filming, picks one of three narrative formats, writes a beat sheet and narration, pairs each claim with visible evidence, then renders with React"
@@ -9039,6 +9305,19 @@ note_en = "Inspired by Zeng Ying's public texts and the \"Ying-Xue\" discussion,
 checked = 2026-10-15
 
 [[skills]]
+repo    = "konlu/story-studio"
+desc    = "历史与人物故事 skill：从高赞稿蒸馏写作 DNA，开头抛具体问题、正文以行动和后果推进、结尾兑现，史实要可追溯，不为钩子或字数补造事实，可单独核史"
+desc_en = "History and life-story skill: writing DNA distilled from top-liked scripts; open on a concrete question, drive with actions and consequences, pay it off at the end; facts must be traceable, never invented for a hook or word count; standalone fact-check mode"
+group   = "nonfiction"
+methods = ["style", "factual", "theory"]
+format  = "skill"
+lang    = "zh"
+agents  = ["claude-code", "codex", "cursor"]
+note    = "写作之外另有豆包配音、分镜配图和剪映草稿开关；人物故事风格蒸馏自抖音账号「玉玲2711」"
+note_en = "Besides writing it has switches for Doubao voice-over, storyboard images and CapCut drafts; the life-story style is distilled from the Douyin account 玉玲2711"
+checked = 2026-11-16
+
+[[skills]]
 repo    = "Leon-KTlan/sunology-writing-skill"
 desc    = "孙学体冷叙事 skill：先从素材找命题、数字、物件、空处，再选冷叙事/财富宣言/人物神话模式，用动作链代替情绪词；只在素材内重组，缺事实先补料"
 desc_en = "Sun-Xue cold narrative: finds proposition, numbers, objects, gaps, picks cold narrative / wealth manifesto / personality myth mode, action chains not emotion words; only recombines the material, gathers more if facts missing"
@@ -9102,6 +9381,19 @@ note_en = "Code for an AAAI 2025 Oral paper; includes the SS-GEN dataset, used t
 checked = 2026-10-15
 
 [[skills]]
+repo    = "mromidev/claude-animated-shorts"
+desc    = "卡通 3D 故事短片：选一个有物理因果的真实奇事，事实连出处写在脚本开头，按钩子→背景→升级→断裂→解释→后果→回扣反转的节拍写 55–70 秒旁白"
+desc_en = "Cartoon 3D story shorts: pick one surprising true story with a physical cause and effect, put facts and sources at the top of the script, then write 55–70 s of narration on a hook → setting → escalation → snap → explanation → consequence → callback formula"
+group   = "nonfiction"
+methods = ["theory", "factual"]
+format  = "skill"
+lang    = "en"
+agents  = ["claude-code"]
+note    = "篇幅大多是 three.js + Remotion 的镜头、光照和渲染"
+note_en = "Most of it covers three.js + Remotion shots, lighting and rendering"
+checked = 2026-11-16
+
+[[skills]]
 repo    = "mycyg/aletheia"
 desc    = "文章、论文转纪录片：先建证据账本把主张和引文绑定出处，提 2–3 个叙事方向，按「张力→证据→解释→后果」因果链写旁白与逐镜分镜，确认后才生成素材"
 desc_en = "Articles and papers → documentary: evidence ledger binds claims and quotes to sources, 2-3 narrative directions, narration and shot storyboards on tension → evidence → explanation → consequence; assets generated only after confirmation"
@@ -9141,6 +9433,17 @@ tier    = "featured"
 note    = "论文配套（arXiv，CAIS workshop Spotlight）；多媒体生成需 OpenRouter API；另有 14 角色扩展版 data2story-pro"
 note_en = "Companion to a paper (arXiv, CAIS workshop Spotlight); multimedia generation needs the OpenRouter API; also a 14-role extended version, data2story-pro"
 checked = 2026-10-15
+
+[[skills]]
+repo    = "rammcodes/Curious-Kid"
+desc    = "用五岁孩子听得懂的 50–100 字小故事讲技术概念：一个难题一个解法，故事元素最多对应概念的 3 个部分，再映射回真实概念并说明比喻哪里不准，附自检清单"
+desc_en = "Explains a technical concept with a 50–100-word story a five-year-old can follow: one problem, one fix, at most three story parts mapped to the concept, then the mapping back and one line on where the analogy breaks, with a self-check list"
+group   = "nonfiction"
+methods = ["theory", "revision"]
+format  = "skill"
+lang    = "en"
+agents  = ["claude-code"]
+checked = 2026-11-16
 
 [[skills]]
 repo    = "RayonLee/teaching-case-writer"
