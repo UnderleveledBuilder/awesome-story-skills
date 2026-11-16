@@ -14,7 +14,7 @@ Every project is sorted by story type and tagged with the methods it uses. The [
 
 Many projects come from the Chinese web-novel and short-drama scene, so a good share of them are documented in Chinese. Descriptions below are translated.
 
-843 projects: 354 skills and prompt sets, 467 harnesses and apps, 22 research codebases · metadata updated 2026-11-16
+845 projects: 356 skills and prompt sets, 467 harnesses and apps, 22 research codebases · metadata updated 2026-11-16
 
 **Legend**: 🌟 featured · 📝 prompts · ⚙️ harness · 🧩 app · 🎓 research code · 💤 no updates for 180+ days · 📦 archived · ⚠️ repo unavailable
 
@@ -23,13 +23,13 @@ Many projects come from the Chinese web-novel and short-drama scene, so a good s
 
 ## Contents
 
-- [New this week](#new) (24)
+- [New this week](#new) (26)
 - [Featured: start here](#featured) (26)
 - [By story type](#by-group)
-  - [Novels · Web Novels](#group-novel) (362)
+  - [Novels · Web Novels](#group-novel) (363)
   - [Short Stories](#group-short) (44)
   - [Scripts · Short Dramas · Film](#group-script) (91)
-  - [Interactive Narrative · Games · Roleplay](#group-interactive) (203)
+  - [Interactive Narrative · Games · Roleplay](#group-interactive) (204)
   - [Imitation · Fan Fiction · Style Transfer](#group-imitation) (28)
   - [Narrative Nonfiction](#group-nonfiction) (70)
   - [General Story Methods](#group-general) (45)
@@ -40,7 +40,7 @@ Many projects come from the Chinese web-novel and short-drama scene, so a good s
 <a id="new"></a>
 ## New this week
 
-24 added in the last 7 days:
+26 added in the last 7 days:
 
 - [claude-animated-shorts](https://github.com/mromidev/claude-animated-shorts) ★3.7k: Cartoon 3D story shorts: pick one surprising true story with a physical cause and effect, put facts and sources at the top of the script, then write 55–70 s of narration on a hook → setting → escalation → snap → explanation → consequence → callback formula
 - [story-studio](https://github.com/konlu/story-studio) ★1.1k: History and life-story skill: writing DNA distilled from top-liked scripts; open on a concrete question, drive with actions and consequences, pay it off at the end; facts must be traceable, never invented for a hook or word count; standalone fact-check mode
@@ -60,9 +60,9 @@ Many projects come from the Chinese web-novel and short-drama scene, so a good s
 - [ann-storybook](https://github.com/bboyfan/ann-storybook) ★14: Interactive bedtime picture books: page structure grown from the theme, text and pictures complement each other, concrete actions instead of stock reduplicated adjectives, page-turn pull early and a slower close, 40–65 characters per page for reading aloud
 - [bang-film](https://github.com/bangtutorial/bang-film) ★10: Planning for live-action AI microdramas and short films: logline, three-line premise, episode arcs and three hooks on different formulas; scripts use a hard hook plus cliffhangers or three acts, then cast bible, shot list and video prompts
 - [ai-novel-assistant](https://github.com/suifengwudong/ai-novel-assistant) ★8: Assistant for million-word serials: three-level summaries (chapter → volume → book) plus a knowledge graph for memory, core settings locked against AI edits, and four agents for intent parsing, generation, logic checks and iterative improvement
+- [watersxya/dsh-novel-forge](https://github.com/watersxya/dsh-novel-forge) ★6: Text-only novel workbench: import an outline or get AI outline options from an idea, extract a story bible and world system fed into every chapter, plan volumes, write chapter by chapter, freeze style as metric ranges, nine-dimension review, whole-book check
 - [skills](https://github.com/Weeexiao/skills) ★6: AI short-drama skill collection with three writing skills: series topics scored on five dimensions → 3-second hook and 8-scene skeleton → timed script with dialogue; first-person POV shorts; absurd 'ridiculous crowd size' life comedies
-- [navi-dnd](https://github.com/AlexandrNemashkalo/navi-dnd) ★6: D&D 5e desktop tabletop game: Claude Code or Codex acts as game master, narrating and voicing NPCs, while the program rolls dice by the rules; tactical grid map, world map, adventure journal and character sheet
-- …and 4 more, listed under their story types below.
+- …and 6 more, listed under their story types below.
 
 <a id="featured"></a>
 ## Featured: start here
@@ -104,7 +104,7 @@ The most solid and representative projects in each story type. Start here if you
 
 Writing systems for long-form serials: book setup, outlines, chapter-by-chapter drafting, long-term memory, review.
 
-#### Skills · prompts (140)
+#### Skills · prompts (141)
 
 - 🌟 **[zenstory-ai/oh-story-claudecode](https://github.com/zenstory-ai/oh-story-claudecode)** · ★ 8.6k<br>Finds genres via ranking-chart analysis, tears down hits for pacing and material, writes from detailed outlines; separate setting/outline/tracking files, state cards split author truth from reader knowledge, post-write AI-pattern script<br><sub>Methods: planning · memory · style · de-AI</sub><br><sub>updated 2026-11-13 · Chinese · 14 skills · MIT</sub><br><sub>💡 The same team has a DeepSeek Harness version, oh-story-dsh</sub>
 
@@ -188,7 +188,7 @@ Writing systems for long-form serials: book setup, outlines, chapter-by-chapter 
 
 - **[AI-Practical-Lab/novel-writer](https://github.com/AI-Practical-Lab/novel-writer)** · ★ 51<br>State-machine long-form skill: concept, worldbuilding, volume and chapter outlines, then chapter writing, each step gated by validation scripts, with YAML character cards, foreshadowing, rollback<br><sub>Methods: planning · character · memory · revision</sub><br><sub>updated 2026-03-18 💤 · Chinese · 10 skills</sub><br><sub>💡 Also works with Trae and Antigravity</sub>
 
-- **[dsh-novel-forge](https://github.com/huangziyuan-general/dsh-novel-forge)** · ★ 46<br>Code-enforced long-form writing: nine-stage state machine blocks chapters until the outline is approved, rejects conflicting facts, budgeted pre-write brief, repeated-passage checks, six-dimension de-AI scan, scene contracts vs spoilers<br><sub>Methods: planning · memory · revision · de-AI</sub><br><sub>updated 2026-11-14 · Chinese · MIT</sub><br><sub>💡 DeepSeek Harness plugin (20 novel_* tools), plus an MCP directory</sub>
+- **[huangziyuan-general/dsh-novel-forge](https://github.com/huangziyuan-general/dsh-novel-forge)** · ★ 46<br>Code-enforced long-form writing: nine-stage state machine blocks chapters until the outline is approved, rejects conflicting facts, budgeted pre-write brief, repeated-passage checks, six-dimension de-AI scan, scene contracts vs spoilers<br><sub>Methods: planning · memory · revision · de-AI</sub><br><sub>updated 2026-11-14 · Chinese · MIT</sub><br><sub>💡 DeepSeek Harness plugin (20 novel_* tools), plus an MCP directory</sub>
 
 - **[axu-novel](https://github.com/asass-11/axu-novel)** · ★ 38<br>Long web-novel skill: step-by-step setup (idea check, pick one of three pitches), nine questions keep outlines from going flat, chapters self-checked against de-AI rules, characters, foreshadowing and timeline kept in local files; only accepted chapters count<br><sub>Methods: planning · memory · revision · de-AI</sub><br><sub>updated 2026-11-07 · Chinese</sub>
 
@@ -343,6 +343,8 @@ Writing systems for long-form serials: book setup, outlines, chapter-by-chapter 
 - **[novelist-skill](https://github.com/chanceline-max/novelist-skill)** · ★ 6<br>Codex Chinese-novel skill: inspiration to volume/chapter outlines, continuation and revision, maintaining files for characters, worldbuilding, foreshadowing, timeline and chapter summaries<br><sub>Methods: planning · character · memory · revision</sub><br><sub>updated 2026-07-23 · Chinese · MIT</sub>
 
 - **[open-novel-fanqie](https://github.com/kongxcer555/open-novel-fanqie)** · ★ 6<br>12-skill Fanqie long-form pipeline: benchmark-book teardown into trope JSON, re-skinning, title/blurb/events, outline, setting, detailed outline, draft, review, rolling summary<br><sub>Methods: planning · memory · revision · style</sub><br><sub>updated 2026-06-12 · Chinese · 11 skills · MIT</sub><br><sub>💡 Mirror of the dead original mosonlab/open-novel-fanqie; the README's git clone URL must be changed to kongxcer555/open-novel-fanqie; scripts need bun, and the p7 de-AI step is unfinished</sub>
+
+- **[watersxya/dsh-novel-forge](https://github.com/watersxya/dsh-novel-forge)** · ★ 6<br>Text-only novel workbench: import an outline or get AI outline options from an idea, extract a story bible and world system fed into every chapter, plan volumes, write chapter by chapter, freeze style as metric ranges, nine-dimension review, whole-book check<br><sub>Methods: planning · worldbuilding · revision · style</sub><br><sub>updated 2026-10-17 · Chinese · AGPL-3.0</sub><br><sub>💡 DeepSeek Harness plugin with a Simplified Chinese-only UI; also has a name generator, anti-AI rules and full-book export</sub>
 
 - **[web-novel-master](https://github.com/tinylion1024/web-novel-master)** · ★ 6<br>Web novel workflow with four modes (quick, professional, industrial, one-shot), author style cards for 11 tracks, trope library, platform positioning packs, init and validation scripts<br><sub>Methods: planning · theory · revision · style</sub><br><sub>updated 2026-07-20 · Chinese · MIT</sub><br><sub>💡 Based on PenglongHuang/chinese-novelist-skill (plot structure, characterization, dialogue and expansion guides follow the original), adding four creation modes, author style cards, platform positioning packs, market data and project management scripts</sub>
 
@@ -919,7 +921,7 @@ npx skills add forsonny/The-Crucible-Writing-System-For-Claude
 npx skills add Fly143/ultimate-novel-creation-skill
 # AI-Practical-Lab/novel-writer
 npx skills add AI-Practical-Lab/novel-writer
-# dsh-novel-forge
+# huangziyuan-general/dsh-novel-forge
 npx skills add huangziyuan-general/dsh-novel-forge
 # axu-novel
 npx skills add asass-11/axu-novel
@@ -1063,6 +1065,8 @@ npx skills add zlbigger/novel-webfiction
 npx skills add chanceline-max/novelist-skill
 # open-novel-fanqie
 npx skills add kongxcer555/open-novel-fanqie
+# watersxya/dsh-novel-forge
+npx skills add watersxya/dsh-novel-forge
 # web-novel-master
 npx skills add tinylion1024/web-novel-master
 # web-novel-writing-skill
@@ -1586,7 +1590,7 @@ npx skills add rouql/AI-Drama-Skill
 
 The AI is the narrator or game master and the story unfolds with the player's choices: interactive fiction, text adventures, tabletop RPGs, visual novels, roleplay.
 
-#### Skills · prompts (25)
+#### Skills · prompts (26)
 
 - **[novel-to-game](https://github.com/zenstory-ai/novel-to-game)** · ★ 1.1k<br>Novel-to-game adaptation: design documents with source citations, web game build, and evidence-based QA, with three playable examples<br><sub>Methods: planning · worldbuilding · revision</sub><br><sub>updated 2026-11-15 · Multilingual · 5 skills · MIT</sub>
 
@@ -1631,6 +1635,8 @@ The AI is the narrator or game master and the story unfolds with the player's ch
 - **[claude-stickman-shorts](https://github.com/SyedBahjat/claude-stickman-shorts)** · ★ 5<br>Stick-figure 'You Decide' interactive shorts: three loglines first, the whole branching season written up front, each part runs hook → escalation → twist → dilemma → A/B question, the next follows the majority vote, a continuity file tracks time, place, props<br><sub>Methods: planning · memory · co-creation</sub><br><sub>updated 2026-11-09 · English · MIT</sub><br><sub>💡 Most of it is Remotion animation, voices and sound; can also recreate any sample video format</sub>
 
 - **[galforge](https://github.com/lyra-planet/galforge)** · ★ 5<br>One sentence to a playable pixel-art visual novel: six ideas filtered for clichés and repeats → structure → characters → spec; the main agent writes chapter one and tunes stats, sub-agents write the rest in parallel, then review, an ending solver and auto-play<br><sub>Methods: planning · character · multi-agent · revision</sub><br><sub>updated 2026-11-02 · Chinese · MIT</sub><br><sub>💡 All art is drawn in code and music synthesized with WebAudio, no image models; stories must be original or public domain</sub>
+
+- **[ludis-continuum](https://github.com/Stunspot/ludis-continuum)** · ★ 5<br>Choice-driven TTRPG and fiction skill: two to four distinct options per turn, characters, places and factions built from wants, pressure, contradictions and hooks, and a campaign ledger keeping canon, proposals, rumours and secrets apart until a human accepts<br><sub>Methods: worldbuilding · memory · co-creation</sub><br><sub>updated 2026-10-15 · English · 4 skills</sub><br><sub>💡 Works with D&D, Pathfinder, Call of Cthulhu or homebrew; can export to VTTs such as Foundry</sub>
 
 - **[gamebook](https://github.com/alanl1234/gamebook)** · ★ 3<br>Turns any document (novel, textbook, biography) into a gamebook: parses chapters, extracts 10-field character cards and 8-dimension style fingerprint, builds variable/achievement/ending state tables, 2-4 branch choices per scene<br><sub>Methods: character · memory · style · co-creation</sub><br><sub>updated 2026-06-03 · English · MIT</sub><br><sub>💡 Nonfiction documents use a "knowledge exploration" mode; processing granularity adjusts automatically for 32K/128K/1M context</sub>
 
@@ -2035,6 +2041,8 @@ npx skills add kiki123124/novel-rpg
 npx skills add SyedBahjat/claude-stickman-shorts
 # galforge
 npx skills add lyra-planet/galforge
+# ludis-continuum
+npx skills add Stunspot/ludis-continuum
 # gamebook
 npx skills add alanl1234/gamebook
 ```
@@ -2596,17 +2604,17 @@ npx skills add aimerfeng/novel-to-webnovel
 
 What each method solves, how projects implement it and where it goes wrong: see the [method guide](METHODS.en.md). Each method there is followed by every project that uses it:
 
-- [Plan first: hierarchical outlines, decomposed drafting](METHODS.en.md#method-planning) (495)
+- [Plan first: hierarchical outlines, decomposed drafting](METHODS.en.md#method-planning) (496)
 - [Narrative theory: structure models, genre tropes, craft principles](METHODS.en.md#method-theory) (220)
-- [Setting · worldbuilding](METHODS.en.md#method-worldbuilding) (150)
+- [Setting · worldbuilding](METHODS.en.md#method-worldbuilding) (152)
 - [Character design · character profiles](METHODS.en.md#method-character) (194)
-- [Long-form memory · continuity: state stores, setting bibles, retrieval](METHODS.en.md#method-memory) (460)
+- [Long-form memory · continuity: state stores, setting bibles, retrieval](METHODS.en.md#method-memory) (461)
 - [Multi-agent roles: writer, editor, reviewer, reader](METHODS.en.md#method-multiagent) (155)
 - [Character and world simulation: let characters act out the plot](METHODS.en.md#method-simulation) (75)
-- [Review · self-critique · iterative revision](METHODS.en.md#method-revision) (402)
-- [Style learning · imitation: exemplars, style distillation, book teardowns](METHODS.en.md#method-style) (146)
+- [Review · self-critique · iterative revision](METHODS.en.md#method-revision) (403)
+- [Style learning · imitation: exemplars, style distillation, book teardowns](METHODS.en.md#method-style) (147)
 - [De-AI · prose polishing](METHODS.en.md#method-deai) (96)
-- [Interactive co-creation: reader choices, human-AI collaboration](METHODS.en.md#method-interactive) (202)
+- [Interactive co-creation: reader choices, human-AI collaboration](METHODS.en.md#method-interactive) (203)
 - [Fact constraints: source-driven, evidence checks, no fabrication](METHODS.en.md#method-factual) (56)
 
 <a id="resources"></a>

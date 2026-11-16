@@ -197,6 +197,10 @@ repo   = "aitippro/tipai-cinema-skills"
 reason = "周边工具：剧本→分镜→逐镜头十维视频提示词→FACS 表情注入，只做视频画面，不写剧情"
 
 [[ignored]]
+repo   = "aixlb/bcc"
+reason = "周边工具：把现成视频拆成剧本、分镜表和风格指南，不创作故事"
+
+[[ignored]]
 repo   = "AjayTiwari94/Darshana"
 reason = "文化遗产展示平台，AI 只做导览问答和推荐，看不到叙事生成方法"
 
@@ -359,6 +363,10 @@ reason = "已归档的旧版客户端（需连接 chasm 服务器），作者已
 [[ignored]]
 repo   = "AusertDream/ACGN-character-skill"
 reason = "陪伴聊天，不是叙事：从原作素材把二次元角色蒸馏成对话人设 skill，用途是和角色聊天"
+
+[[ignored]]
+repo   = "austinnie/PromptForge"
+reason = "周边工具：生图生视频与图文排版分发工具，小说脚本只是成片流程的输入"
 
 [[ignored]]
 repo   = "AuvraDev/Lens-Ai"
@@ -1605,6 +1613,10 @@ repo   = "JokerJonny/NeoLegacy"
 reason = "不生成故事：个人遗产记忆存档和 AI 对话"
 
 [[ignored]]
+repo   = "jonrusso/hand-drawn-2d-animation"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（手绘风 2D 动画短片：故事靠访谈用户给出、不让模型编笑点和结局，重点在设定板、分镜和 Seedance 提示词）"
+
+[[ignored]]
 repo   = "joyousfridg/AIDungeon-Desktop---AI-Dungeon-Unlimited-2026"
 reason = "可疑：无源码，只有 README，以破解版 AI Dungeon 为名引导下载带密码的压缩包并以管理员身份运行"
 
@@ -1811,6 +1823,10 @@ reason = "主要做分镜/视频，剧本环节看不到编剧方法，见 aweso
 [[ignored]]
 repo   = "liangdabiao/liurun-bookwriter-skills"
 reason = "通用写作：刘润、罗振宇风格商业评论长文（SCQA 论说结构），不以讲故事为核心"
+
+[[ignored]]
+repo   = "liangdabiao/seedance-storyboard-generator-realman"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（真人感 Seedance 分镜提示词，剧本环节只有一行写法要求）"
 
 [[ignored]]
 repo   = "liangdabiao/Seedance2-Storyboard-Generator"
@@ -2269,6 +2285,10 @@ repo   = "neosun100/MuMuAINovel"
 reason = "复制版：原版是 xiamuceer-j/MuMuAINovel，只加了 MCP 和批量脚本，2026-01 后未更新"
 
 [[ignored]]
+repo   = "newbiefly/novel-teardown-shelf"
+reason = "不是工具：6 本小说拆解蓝图的静态展示页，拆解用的 novel-teardown-skill 和蒸馏出的创作 skill 包不在仓库里"
+
+[[ignored]]
 repo   = "nhanhxxm2can9351-glitch/script-to-storyboard"
 reason = "周边工具：只把现成剧本转成 AI 视频分镜提示词并导出 Word，不写故事"
 
@@ -2529,6 +2549,10 @@ repo   = "qwertyuiopqaz787898-source/Crime-Creator"
 reason = "套壳，无方法：AI Studio 模板应用，README 只有运行说明"
 
 [[ignored]]
+repo   = "qwq13243/Kaibun-SC"
+reason = "绑定单一作品：只写《偶像大师 闪耀色彩》同人剧本，角色名表、立绘和配音素材都为这部作品准备"
+
+[[ignored]]
 repo   = "rachelos/cdrama"
 reason = "周边工具：短剧视频生产平台（剧本解析→角色图→分镜→视频合成）；且 2026-02 后未更新"
 
@@ -2755,6 +2779,10 @@ reason = "非虚构，无叙事方法：知识 / 产品口播走「痛点→解�
 [[ignored]]
 repo   = "shrunalisalian/hogwarts-gpt"
 reason = "非大模型：GPT-2 和 Bigram 在哈利波特文本上的微调练习"
+
+[[ignored]]
+repo   = "Shugar86/vids-studio"
+reason = "周边工具：在 Google Vids 里制作、剪辑视频，不写故事"
 
 [[ignored]]
 repo   = "shuyu-labs/BigBanana-AI-Director"
@@ -3475,6 +3503,14 @@ reason = "主要做分镜/视频，见 awesome-short-drama-skills"
 [[ignored]]
 repo   = "yxc624122479-glitch/maxdc-infinite-topic-engine"
 reason = "通用写作：选题和争点拆解加观点口播，非讲故事"
+
+[[ignored]]
+repo   = "YYC-Cube/YYC3-AI-Family-Comic-Drama"
+reason = "周边工具：漫剧工业化生产系统（小说→分镜→图像→视频→成片→运营），以小说为输入，重心在出片"
+
+[[ignored]]
+repo   = "z2x7d54/ai-drama-director-skill"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（剧本转分镜，保留原剧本台词和事件，不写剧本）"
 
 [[ignored]]
 repo   = "ZCZHAO-1999/shakespeare-writing-studio"

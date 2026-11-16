@@ -3656,6 +3656,18 @@ note_en = "README opens with CanonBench, a long-form consistency benchmark extra
 checked = 2026-10-15
 
 [[skills]]
+repo    = "watersxya/dsh-novel-forge"
+desc    = "纯文本小说工坊：导入大纲或从想法出多方案大纲，提炼道藏和大世界设定注入每章，分卷分章逐章生成，风格目标卡把文风固化成指标，九维审稿加全书质检"
+desc_en = "Text-only novel workbench: import an outline or get AI outline options from an idea, extract a story bible and world system fed into every chapter, plan volumes, write chapter by chapter, freeze style as metric ranges, nine-dimension review, whole-book check"
+group   = "novel"
+methods = ["planning", "worldbuilding", "style", "revision"]
+format  = "skill"
+lang    = "zh"
+note    = "DeepSeek Harness 插件，界面只有简体中文；另有取名器、反 AI 规则和全本导出"
+note_en = "DeepSeek Harness plugin with a Simplified Chinese-only UI; also has a name generator, anti-AI rules and full-book export"
+checked = 2026-11-16
+
+[[skills]]
 repo    = "waylean/plotrail"
 desc    = "长篇工作流两件套：plotrail 建 canon、章节合同、写后连续性审稿和作者改稿偏好；plotrail-intake 诊断精修已有旧稿再交接续写"
 desc_en = "Two-part long-form workflow: plotrail builds canon, chapter contracts, continuity review and author edit preferences; plotrail-intake diagnoses and refines old drafts before continuation"
@@ -8024,6 +8036,19 @@ agents  = ["claude-code"]
 note    = "产物是 Minecraft Java 原版数据包而非文本小说；需 Python 3.11+、Java 21+、Docker"
 note_en = "Output is a vanilla Minecraft Java datapack, not a text novel; needs Python 3.11+, Java 21+, Docker"
 checked = 2026-10-15
+
+[[skills]]
+repo    = "Stunspot/ludis-continuum"
+desc    = "选择驱动的跑团与小说 skill：每步给 2–4 个不同选项，人物、地点、势力按欲望、压力、矛盾和钩子成型，战役账本分开正史、提案、传闻和秘密，经人批准才算数"
+desc_en = "Choice-driven TTRPG and fiction skill: two to four distinct options per turn, characters, places and factions built from wants, pressure, contradictions and hooks, and a campaign ledger keeping canon, proposals, rumours and secrets apart until a human accepts"
+group   = "interactive"
+methods = ["interactive", "memory", "worldbuilding"]
+format  = "skill"
+lang    = "en"
+agents  = ["claude-code", "codex"]
+note    = "适配 D&D、Pathfinder、克苏鲁等规则或自制规则；可导出给 Foundry 等虚拟桌面"
+note_en = "Works with D&D, Pathfinder, Call of Cthulhu or homebrew; can export to VTTs such as Foundry"
+checked = 2026-11-16
 
 [[skills]]
 repo    = "SyedBahjat/claude-stickman-shorts"

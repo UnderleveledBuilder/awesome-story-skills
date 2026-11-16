@@ -2988,6 +2988,19 @@
       "stars": 12,
       "status": "ok"
     },
+    "Stunspot/ludis-continuum": {
+      "archived": false,
+      "description": "Choice-shaped RPG and fiction skill for playable pressure, governed canon, and campaign continuity.",
+      "first_seen": "2026-11-16",
+      "forks": 0,
+      "full_name": "Stunspot/ludis-continuum",
+      "license": null,
+      "pushed_at": "2026-10-15",
+      "skill_count": 4,
+      "skill_count_truncated": false,
+      "stars": 5,
+      "status": "ok"
+    },
     "SumOneHK/short-drama-scriptwriter": {
       "archived": false,
       "description": "剧本创作skill",
@@ -9219,6 +9232,19 @@
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 17,
+      "status": "ok"
+    },
+    "watersxya/dsh-novel-forge": {
+      "archived": false,
+      "description": "AI 编译纯文本小说工作台 for DSH：大纲导入、道藏/大世界设定、卷与章节规划、逐章 AI 生成 3000-4000 字、九维审稿、全书质检、全本导出。AI novel writing workbench (text-only).",
+      "first_seen": "2026-11-16",
+      "forks": 3,
+      "full_name": "watersxya/dsh-novel-forge",
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-10-17",
+      "skill_count": 0,
+      "skill_count_truncated": false,
+      "stars": 6,
       "status": "ok"
     },
     "way928745-collab/Hermes_Script_Cool": {
