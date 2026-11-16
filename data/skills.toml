@@ -2332,7 +2332,7 @@ note_en = "Python + React + SQLite, launched via bat on Windows; supports OpenAI
 checked = 2026-10-15
 
 [[skills]]
-repo    = "mrigankad/Novel-OS"
+repo    = "mrigankad/NovelOS"
 desc    = "架构→执笔→编辑→守卫→整理五角色流水线，结果并入持久 story_state，确定性连续性引擎先查断线与时间漂移再交 LLM 审校"
 desc_en = "Five-role pipeline of architect, writer, editor, guard, curator, with results merged into a persistent story_state; a deterministic continuity engine checks for broken threads and timeline drift before handing to the LLM reviewer"
 group   = "novel"
