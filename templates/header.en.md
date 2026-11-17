@@ -14,6 +14,8 @@ Many projects come from the Chinese web-novel and short-drama scene, so a good s
 
 {{count}} projects: {{skills}} skills and prompt sets, {{tools}} harnesses and apps, {{research}} research codebases · metadata updated {{updated}}
 
+✍️ **Turn an idea into a vertical short-drama script**: [dramawriter](https://write.shortdramaskills.com) is a site made by this list's maintainer. You write one sentence; three screenwriting skills (zenstory, Shanyin and jtydhr88) each write a pitch, and you pick one blind, then see who wrote it. The pitches, the full skeleton, the characters and outline episodes 1–5 are free; after that you pay with credits. It has no effect on what gets listed or how it ranks.
+
 **Legend**: 🌟 featured · 📝 prompts · ⚙️ harness · 🧩 app · 🎓 research code · 💤 no updates for 180+ days · 📦 archived · ⚠️ repo unavailable
 
 > [!NOTE]
