@@ -46,7 +46,7 @@ def main() -> None:
         print(f"  {q}: {len(items)}", file=sys.stderr)
         for it in items:
             key = it["full_name"].lower()
-            if key in known:
+            if key in known or key.startswith("underleveledbuilder/"):  # 自己的清单不当候选
                 continue
             entry = found.setdefault(key, {"repo": it, "queries": []})
             entry["queries"].append(q)

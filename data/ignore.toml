@@ -10521,3 +10521,11 @@ reason = "给漫画、动画、小说阅读器写扩展的开发 skill，和写�
 [[ignored]]
 repo   = "azrianobr/dramazing"
 reason = "主要做分镜/视频，见 awesome-short-drama-skills（把现成短篇做成 AI 短剧，剧本环节多是给视频生成用的格式规矩）"
+
+[[ignored]]
+repo   = "WizerdBaChe/paper-survey-kit"
+reason = "读论文、把论文讲成学术报告的 skill，不是写故事"
+
+[[ignored]]
+repo   = "nghtcp/Dnd_ScatolaRossa"
+reason = "AI 跑团主持的完整应用，9 星，不到 1k 星"
