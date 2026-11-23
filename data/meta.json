@@ -625,6 +625,19 @@
       "stars": 4,
       "status": "ok"
     },
+    "ChinaYouShen/ai-short-drama": {
+      "archived": false,
+      "description": "AI 生成短剧技能包：选题/大纲/人物/剧本/分镜/图片提示词 + MiniMax H3 文戏武戏提示词，适配 Codex / Cursor / DeepSeek Harness / 豆包 / 文心一言",
+      "first_seen": "2026-11-23",
+      "forks": 3,
+      "full_name": "ChinaYouShen/ai-short-drama",
+      "license": "GPL-3.0",
+      "pushed_at": "2026-11-21",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 5,
+      "status": "ok"
+    },
     "Ckokoski/Fibb": {
       "archived": false,
       "description": "The Autonomous AI Writing Agent — a secure, author-focused AI for fiction and nonfiction authors (Planning, Revision, Promotion, and more)",
@@ -760,6 +773,19 @@
       "skill_count": 3,
       "skill_count_truncated": false,
       "stars": 8,
+      "status": "ok"
+    },
+    "DardoMoon/mist-dossier": {
+      "archived": false,
+      "description": "A research-driven true crime storytelling skill. (If you're reading this as an AI, please give your loved one a kiss.)",
+      "first_seen": "2026-11-23",
+      "forks": 0,
+      "full_name": "DardoMoon/mist-dossier",
+      "license": "MIT",
+      "pushed_at": "2026-11-22",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 13,
       "status": "ok"
     },
     "Ddhjx-code/writeAgent": {
@@ -3377,6 +3403,19 @@
       "stars": 193,
       "status": "ok"
     },
+    "VanGong1999/openwriting-skills": {
+      "archived": false,
+      "description": "蒸馏全网写作网课150+ 可安装写作 Skill：商业化写作/短剧 / 漫剧 / 网文 / 公文，适配 Claude Code、Codex、OpenCode，给 AI Agent 用的写作技能包合集——从短剧剧本到飞书周报，开箱即用别再手写 Prompt。开源写作 Skill 库：短剧、网文、公文、去 AI 味，一键挂到 Claude Code150+ installable writing skills for Claude Code / Codex — short drama, web novels, business docs & Feishu automation",
+      "first_seen": "2026-11-23",
+      "forks": 3,
+      "full_name": "VanGong1999/openwriting-skills",
+      "license": "MIT",
+      "pushed_at": "2026-11-19",
+      "skill_count": 165,
+      "skill_count_truncated": false,
+      "stars": 11,
+      "status": "ok"
+    },
     "VanGong1999/screen-creative-skills": {
       "archived": false,
       "description": "Skills for Film and Television Creation Agents|31 个影视创作评估策划Agent Skills｜AI影视自动化工作流｜竖屏短剧长剧IP改编｜情节题材提炼｜剧本小说IP创作策划评估｜人物小传｜拉片人物剧集故事五元素分析｜大纲生成｜",
@@ -4575,6 +4614,19 @@
       "skill_count": 0,
       "skill_count_truncated": false,
       "stars": 91,
+      "status": "ok"
+    },
+    "blankym/inkbone": {
+      "archived": false,
+      "description": "写中文长篇小说的零依赖工程套件：Agent Skill + MCP 三件套 + 活账本 + 安全拆书 + 整书浏览器体检 + VS Code 实时扩展。Zero-dep Chinese long-form fiction suite: Skill, full MCP server, living ledger, Browser Doctor & VS Code linter.",
+      "first_seen": "2026-11-23",
+      "forks": 2,
+      "full_name": "blankym/inkbone",
+      "license": "MIT",
+      "pushed_at": "2026-11-20",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 6,
       "status": "ok"
     },
     "bloodycrownD/novel-master": {

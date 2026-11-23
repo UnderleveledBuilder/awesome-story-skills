@@ -10318,3 +10318,46 @@ lang    = "en"
 note    = "基于 yangkevin2/doc-story-generation；评估器模型与 GPT-BookSum 数据集在 Hugging Face"
 note_en = "Based on yangkevin2/doc-story-generation; evaluator model and the GPT-BookSum dataset are on Hugging Face"
 checked = 2026-10-15
+
+[[skills]]
+repo    = "VanGong1999/openwriting-skills"
+desc    = "从写作网课蒸馏出的 150 多个写作 skill：故事结构、人物、网文、短剧、剧本、去 AI 味，另有公文和商业写作包"
+desc_en = "150+ writing skills distilled from Chinese writing courses: story structure, character, web novels, short dramas, screenplays and de-AI, plus separate packs for official documents and business writing; for Claude Code, Codex and OpenCode."
+group   = "general"
+methods = ["theory", "character", "deai"]
+format  = "skill"
+lang    = "zh"
+agents  = ["claude-code", "codex", "opencode"]
+checked = 2026-11-23
+
+[[skills]]
+repo    = "DardoMoon/mist-dossier"
+desc    = "真实罪案叙事 skill：先筛案、核查来源、分清事实与推测，再按睡前故事的节奏慢慢讲，严格防剧透、不猎奇"
+desc_en = "True-crime storytelling skill: screens cases and verifies sources first, separates established facts from claims and speculation, then narrates at a calm bedtime pace with strict spoiler control and no sensationalism."
+group   = "nonfiction"
+methods = ["factual"]
+format  = "skill"
+lang    = "en"
+checked = 2026-11-23
+
+[[skills]]
+repo    = "blankym/inkbone"
+desc    = "中文长篇小说工程套件：活账本防吃书和提前漏底，本地脚本逐行查套话和主语链，审稿引文要逐字核对；带 MCP 和 VS Code 扩展"
+desc_en = "Engineering kit for Chinese long-form fiction: a live ledger that stops continuity slips and early reveals, a local checker for clichés and subject chains, and review quotes verified word for word; ships as a skill, an MCP server and a VS Code extension."
+group   = "novel"
+methods = ["memory", "revision", "deai"]
+format  = "skill"
+lang    = "zh"
+agents  = ["claude-code", "codex", "cursor", "opencode"]
+checked = 2026-11-23
+
+[[skills]]
+repo    = "ChinaYouShen/ai-short-drama"
+desc    = "短剧技能包：选题、大纲、人物、剧本、对白、钩子、审稿，一直到分镜和 MiniMax H3 提示词；武戏收 221 招"
+desc_en = "Short-drama skill pack: premise, outline, characters, script, dialogue, hooks and review, through to storyboards and MiniMax H3 prompts; its fight-scene library has 221 moves, each tied to an effect that can be drawn."
+group   = "script"
+methods = ["planning", "character", "revision"]
+format  = "skill"
+lang    = "zh"
+agents  = ["codex", "cursor", "workbuddy"]
+checked = 2026-11-23

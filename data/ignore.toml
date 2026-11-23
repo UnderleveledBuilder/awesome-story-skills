@@ -10469,3 +10469,55 @@ reason = "初筛：与大模型讲故事无关"
 [[ignored]]
 repo   = "Zzzeen2552/copywriting-mastery-skill"
 reason = "初筛：与大模型讲故事无关"
+
+[[ignored]]
+repo   = "kaomei/stickman-video-director"
+reason = "把文案做成火柴人动画视频，重点是出片，不是写故事"
+
+[[ignored]]
+repo   = "CryptoYuyyy02/stickman-video-director"
+reason = "火柴人视频制作（Muse 版），重点是出片，不是写故事"
+
+[[ignored]]
+repo   = "JayziLi/AnimaVN"
+reason = "AI 视觉小说角色扮演的完整应用，161 星，不到完整应用 1k 星的门槛"
+
+[[ignored]]
+repo   = "liangdabiao/dsh-realman-studio"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（Seedance 真人质感分镜，接即梦出图出片）"
+
+[[ignored]]
+repo   = "laSenu/roblox-in-this-town"
+reason = "Roblox 故事短视频制作：重点是在 Roblox Studio 里搭场景、渲染出片，写故事只占一步"
+
+[[ignored]]
+repo   = "partjava/VideoAgent"
+reason = "短剧/漫剧制片的完整应用，8 星，不到完整应用 1k 星的门槛，重点在出片"
+
+[[ignored]]
+repo   = "Alucard0x1/pulupulu-motion"
+reason = "动态图形和解说视频制作，不是写故事"
+
+[[ignored]]
+repo   = "guohuiyuan/novel-scan"
+reason = "把整本网文写成扫书书评和人物卡，是评书，不是写故事"
+
+[[ignored]]
+repo   = "zizhengLI4/lyric-driven-code-mv-skill"
+reason = "按歌词做像素动画 MV，不是写故事"
+
+[[ignored]]
+repo   = "smixs/visual-story"
+reason = "做动画演示片、交互系统图和路演幻灯片，不是叙事写作"
+
+[[ignored]]
+repo   = "Harishisonline/rblx-animates-skill"
+reason = "Roblox 风格故事短视频的 Blender 制作套件，重点是出片"
+
+[[ignored]]
+repo   = "ProjectNox-org/nox-extension-developer"
+reason = "给漫画、动画、小说阅读器写扩展的开发 skill，和写故事无关"
+
+[[ignored]]
+repo   = "azrianobr/dramazing"
+reason = "主要做分镜/视频，见 awesome-short-drama-skills（把现成短篇做成 AI 短剧，剧本环节多是给视频生成用的格式规矩）"

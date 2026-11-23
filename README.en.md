@@ -14,7 +14,7 @@ Every project is sorted by story type and tagged with the methods it uses. The [
 
 Many projects come from the Chinese web-novel and short-drama scene, so a good share of them are documented in Chinese. Descriptions below are translated.
 
-845 projects: 356 skills and prompt sets, 467 harnesses and apps, 22 research codebases · metadata updated 2026-11-23
+849 projects: 360 skills and prompt sets, 467 harnesses and apps, 22 research codebases · metadata updated 2026-11-23
 
 ✍️ **Turn an idea into a vertical short-drama script**: [dramawriter](https://write.shortdramaskills.com) is a site made by this list's maintainer. You write one sentence; three screenwriting skills (zenstory, Shanyin and jtydhr88) each write a pitch, and you pick one blind, then see who wrote it. The pitches, the full skeleton, the characters and outline episodes 1–5 are free; after that you pay with credits. It has no effect on what gets listed or how it ranks.
 
@@ -25,16 +25,16 @@ Many projects come from the Chinese web-novel and short-drama scene, so a good s
 
 ## Contents
 
-- [New this week](#new) (0)
+- [New this week](#new) (4)
 - [Featured: start here](#featured) (26)
 - [By story type](#by-group)
-  - [Novels · Web Novels](#group-novel) (363)
+  - [Novels · Web Novels](#group-novel) (364)
   - [Short Stories](#group-short) (44)
-  - [Scripts · Short Dramas · Film](#group-script) (91)
+  - [Scripts · Short Dramas · Film](#group-script) (92)
   - [Interactive Narrative · Games · Roleplay](#group-interactive) (204)
   - [Imitation · Fan Fiction · Style Transfer](#group-imitation) (28)
-  - [Narrative Nonfiction](#group-nonfiction) (70)
-  - [General Story Methods](#group-general) (45)
+  - [Narrative Nonfiction](#group-nonfiction) (71)
+  - [General Story Methods](#group-general) (46)
 - [By method](#by-method)
 - [Resources](#resources)
 - [Badge](#badge)
@@ -42,7 +42,12 @@ Many projects come from the Chinese web-novel and short-drama scene, so a good s
 <a id="new"></a>
 ## New this week
 
-Nothing new this week. Found a good project? [Suggest it](../../issues/new?template=submit-skill.yml).
+4 added in the last 7 days:
+
+- [mist-dossier](https://github.com/DardoMoon/mist-dossier) ★13: True-crime storytelling skill: screens cases and verifies sources first, separates established facts from claims and speculation, then narrates at a calm bedtime pace with strict spoiler control and no sensationalism.
+- [openwriting-skills](https://github.com/VanGong1999/openwriting-skills) ★11: 150+ writing skills distilled from Chinese writing courses: story structure, character, web novels, short dramas, screenplays and de-AI, plus separate packs for official documents and business writing; for Claude Code, Codex and OpenCode.
+- [inkbone](https://github.com/blankym/inkbone) ★6: Engineering kit for Chinese long-form fiction: a live ledger that stops continuity slips and early reveals, a local checker for clichés and subject chains, and review quotes verified word for word; ships as a skill, an MCP server and a VS Code extension.
+- [ChinaYouShen/ai-short-drama](https://github.com/ChinaYouShen/ai-short-drama) ★5: Short-drama skill pack: premise, outline, characters, script, dialogue, hooks and review, through to storyboards and MiniMax H3 prompts; its fight-scene library has 221 moves, each tied to an effect that can be drawn.
 
 <a id="featured"></a>
 ## Featured: start here
@@ -84,7 +89,7 @@ The most solid and representative projects in each story type. Start here if you
 
 Writing systems for long-form serials: book setup, outlines, chapter-by-chapter drafting, long-term memory, review.
 
-#### Skills · prompts (141)
+#### Skills · prompts (142)
 
 - 🌟 **[zenstory-ai/oh-story-claudecode](https://github.com/zenstory-ai/oh-story-claudecode)** · ★ 8.8k<br>Finds genres via ranking-chart analysis, tears down hits for pacing and material, writes from detailed outlines; separate setting/outline/tracking files, state cards split author truth from reader knowledge, post-write AI-pattern script<br><sub>Methods: planning · memory · style · de-AI</sub><br><sub>updated 2026-11-22 · Chinese · 14 skills · MIT</sub><br><sub>💡 The same team has a DeepSeek Harness version, oh-story-dsh</sub>
 
@@ -315,6 +320,8 @@ Writing systems for long-form serials: book setup, outlines, chapter-by-chapter 
 - **[chaserr/novel-craft](https://github.com/chaserr/novel-craft)** · ★ 6<br>Claude Code plugin for long-form writing and review: 5 skills + 12 agents, RTK.md fixes genre and style, and it manages outline, recaps, foreshadowing, character profiles and per-chapter review<br><sub>Methods: planning · memory · multi-agent · revision</sub><br><sub>updated 2026-09-18 · Chinese · 6 skills · MIT</sub><br><sub>💡 The author also has a desktop version of the same workflow, novel-craft-studio</sub>
 
 - **[Claude-Code-Novel-Writing](https://github.com/f43a9a/Claude-Code-Novel-Writing)** · ★ 6<br>Japanese Claude Code commands in eight stages (planning→worldbuilding→characters→structure→verification→storyboard→writing→review), built on an MBTI/genre/style/readership theory library<br><sub>Methods: planning · theory · character · revision</sub><br><sub>updated 2025-07-08 💤 · Japanese · MIT</sub><br><sub>💡 Not updated since 2025-07; includes a showcase site of AI-written works</sub>
+
+- **[inkbone](https://github.com/blankym/inkbone)** · ★ 6<br>Engineering kit for Chinese long-form fiction: a live ledger that stops continuity slips and early reveals, a local checker for clichés and subject chains, and review quotes verified word for word; ships as a skill, an MCP server and a VS Code extension.<br><sub>Methods: memory · revision · de-AI</sub><br><sub>updated 2026-11-20 · Chinese · MIT</sub>
 
 - **[novel-project-strategy](https://github.com/wgwtest/novel-project-strategy)** · ★ 6<br>Codex long-form project management skill: defines load order, chapter status and sync rules so a new session can resume the project without reading the full text, preventing outline, settings and text from drifting apart<br><sub>Methods: planning · memory</sub><br><sub>updated 2026-04-18 💤 · English · MIT</sub>
 
@@ -1037,6 +1044,8 @@ npx skills add Lzhimie/write-continuous-novels
 npx skills add chaserr/novel-craft
 # Claude-Code-Novel-Writing
 npx skills add f43a9a/Claude-Code-Novel-Writing
+# inkbone
+npx skills add blankym/inkbone
 # novel-project-strategy
 npx skills add wgwtest/novel-project-strategy
 # novel-webfiction
@@ -1244,7 +1253,7 @@ npx skills add Kelin-wu/picturebook-story-illustrations
 
 Screenplays and the story side of short dramas and comic dramas. Projects that only do storyboards or video generation are in [awesome-short-drama-skills](https://github.com/UnderleveledBuilder/awesome-short-drama-skills).
 
-#### Skills · prompts (62)
+#### Skills · prompts (63)
 
 - 🌟 **[screenwriting-skills](https://github.com/jtydhr88/screenwriting-skills)** · ★ 2.1k<br>26 skills distilled from 47 screenwriting books and 23 volumes of scripts: structure, Truby, scenes, dialogue, series bible, writers' room and adaptation, with drama and opera cases from China, the US, Japan, Korea and France<br><sub>Methods: planning · theory · character</sub><br><sub>updated 2026-10-03 · Chinese · 26 skills · MIT</sub><br><sub>💡 Skill text is in Chinese, README in five languages</sub>
 
@@ -1274,7 +1283,7 @@ Screenplays and the story side of short dramas and comic dramas. Projects that o
 
 - **[manga-script-master](https://github.com/snailzsh/manga-script-master)** · ★ 90<br>Comic-drama screenwriting skill: four pacing models (payoff, sweet romance, suspense, comedy), character cards with visual anchors, single-episode scripts with timecodes and shot sizes, storyboard prompts<br><sub>Methods: theory · character</sub><br><sub>updated 2026-03-25 💤 · Chinese · MIT</sub><br><sub>💡 Storyboard prompts default to Seedance 2.0</sub>
 
-- **[ai-short-drama](https://github.com/Hao0321/ai-short-drama)** · ★ 84<br>Genre research, eight-dimension greenlight scoring, a Bible fixing characters, ability costs and a villain ladder, then episodes by micro-arc (main turn, payoff, ending hook, state increment), with a script validating the serial contract<br><sub>Methods: planning · theory · memory · revision</sub><br><sub>updated 2026-08-13 · Chinese · MIT</sub><br><sub>💡 README is in Traditional Chinese</sub>
+- **[Hao0321/ai-short-drama](https://github.com/Hao0321/ai-short-drama)** · ★ 84<br>Genre research, eight-dimension greenlight scoring, a Bible fixing characters, ability costs and a villain ladder, then episodes by micro-arc (main turn, payoff, ending hook, state increment), with a script validating the serial contract<br><sub>Methods: planning · theory · memory · revision</sub><br><sub>updated 2026-08-13 · Chinese · MIT</sub><br><sub>💡 README is in Traditional Chinese</sub>
 
 - **[su-ai-short-drama](https://github.com/doublesq97-ui/su-ai-short-drama)** · ★ 74<br>Chinese short drama skill with female/male-audience genre and emotional-payoff rules; showrunner, writer, casting, storyboard roles share a project file, human locks candidates, episode outlines and scripts<br><sub>Methods: planning · theory · memory · multi-agent</sub><br><sub>updated 2026-11-12 · Chinese · 2 skills · MIT</sub><br><sub>💡 Includes an offline HTML script parameter generator; casting/storyboard/voice roles target later AI video production; the author declares low maintenance</sub>
 
@@ -1361,6 +1370,8 @@ Screenplays and the story side of short dramas and comic dramas. Projects that o
 - **[AI-ShortVideo-Story-Engine](https://github.com/slad-dev/AI-ShortVideo-Story-Engine)** · ★ 6<br>One sentence → life-redo / business-reversal short-video script: first a story contract (emotional promise, power confrontation, core reversal, foreshadowing table), hook library, pressure ladder, then storyboard and voiceover sheet<br><sub>Methods: planning · theory · style</sub><br><sub>updated 2026-10-04 · Chinese · 2 skills · MIT</sub><br><sub>💡 Includes a sub-skill for reverse-engineering viral videos and breaking down business models; storyboard prompts and Douyin/Xiaohongshu publishing packs are bundled</sub>
 
 - **[zhang-yimou-skill](https://github.com/Ye-Zayne/zhang-yimou-skill)** · ★ 6<br>Short drama skill turning Zhang Yimou-style principles (color narrative, ritual staging, spatial power, prop motifs) into writing rules: script from one line, then shot list, storyboard, Seedance prompts<br><sub>Methods: planning · theory · style</sub><br><sub>updated 2026-06-10 · Chinese</sub><br><sub>💡 Does not impersonate Zhang Yimou, uses only publicly observable directing principles; the last five of seven steps are storyboard/video/editing</sub>
+
+- **[ChinaYouShen/ai-short-drama](https://github.com/ChinaYouShen/ai-short-drama)** · ★ 5<br>Short-drama skill pack: premise, outline, characters, script, dialogue, hooks and review, through to storyboards and MiniMax H3 prompts; its fight-scene library has 221 moves, each tied to an effect that can be drawn.<br><sub>Methods: planning · character · revision</sub><br><sub>updated 2026-11-21 · Chinese · GPL-3.0</sub>
 
 - **[manju-full-pipeline](https://github.com/yangjiaxin2007123-dot/manju-full-pipeline)** · ★ 5<br>Adapts novels into vertical motion comics: source chapter index, adaptation contract, story engine and episode map, single-episode scripts, then asset images, nine-grid and MiniMax H3 video prompts, delivered after independent review<br><sub>Methods: planning · revision</sub><br><sub>updated 2026-08-22 · Chinese</sub><br><sub>💡 The second half is production of asset images, storyboards and video prompts; includes a Python structure-check script with no third-party dependencies</sub>
 
@@ -1465,7 +1476,7 @@ npx skills add 62656456/ai-film-skills
 npx skills add Mayzmei/anime-series-maker
 # manga-script-master
 npx skills add snailzsh/manga-script-master
-# ai-short-drama
+# Hao0321/ai-short-drama
 npx skills add Hao0321/ai-short-drama
 # su-ai-short-drama
 npx skills add doublesq97-ui/su-ai-short-drama
@@ -1553,6 +1564,8 @@ npx skills add Weeexiao/skills
 npx skills add slad-dev/AI-ShortVideo-Story-Engine
 # zhang-yimou-skill
 npx skills add Ye-Zayne/zhang-yimou-skill
+# ChinaYouShen/ai-short-drama
+npx skills add ChinaYouShen/ai-short-drama
 # manju-full-pipeline
 npx skills add yangjiaxin2007123-dot/manju-full-pipeline
 # hongguo-shortdrama-screenwriting
@@ -2156,7 +2169,7 @@ npx skills add zhenliu1486/restrained-narrative
 
 Turn real news, events, science and historical figures into stories people want to read: features, event retrospectives, popular science, biographies, voiceover and explainer scripts, brand stories. The story should grip; the facts must not be invented.
 
-#### Skills · prompts (55)
+#### Skills · prompts (56)
 
 - 🌟 **[director](https://github.com/s1dashu/director)** · ★ 884<br>Animated-explainer mode sets a central question, script as hook, background, contradiction, concept, misreading, answer; separates fact from interpretation, invents no motives or dialogue; then characters, storyboard and video generation<br><sub>Methods: planning · theory · facts</sub><br><sub>updated 2026-08-10 · Chinese · MIT</sub><br><sub>💡 Two other modes: personal-experience story animation and drama footage; media generation depends on the LibTV CLI or Jimeng CLI</sub>
 
@@ -2197,6 +2210,8 @@ Turn real news, events, science and historical figures into stories people want 
 - **[Curious-Kid](https://github.com/rammcodes/Curious-Kid)** · ★ 17<br>Explains a technical concept with a 50–100-word story a five-year-old can follow: one problem, one fix, at most three story parts mapped to the concept, then the mapping back and one line on where the analogy breaks, with a self-check list<br><sub>Methods: theory · revision</sub><br><sub>updated 2026-10-26 · English · MIT</sub>
 
 - **[daily-bookcast](https://github.com/GODGOD126/daily-bookcast)** · ★ 15<br>Book title → parallel retrieval builds a fact base and risky-claim cards → structure by fiction / ideas / history-biography track, each part a verified scene/case → ~7000-character audiobook script in three blocks, length counted by script<br><sub>Methods: planning · theory · facts</sub><br><sub>updated 2026-07-19 · Chinese · MIT</sub><br><sub>💡 Designed around a hard 8-minute limit; needs Python 3 and web search</sub>
+
+- **[mist-dossier](https://github.com/DardoMoon/mist-dossier)** · ★ 13<br>True-crime storytelling skill: screens cases and verifies sources first, separates established facts from claims and speculation, then narrates at a calm bedtime pace with strict spoiler control and no sensationalism.<br><sub>Methods: facts</sub><br><sub>updated 2026-11-22 · English · MIT</sub>
 
 - **[doodle-explainer-video](https://github.com/sadekxD/doodle-explainer-video)** · ★ 11<br>Stick-figure explainer skill: tests the topic's "paradox" with three questions, verifies and keeps named sources (no invented citations), writes voiceover on a nine-step arc, pairs images per beat and composites a vertical video<br><sub>Methods: planning · theory · facts</sub><br><sub>updated 2026-07-28 · English</sub><br><sub>💡 Image generation and voiceover depend on the paid Unsora MCP</sub>
 
@@ -2347,6 +2362,8 @@ npx skills add bayshier/sunxue
 npx skills add rammcodes/Curious-Kid
 # daily-bookcast
 npx skills add GODGOD126/daily-bookcast
+# mist-dossier
+npx skills add DardoMoon/mist-dossier
 # doodle-explainer-video
 npx skills add sadekxD/doodle-explainer-video
 # cinematic-confessional-writing
@@ -2426,7 +2443,7 @@ npx skills add constantin2088/yang-jiang-restrained-narrative-skill
 
 Story methods and principles not tied to one form: structure theory, character, dialogue, point of view, and de-AI techniques aimed at fiction.
 
-#### Skills · prompts (28)
+#### Skills · prompts (29)
 
 - 🌟 **[sepia](https://github.com/Nanako0129/sepia)** · ★ 3.9k<br>Three-pass revision based on AI-fiction structural features from the StoryScope paper: fixes narrative architecture (no stated theme, looser causality, delayed reveals), then paragraph flow and wording<br><sub>Methods: theory · revision · de-AI</sub><br><sub>updated 2026-11-03 · English · 6 skills · MIT</sub>
 
@@ -2455,6 +2472,8 @@ Story methods and principles not tied to one form: structure theory, character, 
 - **[ai-story-forge](https://github.com/nwiizo/ai-story-forge)** · ★ 12<br>Japanese novel template set: characters are set in three layers (unchanging core / semi-stable / mutable), stories build in three stages (skeleton, key scenes, scene detail), with five-axis QA and Claude Code slash commands<br><sub>Methods: planning · character · revision</sub><br><sub>updated 2025-06-29 💤 · 📝 prompts · Japanese · MIT</sub>
 
 - **[chinese-webnovel-editor](https://github.com/fanjack510-ctrl/chinese-webnovel-editor)** · ★ 12<br>De-AI refinement skill for web novels: freezes plot facts, character evidence and world rules, then fixes report tone, script-like dialogue, fragmented paragraphs and unpaid chapter endings, four review modes<br><sub>Methods: revision · de-AI</sub><br><sub>updated 2026-07-15 · Chinese · Apache-2.0</sub><br><sub>💡 Beta; author name and repo URL in the README are still placeholders</sub>
+
+- **[openwriting-skills](https://github.com/VanGong1999/openwriting-skills)** · ★ 11<br>150+ writing skills distilled from Chinese writing courses: story structure, character, web novels, short dramas, screenplays and de-AI, plus separate packs for official documents and business writing; for Claude Code, Codex and OpenCode.<br><sub>Methods: theory · character · de-AI</sub><br><sub>updated 2026-11-19 · Chinese · 165 skills · MIT</sub>
 
 - **[gpt3-cyoa](https://github.com/scottleibrand/gpt3-cyoa)** · ★ 10<br>2020 GPT-3 approach: summarizes text into scene, chapter and book outlines as external memory, then re-expands from summaries, envisioned for branching adventures; Tom Sawyer experiments<br><sub>Methods: planning · memory</sub><br><sub>updated 2020-08-15 💤 · 📝 prompts · English · Apache-2.0</sub><br><sub>💡 Only an idea document and prompt experiment outputs; the branching adventure generator itself is not implemented; API scripts taken from minimaxir/gpt-3-experiments</sub>
 
@@ -2553,6 +2572,8 @@ npx skills add rs-skills-lab/fictional-erotica
 npx skills add deedeekong07-alt/fiction-humanizer-zh
 # chinese-webnovel-editor
 npx skills add fanjack510-ctrl/chinese-webnovel-editor
+# openwriting-skills
+npx skills add VanGong1999/openwriting-skills
 # huoren-write
 npx skills add laoguo2025/huoren-write
 # advanced-writer
@@ -2584,18 +2605,18 @@ npx skills add junjiezhou1122/justin-sun-narrative-skill
 
 What each method solves, how projects implement it and where it goes wrong: see the [method guide](METHODS.en.md). Each method there is followed by every project that uses it:
 
-- [Plan first: hierarchical outlines, decomposed drafting](METHODS.en.md#method-planning) (496)
-- [Narrative theory: structure models, genre tropes, craft principles](METHODS.en.md#method-theory) (220)
+- [Plan first: hierarchical outlines, decomposed drafting](METHODS.en.md#method-planning) (497)
+- [Narrative theory: structure models, genre tropes, craft principles](METHODS.en.md#method-theory) (221)
 - [Setting · worldbuilding](METHODS.en.md#method-worldbuilding) (152)
-- [Character design · character profiles](METHODS.en.md#method-character) (194)
-- [Long-form memory · continuity: state stores, setting bibles, retrieval](METHODS.en.md#method-memory) (461)
+- [Character design · character profiles](METHODS.en.md#method-character) (196)
+- [Long-form memory · continuity: state stores, setting bibles, retrieval](METHODS.en.md#method-memory) (462)
 - [Multi-agent roles: writer, editor, reviewer, reader](METHODS.en.md#method-multiagent) (155)
 - [Character and world simulation: let characters act out the plot](METHODS.en.md#method-simulation) (75)
-- [Review · self-critique · iterative revision](METHODS.en.md#method-revision) (403)
+- [Review · self-critique · iterative revision](METHODS.en.md#method-revision) (405)
 - [Style learning · imitation: exemplars, style distillation, book teardowns](METHODS.en.md#method-style) (147)
-- [De-AI · prose polishing](METHODS.en.md#method-deai) (96)
+- [De-AI · prose polishing](METHODS.en.md#method-deai) (98)
 - [Interactive co-creation: reader choices, human-AI collaboration](METHODS.en.md#method-interactive) (203)
-- [Fact constraints: source-driven, evidence checks, no fabrication](METHODS.en.md#method-factual) (56)
+- [Fact constraints: source-driven, evidence checks, no fabrication](METHODS.en.md#method-factual) (57)
 
 <a id="resources"></a>
 ## Resources
